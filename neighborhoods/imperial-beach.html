@@ -4,19 +4,18 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rusty Rau - San Diego Real Estate Expert. Born and raised in San Diego with 8 years of experience helping buyers and sellers achieve their real estate goals.">
-    <meta name="keywords" content="San Diego real estate, Rusty Rau, San Diego realtor, homes for sale San Diego, buy home San Diego">
+    <meta name="description" content="Imperial Beach Real Estate - San Diego's southwesternmost beach community. Affordable coastal living with surf culture, median home price $775K. Expert guidance from Rusty Rau.">
+    <meta name="keywords" content="Imperial Beach real estate, Imperial Beach homes, San Diego beach homes, affordable coastal living, surf community, Imperial Beach pier">
     <meta name="author" content="Rusty Rau">
-    <meta name="description" content="Imperial Beach real estate guide. Imperial Beach is California's most southwesterly city, offering an authentic, laid-back beach town atmosphere. The community features great surf, the">
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Rusty Rau | San Diego Real Estate Expert">
-    <meta property="og:description" content="Born and raised in San Diego. 8 years helping San Diegans buy and sell homes.">
+    <meta property="og:title" content="Imperial Beach Real Estate | Rusty Rau | San Diego">
+    <meta property="og:description" content="Imperial Beach - Where California Begins. Affordable beach living with authentic surf culture.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://rauhomegroup.com">
+    <meta property="og:url" content="https://rauhomegroup.com/neighborhoods/imperial-beach.html">
     
-    <title>Imperial Beach Real Estate | Homes for Sale | Rusty Rau</title>
+    <title>Imperial Beach Real Estate & Homes for Sale | San Diego | Rau Home Group</title>
     
     <!-- Preconnect to external domains for faster loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,6 +41,258 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/logo.png">
 
+    <style>
+        .hero-neighborhood {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../assets/images/neighborhoods/imperial-beach-hero.jpg') center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .hero-neighborhood h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        .hero-neighborhood p {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+        .neighborhood-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+        .section {
+            margin-bottom: 4rem;
+        }
+        .section h2 {
+            color: #2C3E50;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid #D4AF37;
+            padding-bottom: 0.5rem;
+        }
+        .section p {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #444;
+            margin-bottom: 1.5rem;
+        }
+        .section > p:first-of-type {
+            font-size: 1.35rem;
+            line-height: 1.9;
+        }
+        .stats-banner {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            padding: 3rem 2rem;
+            margin: 3rem 0;
+            border-radius: 12px;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2.5rem;
+            margin: 0;
+        }
+        .stat-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            transition: all 0.3s ease;
+        }
+        .stat-card:hover {
+            border-color: #D4AF37;
+            transform: translateY(-5px);
+        }
+        .stat-card h3 {
+            color: #D4AF37;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+        .stat-card p {
+            color: #fff;
+            font-size: 1rem;
+            margin: 0;
+        }
+        .market-stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 2.5rem 0;
+        }
+        .market-stat-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 4px solid #D4AF37;
+        }
+        .market-stat-card h4 {
+            color: #2C3E50;
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+        }
+        .checkmark-list {
+            list-style: none;
+            padding: 0;
+            margin: 2rem 0;
+        }
+        .checkmark-list li {
+            position: relative;
+            padding-left: 3rem;
+            margin-bottom: 1.2rem;
+            font-size: 1.15rem;
+            line-height: 1.9;
+        }
+        .checkmark-list li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 32px;
+            height: 32px;
+            background: #D4AF37;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .pros-cons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+            margin: 2.5rem 0;
+        }
+        .pros, .cons {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+        }
+        .pros {
+            border-left: 4px solid #27ae60;
+        }
+        .cons {
+            border-left: 4px solid #e74c3c;
+        }
+        .pros h3 {
+            color: #27ae60;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .cons h3 {
+            color: #e74c3c;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .pros ul, .cons ul {
+            list-style: none;
+            padding: 0;
+        }
+        .pros li, .cons li {
+            padding-left: 1.5rem;
+            margin-bottom: 0.8rem;
+            position: relative;
+            line-height: 1.6;
+        }
+        .pros li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #27ae60;
+            font-weight: bold;
+        }
+        .cons li:before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .cta-section {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 3rem;
+            border-radius: 12px;
+            margin-top: 4rem;
+        }
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .cta-section h2 {
+            color: white;
+            border: none;
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+        .cta-section p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: rgba(255,255,255,0.9);
+        }
+        .cta-buttons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            max-width: 600px;
+            margin: 2rem auto 0;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #D4AF37;
+            color: #1a1a2e;
+            padding: 1.2rem 2rem;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        .cta-button:hover {
+            background: #f0c953;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
+        }
+        .cta-links {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.2);
+        }
+        .cta-links a {
+            color: #D4AF37;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1rem;
+        }
+        .cta-links a:hover {
+            color: #f0c953;
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .pros-cons {
+                grid-template-columns: 1fr;
+            }
+            .cta-buttons {
+                grid-template-columns: 1fr;
+            }
+            .hero-neighborhood h1 {
+                font-size: 2rem;
+            }
+            .hero-neighborhood p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Skip to main content link for accessibility -->
@@ -80,143 +331,294 @@
         </div>
     </nav>
 
-<nav class="navbar scrolled-dark">
-        <div class="nav-container">
-            <a href="/" class="logo">
-                <img src="../images/logo.png" alt="Rau Home Group" class="logo-img">
-                <div class="logo-text-wrap">
-                    <span class="logo-text">RAU HOME GROUP</span>
-                    <span class="logo-subtitle">SAN DIEGO REAL ESTATE</span>
+    <!-- Hero Section -->
+    <div class="hero-neighborhood">
+        <div>
+            <h1>Imperial Beach, San Diego</h1>
+            <p>Imperial Beach - Where California Begins</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="neighborhood-content">
+        
+        <!-- Stats Banner -->
+        <div class="stats-banner">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>$775K</h3>
+                    <p>Median Home Price</p>
                 </div>
-            </a>
-            <ul class="nav-links">
-                <li><a href="/#about">About</a></li>
-                <li><a href="/buyers.html">Buyers</a></li>
-                <li><a href="/sellers.html">Sellers</a></li>
-                <li><a href="/#listings">Listings</a></li>
-                <li><a href="/neighborhoods.html" class="active">Areas</a></li>
-                <li><a href="/#testimonials">Reviews</a></li>
-                <li><a href="/blog.html">Blog</a></li>
-                <li><a href="#contact" class="nav-cta">Contact</a></li>
-            </ul>
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+                <div class="stat-card">
+                    <h3>52 Days</h3>
+                    <p>Average Days on Market</p>
+                </div>
+                <div class="stat-card">
+                    <h3>65/100</h3>
+                    <p>Competitive Score</p>
+                </div>
+            </div>
         </div>
-    </nav>
 
-    <section class="hero page-hero" style="background: linear-gradient(135deg, #1A2332 0%, #0D1117 100%);">
-        <div class="hero-background">
-            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80" alt="Imperial Beach" class="hero-image">
-            <div class="hero-overlay dark"></div>
-        </div>
-        <div class="hero-content">
-            <span class="hero-tag">San Diego</span>
-            <h1 class="hero-title">Imperial Beach<br><span class="accent">Most Southwesterly City</span></h1>
-            <p class="hero-subtitle">Laid-back surf town at the Mexican border with authentic beach vibe</p>
-            <a href="#contact" class="cta-button">See Homes in Imperial Beach</a>
-        </div>
-    </section>
-
-    <section class="content-section" style="padding: 4rem 0;">
-        <div class="container narrow">
-            <h2 class="section-title">About Imperial Beach</h2>
-            <p class="lead-text">Imperial Beach is California's most southwesterly city, offering an authentic, laid-back beach town atmosphere. The community features great surf, the longest wooden pier in California, and some of San Diego's most affordable beach living.</p>
+        <!-- Overview Section -->
+        <section class="section">
+            <h2>🏖️ About Imperial Beach</h2>
+            <p>Imperial Beach holds a unique distinction as the southwesternmost city in the continental United States, offering authentic beach living without the premium price tag of other San Diego coastal communities. This laid-back surf town embodies the classic California beach lifestyle with a genuine, unpretentious vibe.</p>
             
-            <p style="color: #6B7280; margin-bottom: 1rem;">The Imperial Beach Pier is a local landmark and fishing spot. Tijuana Sloughs National Wildlife Refuge offers nature trails. The beach provides consistent surf and hosts the annual U.S. Open Sandcastle Competition. The community maintains a local, non-touristy vibe.</p>
+            <p><strong>Location:</strong> Southern San Diego County, just 5 miles from the Mexican border and 14 miles south of downtown San Diego. The city sits between the Pacific Ocean to the west and San Diego Bay to the east.</p>
             
-            <p style="color: #6B7280; margin-bottom: 2rem;">Real estate includes beach-close homes, apartments, and condos at prices significantly lower than northern beach communities. The surf culture, affordability, and authentic beach town feel attract surfers, artists, and those seeking unpretentious coastal living.</p>
+            <p><strong>Population:</strong> Approximately 27,000 residents who embrace the relaxed coastal culture and tight-knit community atmosphere.</p>
+            
+            <p><strong>What Makes It Unique:</strong> Imperial Beach is where the California coast literally begins. Home to the iconic Imperial Beach Pier, Silver Strand State Beach, and the Tijuana River National Estuarine Research Reserve, this community celebrates its working-class beach roots and authentic surf culture. The annual Sun & Sea Festival and U.S. Open Sandcastle Competition draw visitors from around the world, while locals enjoy uncrowded beaches and genuine neighborhood character that's increasingly rare in coastal San Diego.</p>
+            
+            <p><strong>Who Lives Here:</strong> Imperial Beach attracts surfers and beach enthusiasts, military families from nearby Naval Air Station North Island, first-time homebuyers seeking coastal affordability, remote workers valuing beach lifestyle over square footage, and longtime residents who cherish the authentic small-town beach vibe. The community is diverse, welcoming, and values environmental stewardship and ocean conservation.</p>
+        </section>
 
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin: 3rem 0; padding: 2rem; background: #F8F7F4; border-radius: 4px;">
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">$775K</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">Median Home Price</div>
+        <!-- Real Estate Market Section -->
+        <section class="section">
+            <h2>💰 Real Estate Market</h2>
+            
+            <div class="market-stats-grid">
+                <div class="market-stat-card">
+                    <h4>📊 Market Overview</h4>
+                    <p><strong>Median Price:</strong> $775,000<br>
+                    <strong>Price per Sq Ft:</strong> $494-596<br>
+                    <strong>Sale-to-List Ratio:</strong> 95.9%<br>
+                    <strong>Market Status:</strong> Somewhat competitive</p>
                 </div>
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">6/10</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">School Rating</div>
+                <div class="market-stat-card">
+                    <h4>⏱️ Market Speed</h4>
+                    <p><strong>Average Days on Market:</strong> 52 days<br>
+                    <strong>Hot Properties:</strong> Sell in ~18 days<br>
+                    <strong>Multiple Offers:</strong> Some homes receive competing bids</p>
                 </div>
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">27K</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">Population</div>
+                <div class="market-stat-card">
+                    <h4>📈 Recent Trends (2025-2026)</h4>
+                    <p><strong>Year-over-Year:</strong> Prices down 12.7%<br>
+                    <strong>Inventory:</strong> Improving buyer conditions<br>
+                    <strong>Market Shift:</strong> More balanced than peak years</p>
                 </div>
             </div>
 
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; margin: 2rem 0 1rem; color: #1A2332;">Lifestyle & Amenities</h3>
-            <ul style="list-style: none; padding: 0;">
-                <li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Imperial Beach Pier - California's southernmost</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Consistent surf breaks</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Tijuana Sloughs Wildlife Refuge</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Annual Sandcastle Competition</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Local surf culture</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Affordable beach access</li>
+            <p><strong>Price Ranges:</strong> Imperial Beach offers the most affordable coastal real estate in San Diego County. Entry-level condos and smaller homes start around $500K-650K, while most single-family homes range from $700K-$1.2M. Larger beachfront or bay-front properties can reach $1.5M-$2M, though these remain significantly more affordable than comparable oceanfront homes in La Jolla or Del Mar.</p>
+
+            <p><strong>Types of Homes:</strong></p>
+            <ul class="checkmark-list">
+                <li><strong>Beach Bungalows & Cottages:</strong> Classic California beach homes with character and charm ($650K-900K)</li>
+                <li><strong>Single-Family Homes:</strong> Typically 1,200-2,000 sq ft on smaller lots (4,000-6,000 sq ft)</li>
+                <li><strong>Condos & Townhomes:</strong> Affordable entry point to coastal living ($500K-750K)</li>
+                <li><strong>Beachfront Properties:</strong> Limited inventory of ocean or bay-front homes commanding premium pricing</li>
+                <li><strong>Newer Construction:</strong> Modern infill developments offering updated amenities</li>
             </ul>
 
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; margin: 2rem 0 1rem; color: #1A2332;">Who Lives Here</h3>
-            <p style="color: #6B7280;">Imperial Beach attracts surfers, artists, military families from nearby bases, and those seeking authentic, affordable beach living. The community is laid-back, diverse, and values maintaining its local character over development.</p>
-        </div>
-    </section>
+            <p><strong>Architectural Styles:</strong> Beach cottages and bungalows, Spanish Revival, Mid-century ranch homes, contemporary coastal design, and mixed-use developments near the pier.</p>
 
-    <section class="cta-section" style="background: #1A2332; color: white; padding: 4rem 0; text-align: center;">
-        <div class="container">
-            <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 1rem; color: white;">Ready to Find Your Imperial Beach Home?</h2>
-            <p style="color: rgba(255,255,255,0.8); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">Let me show you the best homes and investment opportunities in Imperial Beach.</p>
-            <a href="#contact" class="cta-button large">See Homes in Imperial Beach</a>
-        </div>
-    </section>
+            <p><strong>Market Trends:</strong> Imperial Beach represents exceptional value for buyers prioritizing coastal access over luxury finishes. The market has cooled from pandemic peaks, creating improved opportunities for buyers. Properties closest to the beach and pier maintain strongest demand, while homes in residential neighborhoods offer excellent value. The community attracts both local buyers seeking affordability and out-of-state buyers discovering San Diego's best-kept secret.</p>
+        </section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <span class="section-tag">Get in Touch</span>
-                    <h2 class="section-title">Let's Find Your<br>Imperial Beach Home</h2>
-                    <p class="contact-text">I know Imperial Beach inside and out. Let's talk about what you're looking for.</p>
-                    
-                    <div class="contact-details">
-                        <a href="tel:+18582044692" class="contact-item">
-                            <span class="contact-icon"><i class="fas fa-phone"></i></span>
-                            <span>(858) 204-4692</span>
-                        </a>
-                        <a href="mailto:rusty@deanaguilargroup.com" class="contact-item">
-                            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
-                            <span>rusty@deanaguilargroup.com</span>
-                        </a>
-                    </div>
-                    
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/rustyrau_sdrealtor/" target="_blank" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.facebook.com/rusty.rau" target="_blank" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </div>
+        <!-- Lifestyle & Culture Section -->
+        <section class="section">
+            <h2>🎨 Lifestyle & Culture</h2>
+            <p><strong>Vibe & Personality:</strong> Imperial Beach is refreshingly authentic—no pretense, no exclusivity, just genuine beach town living. It's where locals walk to the beach in flip-flops, surfers check the waves before work, and neighbors actually know each other's names. The pace is relaxed, the atmosphere welcoming, and the focus is on enjoying the simple pleasures of coastal life without the price tag or attitude of wealthier beach communities.</p>
+
+            <p><strong>Community Feel:</strong> Strong sense of community pride and environmental activism defines Imperial Beach. Residents actively participate in beach cleanups, ocean conservation efforts, and local events. The downtown area along Seacoast Drive offers local shops, taco spots, and surf shops where everyone feels like a regular. It's a true neighborhood where kids ride bikes to the beach, families gather for sunset, and the community rallies around local causes.</p>
+
+            <p><strong>Local Events & Traditions:</strong></p>
+            <ul class="checkmark-list">
+                <li><strong>U.S. Open Sandcastle Competition:</strong> World's largest sandcastle competition held annually in July</li>
+                <li><strong>Sun & Sea Festival:</strong> Beloved summer celebration with live music, food vendors, and beach activities</li>
+                <li><strong>Farmers Market:</strong> Friday afternoons featuring local produce, artisan goods, and community gathering</li>
+                <li><strong>Beach Cleanups:</strong> Regular volunteer efforts organized by Wildcoast and local environmental groups</li>
+                <li><strong>Concerts on the Green:</strong> Free summer concert series at Portwood Pier Plaza</li>
+            </ul>
+        </section>
+
+        <!-- Things to Do Section -->
+        <section class="section">
+            <h2>🌟 Things to Do</h2>
+            
+            <h3>🏖️ Beaches & Outdoor Activities</h3>
+            <ul class="checkmark-list">
+                <li><strong>Imperial Beach Pier:</strong> 1,500-foot wooden pier perfect for fishing, walking, and sunset watching</li>
+                <li><strong>Silver Strand State Beach:</strong> Mile after mile of pristine sandy beach between ocean and bay</li>
+                <li><strong>Tijuana River National Estuarine Research Reserve:</strong> 2,500 acres of coastal wetlands for birding and nature walks</li>
+                <li><strong>Border Field State Park:</strong> Westernmost point of the U.S.-Mexico border with unique history and trails</li>
+                <li><strong>Surfing:</strong> Consistent waves year-round, less crowded than northern San Diego breaks</li>
+                <li><strong>Bike Path to Coronado:</strong> Scenic Bayshore Bikeway offering stunning bay views and flat riding</li>
+                <li><strong>Kayaking & Paddleboarding:</strong> Calm bay waters perfect for beginners and families</li>
+            </ul>
+
+            <h3>🍽️ Dining & Local Spots</h3>
+            <ul class="checkmark-list">
+                <li><strong>Tin Fish:</strong> Casual seafood restaurant at the end of Imperial Beach Pier with ocean views</li>
+                <li><strong>Brigantine Seafood & Oyster Bar:</strong> Local favorite for fresh fish and oysters</li>
+                <li><strong>Serẽa Coastal Cuisine:</strong> Upscale dining at the Pier South Resort</li>
+                <li><strong>KP Donuts:</strong> Local institution serving breakfast and donuts since the 1970s</li>
+                <li><strong>Taco Shops:</strong> Authentic San Diego-style Mexican food throughout the community</li>
+                <li><strong>Local Breweries:</strong> Craft beer scene with beach-friendly taprooms</li>
+            </ul>
+
+            <h3>🎯 Entertainment & Attractions</h3>
+            <ul class="checkmark-list">
+                <li><strong>Portwood Pier Plaza:</strong> Gathering space with events, markets, and ocean views</li>
+                <li><strong>Imperial Beach Farmers Market:</strong> Friday afternoons with local vendors and live music</li>
+                <li><strong>Surfboard Art:</strong> Unique public art displays celebrating surf culture</li>
+                <li><strong>Close to Tijuana:</strong> International dining, culture, and shopping just minutes away</li>
+                <li><strong>South Bay Drive-In:</strong> Classic drive-in movie theater experience nearby</li>
+            </ul>
+        </section>
+
+        <!-- Schools Section -->
+        <section class="section">
+            <h2>🎓 Schools</h2>
+            <p>Imperial Beach is served by the South Bay Union School District and Sweetwater Union High School District. While test scores are below San Diego County averages, schools offer small class sizes, dedicated teachers, and strong community involvement. Many families supplement with after-school programs and are actively engaged in school improvement efforts.</p>
+
+            <h3>Public Schools</h3>
+            <ul class="checkmark-list">
+                <li><strong>Central Elementary:</strong> K-6, GreatSchools Rating 4/10 - Community-focused elementary school</li>
+                <li><strong>Oneonta Elementary:</strong> K-6, GreatSchools Rating 4/10 - Strong parent involvement and local pride</li>
+                <li><strong>Bayside Elementary:</strong> K-6, GreatSchools Rating 3/10 - Improving programs with community support</li>
+                <li><strong>Imperial Beach Charter School:</strong> K-8, GreatSchools Rating 4/10 - Alternative option with smaller setting</li>
+                <li><strong>Mar Vista High School:</strong> Grades 9-12 - Comprehensive high school serving Imperial Beach students</li>
+            </ul>
+
+            <h3>Private & Alternative Options</h3>
+            <ul class="checkmark-list">
+                <li><strong>Our Lady of Peace Academy:</strong> Catholic elementary school option nearby</li>
+                <li><strong>Homeschool Networks:</strong> Active homeschool community with beach-based learning opportunities</li>
+                <li><strong>Enrichment Programs:</strong> Surf camps, ocean education, and environmental programs leverage coastal location</li>
+            </ul>
+
+            <p><strong>School Considerations:</strong> Families choosing Imperial Beach often prioritize affordability and lifestyle over top-tier test scores. Many supplement public education with enrichment activities and after-school programs. The beach environment offers unique educational opportunities in marine biology, environmental science, and outdoor education that classroom ratings don't capture.</p>
+        </section>
+
+        <!-- Commute & Location Section -->
+        <section class="section">
+            <h2>🚗 Commute & Location</h2>
+            <ul class="checkmark-list">
+                <li><strong>Downtown San Diego:</strong> 14 miles, approximately 20-25 minutes via I-5 (traffic dependent)</li>
+                <li><strong>San Diego Airport:</strong> 18 miles, approximately 25 minutes</li>
+                <li><strong>Coronado:</strong> 8 miles, 15 minutes via Silver Strand Boulevard (scenic route)</li>
+                <li><strong>Tijuana, Mexico:</strong> 5 miles to border, easy access to international culture and dining</li>
+                <li><strong>Naval Air Station North Island:</strong> 10 miles, 20 minutes - convenient for military families</li>
+                <li><strong>Chula Vista:</strong> 6 miles, 12 minutes to retail and services</li>
+            </ul>
+
+            <h3>Freeway Access</h3>
+            <ul class="checkmark-list">
+                <li><strong>I-5 (North-South):</strong> Primary corridor via Palm Avenue or Coronado Avenue, 5-10 minutes to freeway access</li>
+                <li><strong>SR-75 (Silver Strand Highway):</strong> Scenic coastal route connecting to Coronado and downtown</li>
+                <li><strong>SR-905:</strong> Direct connection to Otay Mesa border crossing</li>
+            </ul>
+
+            <h3>Public Transit</h3>
+            <ul class="checkmark-list">
+                <li><strong>MTS Bus Routes:</strong> Multiple bus lines connecting to Chula Vista Transit Center and downtown San Diego</li>
+                <li><strong>Blue Line Trolley:</strong> Accessible from nearby Palm Avenue station</li>
+                <li><strong>Bike-Friendly:</strong> Flat terrain and dedicated bike paths make cycling viable year-round</li>
+            </ul>
+
+            <p><strong>Commute Reality:</strong> Imperial Beach works best for remote workers, military personnel stationed at North Island, or those willing to trade commute time for affordable coastal living. Morning commutes north on I-5 can be congested (30-40 minutes to downtown during peak hours), but many residents find the beach lifestyle worth the drive. The growing remote work trend makes Imperial Beach increasingly attractive.</p>
+        </section>
+
+        <!-- Pros & Cons Section -->
+        <section class="section">
+            <h2>⚖️ Pros & Cons</h2>
+            <div class="pros-cons">
+                <div class="pros">
+                    <h3>✅ What Buyers Love</h3>
+                    <ul>
+                        <li>Most affordable coastal real estate in San Diego</li>
+                        <li>Authentic beach town vibe without pretense</li>
+                        <li>Southwesternmost city in continental U.S. (unique bragging rights!)</li>
+                        <li>Less crowded beaches than northern San Diego</li>
+                        <li>Strong sense of community and local pride</li>
+                        <li>Year-round perfect beach weather (70-75°F)</li>
+                        <li>Walkable downtown and beachfront areas</li>
+                        <li>Growing food and craft beer scene</li>
+                        <li>Close proximity to Tijuana for international culture</li>
+                        <li>Excellent surfing with consistent waves</li>
+                        <li>Improving market offers buyer opportunities</li>
+                        <li>Pet-friendly beaches and community</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h3>⚠️ Considerations</h3>
+                    <ul>
+                        <li>Schools rate below county averages (test scores)</li>
+                        <li>Longer commute to central/north San Diego jobs</li>
+                        <li>Border proximity concerns for some buyers</li>
+                        <li>Tijuana River pollution impacts beach water quality occasionally</li>
+                        <li>Less dining and shopping than wealthier coastal areas</li>
+                        <li>Some areas show visible economic challenges</li>
+                        <li>Limited nightlife and entertainment options</li>
+                        <li>Homes typically smaller with less yard space</li>
+                        <li>Potential aircraft noise from Naval Air Station</li>
+                        <li>Public perception lags behind actual community quality</li>
+                        <li>Lower resale appreciation than premium coastal areas</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Ready to Discover Imperial Beach?</h2>
+                <p>As a San Diego native and local market expert, I know Imperial Beach offers something special: authentic coastal living at prices that actually make sense. This is where first-time buyers, surfers, and smart investors find their slice of the California dream.</p>
+                <p><strong>Let me show you why Imperial Beach might be your perfect beach community.</strong></p>
+                
+                <div class="cta-buttons">
+                    <a href="../contact.html" class="cta-button">Schedule Free Consultation</a>
+                    <a href="tel:+1234567890" class="cta-button">📞 Call Rusty Now</a>
                 </div>
                 
-                <div class="contact-form-container">
-                    <form class="contact-form">
-                        <input type="hidden" name="neighborhood" value="Imperial Beach">
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="email" name="email" placeholder="Email" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" name="phone" placeholder="Phone">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="message" placeholder="Tell me what you're looking for in Imperial Beach..." rows="4"></textarea>
-                        </div>
-                        <button type="submit" class="submit-button">Contact Rusty</button>
-                    </form>
+                <div class="cta-links">
+                    <a href="../listings.html">Browse Current Imperial Beach Listings</a> | 
+                    <a href="../neighborhoods.html">Explore Other San Diego Neighborhoods</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
+        <!-- Internal Links Section -->
+        <section class="section">
+            <h3>🔗 Related San Diego Neighborhoods</h3>
+            <p>Exploring your options? Check out these other San Diego beach communities:</p>
+            <ul class="checkmark-list">
+                <li><a href="coronado.html">Coronado</a> - Island paradise with historic charm and resort lifestyle</li>
+                <li><a href="pacific-beach.html">Pacific Beach</a> - Vibrant beach community with active nightlife</li>
+                <li><a href="ocean-beach.html">Ocean Beach</a> - Bohemian beach town with funky personality</li>
+                <li><a href="la-jolla.html">La Jolla</a> - Luxury coastal living (3x Imperial Beach prices)</li>
+                <li><a href="chula-vista.html">Chula Vista</a> - Nearby inland option with family amenities</li>
+            </ul>
+        </section>
+    </div>
 
-    <script src="../script.js"></script>
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Rau Home Group - Imperial Beach Real Estate",
+        "image": "https://rauhomegroup.com/assets/images/neighborhoods/imperial-beach-hero.jpg",
+        "description": "Imperial Beach San Diego real estate expert. Affordable coastal homes and beach living. Median price $775K. Authentic surf community where California begins.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Imperial Beach",
+            "addressRegion": "CA",
+            "postalCode": "91932",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "32.5793",
+            "longitude": "-117.1131"
+        },
+        "url": "https://rauhomegroup.com/neighborhoods/imperial-beach.html",
+        "priceRange": "$$",
+        "areaServed": "Imperial Beach, San Diego, California"
+    }
+    </script>
 
     <!-- Footer -->
     <footer class="footer" role="contentinfo">
@@ -291,7 +693,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
     <script src="../script.js" defer></script>
     <script src="../luxury-effects.js" defer></script>
-
-
 </body>
 </html>
