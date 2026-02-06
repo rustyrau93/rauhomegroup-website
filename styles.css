@@ -1780,15 +1780,15 @@ section {
 
 /* Testimonials Slider */
 .testimonials-slider {
-    overflow: visible;
-    margin: 0;
+    overflow: hidden;
+    margin: 0 0 var(--spacing-lg) 0;
     padding: 0;
 }
 
 .testimonials-track {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     gap: var(--spacing-md);
+    transition: transform 0.5s ease;
 }
 
 .testimonial-card {
@@ -1797,6 +1797,8 @@ section {
     border-radius: 2px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: var(--transition-normal);
+    min-width: calc(33.333% - var(--spacing-md));
+    flex-shrink: 0;
 }
 
 .testimonial-card:hover {
@@ -1846,7 +1848,11 @@ section {
 
 /* Testimonials Navigation */
 .testimonials-nav {
-    display: none; /* Hidden - showing grid instead of slider */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
 }
 
 .testimonial-nav-btn {
@@ -2894,8 +2900,8 @@ section {
         grid-template-columns: repeat(2, 1fr);
     }
     
-    .testimonials-track {
-        grid-template-columns: repeat(2, 1fr);
+    .testimonial-card {
+        min-width: calc(50% - var(--spacing-sm));
     }
     
     .contact-grid,
@@ -2985,7 +2991,11 @@ section {
     }
     
     .testimonials-track {
-        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+    
+    .testimonial-card {
+        min-width: 100%;
     }
     
     .about-credentials {

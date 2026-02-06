@@ -559,6 +559,70 @@ document.addEventListener('DOMContentLoaded', function() {
 })();
 
 // ============================================
+// TESTIMONIALS CAROUSEL
+// ============================================
+(function() {
+    const track = document.querySelector('.testimonials-track');
+    if (!track) return;
+    
+    const prevBtn = document.querySelector('.testimonials-nav .prev');
+    const nextBtn = document.querySelector('.testimonials-nav .next');
+    const cards = document.querySelectorAll('.testimonial-card');
+    
+    if (!prevBtn || !nextBtn || cards.length === 0) return;
+    
+    let currentIndex = 0;
+    const cardsPerView = getCardsPerView();
+    const totalSlides = Math.ceil(cards.length / cardsPerView);
+    
+    function getCardsPerView() {
+        if (window.innerWidth < 768) return 1;
+        if (window.innerWidth < 1024) return 2;
+        return 3;
+    }
+    
+    function updateCarousel() {
+        const cardWidth = cards[0].offsetWidth;
+        const gap = 16; // var(--spacing-md)
+        const offset = -(currentIndex * cardsPerView * (cardWidth + gap));
+        track.style.transform = `translateX(${offset}px)`;
+        
+        // Update button states
+        prevBtn.disabled = currentIndex === 0;
+        nextBtn.disabled = currentIndex >= totalSlides - 1;
+        prevBtn.style.opacity = currentIndex === 0 ? '0.5' : '1';
+        nextBtn.style.opacity = currentIndex >= totalSlides - 1 ? '0.5' : '1';
+    }
+    
+    prevBtn.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateCarousel();
+        }
+    });
+    
+    nextBtn.addEventListener('click', () => {
+        if (currentIndex < totalSlides - 1) {
+            currentIndex++;
+            updateCarousel();
+        }
+    });
+    
+    // Handle window resize
+    let resizeTimeout;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+            currentIndex = 0;
+            updateCarousel();
+        }, 250);
+    }, { passive: true });
+    
+    // Initialize
+    updateCarousel();
+})();
+
+// ============================================
 // PAGE LOAD OPTIMIZATION
 // ============================================
 window.addEventListener('load', function() {
