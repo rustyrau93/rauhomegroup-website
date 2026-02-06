@@ -1,6 +1,13 @@
 /* ============================================
    RUSTY RAU - SAN DIEGO REAL ESTATE
    Luxury Real Estate Website Styles
+   
+   Optimized for:
+   - Performance (CSS containment, will-change)
+   - Accessibility (focus states, reduced motion)
+   - Mobile responsiveness
+   
+   Last updated: 2026-02-06
    ============================================ */
 
 /* CSS Variables */
@@ -20,6 +27,10 @@
     --gold: #C9A869;
     --gold-light: #E8D5A8;
     
+    /* Focus ring color for accessibility */
+    --focus-ring: #C9A869;
+    --focus-ring-offset: 3px;
+    
     --font-display: 'Playfair Display', Georgia, serif;
     --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     
@@ -37,6 +48,74 @@
     --shadow-md: 0 4px 20px rgba(0,0,0,0.1);
     --shadow-lg: 0 10px 40px rgba(0,0,0,0.15);
     --shadow-xl: 0 20px 60px rgba(0,0,0,0.2);
+}
+
+/* ============================================
+   ACCESSIBILITY - Skip Link & Focus States
+   ============================================ */
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-secondary);
+    color: var(--color-primary);
+    padding: 1rem 2rem;
+    z-index: 10000;
+    font-weight: 600;
+    border-radius: 0 0 4px 4px;
+    transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+    top: 0;
+    outline: none;
+}
+
+/* Visually hidden but accessible to screen readers */
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+/* Global focus styles for keyboard navigation */
+*:focus-visible {
+    outline: 3px solid var(--focus-ring);
+    outline-offset: var(--focus-ring-offset);
+}
+
+/* Remove outline for mouse users */
+*:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* ============================================
+   REDUCED MOTION - Respect user preferences
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    .hero-image {
+        transform: none !important;
+    }
+    
+    .pulse-glow {
+        animation: none !important;
+    }
 }
 
 /* Reset & Base */
@@ -551,11 +630,38 @@ a {
     border: none;
     cursor: pointer;
     transition: var(--transition-normal);
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
 }
 
 .cta-button:hover {
     background: var(--color-white);
     transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(201, 168, 105, 0.35);
+}
+
+.cta-button:focus-visible {
+    outline: 3px solid var(--color-white);
+    outline-offset: 3px;
+    box-shadow: 0 0 0 6px rgba(201, 168, 105, 0.5);
+}
+
+.cta-button:active {
+    transform: translateY(0);
+}
+
+/* Primary CTA - Enhanced visibility */
+.cta-button-primary {
+    background: linear-gradient(135deg, var(--color-secondary) 0%, #DEB879 100%);
+    box-shadow: 0 4px 15px rgba(201, 168, 105, 0.4);
+    font-size: 1rem;
+    padding: 1.1rem 2.8rem;
+}
+
+.cta-button-primary:hover {
+    background: linear-gradient(135deg, #DEB879 0%, var(--color-secondary) 100%);
+    box-shadow: 0 8px 30px rgba(201, 168, 105, 0.5);
 }
 
 .cta-button.secondary {
@@ -567,6 +673,11 @@ a {
 .cta-button.secondary:hover {
     background: var(--color-secondary);
     color: var(--color-primary);
+}
+
+.cta-button.secondary:focus-visible {
+    outline: 3px solid var(--color-secondary);
+    outline-offset: 3px;
 }
 
 /* Secondary button on dark backgrounds */
@@ -3889,4 +4000,261 @@ section {
 
 .neighborhood-slide-more .slide-cta {
     margin-top: 0.5rem;
+}
+
+/* ============================================
+   ADDITIONAL OPTIMIZATIONS
+   Added: 2026-02-06
+   ============================================ */
+
+/* Enhanced Form Inputs - Better Focus States */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--color-secondary) !important;
+    box-shadow: 0 0 0 3px rgba(201, 168, 105, 0.2);
+}
+
+/* Form Input Validation States */
+input:valid:not(:placeholder-shown) {
+    border-color: var(--color-success);
+}
+
+input:invalid:not(:placeholder-shown):not(:focus) {
+    border-color: var(--color-error);
+}
+
+/* Better Placeholder Styling */
+::placeholder {
+    color: var(--color-gray);
+    opacity: 0.7;
+}
+
+/* Form Button Loading State */
+button[aria-busy="true"] {
+    position: relative;
+    color: transparent !important;
+}
+
+button[aria-busy="true"]::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: var(--color-white);
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Improved Mobile Menu Animation */
+.mobile-menu-btn span {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.mobile-menu-btn.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.mobile-menu-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu-btn.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Mobile Navigation Improvements */
+@media (max-width: 768px) {
+    .nav-links {
+        transform: translateY(-10px);
+        opacity: 0;
+        visibility: hidden;
+        transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s;
+    }
+    
+    .nav-links.active {
+        display: flex;
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-links a {
+        padding: var(--spacing-sm) 0 !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .dropdown-menu {
+        position: static;
+        transform: none;
+        background: rgba(255, 255, 255, 0.05);
+        border: none;
+        margin-top: var(--spacing-xs);
+        padding: 0;
+    }
+    
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+    }
+}
+
+/* Better Link Focus States */
+a:focus-visible {
+    outline: 3px solid var(--focus-ring);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+/* Footer Link Focus States */
+.footer-links a:focus-visible,
+.footer-social a:focus-visible {
+    outline-color: var(--color-secondary);
+}
+
+/* Card Focus States */
+.service-card:focus-within,
+.story-card:focus-within,
+.testimonial-card:focus-within,
+.listing-card:focus-within {
+    outline: 3px solid var(--color-secondary);
+    outline-offset: 2px;
+}
+
+/* Enhanced Hover States with GPU Acceleration */
+.service-card,
+.story-card,
+.sale-card,
+.listing-card,
+.area-card,
+.faq-item {
+    will-change: transform;
+    transform: translateZ(0);
+}
+
+/* Smooth Image Loading */
+img {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+img[loading="lazy"] {
+    opacity: 0;
+}
+
+img[loading="lazy"].loaded,
+img[loading="lazy"][src] {
+    opacity: 1;
+}
+
+/* Better Text Selection */
+::selection {
+    background: var(--color-secondary);
+    color: var(--color-primary);
+}
+
+/* Improved Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-off-white);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-gray);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-secondary);
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+    :root {
+        --color-secondary: #D4AF37;
+        --color-gray: #4A4A4A;
+    }
+    
+    .cta-button {
+        border: 2px solid currentColor;
+    }
+}
+
+/* Print Optimizations */
+@media print {
+    .skip-link,
+    .navbar,
+    .scroll-indicator,
+    .cta-button,
+    .testimonials-nav,
+    .social-links,
+    .footer-social,
+    .neighborhoods-nav {
+        display: none !important;
+    }
+    
+    body {
+        font-size: 12pt;
+        color: #000;
+        background: #fff;
+    }
+    
+    a[href]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+    }
+    
+    .hero {
+        height: auto;
+        min-height: auto;
+        padding: 2rem;
+    }
+    
+    section {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+}
+
+/* Ensuring proper touch targets for mobile */
+@media (max-width: 768px) {
+    .cta-button,
+    .nav-links a,
+    .faq-question,
+    .footer-links a,
+    .footer-social a {
+        min-height: 44px;
+        min-width: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Loading skeleton for images (optional enhancement) */
+.skeleton {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s infinite;
+}
+
+@keyframes skeleton-loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
 }
