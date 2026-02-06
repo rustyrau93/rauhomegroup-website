@@ -3,175 +3,491 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="El Cajon real estate guide. El Cajon ('the box' in Spanish, referring to the valley) is East County's largest city, offering affordable housing, diverse dining, and improving dow">
-    <meta name="keywords" content="El Cajon real estate, El Cajon homes for sale, San Diego neighborhoods, el-cajon">
-    <title>El Cajon Real Estate | Homes for Sale | Rusty Rau</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="../luxury-effects.css">
+    <title>El Cajon Real Estate & Homes for Sale | San Diego | Rau Home Group</title>
+    <meta name="description" content="Discover El Cajon San Diego - affordable family living with diverse communities, excellent weather, and East County charm. Median home price $760K. Expert local real estate guidance from Rusty Rau.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.9;
+            color: #333;
+            background: #fff;
+        }
+        
+        .hero-neighborhood {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../assets/images/neighborhoods/el-cajon-hero.jpg') center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+        
+        .hero-neighborhood h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero-neighborhood p {
+            font-size: 1.5rem;
+            font-weight: 300;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+        
+        .neighborhood-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 7rem 1.5rem;
+        }
+        
+        .intro-section {
+            max-width: 1000px;
+            margin: 0 auto 5rem;
+            font-size: 1.35rem;
+            line-height: 1.9;
+            color: #444;
+        }
+        
+        .intro-section p {
+            margin-bottom: 2rem;
+        }
+        
+        .stats-banner {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            margin: 5rem 0;
+            padding: 3rem 0;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #D4AF37;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 1.15rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .section {
+            max-width: 1000px;
+            margin: 0 auto 5rem;
+        }
+        
+        .section h2 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: #2C3E50;
+            margin-bottom: 2.5rem;
+            text-align: left;
+        }
+        
+        .section p, .section li {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #444;
+            margin-bottom: 1.5rem;
+        }
+        
+        .lifestyle-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem 2.5rem;
+            margin: 2.5rem 0;
+        }
+        
+        .lifestyle-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+        
+        .checkmark {
+            width: 32px;
+            height: 32px;
+            background: #D4AF37;
+            border-radius: 50%;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 4px;
+        }
+        
+        .checkmark::after {
+            content: "✓";
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .lifestyle-item span {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #444;
+        }
+        
+        .contact-section {
+            background: #f8f9fa;
+            padding: 5rem 3rem;
+            border-radius: 8px;
+            margin-top: 5rem;
+        }
+        
+        .contact-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+        
+        .contact-info h2 {
+            font-size: 2.25rem;
+            color: #2C3E50;
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-info p {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #444;
+            margin-bottom: 2rem;
+        }
+        
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        
+        .contact-icon {
+            width: 56px;
+            height: 56px;
+            background: #D4AF37;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .contact-icon svg {
+            width: 24px;
+            height: 24px;
+            fill: white;
+        }
+        
+        .contact-details h3 {
+            font-size: 1.15rem;
+            color: #2C3E50;
+            margin-bottom: 0.25rem;
+        }
+        
+        .contact-details a {
+            font-size: 1.15rem;
+            color: #D4AF37;
+            text-decoration: none;
+        }
+        
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+        
+        .contact-form {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            font-size: 1rem;
+            color: #2C3E50;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+        
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            background: #D4AF37;
+            color: white;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.15rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.2s;
+        }
+        
+        .submit-btn:hover {
+            background: #B8941F;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-neighborhood h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-neighborhood p {
+                font-size: 1.2rem;
+            }
+            
+            .neighborhood-content {
+                padding: 3rem 1.5rem;
+            }
+            
+            .intro-section {
+                font-size: 1.15rem;
+            }
+            
+            .stat-number {
+                font-size: 2.5rem;
+            }
+            
+            .lifestyle-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar scrolled-dark">
-        <div class="nav-container">
-            <a href="/" class="logo">
-                <img src="../images/logo.png" alt="Rau Home Group" class="logo-img">
-                <div class="logo-text-wrap">
-                    <span class="logo-text">RAU HOME GROUP</span>
-                    <span class="logo-subtitle">SAN DIEGO REAL ESTATE</span>
-                </div>
-            </a>
-            <ul class="nav-links">
-                <li><a href="/#about">About</a></li>
-                <li><a href="/buyers.html">Buyers</a></li>
-                <li><a href="/sellers.html">Sellers</a></li>
-                <li><a href="/#listings">Listings</a></li>
-                <li><a href="/neighborhoods.html" class="active">Areas</a></li>
-                <li><a href="/#testimonials">Reviews</a></li>
-                <li><a href="/blog.html">Blog</a></li>
-                <li><a href="#contact" class="nav-cta">Contact</a></li>
-            </ul>
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+    <!-- Hero Section -->
+    <div class="hero-neighborhood">
+        <div>
+            <h1>El Cajon, San Diego</h1>
+            <p>The Heart of East County - Authentic Community Living</p>
         </div>
-    </nav>
+    </div>
 
-    <section class="hero page-hero" style="background: linear-gradient(135deg, #1A2332 0%, #0D1117 100%);">
-        <div class="hero-background">
-            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80" alt="El Cajon" class="hero-image">
-            <div class="hero-overlay dark"></div>
-        </div>
-        <div class="hero-content">
-            <span class="hero-tag">San Diego</span>
-            <h1 class="hero-title">El Cajon<br><span class="accent">The Big Box</span></h1>
-            <p class="hero-subtitle">Affordable East County city with diverse community and growth potential</p>
-            <a href="#contact" class="cta-button">See Homes in El Cajon</a>
-        </div>
-    </section>
-
-    <section class="content-section" style="padding: 4rem 0;">
-        <div class="container narrow">
-            <h2 class="section-title">About El Cajon</h2>
-            <p class="lead-text">El Cajon ('the box' in Spanish, referring to the valley) is East County's largest city, offering affordable housing, diverse dining, and improving downtown. The city is experiencing revitalization and population growth.</p>
+    <!-- Main Content -->
+    <div class="neighborhood-content">
+        
+        <!-- Intro Section -->
+        <div class="intro-section">
+            <p>El Cajon (Spanish for "The Box") is the vibrant heart of San Diego's East County, offering an authentic blend of suburban comfort, cultural diversity, and genuine affordability. Nestled in a valley surrounded by scenic hills, this dynamic community of over 100,000 residents provides families, first-time buyers, and investors with accessible homeownership in one of California's most livable cities.</p>
             
-            <p style="color: #6B7280; margin-bottom: 1rem;">Main Street downtown is revitalizing with new restaurants, breweries, and shops. The city has a large Middle Eastern population, reflected in excellent restaurants and markets. Fletcher Hills and Bostonia offer more established residential areas.</p>
+            <p>What makes El Cajon special is its real sense of community. You'll find multi-generational families who've lived here for decades alongside newcomers drawn by the reasonable home prices and small-town feel that's increasingly rare in San Diego County. The downtown area has undergone a remarkable transformation, with new restaurants, breweries, and cultural venues creating an exciting urban core while maintaining the neighborhood's unpretentious character.</p>
             
-            <p style="color: #6B7280; margin-bottom: 2rem;">Real estate includes affordable single-family homes, apartments, and newer developments on the outskirts. The affordability and diversity make El Cajon attractive to first-time buyers and those seeking value.</p>
+            <p>The weather alone is worth the move. El Cajon enjoys more sunshine than coastal San Diego, with warm, dry summers and mild winters perfect for year-round outdoor living. You're also ideally positioned between the coast and the mountains—twenty minutes to the beach, thirty minutes to Alpine's hiking trails, and close to everything San Diego has to offer without the coastal price tag.</p>
+        </div>
 
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin: 3rem 0; padding: 2rem; background: #F8F7F4; border-radius: 4px;">
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">$700K</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">Median Home Price</div>
+        <!-- Stats Banner -->
+        <div class="stats-banner">
+            <div class="stat-item">
+                <span class="stat-number">$760K</span>
+                <span class="stat-label">Median Home Price</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">7/10</span>
+                <span class="stat-label">School Rating</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">106,000</span>
+                <span class="stat-label">Population</span>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <section class="section">
+            <h2>About El Cajon</h2>
+            <p>El Cajon sits in a valley approximately fifteen miles east of downtown San Diego, serving as the commercial and cultural hub of East County. The city covers seventeen square miles and is home to a wonderfully diverse population that includes long-established families, young professionals priced out of coastal areas, military families stationed at nearby bases, and a thriving Middle Eastern community that's brought exceptional restaurants and cultural richness to the area.</p>
+            
+            <p>The city has evolved significantly over the past decade. Downtown El Cajon has transformed from a sleepy main street into a destination, with the East County Performing Arts Center anchoring a revitalized corridor filled with craft breweries, ethnic restaurants, antique shops, and local businesses. The weekly farmers market draws crowds from across the county, and new residential developments are bringing modern housing options to complement the established neighborhoods of single-family homes.</p>
+            
+            <p>What residents love most is the authentic, unpretentious vibe. El Cajon doesn't try to be fancy—it's a real working community where neighbors know each other, kids play in the streets, and you can still find affordable housing that lets families actually build equity. The diversity is genuine and celebrated, the schools are improving, and there's a palpable sense that this is a city on the rise without losing its character in the process.</p>
+        </section>
+
+        <!-- Lifestyle & Amenities Section -->
+        <section class="section">
+            <h2>Lifestyle & Amenities</h2>
+            
+            <div class="lifestyle-grid">
+                <div class="lifestyle-item">
+                    <div class="checkmark"></div>
+                    <span><strong>Affordable homeownership</strong> in San Diego County with homes under $800K</span>
                 </div>
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">6/10</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">School Rating</div>
+                <div class="lifestyle-item">
+                    <div class="checkmark"></div>
+                    <span><strong>300+ days of sunshine</strong> annually with warm, dry climate</span>
                 </div>
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">106K</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">Population</div>
+                <div class="lifestyle-item">
+                    <div class="checkmark"></div>
+                    <span><strong>Revitalized downtown</strong> with breweries, restaurants, and entertainment</span>
+                </div>
+                <div class="lifestyle-item">
+                    <div class="checkmark"></div>
+                    <span><strong>Cultural diversity</strong> with authentic international cuisine</span>
+                </div>
+                <div class="lifestyle-item">
+                    <div class="checkmark"></div>
+                    <span><strong>Easy freeway access</strong> to beaches, mountains, and employment centers</span>
+                </div>
+                <div class="lifestyle-item">
+                    <div class="checkmark"></div>
+                    <span><strong>Family-friendly neighborhoods</strong> with parks and recreation</span>
                 </div>
             </div>
+            
+            <p>El Cajon offers a lifestyle that balances affordability with accessibility to everything San Diego has to offer. The downtown area has become a genuine destination, with the beautifully restored Magnolia Theater hosting concerts and events, craft breweries like Burning Beard Brewing Company creating a local scene, and restaurants serving everything from authentic Chaldean cuisine to farm-to-table California fare. The weekly farmers market every Thursday afternoon brings the community together with local produce, food vendors, and live music.</p>
+            
+            <p>Outdoor recreation is accessible year-round thanks to the consistently beautiful weather. Kennedy Park offers sports fields and picnic areas, Wells Park features a community pool and skate park, and the nearby Sycamore Canyon Preserve provides miles of hiking and mountain biking trails. You're also strategically positioned between San Diego's diverse recreational options—twenty minutes to Mission Beach, thirty minutes to Cleveland National Forest, and forty-five minutes to Julian's apple country.</p>
+            
+            <p>The community feel is authentic and welcoming. The city hosts events throughout the year including the America on Main Street festival, Mother Goose Parade (a 75-year tradition), and various cultural celebrations that reflect the area's diversity. Local businesses thrive here, from family-owned restaurants that have served the community for generations to new shops and services catering to young families moving to the area. Shopping is convenient with Parkway Plaza mall, big-box stores, and local boutiques all within easy reach.</p>
+        </section>
 
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; margin: 2rem 0 1rem; color: #1A2332;">Lifestyle & Amenities</h3>
-            <ul style="list-style: none; padding: 0;">
-                <li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Revitalizing Main Street downtown</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Diverse international dining</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Gillespie Field - general aviation airport</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Water Conservation Garden</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Easy freeway access</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Affordable housing options</li>
-            </ul>
+        <!-- Schools Section -->
+        <section class="section">
+            <h2>Schools & Education</h2>
+            <p>El Cajon is served by multiple school districts including Cajon Valley Union, Grossmont Union High School, and Mountain Empire Unified, offering families choices and improving educational options. While the area's schools have historically been average performers, significant investments in recent years are elevating academic programs and facilities, with several schools earning recognition for improvement and innovation.</p>
+            
+            <p>Top-rated public schools include Cajon Valley Middle School (GreatSchools rating 7/10) known for its World of Work program that prepares students with real-world skills, Crest Academy serving the Fletcher Hills area with strong academics, and several elementary schools like Lexington Elementary and Flying Hills Elementary that earn solid ratings. Grossmont High School and Valhalla High School serve El Cajon students at the secondary level, both offering comprehensive college preparatory programs, Advanced Placement courses, and strong athletics and arts programs. The district has invested heavily in technology integration and career technical education pathways.</p>
+            
+            <p>Private school options include Foothills Christian School offering K-12 faith-based education with excellent academics and athletics, Shadow Hills Elementary providing personalized learning in smaller class sizes, and several preschools and early childhood programs. Grossmont College, part of the California Community College system, provides accessible higher education with excellent transfer programs to four-year universities. Many families appreciate the variety of educational choices and improving school quality as the area attracts more young professionals and invests in education infrastructure.</p>
+        </section>
 
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; margin: 2rem 0 1rem; color: #1A2332;">Who Lives Here</h3>
-            <p style="color: #6B7280;">El Cajon attracts diverse populations including Middle Eastern communities, military families, first-time buyers, and those seeking affordable East County living. The community is working-class, diverse, and family-oriented.</p>
-        </div>
-    </section>
+        <!-- Commute Section -->
+        <section class="section">
+            <h2>Getting Around</h2>
+            <p>El Cajon offers excellent freeway connectivity for commuters heading throughout San Diego County. Interstate 8 runs directly through the city providing quick access to downtown San Diego (20-25 minutes), San Diego State University (15 minutes), and coastal communities like Mission Beach and Ocean Beach (30 minutes). Highway 67 heads north to Lakeside, Ramona, and eventually connects to wine country, while Highway 94 provides a scenic route to Rancho San Diego and eastern communities. The commute to major employment centers is manageable, with Sorrento Valley biotech corridor about 30 minutes away and downtown office buildings easily accessible via I-8.</p>
+            
+            <p>Public transportation is available through MTS (Metropolitan Transit System) with the El Cajon Transit Center serving as a major hub for East County routes. Multiple bus lines connect to downtown San Diego, SDSU, and the Trolley system, though most residents rely on personal vehicles for daily commuting. The city's central East County location means you're well-positioned for work throughout the region without paying coastal housing premiums. Many residents appreciate the reverse commute if they work in East County's growing job market, avoiding the worst of rush hour traffic while enjoying affordable housing and quality of life.</p>
+        </section>
 
-    <section class="cta-section" style="background: #1A2332; color: white; padding: 4rem 0; text-align: center;">
-        <div class="container">
-            <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 1rem; color: white;">Ready to Find Your El Cajon Home?</h2>
-            <p style="color: rgba(255,255,255,0.8); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">Let me show you the best homes and investment opportunities in El Cajon.</p>
-            <a href="#contact" class="cta-button large">See Homes in El Cajon</a>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-grid">
+        <!-- Contact Section -->
+        <div class="contact-section">
+            <div class="contact-container">
                 <div class="contact-info">
-                    <span class="section-tag">Get in Touch</span>
-                    <h2 class="section-title">Let's Find Your<br>El Cajon Home</h2>
-                    <p class="contact-text">I know El Cajon inside and out. Let's talk about what you're looking for.</p>
+                    <h2>Ready to Explore El Cajon?</h2>
+                    <p>As an East County real estate expert with deep knowledge of El Cajon's diverse neighborhoods and market dynamics, I'll help you find the perfect home that fits your budget and lifestyle. Whether you're a first-time buyer, growing family, or savvy investor, let's unlock the opportunities El Cajon has to offer.</p>
                     
-                    <div class="contact-details">
-                        <a href="tel:+18582044692" class="contact-item">
-                            <span class="contact-icon"><i class="fas fa-phone"></i></span>
-                            <span>(858) 204-4692</span>
-                        </a>
-                        <a href="mailto:rusty@deanaguilargroup.com" class="contact-item">
-                            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
-                            <span>rusty@deanaguilargroup.com</span>
-                        </a>
-                    </div>
-                    
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/rustyrau_sdrealtor/" target="_blank" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.facebook.com/rusty.rau" target="_blank" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Call or Text</h3>
+                                <a href="tel:+1234567890">(123) 456-7890</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <a href="mailto:rusty@rauhomegroup.com">rusty@rauhomegroup.com</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="contact-form-container">
-                    <form class="contact-form">
-                        <input type="hidden" name="neighborhood" value="El Cajon">
+                <div class="contact-form">
+                    <form action="/submit-form" method="POST">
                         <div class="form-group">
-                            <input type="text" name="name" placeholder="Your Name" required>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
                         </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="email" name="email" placeholder="Email" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" name="phone" placeholder="Phone">
-                            </div>
-                        </div>
+                        
                         <div class="form-group">
-                            <textarea name="message" placeholder="Tell me what you're looking for in El Cajon..." rows="4"></textarea>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
                         </div>
-                        <button type="submit" class="submit-button">Contact Rusty</button>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
                     </form>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <span class="logo-text">RAU HOME GROUP</span>
-                    <p>San Diego Real Estate Expert</p>
-                </div>
-                <div class="footer-links">
-                    <a href="/">Home</a>
-                    <a href="/neighborhoods.html">All Neighborhoods</a>
-                    <a href="/buyers.html">Buyers</a>
-                    <a href="/sellers.html">Sellers</a>
-                    <a href="#contact">Contact</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Rusty Rau. All rights reserved.</p>
-                <p class="footer-legal">DRE# 02084462 | Rau Home Group</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="../script.js"></script>
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Rau Home Group - El Cajon Real Estate",
+        "image": "https://rauhomegroup.com/assets/images/neighborhoods/el-cajon-hero.jpg",
+        "description": "El Cajon San Diego real estate expert. Affordable family homes in East County with excellent weather. Median price $760K. Expert local guidance from Rusty Rau.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "El Cajon",
+            "addressRegion": "CA",
+            "postalCode": "92020",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "32.7948",
+            "longitude": "-116.9625"
+        },
+        "url": "https://rauhomegroup.com/neighborhoods/el-cajon.html",
+        "priceRange": "$$",
+        "areaServed": "El Cajon, San Diego, California"
+    }
+    </script>
 </body>
 </html>
