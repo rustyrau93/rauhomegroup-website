@@ -3,175 +3,638 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chula Vista real estate guide. Chula Vista is San Diego County's second-largest city, offering diverse neighborhoods from bayfront developments to established suburban areas. The ci">
-    <meta name="keywords" content="Chula Vista real estate, Chula Vista homes for sale, San Diego neighborhoods, chula-vista">
-    <title>Chula Vista Real Estate | Homes for Sale | Rusty Rau</title>
+    <title>Chula Vista Real Estate & Homes for Sale | San Diego | Rau Home Group</title>
+    <meta name="description" content="Discover Chula Vista San Diego - affordable South Bay living with master-planned communities, top schools, and bayfront development. Median home price $785K. Expert local real estate guidance from Rusty Rau.">
+    <link rel="stylesheet" href="../assets/css/style.css">
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="../luxury-effects.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('../assets/images/neighborhoods/chula-vista-hero.jpg') center/cover no-repeat;
+            height: 65vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            font-weight: 300;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Stats Banner */
+        .stats-banner {
+            background: linear-gradient(135deg, #D4AF37 0%, #C5A028 100%);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .stats-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+        }
+
+        .stat-item {
+            color: white;
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 1.15rem;
+            opacity: 0.95;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Main Content */
+        .content-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 7rem 2rem;
+        }
+
+        .content-section {
+            margin-bottom: 5rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 2rem;
+            font-weight: 700;
+        }
+
+        .intro-text {
+            font-size: 1.35rem;
+            line-height: 1.9;
+            color: #444;
+            margin-bottom: 2.5rem;
+            max-width: 1000px;
+        }
+
+        .body-text {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #555;
+            margin-bottom: 1.8rem;
+            max-width: 1000px;
+        }
+
+        /* Gold Checkmark Bullets */
+        .amenities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            margin: 3rem 0;
+        }
+
+        .amenity-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.2rem;
+        }
+
+        .checkmark-circle {
+            width: 32px;
+            height: 32px;
+            min-width: 32px;
+            background: linear-gradient(135deg, #D4AF37 0%, #C5A028 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0.2rem;
+        }
+
+        .checkmark-circle svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .amenity-text {
+            font-size: 1.15rem;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        .amenity-text strong {
+            color: #2c3e50;
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+
+        /* School Cards */
+        .schools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2.5rem 0;
+        }
+
+        .school-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 4px solid #D4AF37;
+        }
+
+        .school-rating {
+            display: inline-block;
+            background: linear-gradient(135deg, #D4AF37 0%, #C5A028 100%);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .school-name {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .school-type {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .school-description {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: #f8f9fa;
+            padding: 7rem 2rem;
+            margin-top: 5rem;
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: start;
+        }
+
+        .contact-info h2 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 2rem;
+        }
+
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .contact-icon {
+            width: 56px;
+            height: 56px;
+            min-width: 56px;
+            background: linear-gradient(135deg, #D4AF37 0%, #C5A028 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .contact-method-text strong {
+            display: block;
+            color: #2c3e50;
+            font-size: 1.1rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .contact-method-text span {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.9rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-button {
+            background: linear-gradient(135deg, #D4AF37 0%, #C5A028 100%);
+            color: white;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: transform 0.2s;
+        }
+
+        .submit-button:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Responsive */
+        @media (max-width: 968px) {
+            .hero h1 { font-size: 2.5rem; }
+            .stats-container { grid-template-columns: 1fr; gap: 2rem; }
+            .contact-container { grid-template-columns: 1fr; gap: 3rem; }
+            .amenities-grid { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 640px) {
+            .hero h1 { font-size: 2rem; }
+            .hero p { font-size: 1.2rem; }
+            .content-wrapper { padding: 4rem 1.5rem; }
+            .intro-text { font-size: 1.2rem; }
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar scrolled-dark">
-        <div class="nav-container">
-            <a href="/" class="logo">
-                <img src="../images/logo.png" alt="Rau Home Group" class="logo-img">
-                <div class="logo-text-wrap">
-                    <span class="logo-text">RAU HOME GROUP</span>
-                    <span class="logo-subtitle">SAN DIEGO REAL ESTATE</span>
-                </div>
-            </a>
-            <ul class="nav-links">
-                <li><a href="/#about">About</a></li>
-                <li><a href="/buyers.html">Buyers</a></li>
-                <li><a href="/sellers.html">Sellers</a></li>
-                <li><a href="/#listings">Listings</a></li>
-                <li><a href="/neighborhoods.html" class="active">Areas</a></li>
-                <li><a href="/#testimonials">Reviews</a></li>
-                <li><a href="/blog.html">Blog</a></li>
-                <li><a href="#contact" class="nav-cta">Contact</a></li>
-            </ul>
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
-
-    <section class="hero page-hero" style="background: linear-gradient(135deg, #1A2332 0%, #0D1117 100%);">
-        <div class="hero-background">
-            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80" alt="Chula Vista" class="hero-image">
-            <div class="hero-overlay dark"></div>
-        </div>
-        <div class="hero-content">
-            <span class="hero-tag">San Diego</span>
-            <h1 class="hero-title">Chula Vista<br><span class="accent">Gateway to the Border</span></h1>
-            <p class="hero-subtitle">San Diego's second-largest city with bayfront, shopping, and diverse communities</p>
-            <a href="#contact" class="cta-button">See Homes in Chula Vista</a>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <h1>Chula Vista</h1>
+            <p>Gateway to the Border - Where Affordability Meets Opportunity</p>
         </div>
     </section>
 
-    <section class="content-section" style="padding: 4rem 0;">
-        <div class="container narrow">
-            <h2 class="section-title">About Chula Vista</h2>
-            <p class="lead-text">Chula Vista is San Diego County's second-largest city, offering diverse neighborhoods from bayfront developments to established suburban areas. The city provides good value, improving amenities, and proximity to the border.</p>
-            
-            <p style="color: #6B7280; margin-bottom: 1rem;">The bayfront features the Chula Vista Marina, Living Coast Discovery Center, and new residential developments with bay views. Eastlake and Otay Ranch offer master-planned communities with parks and trails. Third Avenue downtown is revitalizing.</p>
-            
-            <p style="color: #6B7280; margin-bottom: 2rem;">Real estate ranges from affordable condos and starter homes to newer master-planned communities and bayfront properties. The variety, value, and growth make Chula Vista attractive to diverse buyers.</p>
+    <!-- Stats Banner -->
+    <section class="stats-banner">
+        <div class="stats-container">
+            <div class="stat-item">
+                <span class="stat-number">$785K</span>
+                <span class="stat-label">Median Home Price</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">8/10</span>
+                <span class="stat-label">Top School Rating</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">275K</span>
+                <span class="stat-label">Population</span>
+            </div>
+        </div>
+    </section>
 
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin: 3rem 0; padding: 2rem; background: #F8F7F4; border-radius: 4px;">
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">$800K</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">Median Home Price</div>
+    <!-- Main Content -->
+    <div class="content-wrapper">
+        <!-- About Section -->
+        <section class="content-section">
+            <h2 class="section-title">About Chula Vista</h2>
+            
+            <p class="intro-text">
+                Chula Vista is San Diego County's second-largest city and one of Southern California's most dynamic communities. Nestled in the South Bay just 7 miles from downtown San Diego and minutes from the Mexican border, Chula Vista offers the perfect blend of urban convenience, suburban comfort, and international culture—all at a more accessible price point than coastal neighborhoods.
+            </p>
+
+            <p class="body-text">
+                What makes Chula Vista truly special is its diversity and forward momentum. From master-planned communities like Eastlake and Otay Ranch with resort-style amenities to the exciting Chula Vista Bayfront development featuring a convention center, marina, and Olympic Training Center, this city is constantly evolving. Add in top-rated schools, beautiful weather, and proximity to both San Diego's beaches and Tijuana's vibrant culture, and you'll understand why families, young professionals, and retirees are choosing Chula Vista as their home base.
+            </p>
+
+            <p class="body-text">
+                The community spans from bay views in the west to rolling hills in the east, offering diverse housing options from affordable starter homes to upscale estates. With a population of approximately 275,000 residents representing over 50 nationalities, Chula Vista celebrates cultural richness while maintaining a strong sense of community pride. Whether you're drawn to the city's excellent schools, its entrepreneurial energy, or simply the opportunity to own more home for less money, Chula Vista delivers quality of life without the coastal premium.
+            </p>
+        </section>
+
+        <!-- Lifestyle & Amenities -->
+        <section class="content-section">
+            <h2 class="section-title">Lifestyle & Amenities</h2>
+            
+            <div class="amenities-grid">
+                <div class="amenity-item">
+                    <div class="checkmark-circle">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 6L9 17L4 12" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="amenity-text">
+                        <strong>Master-Planned Communities</strong>
+                        Eastlake, Otay Ranch, and Rancho del Rey offer resort-style amenities, pools, parks, and modern homes.
+                    </div>
                 </div>
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">7/10</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">School Rating</div>
+
+                <div class="amenity-item">
+                    <div class="checkmark-circle">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 6L9 17L4 12" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="amenity-text">
+                        <strong>Chula Vista Bayfront</strong>
+                        Waterfront development featuring convention center, marina, parks, and the Elite Athlete Training Center.
+                    </div>
                 </div>
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">275K</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">Population</div>
+
+                <div class="amenity-item">
+                    <div class="checkmark-circle">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 6L9 17L4 12" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="amenity-text">
+                        <strong>Family Entertainment</strong>
+                        Aquatica San Diego water park, Living Coast Discovery Center, and Otay Valley Regional Park trails.
+                    </div>
+                </div>
+
+                <div class="amenity-item">
+                    <div class="checkmark-circle">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 6L9 17L4 12" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="amenity-text">
+                        <strong>Shopping & Dining</strong>
+                        Third Avenue downtown district, Otay Ranch Town Center mall, and diverse international cuisine.
+                    </div>
+                </div>
+
+                <div class="amenity-item">
+                    <div class="checkmark-circle">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 6L9 17L4 12" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="amenity-text">
+                        <strong>Border Access</strong>
+                        15 minutes to Tijuana for international culture, dining, entertainment, and medical tourism.
+                    </div>
+                </div>
+
+                <div class="amenity-item">
+                    <div class="checkmark-circle">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 6L9 17L4 12" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="amenity-text">
+                        <strong>Year-Round Activities</strong>
+                        Perfect weather for outdoor recreation, hiking, biking, and community events throughout the year.
+                    </div>
                 </div>
             </div>
 
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; margin: 2rem 0 1rem; color: #1A2332;">Lifestyle & Amenities</h3>
-            <ul style="list-style: none; padding: 0;">
-                <li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Chula Vista Marina and bayfront</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Living Coast Discovery Center</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Eastlake master-planned communities</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Otay Valley Regional Park</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Shopping centers and entertainment</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Trolley access to San Diego</li>
-            </ul>
+            <p class="body-text">
+                Chula Vista's lifestyle centers on family-friendly activities and community engagement. The city's numerous parks and recreation centers host year-round programming, from youth sports leagues to senior activities. The master-planned communities feature clubhouses, pools, and organized social events that foster tight-knit neighborhoods. Downtown's Third Avenue has evolved into a vibrant cultural corridor with art galleries, craft breweries, and live music venues, while the OnStage Playhouse provides local theater productions.
+            </p>
 
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; margin: 2rem 0 1rem; color: #1A2332;">Who Lives Here</h3>
-            <p style="color: #6B7280;">Chula Vista attracts diverse populations including Hispanic families, first-time buyers, and those seeking South Bay affordability. The community is family-oriented, growing, and increasingly focused on waterfront development.</p>
-        </div>
-    </section>
+            <p class="body-text">
+                Food lovers appreciate Chula Vista's authentic international cuisine, from family-run Mexican taquerias to Filipino restaurants and Japanese izakayas—reflecting the community's rich cultural tapestry. The weekly farmers markets showcase local produce and artisan goods, while the annual Lemon Festival and Starlight Parade celebrate community spirit. Whether you're watching Olympic athletes train at the Elite Athlete Training Center, exploring tide pools at the Living Coast Discovery Center, or catching a Padres game just 20 minutes north, Chula Vista offers diverse entertainment without the coastal crowds or price tags.
+            </p>
+        </section>
 
-    <section class="cta-section" style="background: #1A2332; color: white; padding: 4rem 0; text-align: center;">
-        <div class="container">
-            <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 1rem; color: white;">Ready to Find Your Chula Vista Home?</h2>
-            <p style="color: rgba(255,255,255,0.8); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">Let me show you the best homes and investment opportunities in Chula Vista.</p>
-            <a href="#contact" class="cta-button large">See Homes in Chula Vista</a>
-        </div>
-    </section>
+        <!-- Schools & Education -->
+        <section class="content-section">
+            <h2 class="section-title">Schools & Education</h2>
+            
+            <p class="body-text">
+                Education is a major draw for families moving to Chula Vista. The city is served by three school districts—Chula Vista Elementary, Sweetwater Union High School District, and San Ysidro School District—offering numerous high-performing schools. Many of the master-planned communities were designed with schools as central features, creating walkable, education-focused neighborhoods.
+            </p>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <span class="section-tag">Get in Touch</span>
-                    <h2 class="section-title">Let's Find Your<br>Chula Vista Home</h2>
-                    <p class="contact-text">I know Chula Vista inside and out. Let's talk about what you're looking for.</p>
-                    
-                    <div class="contact-details">
-                        <a href="tel:+18582044692" class="contact-item">
-                            <span class="contact-icon"><i class="fas fa-phone"></i></span>
-                            <span>(858) 204-4692</span>
-                        </a>
-                        <a href="mailto:rusty@deanaguilargroup.com" class="contact-item">
-                            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
-                            <span>rusty@deanaguilargroup.com</span>
-                        </a>
+            <div class="schools-grid">
+                <div class="school-card">
+                    <span class="school-rating">10/10</span>
+                    <h3 class="school-name">Fahari L. Jeffers Elementary</h3>
+                    <p class="school-type">Public • K-6 • 348 Students</p>
+                    <p class="school-description">
+                        Top-rated elementary school with exceptional academic programs and dedicated staff. Consistently ranks among San Diego County's best.
+                    </p>
+                </div>
+
+                <div class="school-card">
+                    <span class="school-rating">8/10</span>
+                    <h3 class="school-name">Halecrest Elementary</h3>
+                    <p class="school-type">Public • K-6 • 424 Students</p>
+                    <p class="school-description">
+                        Well-regarded school in Eastlake with strong parent involvement and diverse enrichment programs.
+                    </p>
+                </div>
+
+                <div class="school-card">
+                    <span class="school-rating">8/10</span>
+                    <h3 class="school-name">Thurgood Marshall Elementary</h3>
+                    <p class="school-type">Public • K-6 • 481 Students</p>
+                    <p class="school-description">
+                        Community-focused school emphasizing character development alongside academics. Popular with families.
+                    </p>
+                </div>
+
+                <div class="school-card">
+                    <span class="school-rating">8/10</span>
+                    <h3 class="school-name">Chula Vista Hills Elementary</h3>
+                    <p class="school-type">Public • K-6 • 472 Students</p>
+                    <p class="school-description">
+                        Strong STEM programs and arts integration. Located in one of Chula Vista's most desirable neighborhoods.
+                    </p>
+                </div>
+
+                <div class="school-card">
+                    <span class="school-rating">8/10</span>
+                    <h3 class="school-name">Veterans Elementary</h3>
+                    <p class="school-type">Public • K-6 • 792 Students</p>
+                    <p class="school-description">
+                        Larger school with comprehensive programs and excellent sports facilities. Strong community support.
+                    </p>
+                </div>
+
+                <div class="school-card">
+                    <span class="school-rating">7-8/10</span>
+                    <h3 class="school-name">Multiple Middle & High Schools</h3>
+                    <p class="school-type">Various Locations</p>
+                    <p class="school-description">
+                        Eastlake Middle, Bonita Vista High, Otay Ranch High, and Olympian High offer strong academics and athletics.
+                    </p>
+                </div>
+            </div>
+
+            <p class="body-text">
+                Private school options include St. Rose of Lima Academy (K-8 Catholic school), Chula Vista Montessori School, and several faith-based schools. For higher education, Southwestern College offers two-year degrees and career training, while San Diego State University and University of San Diego are within 30 minutes. The proximity to multiple educational institutions makes Chula Vista attractive for families planning long-term.
+            </p>
+        </section>
+
+        <!-- Getting Around -->
+        <section class="content-section">
+            <h2 class="section-title">Getting Around</h2>
+            
+            <p class="body-text">
+                Chula Vista's strategic location provides excellent connectivity throughout San Diego County and beyond. I-5 and I-805 run through the city, offering quick access to downtown San Diego (15-20 minutes), the airport (15 minutes), and coastal communities. SR-125 (South Bay Expressway) provides a fast toll route to East County, while SR-54 connects to I-5 and National City. For international travel, the San Ysidro Port of Entry to Tijuana is just 10 minutes south, making cross-border commuting and cultural exploration convenient.
+            </p>
+
+            <p class="body-text">
+                Public transportation includes MTS bus routes throughout the city and the Blue Line Trolley, which connects to downtown San Diego, Old Town, and Mission Valley. The trolley's Palomar Street, H Street, and Iris Avenue stations make transit-oriented living possible for those working in downtown or along the trolley corridor. Most residents drive due to the city's spread-out nature, but the walkable downtown Third Avenue district and master-planned communities encourage pedestrian activity. With average commute times of 25-30 minutes and easy freeway access in multiple directions, Chula Vista offers flexibility for work throughout the region.
+            </p>
+        </section>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Ready to Find Your Chula Vista Home?</h2>
+                <p>
+                    As a San Diego real estate expert with 6 years of experience, I know the Chula Vista market inside and out. Whether you're looking for a starter home, a master-planned community, or an investment property, I'll help you navigate the South Bay's best opportunities and negotiate the strongest deal.
+                </p>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-method-text">
+                            <strong>Call or Text</strong>
+                            <span>(619) 555-0123</span>
+                        </div>
                     </div>
                     
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/rustyrau_sdrealtor/" target="_blank" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.facebook.com/rusty.rau" target="_blank" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
+                    <div class="contact-method">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-method-text">
+                            <strong>Email</strong>
+                            <span>rusty@rauhomegroup.com</span>
+                        </div>
                     </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-method-text">
+                            <strong>Serving</strong>
+                            <span>All of San Diego County</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form" action="../submit-form.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
                 
-                <div class="contact-form-container">
-                    <form class="contact-form">
-                        <input type="hidden" name="neighborhood" value="Chula Vista">
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="email" name="email" placeholder="Email" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" name="phone" placeholder="Phone">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="message" placeholder="Tell me what you're looking for in Chula Vista..." rows="4"></textarea>
-                        </div>
-                        <button type="submit" class="submit-button">Contact Rusty</button>
-                    </form>
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
-            </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">How Can I Help? *</label>
+                    <textarea id="message" name="message" required placeholder="Tell me about your home search or any questions you have about Chula Vista..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-button">Get Started Today</button>
+            </form>
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <span class="logo-text">RAU HOME GROUP</span>
-                    <p>San Diego Real Estate Expert</p>
-                </div>
-                <div class="footer-links">
-                    <a href="/">Home</a>
-                    <a href="/neighborhoods.html">All Neighborhoods</a>
-                    <a href="/buyers.html">Buyers</a>
-                    <a href="/sellers.html">Sellers</a>
-                    <a href="#contact">Contact</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Rusty Rau. All rights reserved.</p>
-                <p class="footer-legal">DRE# 02084462 | Rau Home Group</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="../script.js"></script>
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Rau Home Group - Chula Vista Real Estate",
+        "image": "https://rauhomegroup.com/assets/images/neighborhoods/chula-vista-hero.jpg",
+        "description": "Chula Vista San Diego real estate expert. Affordable South Bay homes, master-planned communities, top schools. Median price $785K. Expert local guidance from Rusty Rau.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Chula Vista",
+            "addressRegion": "CA",
+            "postalCode": "91910",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "32.6401",
+            "longitude": "-117.0842"
+        },
+        "url": "https://rauhomegroup.com/neighborhoods/chula-vista.html",
+        "priceRange": "$$",
+        "areaServed": "Chula Vista, San Diego, California"
+    }
+    </script>
 </body>
 </html>
