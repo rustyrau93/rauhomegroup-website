@@ -3,180 +3,512 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Solana Beach real estate guide. Discover coastal living in this charming community featuring the Cedros Design District and beautiful beaches.">
-    <meta name="keywords" content="Solana Beach real estate, Solana Beach homes, Cedros Design District, coastal homes San Diego">
-    <title>Solana Beach Real Estate | Homes for Sale | Rusty Rau</title>
-    
+    <title>Solana Beach Real Estate & Homes for Sale | San Diego | Rau Home Group</title>
+    <meta name="description" content="Discover Solana Beach San Diego - coastal village charm with the Cedros Design District, pristine beaches, and top-rated schools. Median home price $2.0M. Expert local real estate guidance from Rusty Rau.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="../luxury-effects.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #1A2332;
+            color: #E8E8E8;
+            line-height: 1.9;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+        }
+        
+        .hero-neighborhood {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                        url('https://images.unsplash.com/photo-1580654712603-eb43273aff33?w=1920&q=80') center/cover no-repeat;
+            height: 65vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .hero-neighborhood h1 {
+            font-size: 4.5rem;
+            margin-bottom: 1.5rem;
+            color: white;
+            text-shadow: 2px 4px 12px rgba(0,0,0,0.5);
+            letter-spacing: 1px;
+        }
+        
+        .hero-neighborhood p {
+            font-size: 1.8rem;
+            color: #D4AF37;
+            font-weight: 300;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* Stats Banner */
+        .stats-banner {
+            background: #0F1620;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .stats-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 3rem;
+        }
+        
+        .stat-box {
+            padding: 2rem;
+        }
+        
+        .stat-number {
+            font-size: 4rem;
+            font-weight: 700;
+            color: #D4AF37;
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 0.75rem;
+            line-height: 1;
+        }
+        
+        .stat-label {
+            font-size: 1.15rem;
+            color: #B0B0B0;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 500;
+        }
+        
+        /* Main Content */
+        .content-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 7rem 2rem;
+        }
+        
+        .text-block {
+            max-width: 1000px;
+            margin: 0 auto 3rem;
+        }
+        
+        .intro-text {
+            font-size: 1.35rem;
+            line-height: 2;
+            margin-bottom: 2.5rem;
+            color: #E0E0E0;
+        }
+        
+        .body-text {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            margin-bottom: 2rem;
+            color: #D0D0D0;
+        }
+        
+        h2 {
+            font-size: 3rem;
+            margin-bottom: 3rem;
+            color: #D4AF37;
+            text-align: center;
+        }
+        
+        h3 {
+            font-size: 1.8rem;
+            margin: 3rem 0 1.5rem;
+            color: #D4AF37;
+        }
+        
+        /* Lifestyle Grid */
+        .lifestyle-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            margin: 3rem 0;
+        }
+        
+        .lifestyle-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.25rem;
+        }
+        
+        .checkmark-circle {
+            width: 32px;
+            height: 32px;
+            min-width: 32px;
+            background: #D4AF37;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 4px;
+        }
+        
+        .checkmark-circle::after {
+            content: '✓';
+            color: #1A2332;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .lifestyle-text {
+            font-size: 1.15rem;
+            line-height: 1.7;
+            color: #D0D0D0;
+        }
+        
+        /* Contact Section */
+        .contact-section {
+            background: #0F1620;
+            padding: 7rem 2rem;
+        }
+        
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 5rem;
+            align-items: start;
+        }
+        
+        .contact-info h2 {
+            text-align: left;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+        
+        .contact-info p {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            margin-bottom: 2.5rem;
+            color: #D0D0D0;
+        }
+        
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        
+        .contact-icon {
+            width: 56px;
+            height: 56px;
+            min-width: 56px;
+            background: #D4AF37;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+        
+        .contact-text {
+            font-size: 1.15rem;
+            color: #E0E0E0;
+        }
+        
+        .contact-text a {
+            color: #D4AF37;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+        
+        .contact-text a:hover {
+            opacity: 0.8;
+        }
+        
+        /* Contact Form */
+        .contact-form {
+            background: #1A2332;
+            padding: 3rem;
+            border-radius: 8px;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #D4AF37;
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            background: #0F1620;
+            border: 1px solid #2A3A4A;
+            border-radius: 4px;
+            color: #E8E8E8;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .submit-btn {
+            background: #D4AF37;
+            color: #1A2332;
+            border: none;
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(212, 175, 55, 0.4);
+        }
+        
+        @media (max-width: 968px) {
+            .hero-neighborhood h1 {
+                font-size: 3rem;
+            }
+            
+            .hero-neighborhood p {
+                font-size: 1.3rem;
+            }
+            
+            .stat-number {
+                font-size: 3rem;
+            }
+            
+            h2 {
+                font-size: 2.5rem;
+            }
+            
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            
+            .lifestyle-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar scrolled-dark">
-        <div class="nav-container">
-            <a href="/" class="logo">
-                <img src="../images/logo.png" alt="Rau Home Group" class="logo-img">
-                <div class="logo-text-wrap">
-                    <span class="logo-text">RAU HOME GROUP</span>
-                    <span class="logo-subtitle">SAN DIEGO REAL ESTATE</span>
-                </div>
-            </a>
-            <ul class="nav-links">
-                <li><a href="/#about">About</a></li>
-                <li><a href="/buyers.html">Buyers</a></li>
-                <li><a href="/sellers.html">Sellers</a></li>
-                <li><a href="/#listings">Listings</a></li>
-                <li><a href="/neighborhoods.html" class="active">Areas</a></li>
-                <li><a href="/#testimonials">Reviews</a></li>
-                <li><a href="/blog.html">Blog</a></li>
-                <li><a href="#contact" class="nav-cta">Contact</a></li>
-            </ul>
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+    <!-- Hero Section -->
+    <div class="hero-neighborhood">
+        <div>
+            <h1>Solana Beach</h1>
+            <p>Coastal Village Elegance Meets Design District Cool</p>
         </div>
-    </nav>
+    </div>
 
-    <section class="hero page-hero" style="background: linear-gradient(135deg, #1A2332 0%, #0D1117 100%);">
-        <div class="hero-background">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80" alt="Solana Beach" class="hero-image">
-            <div class="hero-overlay dark"></div>
+    <!-- Stats Banner -->
+    <div class="stats-banner">
+        <div class="stats-container">
+            <div class="stat-box">
+                <div class="stat-number">$2.0M</div>
+                <div class="stat-label">Median Home Price</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">9/10</div>
+                <div class="stat-label">School Rating</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">13,500</div>
+                <div class="stat-label">Population</div>
+            </div>
         </div>
-        <div class="hero-content">
-            <span class="hero-tag">Design District</span>
-            <h1 class="hero-title">Solana Beach<br><span class="accent">Coastal Charm</span></h1>
-            <p class="hero-subtitle">Boutique coastal community with the renowned Cedros Design District</p>
-            <a href="#contact" class="cta-button">See Homes in Solana Beach</a>
-        </div>
-    </section>
+    </div>
 
-    <section class="content-section" style="padding: 4rem 0;">
-        <div class="container narrow">
-            <h2 class="section-title">About Solana Beach</h2>
-            <p class="lead-text">Solana Beach is a small but stylish coastal gem known for the Cedros Design District, beautiful beaches, and a tight-knit community feel. This walkable beach town offers sophistication in a compact package.</p>
+    <!-- About Section -->
+    <div class="content-section">
+        <div class="text-block">
+            <h2>About Solana Beach</h2>
+            <p class="intro-text">Solana Beach is where sophisticated coastal living meets artistic flair. This intimate beach community of just 1.7 square miles punches well above its weight class, offering world-class dining, the renowned Cedros Design District, and pristine beaches that rival any in Southern California.</p>
             
-            <p style="color: #6B7280; margin-bottom: 1rem;">Stretching just 3.5 square miles along the coast, Solana Beach punches above its weight in terms of amenities and lifestyle. The Cedros Avenue Design District features high-end furniture stores, art galleries, and unique boutiques, while the downtown area offers excellent restaurants and craft breweries.</p>
+            <p class="body-text">Located between Del Mar to the south and Encinitas to the north, Solana Beach has cultivated a distinct identity as North County's most refined yet relaxed coastal village. The town's compact size creates an enviable walkability rare in Southern California—you can stroll from your home to Fletcher Cove Beach, browse the Cedros Design District's 85+ galleries and shops, and enjoy dinner at a nationally-recognized restaurant, all without moving your car.</p>
             
-            <p style="color: #6B7280; margin-bottom: 2rem;">Real estate ranges from bluff-top homes with ocean views to modern condos near the train station, making it popular with commuters to downtown San Diego. The community's walkability, top-rated schools, and proximity to both beach and urban amenities make it ideal for families and professionals.</p>
+            <p class="body-text">Unlike its more touristy neighbors, Solana Beach maintains a locals-first atmosphere. The community attracts discerning professionals, creative entrepreneurs, and families who value quality over quantity. Residents are drawn to the town's sophisticated yet unpretentious vibe—think farmer's market on Sundays, yoga on the bluffs, and sunset cocktails at seaside patios rather than nightclub scenes.</p>
+            
+            <p class="body-text">The housing stock reflects this refined sensibility, with beautifully updated beach cottages, modern coastal architecture, and luxury oceanfront estates that command some of North County's highest prices. The Coaster train station provides car-free commuting to downtown San Diego, while proximity to I-5 ensures easy access throughout the region. With top-rated schools, a vibrant arts scene anchored by the legendary Belly Up Tavern, and a walkable downtown that feels like a secret locals have been keeping from the crowds, Solana Beach represents coastal California living at its most civilized.</p>
+        </div>
+    </div>
 
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin: 3rem 0; padding: 2rem; background: #F8F7F4; border-radius: 4px;">
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">$2.1M</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">Median Home Price</div>
+    <!-- Lifestyle & Amenities Section -->
+    <div class="content-section" style="padding-top: 0;">
+        <div class="text-block">
+            <h2>Lifestyle & Amenities</h2>
+            
+            <div class="lifestyle-grid">
+                <div class="lifestyle-item">
+                    <div class="checkmark-circle"></div>
+                    <div class="lifestyle-text"><strong>Cedros Design District</strong> — 2.5 blocks of 85+ galleries, boutiques, antique shops, and design studios</div>
                 </div>
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">10/10</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">School Rating</div>
+                <div class="lifestyle-item">
+                    <div class="checkmark-circle"></div>
+                    <div class="lifestyle-text"><strong>Fletcher Cove Beach Park</strong> — Family-friendly beach with tide pools, lifeguards, and dramatic sunsets</div>
                 </div>
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">13K</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">Population</div>
+                <div class="lifestyle-item">
+                    <div class="checkmark-circle"></div>
+                    <div class="lifestyle-text"><strong>Belly Up Tavern</strong> — Legendary live music venue hosting national and international acts</div>
+                </div>
+                <div class="lifestyle-item">
+                    <div class="checkmark-circle"></div>
+                    <div class="lifestyle-text"><strong>Coaster Train Station</strong> — Direct rail service to downtown San Diego and oceanside communities</div>
+                </div>
+                <div class="lifestyle-item">
+                    <div class="checkmark-circle"></div>
+                    <div class="lifestyle-text"><strong>Walkable Village Core</strong> — Shops, restaurants, and services within easy walking distance</div>
+                </div>
+                <div class="lifestyle-item">
+                    <div class="checkmark-circle"></div>
+                    <div class="lifestyle-text"><strong>World-Class Dining</strong> — Award-winning restaurants including Fish 101, Ki's, and Claire's on Cedros</div>
                 </div>
             </div>
-
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; margin: 2rem 0 1rem; color: #1A2332;">Lifestyle & Amenities</h3>
-            <ul style="list-style: none; padding: 0;">
-                <li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Cedros Design District - unique shopping and design</li>
-                <li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Fletcher Cove Beach Park - family-friendly beach</li>
-                <li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Coaster train station - easy commute access</li>
-                <li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Walkable downtown with restaurants and cafes</li>
-                <li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Tide Beach Park - local favorite beach spot</li>
-                <li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Farmers market and community events</li>
-            </ul>
-
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; margin: 2rem 0 1rem; color: #1A2332;">Who Lives Here</h3>
-            <p style="color: #6B7280;">Solana Beach attracts design-conscious professionals, young families, and active retirees who appreciate walkability and coastal access. The community values art, design, sustainability, and maintaining its small-town character.</p>
+            
+            <p class="body-text">Solana Beach's compact 1.7 square miles contain an outsized number of amenities that would be the envy of towns ten times its size. The Cedros Design District anchors the community's creative spirit with its concentration of interior design showrooms, art galleries, vintage furniture shops, and artisan boutiques. On any given Saturday, you'll find design professionals from across Southern California hunting for unique pieces alongside locals browsing for home decor.</p>
+            
+            <p class="body-text">The dining scene rivals that of much larger coastal communities, with nationally-recognized establishments like Parioli Italian Bistro, Claire's on Cedros, and the ultra-fresh fish tacos at Fish 101. The town's three main beaches—Fletcher Cove, Tide Beach Park, and Seascape Surf—offer distinct personalities from family-friendly to surfer-haven, all less crowded than neighboring beach towns. The bluff-top pathway provides stunning ocean views and connects to the extensive coastal trail system stretching from Torrey Pines to Oceanside.</p>
+            
+            <p class="body-text">Cultural offerings punch above the town's weight class. The Belly Up Tavern has hosted legendary performances by everyone from Nirvana to Adele (before they were famous), maintaining its reputation as one of the best small music venues in America. The Sunday farmer's market showcases local organic produce, artisan foods, and live music. Annual events like the Fiesta del Sol street fair and the Solana Beach Film Festival reflect the community's commitment to arts and culture without the pretension found in some coastal enclaves.</p>
         </div>
-    </section>
+    </div>
 
-    <section class="cta-section" style="background: #1A2332; color: white; padding: 4rem 0; text-align: center;">
-        <div class="container">
-            <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 1rem; color: white;">Ready to Find Your Solana Beach Home?</h2>
-            <p style="color: rgba(255,255,255,0.8); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">Let me show you the best homes and investment opportunities in Solana Beach.</p>
-            <a href="#contact" class="cta-button large">See Homes in Solana Beach</a>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <span class="section-tag">Get in Touch</span>
-                    <h2 class="section-title">Let's Find Your<br>Solana Beach Home</h2>
-                    <p class="contact-text">I know Solana Beach inside and out. Let's talk about what you're looking for.</p>
-                    
-                    <div class="contact-details">
-                        <a href="tel:+18582044692" class="contact-item">
-                            <span class="contact-icon"><i class="fas fa-phone"></i></span>
-                            <span>(858) 204-4692</span>
-                        </a>
-                        <a href="mailto:rusty@deanaguilargroup.com" class="contact-item">
-                            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
-                            <span>rusty@deanaguilargroup.com</span>
-                        </a>
-                    </div>
-                    
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/rustyrau_sdrealtor/" target="_blank" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.facebook.com/rusty.rau" target="_blank" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </div>
-                </div>
+    <!-- Schools & Education Section -->
+    <div class="content-section" style="padding-top: 0; background: #0F1620; margin: 0; max-width: 100%;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 7rem 2rem;">
+            <div class="text-block">
+                <h2>Schools & Education</h2>
                 
-                <div class="contact-form-container">
-                    <form class="contact-form">
-                        <input type="hidden" name="neighborhood" value="Solana Beach">
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="email" name="email" placeholder="Email" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" name="phone" placeholder="Phone">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="message" placeholder="Tell me what you're looking for in Solana Beach..." rows="4"></textarea>
-                        </div>
-                        <button type="submit" class="submit-button">Contact Rusty</button>
-                    </form>
-                </div>
+                <p class="body-text">Solana Beach is served by the exceptional Solana Beach School District and the San Dieguito Union High School District, consistently ranking among San Diego County's top-performing school systems. Families specifically relocate to Solana Beach for its outstanding public schools, which combine academic rigor with strong arts and athletics programs.</p>
+                
+                <p class="body-text">Skyline Elementary (GreatSchools rating 9/10) serves kindergarten through fifth grade with a curriculum emphasizing critical thinking, project-based learning, and technology integration. The school's International Baccalaureate Primary Years Programme distinguishes it as one of the region's most academically rigorous elementary schools. Neighboring Solana Vista Elementary provides similar excellence with slightly smaller class sizes. Students transition to Earl Warren Middle School (GreatSchools rating 8/10), known for its strong STEM programs, award-winning band and orchestra, and competitive athletics. The school's proximity to the beach allows for unique marine science field studies through Scripps Institution of Oceanography programs.</p>
+                
+                <p class="body-text">High school students attend Torrey Pines High School (GreatSchools rating 9/10), consistently ranked among California's top public high schools. With a 97% four-year college acceptance rate, extensive Advanced Placement offerings (30+ AP courses), and nationally competitive athletics and performing arts programs, Torrey Pines attracts families willing to pay premium prices for homes within its boundaries. The school's relationship with UC San Diego provides students access to research opportunities and college-level coursework. Private school families have excellent options including nearby Santa Fe Christian Schools, The Bishop's School in La Jolla, and numerous Montessori and independent schools within a short drive.</p>
             </div>
         </div>
-    </section>
+    </div>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <span class="logo-text">RAU HOME GROUP</span>
-                    <p>San Diego Real Estate Expert</p>
-                </div>
-                <div class="footer-links">
-                    <a href="/">Home</a>
-                    <a href="/neighborhoods.html">All Neighborhoods</a>
-                    <a href="/buyers.html">Buyers</a>
-                    <a href="/sellers.html">Sellers</a>
-                    <a href="#contact">Contact</a>
+    <!-- Getting Around Section -->
+    <div class="content-section" style="padding-top: 7rem;">
+        <div class="text-block">
+            <h2>Getting Around</h2>
+            
+            <p class="body-text">Solana Beach's location provides exceptional regional connectivity while maintaining a village-like walkability. The Solana Beach Coaster station offers car-free commuting to downtown San Diego (35 minutes), Old Town, Sorrento Valley's biotech corridor, and north to Oceanside and the Carlsbad tech hub. The station sees steady ridership from professionals working throughout the county, and the adjacent Amtrak service provides connections to Los Angeles, Orange County, and the Inland Empire.</p>
+            
+            <p class="body-text">I-5 access via Lomas Santa Fe Drive provides 15-minute drives to Del Mar, 20 minutes to downtown San Diego, and easy access to inland communities via SR-56. Despite being a beach town, Solana Beach rarely experiences the traffic nightmares of Pacific Beach or Ocean Beach—the town's limited parking and lack of large attractions keep crowds manageable even during summer weekends. Many residents embrace the town's exceptional walkability, with 80% of daily errands achievable on foot or bicycle. The flat terrain and bike-friendly streets make cycling a practical transportation option, and the coastal bike trail provides scenic routes north and south. The town's compact size means you're never more than a 10-minute walk from the beach, regardless of where you live.</p>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Find Your Solana Beach Home</h2>
+                <p>As a San Diego native with 6 years of local real estate experience, I know Solana Beach inside and out. Whether you're looking for a beach cottage, a Cedros District townhome, or an oceanfront estate, I'll help you navigate this competitive market and find your perfect coastal home.</p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-text">
+                            <strong>Call or Text</strong><br>
+                            <a href="tel:+18582295894">(858) 229-5894</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-text">
+                            <strong>Email</strong><br>
+                            <a href="mailto:rusty@rauhomegroup.com">rusty@rauhomegroup.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🏠</div>
+                        <div class="contact-text">
+                            <strong>Serving</strong><br>
+                            All of San Diego County
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Rusty Rau. All rights reserved.</p>
-                <p class="footer-legal">DRE# 02084462 | Rau Home Group</p>
+            
+            <div class="contact-form">
+                <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="contact">
+                    <input type="hidden" name="bot-field">
+                    <input type="hidden" name="neighborhood" value="Solana Beach">
+                    
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">How can I help? *</label>
+                        <textarea id="message" name="message" required>I'm interested in Solana Beach real estate...</textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
             </div>
         </div>
-    </footer>
+    </div>
 
-    <script src="../script.js"></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "RealEstateAgent",
+        "name": "Rusty Rau - Rau Home Group",
+        "image": "https://rauhomegroup.com/assets/images/rusty-rau.jpg",
+        "description": "Solana Beach San Diego real estate expert. Coastal homes, Cedros District properties, and beach cottages. Median price $2.0M. Top schools and walkable village lifestyle.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Solana Beach",
+            "addressRegion": "CA",
+            "addressCountry": "US"
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "Solana Beach",
+            "@id": "https://www.wikidata.org/wiki/Q988434"
+        },
+        "url": "https://rauhomegroup.com/neighborhoods/solana-beach.html",
+        "telephone": "+18582295894",
+        "email": "rusty@rauhomegroup.com",
+        "priceRange": "$$$"
+    }
+    </script>
 </body>
 </html>
