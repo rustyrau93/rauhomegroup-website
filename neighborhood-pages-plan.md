@@ -20,6 +20,7 @@ All pages should match La Jolla's exact structure (~25KB, 750 words):
 - [x] **4S Ranch** - 21KB - Built previously
 - [x] **Carlsbad** - 21KB - Built previously
 - [x] **Carmel Valley** - 20KB - Built previously
+- [x] **Chula Vista** - 26KB - Built 2026-02-06 - South Bay gateway, master-planned communities ($785K median)
 - [x] **Clairemont** - 21KB - Built previously
 - [x] **Coronado** - 19KB - Built previously
 - [x] **Del Mar** - 19KB - Built previously
@@ -43,7 +44,6 @@ All pages should match La Jolla's exact structure (~25KB, 750 words):
 - [x] **Vista** - 20KB - Built previously
 
 ### 🔨 Needs Rebuild (Stub Pages ~11KB)
-- [ ] **Chula Vista** - 11KB stub - Gateway to the Border, bayfront, master-planned ($800K)
 - [ ] **Escondido** - 11KB stub - Hidden Valley, wineries, arts, affordable North County ($775K)
 - [ ] **Imperial Beach** - 11KB stub - Most Southwesterly City, laid-back surf town ($775K)
 - [ ] **Kensington** - 11KB stub - Village in the City, small-town charm ($1.1M)
