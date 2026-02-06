@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mira Mesa Real Estate & Homes for Sale | San Diego | Rau Home Group</title>
+    <meta name="description" content="Discover Mira Mesa San Diego - diverse family-friendly community with affordable homes, top employers, and strong Asian cultural heritage. Median home price $970K. Expert local real estate guidance from Rusty Rau.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .hero-neighborhood {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../assets/images/neighborhoods/mira-mesa-hero.jpg') center/cover;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .hero-neighborhood h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero-neighborhood .tagline {
+            font-size: 1.5rem;
+            font-weight: 300;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .stats-banner {
+            background: #1a1a1a;
+            padding: 4rem 2rem;
+        }
+
+        .stats-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            color: white;
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #D4AF37;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            color: #ccc;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .content-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 7rem 2rem;
+        }
+
+        .content-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #1a1a1a;
+            font-weight: 700;
+        }
+
+        .intro-text {
+            max-width: 1000px;
+            font-size: 1.35rem;
+            line-height: 1.9;
+            color: #444;
+            margin-bottom: 2.5rem;
+        }
+
+        .body-text {
+            max-width: 1000px;
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #444;
+            margin-bottom: 2.5rem;
+        }
+
+        .amenities-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin: 3rem 0;
+            max-width: 1000px;
+        }
+
+        .amenity-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .amenity-icon {
+            width: 32px;
+            height: 32px;
+            background: #D4AF37;
+            border-radius: 50%;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 4px;
+        }
+
+        .amenity-icon::after {
+            content: '✓';
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .amenity-text {
+            font-size: 1.15rem;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        .contact-section {
+            background: #f8f8f8;
+            padding: 7rem 2rem;
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+        }
+
+        .contact-info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #1a1a1a;
+            font-weight: 700;
+        }
+
+        .contact-info p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 2rem;
+        }
+
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 2.5rem;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .contact-icon {
+            width: 56px;
+            height: 56px;
+            background: #D4AF37;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 24px;
+        }
+
+        .contact-details h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.25rem;
+            color: #1a1a1a;
+        }
+
+        .contact-details a {
+            color: #D4AF37;
+            text-decoration: none;
+            font-size: 1.15rem;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #1a1a1a;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background: #D4AF37;
+            color: white;
+            border: none;
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: #B8941F;
+        }
+
+        @media (max-width: 968px) {
+            .hero-neighborhood h1 {
+                font-size: 2.5rem;
+            }
+
+            .stats-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .content-section {
+                padding: 4rem 1.5rem;
+            }
+
+            .amenities-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero-neighborhood">
+        <div>
+            <h1>Mira Mesa, San Diego</h1>
+            <p class="tagline">San Diego's Multicultural Hub - Where Community & Opportunity Meet</p>
+        </div>
+    </div>
+
+    <!-- Stats Banner -->
+    <div class="stats-banner">
+        <div class="stats-container">
+            <div class="stat-item">
+                <span class="stat-number">$970K</span>
+                <span class="stat-label">Median Home Price</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">8/10</span>
+                <span class="stat-label">School Rating</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">80,000</span>
+                <span class="stat-label">Residents</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="content-section">
+        <h2>About Mira Mesa</h2>
+        <p class="intro-text">Mira Mesa—Spanish for "Table View"—is one of San Diego's most diverse and dynamic communities. Established in the late 1960s during a housing boom along the I-15 corridor, this expansive neighborhood has evolved into a vibrant multicultural hub that's home to San Diego's largest Filipino and Vietnamese populations, earning it the affectionate nickname "Manila Mesa."</p>
+        
+        <p class="body-text">Located in north-central San Diego between Interstate 15 and Interstate 805, Mira Mesa offers something increasingly rare in California real estate: genuine affordability combined with excellent quality of life. With a median home price around $970K—significantly lower than coastal neighborhoods like La Jolla or Del Mar—families can secure spacious single-family homes with yards, attached garages, and access to good schools without the coastal premium. The community attracts young families, military personnel stationed at nearby Marine Corps Air Station Miramar, tech workers employed at Qualcomm and the surrounding biotech corridor, and first-time homebuyers looking for their entry point into San Diego real estate.</p>
+
+        <p class="body-text">What truly sets Mira Mesa apart is its authentic community character. This is a neighborhood where you'll find the San Diego Tet Festival celebrating Lunar New Year, multiple Asian supermarkets offering fresh ingredients from across the Pacific, and some of the region's best Vietnamese pho and Filipino cuisine. The streets are filled with families, the parks host youth sports leagues, and neighbors actually know each other. Mira Mesa doesn't try to be exclusive or trendy—it's real, welcoming, and deeply rooted in the values of hard work and family that built it.</p>
+    </div>
+
+    <!-- Lifestyle & Amenities Section -->
+    <div class="content-section" style="background: #f8f8f8; margin: 0; max-width: 100%;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 7rem 2rem;">
+            <h2>Lifestyle & Amenities</h2>
+            
+            <div class="amenities-grid">
+                <div class="amenity-item">
+                    <div class="amenity-icon"></div>
+                    <div class="amenity-text"><strong>Authentic Asian Dining:</strong> Home to San Diego's best Vietnamese pho, Filipino cuisine, and Asian fusion restaurants</div>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon"></div>
+                    <div class="amenity-text"><strong>Mira Mesa Market Center:</strong> Major shopping hub with Home Depot, Target, Regal Cinemas, and diverse retail options</div>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon"></div>
+                    <div class="amenity-text"><strong>Community Events:</strong> Annual Mira Mesa Street Fair, San Diego Tet Festival, and neighborhood celebrations year-round</div>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon"></div>
+                    <div class="amenity-text"><strong>Parks & Recreation:</strong> Hourglass Field Community Park, multiple neighborhood parks with sports facilities and playgrounds</div>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon"></div>
+                    <div class="amenity-text"><strong>Proximity to Nature:</strong> Los Peñasquitos Canyon offers miles of hiking and mountain biking trails just minutes away</div>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon"></div>
+                    <div class="amenity-text"><strong>San Diego Miramar College:</strong> Community college offering affordable higher education and workforce training programs</div>
+                </div>
+            </div>
+
+            <p class="body-text" style="margin-top: 3rem;">Mira Mesa's lifestyle revolves around family, community, and practicality. This is where San Diego residents who prioritize value, diversity, and genuine neighborhoods over beach views and status addresses choose to live. The community features excellent recreational facilities including youth sports leagues that have produced championship teams, well-maintained parks that serve as gathering spots for families, and shopping centers that actually meet residents' daily needs without requiring a drive across town.</p>
+
+            <p class="body-text">The cultural richness here is unmatched in San Diego. You'll find authentic Vietnamese banh mi shops next to Filipino bakeries serving ube pastries, Korean BBQ restaurants alongside Mexican taquerias, and Asian supermarkets like 99 Ranch Market stocked with ingredients from across the Pacific. The annual San Diego Tet Festival draws thousands to celebrate Lunar New Year with traditional performances, food vendors, and community spirit. This diversity isn't performative—it's lived daily in schools, neighborhoods, and businesses throughout Mira Mesa.</p>
+        </div>
+    </div>
+
+    <!-- Schools & Education Section -->
+    <div class="content-section">
+        <h2>Schools & Education</h2>
+        <p class="body-text">Mira Mesa is served by San Diego Unified School District and offers a solid selection of public schools that receive good ratings from families. The neighborhood is home to multiple elementary schools including Ericson Elementary, Jonas Salk Elementary, and Sandburg Elementary—all rated between 7-8 out of 10 by GreatSchools. Challenger Middle School and Wangenheim Middle School serve the area's middle school students with strong academic programs and extracurricular activities. Mira Mesa High School anchors the community with a comprehensive curriculum, competitive athletics, and performing arts programs that prepare students for college and career success.</p>
+
+        <p class="body-text">Beyond public schools, families have access to private options including Christ the Cornerstone Academy, Good Shepherd Catholic School, and Mira Mesa Christian School. San Diego Miramar College provides accessible higher education and workforce training for community members, while the neighborhood's proximity to UC San Diego, one of the nation's top research universities, offers additional educational opportunities. The schools here reflect the community's diversity, with students from dozens of cultural backgrounds learning together—a genuine strength that prepares children for success in our interconnected world.</p>
+    </div>
+
+    <!-- Getting Around Section -->
+    <div class="content-section" style="background: #f8f8f8; margin: 0; max-width: 100%;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 7rem 2rem;">
+            <h2>Getting Around</h2>
+            <p class="body-text">Mira Mesa's central location between I-15 and I-805 makes it one of San Diego's most strategically positioned neighborhoods for commuters. Downtown San Diego is just 15 miles south with a typical commute of 20-25 minutes via I-15. The massive Sorrento Valley and Sorrento Mesa employment centers—home to major tech and biotech companies—are literally adjacent to Mira Mesa, with many residents enjoying commutes under 10 minutes. UC San Diego, Qualcomm Stadium area employers, and the Kearny Mesa business district are all within 15 minutes. Even San Diego International Airport is only 20 minutes away, making business travel convenient.</p>
+
+        <p class="body-text">The neighborhood is served by multiple MTS bus routes connecting residents to transit centers and major employment hubs, though most residents drive given San Diego's car-oriented infrastructure. For military families, Marine Corps Air Station Miramar borders Mira Mesa to the south, offering base access in minutes. The nearby I-15/SR-52 interchange provides quick connections to east county communities like Santee and Lakeside. While Mira Mesa isn't a walkable urban neighborhood, its central location means you're never far from wherever you need to be in San Diego—beaches, mountains, downtown, or Mexico.</p>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Ready to Find Your Mira Mesa Home?</h2>
+                <p>As a 6-year San Diego real estate veteran and Mira Mesa market expert, I'll help you navigate this competitive community and find the perfect home for your family.</p>
+                <p>Whether you're a first-time buyer looking for affordability, a military family relocating to be near Miramar, or an investor seeking value in one of San Diego's most diverse communities, I'll guide you every step of the way.</p>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h3>Call or Text</h3>
+                            <a href="tel:+1234567890">619-555-0100</a>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:rusty@rauhomegroup.com">rusty@rauhomegroup.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h3>Office</h3>
+                            <a href="#">San Diego, California</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Rau Home Group - Mira Mesa Real Estate",
+        "image": "https://rauhomegroup.com/assets/images/neighborhoods/mira-mesa-hero.jpg",
+        "description": "Mira Mesa San Diego real estate expert. Affordable family homes, diverse community, top employers. Median price $970K. Expert local guidance from Rusty Rau.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Mira Mesa",
+            "addressRegion": "CA",
+            "postalCode": "92126",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "32.9156",
+            "longitude": "-117.1439"
+        },
+        "url": "https://rauhomegroup.com/neighborhoods/mira-mesa.html",
+        "priceRange": "$$",
+        "areaServed": "Mira Mesa, San Diego, California"
+    }
+    </script>
+</body>
+</html>

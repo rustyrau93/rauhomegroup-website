@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rancho Penasquitos Real Estate & Homes for Sale | San Diego | Rau Home Group</title>
+    <meta name="description" content="Discover Rancho Penasquitos San Diego - master-planned suburban living with top-rated schools, miles of trails, and family-friendly amenities. Median home price $1.25M. Expert local real estate guidance from Rusty Rau.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.9;
+            color: #2d2d2d;
+            margin: 0;
+            padding: 0;
+        }
+        .hero-neighborhood {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../assets/images/neighborhoods/rancho-penasquitos-hero.jpg') center/cover;
+            height: 65vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        .hero-neighborhood h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin: 0 0 1rem 0;
+            letter-spacing: -0.02em;
+        }
+        .hero-neighborhood p {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin: 0;
+        }
+        .content-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 7rem 2rem;
+        }
+        .intro-text {
+            font-size: 1.35rem;
+            line-height: 1.9;
+            color: #2d2d2d;
+            margin-bottom: 3rem;
+            max-width: 1000px;
+        }
+        .stats-banner {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            margin: 5rem 0;
+            padding: 4rem 3rem;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            border-radius: 2px;
+        }
+        .stat-item {
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #D4AF37;
+            margin: 0 0 0.5rem 0;
+            letter-spacing: -0.02em;
+        }
+        .stat-label {
+            font-size: 1.1rem;
+            color: #e0e0e0;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+        }
+        .section-title {
+            font-size: 2.75rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin: 5rem 0 2.5rem 0;
+            letter-spacing: -0.02em;
+            text-align: left;
+        }
+        .section-content {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #2d2d2d;
+            max-width: 1000px;
+        }
+        .section-content p {
+            margin-bottom: 1.75rem;
+        }
+        .amenities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+        .amenity-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+        .amenity-icon {
+            width: 32px;
+            height: 32px;
+            background: #D4AF37;
+            border-radius: 50%;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0.25rem;
+        }
+        .amenity-icon::after {
+            content: '✓';
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .amenity-text {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #2d2d2d;
+        }
+        .contact-section {
+            margin: 7rem 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: start;
+        }
+        .contact-info h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin: 0 0 2rem 0;
+            letter-spacing: -0.02em;
+            text-align: left;
+        }
+        .contact-info p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #2d2d2d;
+            margin-bottom: 2rem;
+        }
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 2.5rem;
+        }
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        .contact-icon {
+            width: 56px;
+            height: 56px;
+            background: #D4AF37;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+        .contact-method-text {
+            font-size: 1.1rem;
+            color: #2d2d2d;
+        }
+        .contact-method a {
+            color: #2d2d2d;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .contact-method a:hover {
+            color: #D4AF37;
+        }
+        .contact-form {
+            background: #f8f8f8;
+            padding: 3rem;
+            border-radius: 2px;
+        }
+        .contact-form h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin: 0 0 2rem 0;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #2d2d2d;
+            margin-bottom: 0.5rem;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.875rem;
+            border: 1px solid #ddd;
+            border-radius: 2px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        .submit-btn {
+            background: #D4AF37;
+            color: white;
+            border: none;
+            padding: 1rem 2.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 2px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .submit-btn:hover {
+            background: #c19b2b;
+        }
+        @media (max-width: 968px) {
+            .hero-neighborhood h1 {
+                font-size: 2.5rem;
+            }
+            .hero-neighborhood p {
+                font-size: 1.2rem;
+            }
+            .content-wrapper {
+                padding: 4rem 1.5rem;
+            }
+            .stats-banner {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                padding: 3rem 2rem;
+            }
+            .contact-section {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            .section-title {
+                font-size: 2.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-neighborhood">
+        <div>
+            <h1>Rancho Penasquitos</h1>
+            <p>Master-Planned Family Living with Nature at Your Doorstep</p>
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+        <div class="intro-text">
+            <p>Rancho Penasquitos represents the pinnacle of planned suburban living in San Diego. Nestled in the North County Inland area, this master-planned community seamlessly blends family-friendly neighborhoods with access to one of San Diego's most treasured natural preserves. With top-rated schools, miles of hiking and biking trails, and a strong sense of community, "PQ" has become a sought-after destination for families seeking quality of life without sacrificing proximity to major employment centers.</p>
+        </div>
+
+        <div class="stats-banner">
+            <div class="stat-item">
+                <div class="stat-number">$1.25M</div>
+                <div class="stat-label">MEDIAN HOME PRICE</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">9/10</div>
+                <div class="stat-label">AVERAGE SCHOOL RATING</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">55,000</div>
+                <div class="stat-label">RESIDENTS</div>
+            </div>
+        </div>
+
+        <div class="section-content">
+            <p>Developed primarily in the 1980s and 1990s, Rancho Penasquitos was designed with intention—wide streets, abundant parks, excellent schools, and preserved open space creating a community that prioritizes livability. The neighborhood sits at the crossroads of convenience and nature, offering quick freeway access to major job centers while maintaining a peaceful, family-oriented atmosphere that feels miles away from urban congestion.</p>
+
+            <p>The community's crown jewel is Los Penasquitos Canyon Preserve, a 4,000-acre natural park featuring seven miles of trails through riparian habitat, waterfalls, and historic adobe ranch buildings. This preserved wilderness runs through the heart of the community, providing residents with immediate access to outdoor recreation without leaving their neighborhood. Whether you're mountain biking, horseback riding, or hiking with the family, the preserve offers an unparalleled natural amenity that defines the Rancho Penasquitos lifestyle.</p>
+
+            <p>What truly sets PQ apart is its exceptional value proposition—you get award-winning schools from the Poway Unified School District, modern homes with functional floor plans, and abundant community amenities at price points significantly below La Jolla or Del Mar. For families prioritizing education, safety, and community engagement, Rancho Penasquitos delivers exactly what matters most.</p>
+        </div>
+
+        <h2 class="section-title">Lifestyle & Amenities</h2>
+
+        <div class="amenities-grid">
+            <div class="amenity-item">
+                <div class="amenity-icon"></div>
+                <div class="amenity-text"><strong>Los Penasquitos Canyon Preserve</strong> — 4,000 acres of trails, waterfalls, and natural beauty</div>
+            </div>
+            <div class="amenity-item">
+                <div class="amenity-icon"></div>
+                <div class="amenity-text"><strong>Top-Rated Schools</strong> — Poway Unified School District excellence</div>
+            </div>
+            <div class="amenity-item">
+                <div class="amenity-icon"></div>
+                <div class="amenity-text"><strong>Community Parks</strong> — Multiple neighborhood parks with playgrounds and sports facilities</div>
+            </div>
+            <div class="amenity-item">
+                <div class="amenity-icon"></div>
+                <div class="amenity-text"><strong>Shopping & Dining</strong> — Penasquitos Town Center and nearby Westfield UTC</div>
+            </div>
+            <div class="amenity-item">
+                <div class="amenity-icon"></div>
+                <div class="amenity-text"><strong>Safe & Family-Friendly</strong> — Low crime rates and strong community engagement</div>
+            </div>
+            <div class="amenity-item">
+                <div class="amenity-icon"></div>
+                <div class="amenity-text"><strong>Convenient Freeway Access</strong> — Minutes to I-15, SR-56, and major employment centers</div>
+            </div>
+        </div>
+
+        <div class="section-content">
+            <p>Rancho Penasquitos offers an active, outdoor-oriented lifestyle that appeals to families who value recreation and community connection. The Los Penasquitos Canyon Preserve serves as the community's backyard, where neighbors gather for morning trail runs, weekend hikes, and after-school bike rides. The preserve features both paved and dirt trails accommodating all skill levels, from families with young children to serious mountain bikers tackling technical single-track.</p>
+
+            <p>Beyond the natural preserve, the community maintains numerous neighborhood parks equipped with playgrounds, sports courts, and open fields. Youth sports thrive here, with baseball, soccer, and basketball leagues bringing families together throughout the year. The community center hosts events, classes, and activities that strengthen neighborhood bonds. Local shopping centers provide convenient access to groceries, restaurants, and services—you'll find everything from Starbucks and Chipotle to local favorites like Oggi's Pizza and Phil's BBQ nearby.</p>
+
+            <p>The community's master-planned design creates a genuine neighborhood feel where families know their neighbors and children ride bikes to friends' houses. Tree-lined streets, well-maintained common areas, and active HOAs maintain the area's appeal and property values. For families seeking a traditional suburban lifestyle with modern conveniences and natural beauty, Rancho Penasquitos delivers an exceptional living experience.</p>
+        </div>
+
+        <h2 class="section-title">Schools & Education</h2>
+
+        <div class="section-content">
+            <p>Education stands as one of Rancho Penasquitos' strongest selling points. The community falls within the highly-regarded Poway Unified School District, consistently ranked among California's top school districts. Parents choose PQ specifically for school quality, and the district's performance reflects in property values—homes within top school boundaries command premium pricing and sell significantly faster than comparable properties elsewhere.</p>
+
+            <p>Neighborhood elementary schools including Challenger, Mesa Verde, and Rolling Hills Elementary regularly receive 9/10 and 10/10 ratings from GreatSchools. These schools feature strong academic programs, engaged parent communities, and excellent facilities. Students transition to Black Mountain Middle School (8/10 rating) before attending either Mt. Carmel High School or Westview High School, both delivering exceptional college preparatory education with numerous AP courses, strong athletics, and comprehensive arts programs.</p>
+
+            <p>The district's commitment to excellence extends beyond test scores—Poway Unified emphasizes character development, innovative teaching methods, and preparing students for college and career success. Many families remain in Rancho Penasquitos for decades specifically for educational continuity, creating stable neighborhoods with multi-generational community ties. For parents prioritizing education as a primary home-buying factor, few San Diego communities offer better value than Rancho Penasquitos.</p>
+        </div>
+
+        <h2 class="section-title">Getting Around</h2>
+
+        <div class="section-content">
+            <p>Rancho Penasquitos enjoys an ideal location for commuters working throughout San Diego County. The neighborhood sits between I-15 and I-5, with SR-56 running directly through the community, providing quick access to major employment centers. Commuters can reach Sorrento Valley's biotech corridor in 10 minutes, University City's tech companies in 12 minutes, and downtown San Diego in 25 minutes during normal traffic. The convenient freeway proximity makes PQ equally attractive for those working in North County or central San Diego.</p>
+
+            <p>While the neighborhood is car-dependent like most suburban communities, its master-planned design includes extensive bike lanes and walking paths connecting residential areas to schools, parks, and shopping centers. Many families find they can accomplish daily activities—school drop-offs, grocery shopping, youth sports—within a compact radius. The community's walkability within neighborhoods creates a pleasant pedestrian experience despite limited public transit options. For families with dual-income commuters, Rancho Penasquitos' central location minimizes drive times compared to more distant suburbs while maintaining the peaceful residential character that makes it so appealing.</p>
+        </div>
+
+        <div class="contact-section">
+            <div class="contact-info">
+                <h2>Ready to Explore Rancho Penasquitos?</h2>
+                <p>As a 6-year San Diego real estate veteran, I know what makes Rancho Penasquitos special—and I can help you find the perfect home for your family in this exceptional community.</p>
+                <p>Whether you're relocating for the schools, seeking more space, or looking for that ideal balance of suburban comfort and urban access, let's make it happen.</p>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-method-text">
+                            <div>Call or Text</div>
+                            <a href="tel:+1234567890">(123) 456-7890</a>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-method-text">
+                            <div>Email</div>
+                            <a href="mailto:rusty@rauhomegroup.com">rusty@rauhomegroup.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">🏠</div>
+                        <div class="contact-method-text">
+                            <div><a href="../listings.html">Browse Current Listings</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h3>Schedule Your Free Consultation</h3>
+                <form>
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone</label>
+                        <input type="tel" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea>I'm interested in learning more about homes in Rancho Penasquitos...</textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Get Started Today</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Rau Home Group - Rancho Penasquitos Real Estate",
+        "image": "https://rauhomegroup.com/assets/images/neighborhoods/rancho-penasquitos-hero.jpg",
+        "description": "Rancho Penasquitos San Diego real estate expert. Master-planned family community with top-rated schools and nature trails. Median price $1.25M.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Rancho Penasquitos",
+            "addressRegion": "CA",
+            "postalCode": "92129",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "32.9595",
+            "longitude": "-117.1134"
+        },
+        "url": "https://rauhomegroup.com/neighborhoods/rancho-penasquitos.html",
+        "priceRange": "$$$$",
+        "areaServed": "Rancho Penasquitos, San Diego, California"
+    }
+    </script>
+</body>
+</html>

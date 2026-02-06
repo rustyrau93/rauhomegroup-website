@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista Real Estate & Homes for Sale | San Diego County | Rau Home Group</title>
+    <meta name="description" content="Discover Vista San Diego - the Craft Beer Capital with affordable family homes, top-rated schools, and vibrant downtown. Median home price $825K. Expert local real estate guidance from Rusty Rau.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    
+    <!-- Identical CSS from La Jolla template -->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.9;
+            color: #2c3e50;
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero-simple {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            padding: 7rem 2rem;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-simple h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin: 0 0 1rem 0;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-simple .subtitle {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin: 0;
+            opacity: 0.95;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .intro-section {
+            padding: 5rem 0;
+            background: white;
+        }
+
+        .intro-text {
+            max-width: 1000px;
+            margin: 0 auto;
+            font-size: 1.35rem;
+            line-height: 1.9;
+            color: #2c3e50;
+        }
+
+        .intro-text p {
+            margin-bottom: 2rem;
+        }
+
+        .intro-text p:last-child {
+            margin-bottom: 0;
+        }
+
+        .stats-banner {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            padding: 4rem 0;
+            max-width: 1000px;
+            margin: 3rem auto 0 auto;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #d4af37;
+            margin-bottom: 0.5rem;
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            color: #555;
+            font-weight: 500;
+        }
+
+        .content-section {
+            padding: 5rem 0;
+        }
+
+        .content-section:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        .section-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .section-content h2 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 2.5rem;
+            font-weight: 700;
+            text-align: left;
+        }
+
+        .section-content p {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+        }
+
+        .section-content p:last-child {
+            margin-bottom: 0;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem 3rem;
+            margin: 2.5rem 0;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .feature-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #d4af37;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 0.3rem;
+        }
+
+        .feature-icon::before {
+            content: '✓';
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .feature-text {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #2c3e50;
+        }
+
+        .contact-section {
+            padding: 7rem 0;
+            background: white;
+        }
+
+        .contact-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .contact-container h2 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 3rem;
+            font-weight: 700;
+            text-align: left;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contact-info h3 {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info p {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+        }
+
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .contact-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: #1e3c72;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 24px;
+        }
+
+        .contact-details h4 {
+            margin: 0 0 0.25rem 0;
+            font-size: 1.1rem;
+            color: #2c3e50;
+        }
+
+        .contact-details a {
+            color: #1e3c72;
+            text-decoration: none;
+            font-size: 1.15rem;
+        }
+
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-form {
+            background: #f8f9fa;
+            padding: 2.5rem;
+            border-radius: 8px;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #2c3e50;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-btn {
+            background: #d4af37;
+            color: white;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background: #b8941f;
+        }
+
+        @media (max-width: 968px) {
+            .hero-simple h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-simple .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .stats-banner {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero-simple">
+        <h1>Vista, San Diego County</h1>
+        <p class="subtitle">Craft Beer Capital with Family-Friendly Living & Affordability</p>
+    </div>
+
+    <!-- Intro Section -->
+    <section class="intro-section">
+        <div class="container">
+            <div class="intro-text">
+                <p>Vista stands out as North San Diego County's craft beer capital, boasting more breweries per capita than any city in the United States. This vibrant community of nearly 100,000 residents offers an exceptional blend of affordability, family-friendly neighborhoods, excellent schools, and a thriving downtown scene centered around artisan breweries and local culture.</p>
+                
+                <p>Located along the scenic "Hops Highway" (Highway 78), Vista provides easy access to both coastal beaches and inland attractions while maintaining its own distinct identity. The city has transformed its historic downtown into a walkable destination filled with craft breweries, farm-to-table restaurants, theaters, and community events that bring neighbors together year-round.</p>
+                
+                <p>What makes Vista particularly appealing to homebuyers is the combination of reasonable home prices, top-rated schools in Vista Unified School District, abundant parks and recreation, and a genuine sense of community. Families appreciate the safe neighborhoods, retirees enjoy the mild climate and cultural amenities, and young professionals are drawn to the craft beer scene and easy commute access to major employment centers throughout San Diego County.</p>
+
+                <!-- Stats Banner -->
+                <div class="stats-banner">
+                    <div class="stat-item">
+                        <div class="stat-number">$825K</div>
+                        <div class="stat-label">Median Home Price</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">7/10</div>
+                        <div class="stat-label">School Rating</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">99,300</div>
+                        <div class="stat-label">Population</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lifestyle & Amenities -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-content">
+                <h2>Lifestyle & Amenities</h2>
+                
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon"></div>
+                        <div class="feature-text">More craft breweries per capita than any U.S. city - beer lovers' paradise</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"></div>
+                        <div class="feature-text">Vibrant downtown with walkable breweries, restaurants, and entertainment</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"></div>
+                        <div class="feature-text">Affordable family-friendly neighborhoods with excellent value</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"></div>
+                        <div class="feature-text">Award-winning Moonlight Amphitheatre with outdoor summer performances</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"></div>
+                        <div class="feature-text">Alta Vista Botanical Gardens showcasing rare plants and stunning landscapes</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"></div>
+                        <div class="feature-text">Year-round farmers markets, street fairs, and community events</div>
+                    </div>
+                </div>
+
+                <p>Vista's craft brewery scene is legendary throughout Southern California. Downtown Vista hosts Mother Earth Brew Co., Backstreet Brewery, Wavelength Brewery, Belching Beaver Brewery Tavern and Grill, Bear Roots Brewing, and Guadalupe Brewery Tap House - each offering unique atmospheres from family-friendly outdoor spaces to intimate taprooms with forest vibes. The breweries aren't just places to drink - they're community hubs hosting trivia nights, live music, science-themed events for kids, and seasonal celebrations.</p>
+
+                <p>Beyond beer, Vista offers rich cultural experiences including the renowned Moonlight Amphitheatre presenting Broadway-quality musicals under the stars, the AVO Playhouse and Broadway Theatre showcasing diverse productions, and the historic Rancho Guajome Adobe providing glimpses into California's rancho past. The Alta Vista Botanical Gardens spans 14 acres with themed gardens, walking paths, and educational programs that attract nature lovers from across the region.</p>
+
+                <p>Downtown Vista has experienced a remarkable renaissance, transforming into a walkable destination where residents stroll between breweries, enjoy farm-to-table dining, browse local shops, and gather for weekly farmers markets. The community calendar stays packed with events like the Vista Strawberry Festival, Classic Car Cruise, Summer Concert Series, and holiday celebrations that create strong neighborhood bonds and keep the city feeling vibrant and connected.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schools & Education -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-content">
+                <h2>Schools & Education</h2>
+                
+                <p>Vista Unified School District serves the community with over 20,000 students across 28 schools, earning recognition for academic achievement, innovative programs, and commitment to student success. The district offers specialized academies, strong STEM programs, robust arts education, and comprehensive support services that prepare students for college and career pathways. Many Vista schools have received California Gold Ribbon recognition for exemplary educational practices.</p>
+
+                <p>Top-rated elementary schools include Madison Elementary, Casita Center for Technology, Science & Math, and Bobier Elementary, all earning strong GreatSchools ratings and parent reviews. Middle school students attend schools like Rancho Buena Vista High School (which includes middle grades) or Washington Middle School, both offering honors courses, athletics, and extracurricular activities. Vista's high schools - Vista High School, Rancho Buena Vista High School, and Vista Murrieta High School - provide comprehensive college prep curricula, Advanced Placement courses, career technical education programs, and championship athletics programs.</p>
+
+                <p>Beyond public schools, Vista offers private education options including Mountain View Christian School, Vista Christian School, and Montessori programs for families seeking alternative educational approaches. The proximity to Palomar College provides accessible higher education opportunities for residents pursuing associate degrees, vocational training, or transferring to four-year universities. This educational ecosystem makes Vista particularly attractive to families prioritizing quality schooling without coastal price premiums.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Getting Around -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-content">
+                <h2>Getting Around</h2>
+                
+                <p>Vista's central location in North San Diego County provides excellent connectivity to employment centers, beaches, and regional attractions. Highway 78 runs directly through Vista, earning its nickname "Hops Highway" for connecting the brewery-rich corridor, while also providing quick east-west access across the county. Interstate 5 lies just 10 miles west, connecting to coastal communities and Downtown San Diego in 35-40 minutes. Highway 76 to the east leads to wine country and inland North County, while SR-78 west reaches Oceanside beaches in 15 minutes.</p>
+
+                <p>Commuters benefit from Vista's positioning between major employment hubs - Carlsbad's biotech corridor sits 15 minutes west, Escondido's commercial center is 10 minutes east, and the Sorrento Valley tech hub in San Diego is accessible in 30 minutes. The Sprinter light rail connects Vista to Oceanside and Escondido with convenient stations throughout the city, offering an alternative to driving for coastal access or connecting to the Coaster commuter train. NCTD bus routes provide local transit within Vista and connections to neighboring cities, though most residents rely on personal vehicles for daily transportation given the suburban layout and ample parking throughout the community.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-container">
+                <h2>Ready to Find Your Vista Home?</h2>
+                
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Let's Connect</h3>
+                        <p>As a San Diego real estate expert with 6 years of experience, I know Vista's neighborhoods, schools, and market inside out. Whether you're buying your first home, upsizing for a growing family, or investing in North County's growth, I'll guide you every step of the way.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon">📱</div>
+                                <div class="contact-details">
+                                    <h4>Call or Text</h4>
+                                    <a href="tel:+18582293361">(858) 229-3361</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="contact-icon">✉️</div>
+                                <div class="contact-details">
+                                    <h4>Email</h4>
+                                    <a href="mailto:rusty@rauhomegroup.com">rusty@rauhomegroup.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <form action="https://formspree.io/f/xldepkdq" method="POST">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">What can I help you with?</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Rau Home Group - Vista Real Estate",
+        "image": "https://rauhomegroup.com/assets/images/neighborhoods/vista-hero.jpg",
+        "description": "Vista San Diego real estate expert. Craft beer capital with family-friendly homes, top schools, and affordable living. Median price $825K.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Vista",
+            "addressRegion": "CA",
+            "postalCode": "92081",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "33.2000",
+            "longitude": "-117.2425"
+        },
+        "url": "https://rauhomegroup.com/neighborhoods/vista.html",
+        "priceRange": "$$",
+        "areaServed": "Vista, San Diego County, California"
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4S Ranch Real Estate & Homes for Sale | San Diego | Rau Home Group</title>
+    <meta name="description" content="Discover 4S Ranch San Diego - premier master-planned community with top-rated schools, family-friendly amenities, and modern homes. Median home price $1.6M. Expert local real estate guidance from Rusty Rau.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                        url('../assets/images/neighborhoods/4s-ranch-hero.jpg') center/cover;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 0 2rem;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        .hero-subtitle {
+            font-size: 1.5rem;
+            font-weight: 300;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .stats-banner {
+            background: #f8f9fa;
+            padding: 4rem 2rem;
+            margin: 0;
+        }
+        .stats-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+        }
+        .stat-item {
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #D4AF37;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        .stat-label {
+            font-size: 1.1rem;
+            color: #555;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .content-section {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 7rem 2rem;
+        }
+        .content-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2.5rem;
+            color: #2C3E50;
+        }
+        .content-section p {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #444;
+            margin-bottom: 1.5rem;
+        }
+        .intro-text {
+            font-size: 1.35rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+        
+        .lifestyle-section {
+            background: white;
+            padding: 7rem 2rem;
+        }
+        .lifestyle-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .lifestyle-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #2C3E50;
+        }
+        .amenities-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        .amenity-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .amenity-icon {
+            width: 32px;
+            height: 32px;
+            background: #D4AF37;
+            border-radius: 50%;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        .amenity-text {
+            font-size: 1.15rem;
+            color: #444;
+        }
+        .lifestyle-text p {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #444;
+            margin-bottom: 1.5rem;
+        }
+        
+        .schools-section {
+            background: #f8f9fa;
+            padding: 7rem 2rem;
+        }
+        .schools-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .schools-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2.5rem;
+            color: #2C3E50;
+        }
+        .schools-section p {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #444;
+            margin-bottom: 1.5rem;
+        }
+        
+        .commute-section {
+            background: white;
+            padding: 7rem 2rem;
+        }
+        .commute-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .commute-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2.5rem;
+            color: #2C3E50;
+        }
+        .commute-section p {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #444;
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-section {
+            background: linear-gradient(135deg, #2C3E50 0%, #3498db 100%);
+            padding: 7rem 2rem;
+            color: white;
+        }
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+        .contact-info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: white;
+        }
+        .contact-info p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            color: rgba(255,255,255,0.95);
+        }
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        .contact-icon {
+            width: 56px;
+            height: 56px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        .contact-method-text {
+            font-size: 1.1rem;
+        }
+        .contact-method a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .contact-method a:hover {
+            text-decoration: underline;
+        }
+        
+        .contact-form {
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+        }
+        .contact-form h3 {
+            color: #2C3E50;
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            color: #2C3E50;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        .submit-btn {
+            background: #D4AF37;
+            color: white;
+            border: none;
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+            width: 100%;
+        }
+        .submit-btn:hover {
+            background: #B8941F;
+        }
+        
+        @media (max-width: 968px) {
+            .hero h1 { font-size: 2.5rem; }
+            .hero-subtitle { font-size: 1.2rem; }
+            .stats-container { grid-template-columns: 1fr; gap: 2rem; }
+            .amenities-grid { grid-template-columns: 1fr; }
+            .contact-container { grid-template-columns: 1fr; }
+            .content-section,
+            .lifestyle-section,
+            .schools-section,
+            .commute-section { padding: 4rem 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <h1>4S Ranch, San Diego</h1>
+            <p class="hero-subtitle">Award-Winning Master-Planned Living in North County</p>
+        </div>
+    </section>
+
+    <!-- Stats Banner -->
+    <section class="stats-banner">
+        <div class="stats-container">
+            <div class="stat-item">
+                <span class="stat-number">$1.6M</span>
+                <span class="stat-label">Median Home Price</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">9/10</span>
+                <span class="stat-label">School Rating</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">20,000+</span>
+                <span class="stat-label">Residents</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="content-section">
+        <h2>About 4S Ranch</h2>
+        <p class="intro-text">4S Ranch represents the pinnacle of Southern California master-planned community design. Developed in the late 1990s and continuing to expand today, this thoughtfully designed neighborhood in North County San Diego has earned national recognition for its family-friendly amenities, outstanding schools, and quality of life.</p>
+        
+        <p>Located in the Rancho Bernardo area of San Diego, 4S Ranch sits at the intersection of urban convenience and suburban tranquility. The community was designed from the ground up with families in mind, featuring an extensive network of parks, trails, recreational facilities, and highly-rated schools all within a cohesive neighborhood framework. Every detail was considered, from the tree-lined streets and Mediterranean architecture to the community centers and Olympic-sized pools that serve as gathering places for residents.</p>
+        
+        <p>What sets 4S Ranch apart from other master-planned communities is its genuine sense of community and quality execution. This isn't just a collection of homes but a carefully curated lifestyle where neighbors know each other, kids ride bikes safely through the streets, and families gather for community events year-round. The name "4S" comes from the four original land-grant ranchos that once occupied the area: San Dieguito, Santa Fe, San Bernardo, and Santa Maria de Los Peñasquitos. Today, it represents something new: premier family living in North County San Diego.</p>
+    </section>
+
+    <!-- Lifestyle & Amenities Section -->
+    <section class="lifestyle-section">
+        <div class="lifestyle-container">
+            <h2>Lifestyle & Amenities</h2>
+            
+            <div class="amenities-grid">
+                <div class="amenity-item">
+                    <div class="amenity-icon">✓</div>
+                    <span class="amenity-text">Award-winning parks and recreation centers throughout the community</span>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon">✓</div>
+                    <span class="amenity-text">Olympic-sized community pools with splash pads and family areas</span>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon">✓</div>
+                    <span class="amenity-text">Miles of hiking and biking trails connecting to regional trail systems</span>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon">✓</div>
+                    <span class="amenity-text">Top-rated Poway Unified School District with excellent test scores</span>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon">✓</div>
+                    <span class="amenity-text">Full-service community centers with fitness facilities and programs</span>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon">✓</div>
+                    <span class="amenity-text">Safe, family-friendly streets with low crime rates and active HOA</span>
+                </div>
+            </div>
+            
+            <div class="lifestyle-text">
+                <p>Living in 4S Ranch means embracing an active, connected lifestyle. The community features over twenty parks ranging from small neighborhood tot lots to expansive regional parks with sports fields, playgrounds, and picnic areas. The Recreation Center serves as the social hub, offering fitness classes, youth programs, community events, and two Olympic-sized swimming pools that become the center of summer life. Walking and biking trails wind throughout the neighborhood, connecting to the extensive San Diego regional trail system for weekend adventures.</p>
+                
+                <p>The 4S Ranch Town Center provides convenient shopping and dining without leaving the community. You'll find grocery stores, restaurants, coffee shops, medical offices, and services all within a few minutes' drive or bike ride. The neighborhood hosts regular community events including summer concerts, holiday celebrations, and farmers markets that bring neighbors together and create lasting connections. Many residents say the community feel is what makes 4S Ranch special—it's not uncommon to know dozens of neighbors by name and have kids playing freely throughout the safe, well-maintained streets.</p>
+                
+                <p>For outdoor enthusiasts, the proximity to Lake Hodges offers kayaking, fishing, and scenic lake views. Nearby attractions include the Del Dios Gorge hiking trail, the historic Santa Ysabel Creek, and easy access to North County's wine country in Ramona and Escondido. You're also just thirty minutes from the beaches of Carlsbad and Encinitas, making weekend coastal getaways effortless.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schools Section -->
+    <section class="schools-section">
+        <div class="schools-container">
+            <h2>Schools & Education</h2>
+            
+            <p>Education is one of 4S Ranch's biggest draws for families. The community is served by the highly-rated Poway Unified School District, consistently ranked among the top school districts in California. Most 4S Ranch homes feed into a cluster of excellent schools that parents specifically seek out when relocating to San Diego. The typical pathway includes Monterey Ridge Elementary (9/10 rating), Black Mountain Middle School (8/10 rating), and Del Norte High School (8/10 rating), all known for strong academics, excellent teachers, and comprehensive extracurricular programs.</p>
+            
+            <p>The schools in 4S Ranch offer robust STEM programs, competitive athletics, award-winning music and arts departments, and a wide variety of AP courses for college-bound students. Del Norte High School regularly sends graduates to top UC schools and prestigious universities nationwide. Parent involvement is high, and the schools benefit from active PTAs and strong community support. Class sizes are manageable, and the schools maintain modern facilities with updated technology.</p>
+            
+            <p>Private school options are also available nearby, including Gracepoint Christian Academy and several excellent Montessori and preschool programs within the community. For families with college-age students, CSU San Marcos is just fifteen minutes away, and UCSD is about thirty minutes south. The combination of top-tier public schools and convenient access to higher education makes 4S Ranch particularly attractive to families who prioritize their children's academic success.</p>
+        </div>
+    </section>
+
+    <!-- Commute Section -->
+    <section class="commute-section">
+        <div class="commute-container">
+            <h2>Getting Around</h2>
+            
+            <p>4S Ranch offers convenient access to major employment centers throughout San Diego County while maintaining a peaceful, suburban atmosphere. The community is strategically located near Interstate 15, providing direct routes north to Escondido, Temecula, and Riverside County, or south to Downtown San Diego, UTC, and the coast. Commute times are reasonable: Downtown San Diego is about thirty-five minutes in moderate traffic, the I-15 tech corridor (including major employers like Sony, Hewlett Packard, and Intuit) is ten to fifteen minutes, and Sorrento Valley's biotech hub is about twenty-five minutes via the 56 freeway.</p>
+            
+            <p>Many 4S Ranch residents work in nearby Rancho Bernardo's business parks, Carmel Valley, or the Sorrento Mesa/Sorrento Valley corridor, making for easy commutes of fifteen to twenty-five minutes. The neighborhood is also popular with remote workers and tech professionals who value the family-friendly environment and strong schools while maintaining flexibility in their work arrangements. San Diego International Airport is about thirty-five minutes away, and the Coaster train station in Sorrento Valley provides public transit access to coastal communities and Downtown for those who prefer rail commuting. While 4S Ranch is primarily a car-dependent community, the well-maintained roads, ample parking, and strategic freeway access make transportation straightforward and stress-free.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Ready to Explore 4S Ranch?</h2>
+                <p>As a 6-year San Diego real estate veteran specializing in North County communities, I know the 4S Ranch market inside and out. Whether you're buying or selling, I'll help you navigate this competitive master-planned community with confidence.</p>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-method-text">
+                            <strong>Call or Text</strong><br>
+                            <a href="tel:+1234567890">(123) 456-7890</a>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-method-text">
+                            <strong>Email</strong><br>
+                            <a href="mailto:rusty@rauhomegroup.com">rusty@rauhomegroup.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">🏘️</div>
+                        <div class="contact-method-text">
+                            <strong>Browse Listings</strong><br>
+                            <a href="../listings.html">View Current 4S Ranch Homes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h3>Get Your Free 4S Ranch Market Report</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Tell me about your 4S Ranch real estate goals..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Rau Home Group - 4S Ranch Real Estate",
+        "image": "https://rauhomegroup.com/assets/images/neighborhoods/4s-ranch-hero.jpg",
+        "description": "4S Ranch San Diego real estate expert. Master-planned community with top schools, family amenities. Median price $1.6M. Expert guidance from Rusty Rau.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "San Diego",
+            "addressRegion": "CA",
+            "postalCode": "92127",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "33.0347",
+            "longitude": "-117.0931"
+        },
+        "url": "https://rauhomegroup.com/neighborhoods/4s-ranch.html",
+        "priceRange": "$$$"
+    }
+    </script>
+</body>
+</html>

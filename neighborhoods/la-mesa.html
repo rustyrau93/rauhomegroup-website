@@ -3,175 +3,398 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="La Mesa real estate guide. La Mesa is known as the 'Jewel of the Hills,' featuring a walkable downtown village, excellent restaurants, and easy trolley access to downtown San Di">
-    <meta name="keywords" content="La Mesa real estate, La Mesa homes for sale, San Diego neighborhoods, la-mesa">
-    <title>La Mesa Real Estate | Homes for Sale | Rusty Rau</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="../luxury-effects.css">
+    <title>La Mesa Real Estate & Homes for Sale | San Diego | Rau Home Group</title>
+    <meta name="description" content="Discover La Mesa San Diego - the Jewel of the Hills with charming Village, trolley access, and family-friendly neighborhoods. Median home price $775K. Expert local real estate guidance from Rusty Rau.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.9;
+            color: #2d3436;
+        }
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                        url('https://images.unsplash.com/photo-1519046904884-53103b34b206?w=1600&q=80') center/cover;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+        .stats-banner {
+            background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
+            padding: 4rem 1.5rem;
+        }
+        .stats-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+        }
+        .stat {
+            text-align: center;
+            color: white;
+        }
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .stat-label {
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 7rem 1.5rem;
+        }
+        .section {
+            margin-bottom: 5rem;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            color: #2d3436;
+            margin-bottom: 2.5rem;
+            font-weight: 700;
+        }
+        .intro-text {
+            font-size: 1.35rem;
+            line-height: 1.9;
+            color: #2d3436;
+            margin-bottom: 2rem;
+            max-width: 1000px;
+        }
+        .body-text {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #2d3436;
+            margin-bottom: 2rem;
+            max-width: 1000px;
+        }
+        .amenities-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin: 2.5rem 0;
+        }
+        .amenity-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+        .amenity-icon {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
+            border-radius: 50%;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .amenity-text {
+            font-size: 1.15rem;
+            color: #2d3436;
+            line-height: 1.6;
+        }
+        .contact-section {
+            background: #f8f9fa;
+            padding: 7rem 1.5rem;
+            margin-top: 7rem;
+        }
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 4rem;
+        }
+        .contact-info h2 {
+            font-size: 2.5rem;
+            color: #2d3436;
+            margin-bottom: 2rem;
+            font-weight: 700;
+        }
+        .contact-info p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #2d3436;
+            margin-bottom: 1.5rem;
+        }
+        .contact-methods {
+            margin-top: 2.5rem;
+        }
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .contact-icon {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+        .contact-method-text h3 {
+            font-size: 1.1rem;
+            color: #2d3436;
+            margin-bottom: 0.3rem;
+        }
+        .contact-method-text p {
+            font-size: 1rem;
+            color: #636e72;
+            margin: 0;
+        }
+        .contact-form {
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #2d3436;
+            font-weight: 500;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.875rem;
+            border: 1px solid #dfe6e9;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        .submit-btn {
+            background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
+            color: white;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .stats-container { grid-template-columns: 1fr; gap: 2rem; }
+            .amenities-grid { grid-template-columns: 1fr; }
+            .contact-container { grid-template-columns: 1fr; }
+            .content { padding: 4rem 1.5rem; }
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar scrolled-dark">
-        <div class="nav-container">
-            <a href="/" class="logo">
-                <img src="../images/logo.png" alt="Rau Home Group" class="logo-img">
-                <div class="logo-text-wrap">
-                    <span class="logo-text">RAU HOME GROUP</span>
-                    <span class="logo-subtitle">SAN DIEGO REAL ESTATE</span>
-                </div>
-            </a>
-            <ul class="nav-links">
-                <li><a href="/#about">About</a></li>
-                <li><a href="/buyers.html">Buyers</a></li>
-                <li><a href="/sellers.html">Sellers</a></li>
-                <li><a href="/#listings">Listings</a></li>
-                <li><a href="/neighborhoods.html" class="active">Areas</a></li>
-                <li><a href="/#testimonials">Reviews</a></li>
-                <li><a href="/blog.html">Blog</a></li>
-                <li><a href="#contact" class="nav-cta">Contact</a></li>
-            </ul>
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+    <!-- Hero -->
+    <div class="hero">
+        <div>
+            <h1>La Mesa</h1>
+            <p>The Jewel of the Hills</p>
         </div>
-    </nav>
+    </div>
 
-    <section class="hero page-hero" style="background: linear-gradient(135deg, #1A2332 0%, #0D1117 100%);">
-        <div class="hero-background">
-            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80" alt="La Mesa" class="hero-image">
-            <div class="hero-overlay dark"></div>
+    <!-- Stats Banner -->
+    <div class="stats-banner">
+        <div class="stats-container">
+            <div class="stat">
+                <div class="stat-number">$775K</div>
+                <div class="stat-label">Median Home Price</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">8/10</div>
+                <div class="stat-label">Top School Rating</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">61,000</div>
+                <div class="stat-label">Population</div>
+            </div>
         </div>
-        <div class="hero-content">
-            <span class="hero-tag">San Diego</span>
-            <h1 class="hero-title">La Mesa<br><span class="accent">Jewel of the Hills</span></h1>
-            <p class="hero-subtitle">Charming city with vibrant downtown village and trolley access</p>
-            <a href="#contact" class="cta-button">See Homes in La Mesa</a>
-        </div>
-    </section>
+    </div>
 
-    <section class="content-section" style="padding: 4rem 0;">
-        <div class="container narrow">
+    <!-- Main Content -->
+    <div class="content">
+        <!-- About Section -->
+        <section class="section">
             <h2 class="section-title">About La Mesa</h2>
-            <p class="lead-text">La Mesa is known as the 'Jewel of the Hills,' featuring a walkable downtown village, excellent restaurants, and easy trolley access to downtown San Diego. The community offers small-town charm with urban conveniences.</p>
+            <p class="intro-text">Known as "The Jewel of the Hills," La Mesa is one of San Diego's most charming and accessible communities. Located just nine miles east of downtown San Diego, this family-friendly city offers the perfect balance of small-town character and big-city convenience, with tree-lined streets, a walkable downtown village, and direct trolley access to the entire San Diego region.</p>
             
-            <p style="color: #6B7280; margin-bottom: 1rem;">La Mesa Village features antique shops, restaurants, breweries, and weekly concerts in the summer. The trolley provides easy access to downtown and SDSU. Lake Murray offers recreation and scenic views.</p>
+            <p class="body-text">Founded in 1869 and incorporated in 1912, La Mesa has evolved into a vibrant community of approximately 61,000 residents who appreciate its blend of historic charm and modern amenities. The city's crown jewel is La Mesa Village, a pedestrian-friendly downtown district along La Mesa Boulevard featuring locally-owned shops, antique stores, galleries, and diverse dining options. The village hosts popular events throughout the year, including one of San Diego's largest Oktoberfest celebrations and a beloved Friday evening farmers market.</p>
             
-            <p style="color: #6B7280; margin-bottom: 2rem;">Real estate includes historic homes in established neighborhoods, downtown condos, and hillside properties with views. The walkability, trolley access, and community character make La Mesa popular with diverse age groups.</p>
+            <p class="body-text">What sets La Mesa apart is its exceptional value proposition for San Diego County living. With a median home price around $775,000, buyers get significantly more space and affordability compared to coastal neighborhoods, while still enjoying quick access to beaches, downtown, and major employment centers. The San Diego Trolley's Orange and Green Lines connect La Mesa directly to downtown, SDSU, UTC, and the border, making it ideal for commuters who want to reduce their housing costs without sacrificing connectivity. The community attracts young families, first-time buyers, and anyone seeking a strong neighborhood feel with excellent schools and parks.</p>
+        </section>
 
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin: 3rem 0; padding: 2rem; background: #F8F7F4; border-radius: 4px;">
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">$850K</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">Median Home Price</div>
+        <!-- Lifestyle & Amenities -->
+        <section class="section">
+            <h2 class="section-title">Lifestyle & Amenities</h2>
+            
+            <div class="amenities-grid">
+                <div class="amenity-item">
+                    <div class="amenity-icon">✓</div>
+                    <div class="amenity-text"><strong>La Mesa Village</strong> – Walkable downtown with shops, restaurants, antiques, and weekly farmers market</div>
                 </div>
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">7/10</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">School Rating</div>
+                <div class="amenity-item">
+                    <div class="amenity-icon">✓</div>
+                    <div class="amenity-text"><strong>Trolley Access</strong> – Direct Orange & Green Line service to downtown SD, SDSU, and beyond</div>
                 </div>
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">60K</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">Population</div>
+                <div class="amenity-item">
+                    <div class="amenity-icon">✓</div>
+                    <div class="amenity-text"><strong>Grossmont Center</strong> – Major shopping destination with Macy's, Target, restaurants, and entertainment</div>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon">✓</div>
+                    <div class="amenity-text"><strong>Lake Murray</strong> – Five-mile loop trail around scenic lake perfect for walking, running, and biking</div>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon">✓</div>
+                    <div class="amenity-text"><strong>Harry Griffen Regional Park</strong> – 140+ acres with playgrounds, sports fields, and hiking trails</div>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon">✓</div>
+                    <div class="amenity-text"><strong>Community Events</strong> – Annual Oktoberfest, Friday farmers market, summer concerts, and holiday celebrations</div>
                 </div>
             </div>
 
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; margin: 2rem 0 1rem; color: #1A2332;">Lifestyle & Amenities</h3>
-            <ul style="list-style: none; padding: 0;">
-                <li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> La Mesa Village - walkable downtown</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Trolley station - easy downtown access</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Lake Murray - walking loop and water activities</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Summer concerts and farmers market</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Diverse restaurant scene</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Antique shops and local boutiques</li>
-            </ul>
+            <p class="body-text">La Mesa's lifestyle revolves around community connection and practical convenience. The Village serves as the heart of social life, with popular dining spots like The Brigantine seafood restaurant, Anthony's Fish Grotto, Casa de Pico for authentic Mexican cuisine, and Centifonti's Italian restaurant. Coffee shops, craft breweries, and family-owned eateries give the downtown area a genuine neighborhood feel that's increasingly rare in modern San Diego.</p>
+            
+            <p class="body-text">Outdoor recreation is easily accessible, with Lake Murray offering a beloved five-mile loop trail for walking and jogging, and Harry Griffen Regional Park providing extensive facilities for sports and picnics. The city maintains numerous neighborhood parks, and residents enjoy easy access to hiking in Mission Trails Regional Park just minutes away. The climate is slightly warmer than coastal areas, with hot, dry summers and mild winters—perfect for year-round outdoor activities without the marine layer that affects beach communities.</p>
+            
+            <p class="body-text">The community vibe is decidedly family-oriented and welcoming, with strong neighborhood associations, active schools, and residents who genuinely know their neighbors. It's the kind of place where people wave hello on walks, support local businesses, and participate in community events. La Mesa attracts first-time homebuyers, growing families, and anyone seeking authentic community character over flashy amenities.</p>
+        </section>
 
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; margin: 2rem 0 1rem; color: #1A2332;">Who Lives Here</h3>
-            <p style="color: #6B7280;">La Mesa attracts young professionals using the trolley, families, retirees, and those seeking walkability and community events. The population is diverse and values local businesses and public transportation.</p>
-        </div>
-    </section>
+        <!-- Schools & Education -->
+        <section class="section">
+            <h2 class="section-title">Schools & Education</h2>
+            
+            <p class="body-text">La Mesa is served primarily by the La Mesa-Spring Valley School District, which operates numerous well-regarded elementary and middle schools. Top-rated options include La Mesa Arts Academy (grades 4-8, GreatSchools rating 7/10), a popular charter school emphasizing arts integration across the curriculum, and La Mesa Dale Elementary (K-6, rating 7/10), known for strong community involvement and academic programs. Rolando Elementary, Murdock Elementary, and Highlands Elementary serve various neighborhoods throughout the city.</p>
+            
+            <p class="body-text">For high school, students attend either Helix Charter High School or Grossmont High School, both offering comprehensive college preparatory programs, competitive athletics, and strong performing arts departments. Helix Charter in particular has an excellent reputation throughout East County. The proximity to San Diego State University and Grossmont College provides excellent higher education options, with many La Mesa students taking advantage of dual enrollment programs and easy commutes to campus.</p>
+            
+            <p class="body-text">Families appreciate La Mesa's strong investment in education and the variety of school options available. The district's focus on community engagement and parent involvement creates supportive learning environments, and many families specifically choose La Mesa for its combination of quality schools and housing affordability compared to coastal districts with similar ratings.</p>
+        </section>
 
-    <section class="cta-section" style="background: #1A2332; color: white; padding: 4rem 0; text-align: center;">
-        <div class="container">
-            <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 1rem; color: white;">Ready to Find Your La Mesa Home?</h2>
-            <p style="color: rgba(255,255,255,0.8); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">Let me show you the best homes and investment opportunities in La Mesa.</p>
-            <a href="#contact" class="cta-button large">See Homes in La Mesa</a>
-        </div>
-    </section>
+        <!-- Getting Around -->
+        <section class="section">
+            <h2 class="section-title">Getting Around</h2>
+            
+            <p class="body-text">La Mesa's location and transit connectivity are among its greatest strengths. The San Diego Trolley's Orange and Green Lines both serve La Mesa, with stations at La Mesa Boulevard, Spring Street, Grossmont Transit Center, and Amaya Drive, providing direct access to downtown San Diego (25 minutes), San Diego State University (15 minutes), and connections throughout the metropolitan area. This makes La Mesa one of the best neighborhoods in San Diego for car-free or single-car living, particularly appealing to commuters working downtown or at SDSU.</p>
+            
+            <p class="body-text">By car, Interstate 8 runs directly through La Mesa, offering quick connections west to the beaches and downtown (15-20 minutes to Mission Valley, 20 minutes to the coast) and east to inland communities. State Route 125 provides north-south connectivity, and the entire city is positioned for easy access to San Diego's major employment centers. Commute times average 20-25 minutes to downtown, 15 minutes to Mission Valley and SDSU, and 25-30 minutes to coastal areas. The combination of trolley access and freeway proximity gives residents genuine transportation flexibility that's rare in San Diego's more affordable neighborhoods.</p>
+        </section>
+    </div>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <span class="section-tag">Get in Touch</span>
-                    <h2 class="section-title">Let's Find Your<br>La Mesa Home</h2>
-                    <p class="contact-text">I know La Mesa inside and out. Let's talk about what you're looking for.</p>
-                    
-                    <div class="contact-details">
-                        <a href="tel:+18582044692" class="contact-item">
-                            <span class="contact-icon"><i class="fas fa-phone"></i></span>
-                            <span>(858) 204-4692</span>
-                        </a>
-                        <a href="mailto:rusty@deanaguilargroup.com" class="contact-item">
-                            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
-                            <span>rusty@deanaguilargroup.com</span>
-                        </a>
-                    </div>
-                    
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/rustyrau_sdrealtor/" target="_blank" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.facebook.com/rusty.rau" target="_blank" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </div>
-                </div>
+    <!-- Contact Section -->
+    <div class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Ready to Find Your La Mesa Home?</h2>
+                <p>As a 6-year San Diego real estate veteran, I know La Mesa inside and out. Whether you're a first-time buyer seeking affordability and community, or a growing family looking for excellent schools and space, I'll help you navigate this competitive market and find the perfect home.</p>
                 
-                <div class="contact-form-container">
-                    <form class="contact-form">
-                        <input type="hidden" name="neighborhood" value="La Mesa">
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Your Name" required>
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-method-text">
+                            <h3>Call or Text</h3>
+                            <p>(619) 123-4567</p>
                         </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="email" name="email" placeholder="Email" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" name="phone" placeholder="Phone">
-                            </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-method-text">
+                            <h3>Email</h3>
+                            <p>rusty@rauhomegroup.com</p>
                         </div>
-                        <div class="form-group">
-                            <textarea name="message" placeholder="Tell me what you're looking for in La Mesa..." rows="4"></textarea>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-method-text">
+                            <h3>Serving</h3>
+                            <p>La Mesa & All San Diego County</p>
                         </div>
-                        <button type="submit" class="submit-button">Contact Rusty</button>
-                    </form>
+                    </div>
                 </div>
+            </div>
+
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone</label>
+                        <input type="tel">
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea required>I'm interested in La Mesa real estate...</textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
             </div>
         </div>
-    </section>
+    </div>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <span class="logo-text">RAU HOME GROUP</span>
-                    <p>San Diego Real Estate Expert</p>
-                </div>
-                <div class="footer-links">
-                    <a href="/">Home</a>
-                    <a href="/neighborhoods.html">All Neighborhoods</a>
-                    <a href="/buyers.html">Buyers</a>
-                    <a href="/sellers.html">Sellers</a>
-                    <a href="#contact">Contact</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Rusty Rau. All rights reserved.</p>
-                <p class="footer-legal">DRE# 02084462 | Rau Home Group</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="../script.js"></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Rau Home Group - La Mesa Real Estate",
+        "description": "La Mesa San Diego real estate expert. Family-friendly neighborhoods, trolley access, and excellent value. Median price $775K. Top schools and Village lifestyle.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "La Mesa",
+            "addressRegion": "CA",
+            "postalCode": "91942",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "32.7678",
+            "longitude": "-117.0231"
+        },
+        "url": "https://rauhomegroup.com/neighborhoods/la-mesa.html",
+        "priceRange": "$$",
+        "areaServed": "La Mesa, San Diego, California"
+    }
+    </script>
 </body>
 </html>
