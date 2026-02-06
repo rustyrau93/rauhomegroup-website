@@ -1,27 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rusty Rau - San Diego Real Estate Expert. Born and raised in San Diego with 8 years of experience helping buyers and sellers achieve their real estate goals.">
-    <meta name="keywords" content="San Diego real estate, Rusty Rau, San Diego realtor, homes for sale San Diego, buy home San Diego">
+    <meta name="description" content="Explore Escondido real estate with Rusty Rau. Hidden Valley charm, wineries, arts district, and affordable North County living. Median price $810K.">
+    <meta name="keywords" content="Escondido real estate, Escondido homes for sale, North County San Diego, San Diego wineries, affordable San Diego real estate">
     <meta name="author" content="Rusty Rau">
-    <meta name="description" content="Escondido real estate guide. Escondido ('hidden' in Spanish) is North County's largest inland city, offering arts, culture, wineries, and some of the region's most affordable hous">
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Rusty Rau | San Diego Real Estate Expert">
-    <meta property="og:description" content="Born and raised in San Diego. 8 years helping San Diegans buy and sell homes.">
+    <meta property="og:title" content="Escondido Real Estate | North County San Diego | Rau Home Group">
+    <meta property="og:description" content="Hidden Valley charm with wineries, arts, and family-friendly living. Median home price $810K.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://rauhomegroup.com">
+    <meta property="og:url" content="https://rauhomegroup.com/neighborhoods/escondido.html">
     
-    <title>Escondido Real Estate | Homes for Sale | Rusty Rau</title>
+    <title>Escondido Real Estate & Homes for Sale | North County | Rau Home Group</title>
     
     <!-- Preconnect to external domains for faster loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://images.unsplash.com">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     
     <!-- Preload critical assets -->
@@ -40,8 +37,303 @@
     <link rel="stylesheet" href="../luxury-effects.css">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="icon" type="image/png" href="../images/logo.png">
 
+    <style>
+        /* Hero Section */
+        .neighborhood-hero {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                        url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1920&q=80') center/cover;
+            min-height: 65vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 7rem 2rem 5rem;
+            position: relative;
+        }
+
+        .hero-content h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero-tagline {
+            font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+            font-weight: 300;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+
+        /* Stats Banner */
+        .stats-banner {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            padding: 3rem 2rem;
+            margin-top: -3rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .stats-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            color: white;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #D4AF37;
+            margin-bottom: 0.5rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: rgba(255,255,255,0.9);
+        }
+
+        /* Main Content Sections */
+        .neighborhood-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 7rem 2rem;
+        }
+
+        .content-section {
+            margin-bottom: 5rem;
+        }
+
+        .content-section h2 {
+            font-size: 2.5rem;
+            color: #1a1a1a;
+            margin-bottom: 2rem;
+            font-family: 'Playfair Display', serif;
+            border-bottom: 3px solid #D4AF37;
+            padding-bottom: 1rem;
+        }
+
+        .intro-text {
+            font-size: 1.35rem;
+            line-height: 1.9;
+            color: #2d2d2d;
+            margin-bottom: 2.5rem;
+            max-width: 1000px;
+        }
+
+        .body-text {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #333;
+            margin-bottom: 2rem;
+            max-width: 1000px;
+        }
+
+        .body-text strong {
+            color: #1a1a1a;
+            font-weight: 600;
+        }
+
+        /* Gold Checkmark Lists */
+        .amenities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .amenity-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .amenity-icon {
+            width: 32px;
+            height: 32px;
+            background: #D4AF37;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 0.25rem;
+        }
+
+        .amenity-icon i {
+            color: white;
+            font-size: 16px;
+        }
+
+        .amenity-text {
+            font-size: 1.15rem;
+            line-height: 1.7;
+            color: #333;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            padding: 5rem 2rem;
+            margin-top: 5rem;
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .contact-info {
+            color: white;
+        }
+
+        .contact-info h2 {
+            font-size: 2.5rem;
+            color: #D4AF37;
+            margin-bottom: 1.5rem;
+            border: none;
+            padding: 0;
+        }
+
+        .contact-info p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            color: rgba(255,255,255,0.9);
+        }
+
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .contact-icon {
+            width: 56px;
+            height: 56px;
+            background: #D4AF37;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-icon i {
+            color: white;
+            font-size: 24px;
+        }
+
+        .contact-details h3 {
+            font-size: 1.1rem;
+            color: #D4AF37;
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-details a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.15rem;
+        }
+
+        .contact-details a:hover {
+            color: #D4AF37;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #1a1a1a;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background: #D4AF37;
+            color: white;
+            border: none;
+            padding: 1.25rem 3rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            background: #b8941f;
+            transform: translateY(-2px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 968px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .stats-container {
+                gap: 2rem;
+            }
+
+            .amenities-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .neighborhood-content {
+                padding: 5rem 1.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Skip to main content link for accessibility -->
@@ -80,164 +372,198 @@
         </div>
     </nav>
 
-<nav class="navbar scrolled-dark">
-        <div class="nav-container">
-            <a href="/" class="logo">
-                <img src="../images/logo.png" alt="Rau Home Group" class="logo-img">
-                <div class="logo-text-wrap">
-                    <span class="logo-text">RAU HOME GROUP</span>
-                    <span class="logo-subtitle">SAN DIEGO REAL ESTATE</span>
-                </div>
-            </a>
-            <ul class="nav-links">
-                <li><a href="/#about">About</a></li>
-                <li><a href="/buyers.html">Buyers</a></li>
-                <li><a href="/sellers.html">Sellers</a></li>
-                <li><a href="/#listings">Listings</a></li>
-                <li><a href="/neighborhoods.html" class="active">Areas</a></li>
-                <li><a href="/#testimonials">Reviews</a></li>
-                <li><a href="/blog.html">Blog</a></li>
-                <li><a href="#contact" class="nav-cta">Contact</a></li>
-            </ul>
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
-
-    <section class="hero page-hero" style="background: linear-gradient(135deg, #1A2332 0%, #0D1117 100%);">
-        <div class="hero-background">
-            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80" alt="Escondido" class="hero-image">
-            <div class="hero-overlay dark"></div>
-        </div>
+    <!-- Hero Section -->
+    <section class="neighborhood-hero">
         <div class="hero-content">
-            <span class="hero-tag">San Diego</span>
-            <h1 class="hero-title">Escondido<br><span class="accent">Hidden Valley</span></h1>
-            <p class="hero-subtitle">Inland city with wineries, arts scene, and affordable North County living</p>
-            <a href="#contact" class="cta-button">See Homes in Escondido</a>
+            <h1>Escondido</h1>
+            <p class="hero-tagline">Hidden Valley Charm with Wine Country Appeal</p>
         </div>
     </section>
 
-    <section class="content-section" style="padding: 4rem 0;">
-        <div class="container narrow">
-            <h2 class="section-title">About Escondido</h2>
-            <p class="lead-text">Escondido ('hidden' in Spanish) is North County's largest inland city, offering arts, culture, wineries, and some of the region's most affordable housing. The city features a revitalizing downtown and proximity to San Diego Zoo Safari Park.</p>
-            
-            <p style="color: #6B7280; margin-bottom: 1rem;">Downtown Escondido features art galleries, the California Center for the Arts, and Grand Avenue's dining scene. The area is surrounded by vineyards and wineries. The Safari Park and Stone Brewing's headquarters are major attractions.</p>
-            
-            <p style="color: #6B7280; margin-bottom: 2rem;">Real estate ranges from affordable homes in established neighborhoods to new developments and rural properties with acreage. The combination of culture, affordability, and proximity to wineries attracts diverse residents.</p>
+    <!-- Stats Banner -->
+    <section class="stats-banner">
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-number">$810K</div>
+                <div class="stat-label">Median Home Price</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">8/10</div>
+                <div class="stat-label">Top School Rating</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">157,000</div>
+                <div class="stat-label">Residents</div>
+            </div>
+        </div>
+    </section>
 
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin: 3rem 0; padding: 2rem; background: #F8F7F4; border-radius: 4px;">
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">$775K</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">Median Home Price</div>
+    <!-- Main Content -->
+    <main id="main-content" class="neighborhood-content">
+        
+        <!-- About Section -->
+        <section class="content-section">
+            <h2>About Escondido</h2>
+            
+            <p class="intro-text">Escondido—Spanish for "hidden"—is North County San Diego's vibrant second-largest city, offering an exceptional blend of wine country charm, cultural sophistication, and genuine affordability. Nestled in a fertile valley surrounded by rolling hills and citrus groves, this thriving community of 157,000 residents delivers authentic California living without coastal price tags.</p>
+
+            <p class="body-text">Just 30 miles north of downtown San Diego and 18 miles inland from the Pacific, Escondido serves as North County's cultural and commercial hub. The city's historic Grand Avenue downtown district has transformed into a thriving arts and dining destination, while surrounding neighborhoods offer everything from modern master-planned communities to charming mid-century homes on tree-lined streets.</p>
+
+            <p class="body-text">What sets Escondido apart is its remarkable diversity—not just in demographics, but in lifestyle options. Here you'll find award-winning wineries sharing hillsides with craft breweries, world-class performing arts venues alongside neighborhood farmers markets, and the famous San Diego Zoo Safari Park minutes from established residential neighborhoods. The warm inland climate (averaging 263 sunny days annually) creates perfect conditions for outdoor living and agriculture, making Escondido a haven for both nature lovers and urban sophisticates.</p>
+
+            <p class="body-text">The community attracts a wonderfully diverse mix of families seeking excellent schools and affordability, young professionals working in nearby tech corridors, artists drawn to the thriving creative scene, retirees enjoying the temperate climate, and wine enthusiasts building homes near acclaimed vineyards. It's a city where Nobel Prize-winning researchers from nearby institutions share neighborhoods with fifth-generation farming families, creating an authentic, welcoming community uncommon in Southern California.</p>
+        </section>
+
+        <!-- Lifestyle & Amenities Section -->
+        <section class="content-section">
+            <h2>Lifestyle & Amenities</h2>
+            
+            <div class="amenities-grid">
+                <div class="amenity-item">
+                    <div class="amenity-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="amenity-text"><strong>Award-Winning Wineries:</strong> Orfila Vineyards, Cordiano Winery, and 15+ boutique tasting rooms throughout the valley</div>
                 </div>
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">6/10</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">School Rating</div>
+                <div class="amenity-item">
+                    <div class="amenity-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="amenity-text"><strong>World-Class Attractions:</strong> San Diego Zoo Safari Park featuring 3,600+ animals on 1,800 acres of open-range habitat</div>
                 </div>
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">151K</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">Population</div>
+                <div class="amenity-item">
+                    <div class="amenity-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="amenity-text"><strong>Thriving Arts Scene:</strong> California Center for the Arts with Broadway shows, symphony, and gallery exhibitions</div>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="amenity-text"><strong>Outdoor Recreation:</strong> Lake Hodges, Daley Ranch (3,000+ acres of trails), and Elfin Forest Recreational Reserve</div>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="amenity-text"><strong>Craft Beer Capital:</strong> Stone Brewing flagship bistro, Twisted Manzanita, and a dozen craft breweries</div>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="amenity-text"><strong>Family-Friendly Events:</strong> Grand Avenue Festival, Grape Day Park celebrations, and weekly downtown farmers market</div>
                 </div>
             </div>
 
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; margin: 2rem 0 1rem; color: #1A2332;">Lifestyle & Amenities</h3>
-            <ul style="list-style: none; padding: 0;">
-                <li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> San Diego Zoo Safari Park nearby</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> California Center for the Arts</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Stone Brewing World Bistro & Gardens</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Daley Ranch - hiking and trails</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Wine country - multiple local wineries</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Revitalizing downtown Grand Avenue</li>
-            </ul>
+            <p class="body-text">Escondido's revitalized downtown Grand Avenue district buzzes with independent restaurants, wine bars, galleries, and the beloved Escondido Farmers Market. The city celebrates its agricultural heritage through wine festivals, the annual Grape Day celebration, and numerous farm-to-table dining establishments showcasing local produce and vintages.</p>
 
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; margin: 2rem 0 1rem; color: #1A2332;">Who Lives Here</h3>
-            <p style="color: #6B7280;">Escondido attracts families seeking affordability, retirees, artists, and those who appreciate wine country living. The community is diverse, growing, and values arts, culture, and outdoor recreation.</p>
-        </div>
-    </section>
+            <p class="body-text">Residents enjoy an enviable indoor-outdoor lifestyle with world-class hiking and mountain biking trails, championship golf courses including The Vineyard at Escondido and Eagle Crest, plus multiple community parks and sports complexes. The warm, dry climate means year-round outdoor activities without coastal fog or humidity, making Escondido perfect for families who prioritize active living and entertaining at home.</p>
+        </section>
 
-    <section class="cta-section" style="background: #1A2332; color: white; padding: 4rem 0; text-align: center;">
-        <div class="container">
-            <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 1rem; color: white;">Ready to Find Your Escondido Home?</h2>
-            <p style="color: rgba(255,255,255,0.8); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">Let me show you the best homes and investment opportunities in Escondido.</p>
-            <a href="#contact" class="cta-button large">See Homes in Escondido</a>
-        </div>
-    </section>
+        <!-- Schools & Education Section -->
+        <section class="content-section">
+            <h2>Schools & Education</h2>
+            
+            <p class="body-text">Escondido offers strong public education through two unified school districts serving the area, with several schools earning top ratings and recognition for academic excellence. Many families specifically choose Escondido for its combination of quality schools and housing affordability—a rare find in San Diego County.</p>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <span class="section-tag">Get in Touch</span>
-                    <h2 class="section-title">Let's Find Your<br>Escondido Home</h2>
-                    <p class="contact-text">I know Escondido inside and out. Let's talk about what you're looking for.</p>
-                    
-                    <div class="contact-details">
-                        <a href="tel:+18582044692" class="contact-item">
-                            <span class="contact-icon"><i class="fas fa-phone"></i></span>
-                            <span>(858) 204-4692</span>
-                        </a>
-                        <a href="mailto:rusty@deanaguilargroup.com" class="contact-item">
-                            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
-                            <span>rusty@deanaguilargroup.com</span>
-                        </a>
-                    </div>
-                    
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/rustyrau_sdrealtor/" target="_blank" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.facebook.com/rusty.rau" target="_blank" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </div>
-                </div>
+            <p class="body-text"><strong>Top-Rated Public Schools:</strong> Knob Hill Elementary (8/10 GreatSchools rating), Quantum Academy (8/10), Reidy Creek Elementary (8/10), Bernardo Elementary (7/10), and Richland Elementary (7/10) consistently deliver strong academic programs. At the secondary level, San Pasqual High School, Orange Glen High School, and Escondido High School offer comprehensive college prep curricula with robust AP offerings, excellent athletics, and competitive performing arts programs.</p>
+
+            <p class="body-text">Private school options include Classical Academy (highly-rated charter), Calvin Christian School, Escondido Adventist Academy, and several Montessori programs. Many Escondido families also access nearby prestigious institutions like The Army and Navy Academy in Carlsbad. The proximity to California State University San Marcos (just 10 minutes away) and Palomar College provides excellent higher education access, while UC San Diego and its world-renowned research institutions are a 25-minute commute, offering employment opportunities for professionals in tech, biotech, and research fields.</p>
+        </section>
+
+        <!-- Getting Around Section -->
+        <section class="content-section">
+            <h2>Getting Around</h2>
+            
+            <p class="body-text">Escondido's central North County location delivers excellent connectivity to San Diego's major employment centers and attractions. Interstate 15 runs directly through the city, providing straightforward commutes: 30 minutes to downtown San Diego (30 miles), 20 minutes to the coast at Carlsbad or Encinitas, 25 minutes to UC San Diego and the Sorrento Valley tech corridor, 15 minutes to California State University San Marcos, and 35 minutes to San Diego International Airport. Many residents work locally in Escondido's growing business districts or at nearby major employers like the Safari Park, while others appreciate the reasonable reverse commute to North County's biotech and technology hubs.</p>
+
+            <p class="body-text">The city is served by North County Transit District bus routes and the Sprinter light rail (connecting to Oceanside), though most residents prefer driving given the suburban layout. Escondido's central position makes it ideal for exploring all of San Diego County—you're equidistant to beaches, mountains, wine country, and urban attractions. The transit center downtown connects regional bus routes, and many neighborhoods are increasingly bike-friendly with expanding trail networks.</p>
+        </section>
+
+    </main>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Ready to Explore Escondido?</h2>
+                <p>Discover why Escondido is one of North County's best-kept secrets. With affordable pricing, excellent schools, wine country lifestyle, and proximity to everything San Diego offers, this hidden valley delivers exceptional value for families and professionals alike.</p>
+                <p>As a 6-year San Diego real estate veteran and North County expert, I'll help you navigate Escondido's diverse neighborhoods and find your perfect home.</p>
                 
-                <div class="contact-form-container">
-                    <form class="contact-form">
-                        <input type="hidden" name="neighborhood" value="Escondido">
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Your Name" required>
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
                         </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="email" name="email" placeholder="Email" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" name="phone" placeholder="Phone">
-                            </div>
+                        <div class="contact-details">
+                            <h3>Call or Text</h3>
+                            <a href="tel:+1234567890">(123) 456-7890</a>
                         </div>
-                        <div class="form-group">
-                            <textarea name="message" placeholder="Tell me what you're looking for in Escondido..." rows="4"></textarea>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
                         </div>
-                        <button type="submit" class="submit-button">Contact Rusty</button>
-                    </form>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:rusty@rauhomegroup.com">rusty@rauhomegroup.com</a>
+                        </div>
+                    </div>
                 </div>
+            </div>
+
+            <div class="contact-form">
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required placeholder="Tell me about your Escondido home search..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <span class="logo-text">RAU HOME GROUP</span>
-                    <p>San Diego Real Estate Expert</p>
-                </div>
-                <div class="footer-links">
-                    <a href="/">Home</a>
-                    <a href="/neighborhoods.html">All Neighborhoods</a>
-                    <a href="/buyers.html">Buyers</a>
-                    <a href="/sellers.html">Sellers</a>
-                    <a href="#contact">Contact</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Rusty Rau. All rights reserved.</p>
-                <p class="footer-legal">DRE# 02084462 | Rau Home Group</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="../script.js"></script>
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Place",
+        "name": "Escondido",
+        "description": "North County San Diego hidden valley with wine country charm, arts scene, Safari Park, and affordable homes. Median price $810K.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Escondido",
+            "addressRegion": "CA",
+            "postalCode": "92025",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "33.1192",
+            "longitude": "-117.0864"
+        }
+    }
+    </script>
 
     <!-- Footer -->
     <footer class="footer" role="contentinfo">
@@ -312,7 +638,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
     <script src="../script.js" defer></script>
     <script src="../luxury-effects.js" defer></script>
-
-
 </body>
 </html>
