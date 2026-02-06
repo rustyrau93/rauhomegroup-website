@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="San Diego real estate insights, market updates, and home buying tips from Rusty Rau. Stay informed about the San Diego housing market.">
+    <meta name="keywords" content="San Diego real estate blog, San Diego housing market, home buying tips, real estate advice">
+    <title>Blog | Rusty Rau | San Diego Real Estate</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="luxury-effects.css">
+    
+    <!-- Smooth Scroll Library -->
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    
+    <!-- GSAP for advanced animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar scrolled-dark">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <img src="images/logo.png" alt="Rau Home Group" class="logo-img">
+                <div class="logo-text-wrap">
+                    <span class="logo-text">RAU HOME GROUP</span>
+                    <span class="logo-subtitle">SAN DIEGO REAL ESTATE</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="/#about">About</a></li>
+                <li><a href="/buyers.html">Buyers</a></li>
+                <li><a href="/sellers.html">Sellers</a></li>
+                <li class="nav-dropdown">
+                    <a href="#" class="dropdown-toggle">Resources <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/mortgage-calculator.html"><i class="fas fa-calculator"></i> Mortgage Calculator</a></li>
+                        <li><a href="/neighborhoods.html"><i class="fas fa-map-marked-alt"></i> San Diego Neighborhoods</a></li>
+                    </ul>
+                </li>
+                <li><a href="/contact.html" class="nav-cta">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero blog-hero">
+        <div class="hero-background">
+            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1920&q=80" alt="San Diego Real Estate" class="hero-bg-image">
+            <div class="hero-overlay dark"></div>
+        </div>
+        <div class="hero-content">
+            <span class="hero-tag"><i class="fas fa-newspaper"></i> Insights & Updates</span>
+            <h1 class="hero-title">Real Estate<br><span class="accent">Blog</span></h1>
+            <p class="hero-subtitle">Market insights, buying & selling tips, and local San Diego knowledge to help you make smart real estate decisions.</p>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <section class="blog-section">
+        <div class="container">
+            <!-- Featured Post -->
+            <div class="featured-post">
+                <div class="featured-post-image">
+                    <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&q=80" alt="San Diego Real Estate Market 2026">
+                    <span class="post-category">Market Update</span>
+                </div>
+                <div class="featured-post-content">
+                    <span class="post-date"><i class="far fa-calendar"></i> January 2026</span>
+                    <h2>San Diego Real Estate Market: What to Expect in 2026</h2>
+                    <p>The San Diego housing market continues to evolve. Here's what buyers and sellers need to know about current conditions, pricing trends, and opportunities in the coming months. With interest rates stabilizing and inventory gradually improving, 2026 presents unique opportunities for both buyers and sellers in America's Finest City.</p>
+                    <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Blog Grid -->
+            <div class="blog-grid">
+                <!-- Post 1 -->
+                <article class="blog-card">
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1560184897-ae75f418493e?w=600&q=80" alt="First Time Homebuyer">
+                        <span class="post-category">Buyers</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="post-date"><i class="far fa-calendar"></i> January 2026</span>
+                        <h3>First-Time Homebuyer Guide: San Diego Edition</h3>
+                        <p>Everything you need to know about buying your first home in San Diego—from getting pre-approved to closing day.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Post 2 -->
+                <article class="blog-card">
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1558036117-15d82a90b9b1?w=600&q=80" alt="Home Staging Tips">
+                        <span class="post-category">Sellers</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="post-date"><i class="far fa-calendar"></i> January 2026</span>
+                        <h3>10 Tips to Maximize Your Home's Value Before Selling</h3>
+                        <p>Simple improvements and staging tips that can help you get top dollar when selling your San Diego home.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Post 3 -->
+                <article class="blog-card">
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&q=80" alt="San Diego Neighborhoods">
+                        <span class="post-category">Neighborhoods</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="post-date"><i class="far fa-calendar"></i> December 2025</span>
+                        <h3>Best San Diego Neighborhoods for Families</h3>
+                        <p>A guide to family-friendly communities with great schools, parks, and amenities across San Diego County.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Post 4 -->
+                <article class="blog-card">
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80" alt="Real Estate Investment">
+                        <span class="post-category">Investment</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="post-date"><i class="far fa-calendar"></i> December 2025</span>
+                        <h3>Investing in San Diego Real Estate: A Beginner's Guide</h3>
+                        <p>Why San Diego is a strong market for real estate investment and how to get started with rental properties.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Post 5 -->
+                <article class="blog-card">
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80" alt="VA Loans San Diego">
+                        <span class="post-category">Buyers</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="post-date"><i class="far fa-calendar"></i> November 2025</span>
+                        <h3>Understanding VA Loans: A Guide for Military Buyers</h3>
+                        <p>Everything service members and veterans need to know about using VA loans to buy a home in San Diego.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Post 6 -->
+                <article class="blog-card">
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80" alt="Interest Rates">
+                        <span class="post-category">Market Update</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <span class="post-date"><i class="far fa-calendar"></i> November 2025</span>
+                        <h3>Interest Rates and the San Diego Housing Market</h3>
+                        <p>How mortgage rates are affecting home prices and buyer demand in the San Diego market.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Load More -->
+            <div class="blog-load-more">
+                <p class="coming-soon"><i class="fas fa-bell"></i> More articles coming soon! Subscribe below to get notified when new posts are published.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container narrow">
+            <div class="newsletter-box">
+                <div class="newsletter-content">
+                    <i class="fas fa-envelope-open-text newsletter-icon"></i>
+                    <h2>Stay Informed</h2>
+                    <p>Get San Diego real estate insights, market updates, and tips delivered to your inbox.</p>
+                </div>
+                <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+                    <div class="newsletter-input-group">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="cta-button"><i class="fas fa-paper-plane"></i> Subscribe</button>
+                    </div>
+                    <p class="newsletter-disclaimer"><i class="fas fa-lock"></i> No spam, ever. Unsubscribe anytime.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Make Your Move?</h2>
+                <p>Whether you're buying or selling, I'm here to help you navigate the San Diego market.</p>
+                <div class="cta-buttons">
+                    <a href="/buyers.html" class="cta-button"><i class="fas fa-home"></i> I'm Buying</a>
+                    <a href="/sellers.html" class="cta-button secondary"><i class="fas fa-sign"></i> I'm Selling</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-text">RAU HOME GROUP</span>
+                    <p>San Diego Real Estate Expert</p>
+                    <p class="footer-brokerage">Rau Home Group</p>
+                    <div class="footer-social">
+                        <a href="https://instagram.com/rustyrau" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com/rustyrau" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <a href="/#about">About</a>
+                    <a href="/buyers.html">Buyers</a>
+                    <a href="/sellers.html">Sellers</a>
+                    <a href="/#listings">Listings</a>
+                    <a href="/neighborhoods.html">Areas</a>
+                    <a href="/#testimonials">Reviews</a>
+                    <a href="/blog.html">Blog</a>
+                    <a href="/contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Rusty Rau. All rights reserved.</p>
+                <p class="footer-legal">DRE# 02084462 | Rau Home Group</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="luxury-effects.js"></script>
+</body>
+</html>

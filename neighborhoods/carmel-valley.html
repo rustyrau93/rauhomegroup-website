@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carmel Valley Real Estate & Homes for Sale | San Diego | Rau Home Group</title>
+    <meta name="description" content="Discover Carmel Valley San Diego - modern master-planned community with top-rated schools, family-friendly neighborhoods, and nearby beaches. Median home price $1.37M. Expert local guidance from Rusty Rau.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        /* === HERO SECTION === */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                        url('../assets/images/neighborhoods/carmel-valley-hero.jpg') center/cover no-repeat;
+            height: 70vh;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-content h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            margin: 0 0 1rem 0;
+            letter-spacing: -1px;
+        }
+
+        .hero-content p {
+            font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+            font-weight: 300;
+            margin: 0;
+        }
+
+        /* === CONTAINER === */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* === STATS BANNER (3 GOLD NUMBERS) === */
+        .stats-banner {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            padding: 4rem 0;
+            margin-top: -3rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            color: white;
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #D4AF37;
+            margin-bottom: 0.5rem;
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.9;
+        }
+
+        /* === MAIN CONTENT === */
+        .content-section {
+            padding: 7rem 2rem;
+        }
+
+        .content-section:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        .content-wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 2.5rem;
+            color: #1a1a1a;
+            text-align: left;
+        }
+
+        .intro-text {
+            font-size: 1.35rem;
+            line-height: 1.9;
+            color: #2d2d2d;
+            margin-bottom: 2.5rem;
+        }
+
+        .body-text {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #333;
+            margin-bottom: 2rem;
+        }
+
+        /* === GOLD CHECKMARK BULLETS === */
+        .benefits-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .check-icon {
+            width: 32px;
+            height: 32px;
+            min-width: 32px;
+            background: #D4AF37;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 2px;
+        }
+
+        .benefit-text {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #2d2d2d;
+        }
+
+        /* === CONTACT SECTION (2-COLUMN) === */
+        .contact-section {
+            background: #1a1a1a;
+            color: white;
+            padding: 7rem 2rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            align-items: start;
+        }
+
+        .contact-info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #D4AF37;
+        }
+
+        .contact-info p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .contact-icon {
+            width: 56px;
+            height: 56px;
+            min-width: 56px;
+            background: #D4AF37;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        .contact-method-text {
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        .contact-method-text strong {
+            display: block;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.7;
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+        }
+
+        .contact-form h3 {
+            color: #1a1a1a;
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            color: #1a1a1a;
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #D4AF37;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-btn {
+            background: #D4AF37;
+            color: white;
+            border: none;
+            padding: 1.2rem 3rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .submit-btn:hover {
+            background: #C19B2B;
+        }
+
+        /* === RESPONSIVE === */
+        @media (max-width: 768px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .content-section {
+                padding: 4rem 1.5rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Carmel Valley</h1>
+            <p>Modern Family Living with Top Schools & Beach Access</p>
+        </div>
+    </section>
+
+    <!-- Stats Banner -->
+    <section class="stats-banner">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number">$1.37M</div>
+                <div class="stat-label">Median Home Price</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">9/10</div>
+                <div class="stat-label">Avg School Rating</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">45,000</div>
+                <div class="stat-label">Residents</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="content-section">
+        <div class="content-wrapper">
+            <h2 class="section-title">About Carmel Valley</h2>
+            <p class="intro-text">
+                Carmel Valley represents the evolution of San Diego living — a master-planned community that perfectly balances suburban comfort with coastal accessibility. Built primarily from the 1980s through the 2000s, this neighborhood has become one of San Diego's most sought-after addresses for families seeking excellent schools, modern amenities, and a true sense of community.
+            </p>
+            <p class="body-text">
+                Located in North San Diego between Interstate 5 and Interstate 15, Carmel Valley offers the best of both worlds. You're fifteen minutes from the beaches of Del Mar and Torrey Pines, yet close enough to major employment centers like Sorrento Valley's biotech corridor and University City's tech hub that your morning commute feels effortless. The neighborhood's strategic position along State Route 56 makes it one of the most accessible communities in San Diego County.
+            </p>
+            <p class="body-text">
+                What truly sets Carmel Valley apart is its family-first design. Wide, tree-lined streets connect well-maintained neighborhoods to excellent schools, numerous parks, and the vibrant One Paseo shopping district. With approximately 45,000 residents — 78% of whom are families — this community has cultivated an atmosphere where neighbors know each other, kids play outside, and local businesses thrive. It's the kind of place where you'll recognize faces at the farmers market and your children will grow up with lifelong friends from the neighborhood.
+            </p>
+        </div>
+    </section>
+
+    <!-- Lifestyle & Amenities Section -->
+    <section class="content-section">
+        <div class="content-wrapper">
+            <h2 class="section-title">Lifestyle & Amenities</h2>
+            
+            <div class="benefits-list">
+                <div class="benefit-item">
+                    <div class="check-icon">✓</div>
+                    <div class="benefit-text">Award-winning schools with multiple 9/10 and 10/10 rated campuses</div>
+                </div>
+                <div class="benefit-item">
+                    <div class="check-icon">✓</div>
+                    <div class="benefit-text">One Paseo mixed-use district with upscale shopping, dining, and entertainment</div>
+                </div>
+                <div class="benefit-item">
+                    <div class="check-icon">✓</div>
+                    <div class="benefit-text">Miles of walking and biking trails throughout the valley</div>
+                </div>
+                <div class="benefit-item">
+                    <div class="check-icon">✓</div>
+                    <div class="benefit-text">15 minutes to Del Mar beaches and Torrey Pines State Reserve</div>
+                </div>
+                <div class="benefit-item">
+                    <div class="check-icon">✓</div>
+                    <div class="benefit-text">Close proximity to major tech and biotech employers</div>
+                </div>
+                <div class="benefit-item">
+                    <div class="check-icon">✓</div>
+                    <div class="benefit-text">Safe, walkable neighborhoods with strong community connections</div>
+                </div>
+            </div>
+
+            <p class="body-text">
+                Carmel Valley's lifestyle revolves around convenience and quality. The crown jewel is One Paseo, a beautifully designed mixed-use development that serves as the neighborhood's town center. Here you'll find everything from iPic Theaters and Equinox Fitness to farm-to-table restaurants like True Food Kitchen and The Headquarters. Weekend mornings see the plaza filled with families enjoying coffee at Starbucks Reserve or brunch at Puesto, while evenings bring outdoor concerts and community events that foster the neighborhood's tight-knit feel.
+            </p>
+            <p class="body-text">
+                The community's outdoor spaces are equally impressive. Torrey Highlands Park offers baseball fields and playgrounds, while the extensive trail network connects neighborhoods and provides scenic routes for morning runs or evening walks. Families love the weekly farmers market at the Carmel Valley Community Park, where local vendors sell fresh produce and artisan goods. And when you want the beach, you're just a fifteen-minute drive to the shores of Del Mar or the hiking trails of Torrey Pines State Natural Reserve.
+            </p>
+            <p class="body-text">
+                What residents appreciate most is how Carmel Valley makes daily life easier. Grocery stores, medical facilities, and essential services are all within a five-minute drive. The neighborhoods feel safe and well-maintained, with HOAs that keep common areas pristine without being overly restrictive. It's a community designed for modern families — where you can work nearby, walk to dinner, and still have your kids in some of San Diego's best schools.
+            </p>
+        </div>
+    </section>
+
+    <!-- Schools & Education Section -->
+    <section class="content-section">
+        <div class="content-wrapper">
+            <h2 class="section-title">Schools & Education</h2>
+            <p class="body-text">
+                Schools are the cornerstone of Carmel Valley's appeal, and it's not hard to see why families prioritize this neighborhood. The area is served by the Del Mar Union School District and San Dieguito Union High School District, both consistently ranked among California's top school systems. Multiple elementary schools hold perfect 10/10 GreatSchools ratings, including Carmel Creek Elementary and Pacific Sky School, while Carmel Valley Middle School is one of the few California middle schools to achieve a 10/10 rating. These aren't just numbers — they reflect dedicated teachers, involved parents, and a community that invests heavily in educational excellence.
+            </p>
+            <p class="body-text">
+                The impact on real estate cannot be overstated. Homes within Carmel Valley's top school boundaries command significant premiums and sell faster than comparable properties outside these zones. Many families specifically relocate to San Diego for Carmel Valley's schools, creating consistent demand regardless of market conditions. The neighborhood's high percentage of families with school-age children means you'll find robust PTAs, well-funded programs, and a culture that celebrates academic achievement. For parents researching neighborhoods, Carmel Valley's school ratings often become the deciding factor.
+            </p>
+        </div>
+    </section>
+
+    <!-- Getting Around Section -->
+    <section class="content-section">
+        <div class="content-wrapper">
+            <h2 class="section-title">Getting Around</h2>
+            <p class="body-text">
+                Carmel Valley's location is one of its greatest assets. State Route 56 runs directly through the neighborhood, providing quick east-west access between Interstate 5 and Interstate 15. This makes your commute remarkably flexible — downtown San Diego is about 18 miles south via I-5 (typically 25-30 minutes), while inland communities like Poway and Rancho Bernardo are easily accessible via I-15. The nearby employment hubs of Sorrento Valley and University City are just 10-15 minutes away, which is why so many tech and biotech professionals choose to live here.
+            </p>
+            <p class="body-text">
+                While Carmel Valley is car-dependent by design (Walk Score of 37), the neighborhood's layout makes driving pleasant rather than stressful. Wide boulevards like Del Mar Heights Road and Carmel Valley Road are well-maintained and rarely congested outside of peak hours. San Diego International Airport is about 20 minutes away, and you're positioned perfectly for weekend getaways — whether that's north to Orange County, east to the mountains, or south to Baja California. For families who value both suburban tranquility and easy access to everything San Diego offers, Carmel Valley's location is ideal.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section (2-Column) -->
+    <section class="contact-section">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h2>Ready to Find Your Carmel Valley Home?</h2>
+                <p>
+                    As a 6-year San Diego real estate veteran, I specialize in helping families find their perfect home in Carmel Valley's competitive market. Whether you're relocating for the schools or upgrading to a larger home, I'll guide you through every step.
+                </p>
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-method-text">
+                            <strong>Call or Text</strong>
+                            (619) 555-0100
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-method-text">
+                            <strong>Email</strong>
+                            rusty@rauhomegroup.com
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-method-text">
+                            <strong>Serving</strong>
+                            All of San Diego County
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h3>Get Your Free Market Analysis</h3>
+                <form action="/submit-contact" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Tell Me About Your Goals</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Rau Home Group - Carmel Valley Real Estate",
+        "image": "https://rauhomegroup.com/assets/images/neighborhoods/carmel-valley-hero.jpg",
+        "description": "Carmel Valley San Diego real estate expert. Master-planned family community with top schools, modern amenities, beach access. Median price $1.37M.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Carmel Valley",
+            "addressRegion": "CA",
+            "postalCode": "92130",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "32.9338",
+            "longitude": "-117.2276"
+        },
+        "url": "https://rauhomegroup.com/neighborhoods/carmel-valley.html",
+        "priceRange": "$$$$",
+        "areaServed": "Carmel Valley, San Diego, California"
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scripps Ranch Real Estate & Homes for Sale | San Diego | Rau Home Group</title>
+    <meta name="description" content="Discover Scripps Ranch San Diego - master-planned community with excellent schools, safe neighborhoods, and family-friendly lifestyle. Median home price $1.4M. Expert local real estate guidance from Rusty Rau.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+        }
+
+        .hero-neighborhood {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../assets/images/neighborhoods/scripps-ranch-hero.jpg') center/cover;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero-content p {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+
+        .stats-banner {
+            background: #1a1a1a;
+            padding: 4rem 0;
+        }
+
+        .stats-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            color: white;
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #d4af37;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #ccc;
+        }
+
+        .content-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 7rem 1.5rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 2.5rem;
+            color: #2c3e50;
+            text-align: left;
+        }
+
+        .text-block {
+            max-width: 1000px;
+            margin: 0 auto 3rem auto;
+        }
+
+        .text-block p {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            margin-bottom: 1.5rem;
+            color: #4a4a4a;
+        }
+
+        .intro-text {
+            font-size: 1.35rem !important;
+            line-height: 1.8;
+            color: #2c3e50;
+            font-weight: 400;
+        }
+
+        .amenities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem auto;
+            max-width: 1000px;
+        }
+
+        .amenity-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .amenity-icon {
+            width: 32px;
+            height: 32px;
+            background: #d4af37;
+            border-radius: 50%;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .amenity-text {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #4a4a4a;
+        }
+
+        .contact-section {
+            background: #f8f9fa;
+            padding: 7rem 0;
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contact-info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+        }
+
+        .contact-info p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            color: #4a4a4a;
+        }
+
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .contact-icon {
+            width: 56px;
+            height: 56px;
+            background: #d4af37;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .contact-method-text {
+            font-size: 1.1rem;
+            color: #2c3e50;
+        }
+
+        .contact-method-text a {
+            color: #d4af37;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background: #d4af37;
+            color: white;
+            padding: 1rem 3rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: #c09b2f;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .stats-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .content-section {
+                padding: 4rem 1.5rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .amenities-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero-neighborhood">
+        <div class="hero-content">
+            <h1>Scripps Ranch, San Diego</h1>
+            <p>Master-Planned Excellence in the Heart of San Diego</p>
+        </div>
+    </div>
+
+    <!-- Stats Banner -->
+    <div class="stats-banner">
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-number">$1.4M</div>
+                <div class="stat-label">Median Home Price</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">9/10</div>
+                <div class="stat-label">School Rating</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">30,000</div>
+                <div class="stat-label">Population</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="content-section">
+        <h2 class="section-title">About Scripps Ranch</h2>
+        <div class="text-block">
+            <p class="intro-text">Scripps Ranch is one of San Diego's most sought-after master-planned communities, offering the perfect blend of suburban tranquility, excellent schools, and modern convenience. Developed in the 1970s through 1990s, this carefully designed neighborhood sits in the northeast corner of San Diego, just north of the iconic Lake Miramar and about 20 miles from downtown.</p>
+            
+            <p>What sets Scripps Ranch apart is its commitment to quality of life. Wide, eucalyptus-lined streets wind through neighborhoods of well-maintained homes, while an extensive network of parks, trails, and green spaces gives residents easy access to outdoor recreation. The community was intentionally designed with families in mind, and that vision continues to attract homebuyers who value top-rated schools, safe streets, and a strong sense of community.</p>
+            
+            <p>Scripps Ranch residents enjoy a suburban lifestyle without sacrificing convenience. The neighborhood offers excellent shopping and dining options along Scripps Poway Parkway, while major employment centers in Sorrento Valley, University City, and downtown San Diego are all within easy reach. With its combination of family-friendly amenities, highly-rated schools, and consistent property values, Scripps Ranch has earned its reputation as one of San Diego's premier residential communities.</p>
+        </div>
+    </div>
+
+    <!-- Lifestyle & Amenities Section -->
+    <div class="content-section" style="background: #f8f9fa; padding-top: 7rem; padding-bottom: 7rem;">
+        <h2 class="section-title">Lifestyle & Amenities</h2>
+        
+        <div class="amenities-grid">
+            <div class="amenity-item">
+                <div class="amenity-icon">✓</div>
+                <div class="amenity-text"><strong>Lake Miramar Recreation:</strong> 162-acre reservoir perfect for hiking, fishing, and boating with a scenic 4.8-mile loop trail</div>
+            </div>
+            <div class="amenity-item">
+                <div class="amenity-icon">✓</div>
+                <div class="amenity-text"><strong>Scripps Ranch Community Park:</strong> One of San Diego's largest community parks with sports fields, playgrounds, and recreational facilities</div>
+            </div>
+            <div class="amenity-item">
+                <div class="amenity-icon">✓</div>
+                <div class="amenity-text"><strong>Scripps Ranch Marketplace:</strong> Convenient shopping center with major retailers, dining, and essential services all within the community</div>
+            </div>
+            <div class="amenity-item">
+                <div class="amenity-icon">✓</div>
+                <div class="amenity-text"><strong>Extensive Trail System:</strong> Miles of interconnected walking and biking trails throughout the neighborhood for active lifestyles</div>
+            </div>
+            <div class="amenity-item">
+                <div class="amenity-icon">✓</div>
+                <div class="amenity-text"><strong>Family-Friendly Community:</strong> Active civic association, neighborhood events, and a strong sense of community engagement</div>
+            </div>
+            <div class="amenity-item">
+                <div class="amenity-icon">✓</div>
+                <div class="amenity-text"><strong>Safe, Well-Maintained:</strong> Low crime rates, manicured landscapes, and pride of ownership throughout the community</div>
+            </div>
+        </div>
+
+        <div class="text-block">
+            <p>Scripps Ranch offers the quintessential Southern California lifestyle with a distinctly family-oriented vibe. The community is known for its well-maintained streets lined with mature eucalyptus trees, creating a peaceful, suburban atmosphere that feels worlds away from urban bustle while remaining surprisingly close to everything San Diego has to offer. Residents take pride in their neighborhood, and it shows in the immaculate landscaping, well-kept homes, and active community engagement.</p>
+            
+            <p>Lake Miramar serves as the community's crown jewel for outdoor recreation. The 4.8-mile paved loop around the lake is a favorite spot for walkers, runners, and cyclists, offering stunning views and excellent birdwatching opportunities. The lake itself is stocked with fish and allows boats with electric motors, making it a popular weekend destination for families. Throughout Scripps Ranch, you'll find numerous neighborhood parks, tot lots, and green spaces where kids play and neighbors gather.</p>
+            
+            <p>Dining and shopping options are conveniently located within the community at Scripps Ranch Marketplace, featuring everything from Sammy's Woodfired Pizza to national chains and local favorites. While the neighborhood maintains a suburban feel, residents appreciate having everyday conveniences close to home, reducing the need for long drives. The community also hosts regular events throughout the year, from farmers markets to holiday celebrations, fostering the strong sense of connection that makes Scripps Ranch such a desirable place to call home.</p>
+        </div>
+    </div>
+
+    <!-- Schools & Education Section -->
+    <div class="content-section">
+        <h2 class="section-title">Schools & Education</h2>
+        <div class="text-block">
+            <p>Education is one of Scripps Ranch's biggest selling points, and it's a primary reason families choose this community. The neighborhood is served by the San Diego Unified School District and is home to several highly-rated schools that consistently rank among the best in the city. Scripps Ranch High School is particularly noteworthy, with an impressive 84.6% of students scoring proficient or better in English Language Arts and a remarkable 66% AP participation rate. The school receives an A+ rating and maintains a strong college preparatory curriculum with excellent athletics and extracurricular programs.</p>
+            
+            <p>At the elementary level, families have access to several top-rated schools including Ellen Browning Scripps Elementary, Dingeman Elementary, Jerabek Elementary, and Miramar Ranch Elementary. Marshall Middle School serves the area with strong STEM programs and a supportive learning environment. All of these schools benefit from active parent involvement, well-funded programs, and dedicated teaching staff. The emphasis on education extends beyond test scores—these schools foster well-rounded development through arts, athletics, and community service opportunities.</p>
+            
+            <p>The quality of Scripps Ranch schools directly impacts property values, with homes within the attendance boundaries commanding a premium over comparable properties in other areas. Many families specifically relocate to Scripps Ranch for the educational opportunities, creating a community of engaged, education-focused residents. The combination of excellent public schools, safe neighborhoods, and strong community support makes Scripps Ranch one of the best places in San Diego to raise children and invest in real estate.</p>
+        </div>
+    </div>
+
+    <!-- Getting Around Section -->
+    <div class="content-section" style="background: #f8f9fa; padding-top: 7rem; padding-bottom: 7rem;">
+        <h2 class="section-title">Getting Around</h2>
+        <div class="text-block">
+            <p>Scripps Ranch offers excellent connectivity to major San Diego employment centers and attractions while maintaining its peaceful residential character. The community sits just off Interstate 15, providing quick access north to Rancho Bernardo and Escondido or south to downtown San Diego (approximately 20 miles, 25-30 minutes in normal traffic). State Route 52 runs along the southern edge of the neighborhood, offering an efficient east-west connection to Mission Valley, La Jolla, and coastal communities. For residents working in San Diego's thriving biotech and tech sectors, Sorrento Valley is just 10 minutes away, while University City and UTC are equally accessible.</p>
+            
+            <p>While Scripps Ranch is primarily a car-dependent community by design, its central location and freeway access make commuting manageable. San Diego International Airport is about 20 miles away (30 minutes without traffic), making business travel convenient. Many residents appreciate the reverse commute advantage—while much of San Diego drives toward the coast in the morning, Scripps Ranch residents heading to Sorrento Valley, UTC, or inland business parks often enjoy lighter traffic. The neighborhood's master-planned layout also makes internal navigation easy, with logical street patterns and multiple access points that prevent bottlenecks during rush hours.</p>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Ready to Explore Scripps Ranch?</h2>
+                <p>As a 6-year San Diego real estate veteran and Scripps Ranch neighborhood expert, I understand what makes this community special. Whether you're a family seeking top-rated schools, a professional wanting an easy commute, or an investor looking for stable appreciation, I'll help you find the perfect home in Scripps Ranch.</p>
+                <p>Let's discuss your goals and explore what Scripps Ranch has to offer. I'll provide insider knowledge on the best streets, current market conditions, and upcoming listings before they hit the market.</p>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-method-text">
+                            Call or text:<br>
+                            <a href="tel:+1234567890">(858) 123-4567</a>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-method-text">
+                            Email:<br>
+                            <a href="mailto:rusty@rauhomegroup.com">rusty@rauhomegroup.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">🏠</div>
+                        <div class="contact-method-text">
+                            Browse current listings:<br>
+                            <a href="../listings.html">View Available Homes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required placeholder="Tell me about your Scripps Ranch home search..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Rau Home Group - Scripps Ranch Real Estate",
+        "image": "https://rauhomegroup.com/assets/images/neighborhoods/scripps-ranch-hero.jpg",
+        "description": "Scripps Ranch San Diego real estate expert. Master-planned community with top schools, family-friendly lifestyle. Median price $1.4M.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Scripps Ranch",
+            "addressRegion": "CA",
+            "postalCode": "92131",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "32.9081",
+            "longitude": "-117.1090"
+        },
+        "url": "https://rauhomegroup.com/neighborhoods/scripps-ranch.html",
+        "priceRange": "$$$",
+        "areaServed": "Scripps Ranch, San Diego, California"
+    }
+    </script>
+</body>
+</html>

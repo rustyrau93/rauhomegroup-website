@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Point Loma Real Estate & Homes for Sale | San Diego | Rau Home Group</title>
+    <meta name="description" content="Discover Point Loma San Diego - historic peninsula with stunning sunsets, beaches, and Liberty Station arts district. Median home price $1.75M. Expert local real estate guidance from Rusty Rau.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .hero-neighborhood {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../assets/images/neighborhoods/point-loma-hero.jpg') center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .hero-neighborhood h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        .hero-neighborhood p {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+        .neighborhood-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 7rem 1.5rem;
+        }
+        .intro-text {
+            font-size: 1.35rem;
+            line-height: 1.9;
+            color: #2C3E50;
+            margin-bottom: 3rem;
+        }
+        .section {
+            margin-bottom: 3rem;
+        }
+        .section h2 {
+            color: #2C3E50;
+            font-size: 2rem;
+            margin-bottom: 2.5rem;
+            padding-bottom: 0.5rem;
+        }
+        .section p, .section li {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+        .stats-banner {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            margin: 3rem 0;
+            padding: 3rem 0;
+        }
+        .stat-card {
+            background: linear-gradient(135deg, #D4AF37 0%, #C5A028 100%);
+            padding: 2.5rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+            transition: transform 0.3s ease;
+        }
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+        .stat-card h3 {
+            color: white;
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+        .stat-card p {
+            color: white;
+            font-size: 1.1rem;
+            margin: 0;
+            font-weight: 500;
+        }
+        .lifestyle-grid {
+            display: grid;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .lifestyle-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+        }
+        .bullet-icon {
+            min-width: 32px;
+            width: 32px;
+            height: 32px;
+            background: #D4AF37;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0.3rem;
+        }
+        .bullet-icon::after {
+            content: "✓";
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .lifestyle-content h3 {
+            color: #2C3E50;
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+        .lifestyle-content p {
+            margin: 0;
+        }
+        .schools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .school-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 4px solid #D4AF37;
+        }
+        .school-card h4 {
+            color: #2C3E50;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+        .school-rating {
+            color: #D4AF37;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        .commute-list {
+            list-style: none;
+            padding: 0;
+        }
+        .commute-list li {
+            padding: 1rem 0;
+            border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .commute-list li:last-child {
+            border-bottom: none;
+        }
+        .commute-location {
+            font-weight: 600;
+            color: #2C3E50;
+        }
+        .commute-time {
+            color: #D4AF37;
+            font-weight: 600;
+        }
+        .contact-section {
+            background: #f8f9fa;
+            padding: 4rem 3rem;
+            border-radius: 12px;
+            margin-top: 4rem;
+        }
+        .contact-section h2 {
+            color: #2C3E50;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        .contact-icon {
+            width: 56px;
+            height: 56px;
+            background: #D4AF37;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        .contact-details h3 {
+            color: #2C3E50;
+            font-size: 1.2rem;
+            margin-bottom: 0.3rem;
+        }
+        .contact-details p {
+            margin: 0;
+            font-size: 1.1rem;
+        }
+        .contact-details a {
+            color: #D4AF37;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .contact-form {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #2C3E50;
+            font-weight: 600;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        .submit-btn {
+            background: #D4AF37;
+            color: white;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s ease;
+        }
+        .submit-btn:hover {
+            background: #C5A028;
+        }
+        @media (max-width: 768px) {
+            .hero-neighborhood h1 {
+                font-size: 2rem;
+            }
+            .neighborhood-content {
+                padding: 3rem 1.5rem;
+            }
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero-neighborhood">
+        <div>
+            <h1>Point Loma, San Diego</h1>
+            <p>Historic Peninsula Living - Where the Pacific Meets San Diego Bay</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="neighborhood-content">
+        
+        <!-- Introduction -->
+        <div class="intro-text">
+            <p>Point Loma is where San Diego's story begins. This historic peninsula, stretching into the Pacific Ocean between San Diego Bay and the open sea, offers a unique blend of maritime heritage, natural beauty, and modern coastal living. From dramatic sunset-painted cliffs to the vibrant Liberty Station arts district, Point Loma captures the essence of Southern California's laid-back sophistication.</p>
+        </div>
+
+        <!-- Stats Banner -->
+        <div class="stats-banner">
+            <div class="stat-card">
+                <h3>$1.75M</h3>
+                <p>Median Home Price</p>
+            </div>
+            <div class="stat-card">
+                <h3>$1,040</h3>
+                <p>Price per Square Foot</p>
+            </div>
+            <div class="stat-card">
+                <h3>45 Days</h3>
+                <p>Average Days on Market</p>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <section class="section">
+            <h2>About Point Loma</h2>
+            <p>Point Loma is San Diego's original gateway, where Spanish explorer Juan Rodriguez Cabrillo first landed on the West Coast in 1542. Today, this storied peninsula balances its military heritage with thriving residential neighborhoods, world-class beaches, and one of San Diego's most successful adaptive reuse projects—Liberty Station.</p>
+            
+            <p>The community stretches along a narrow peninsula separating San Diego Bay from the Pacific Ocean, creating two distinct coastlines. The western shore features dramatic sandstone cliffs at Sunset Cliffs Natural Park, while the eastern bay side offers protected waters perfect for sailing, kayaking, and waterfront dining. Point Loma Nazarene University crowns the hilltop, providing stunning 360-degree views of the city, ocean, and bay.</p>
+            
+            <p>Point Loma attracts a diverse demographic: active military families stationed at nearby Naval Base Point Loma, maritime professionals working in the commercial fishing and boating industries, young professionals seeking coastal living near downtown, artists and creatives drawn to Liberty Station's arts district, and established families who value the area's excellent schools and neighborhood feel. The community maintains a relaxed, unpretentious vibe while still offering sophisticated dining, shopping, and cultural amenities.</p>
+        </section>
+
+        <!-- Lifestyle Section -->
+        <section class="section">
+            <h2>Point Loma Lifestyle</h2>
+            <div class="lifestyle-grid">
+                <div class="lifestyle-item">
+                    <div class="bullet-icon"></div>
+                    <div class="lifestyle-content">
+                        <h3>🌅 Sunset Cliffs Natural Park</h3>
+                        <p>Point Loma's crown jewel: 68 acres of dramatic sandstone cliffs offering world-famous sunsets, tide pools, sea caves, and prime whale-watching December through April. This is where locals come to decompress and visitors fall in love with San Diego.</p>
+                    </div>
+                </div>
+                <div class="lifestyle-item">
+                    <div class="bullet-icon"></div>
+                    <div class="lifestyle-content">
+                        <h3>🏛️ Liberty Station Arts & Culture</h3>
+                        <p>The former Naval Training Center has transformed into San Diego's premier arts district with 100+ tenants including galleries, studios, restaurants, breweries, and the beloved Liberty Public Market featuring 30+ local food vendors. First Friday art walks draw crowds monthly.</p>
+                    </div>
+                </div>
+                <div class="lifestyle-item">
+                    <div class="bullet-icon"></div>
+                    <div class="lifestyle-content">
+                        <h3>⛵ Shelter Island Marina Living</h3>
+                        <p>This man-made peninsula jutting into San Diego Bay offers protected waters for sailing, fishing piers, sandy beaches with fire pits, and waterfront restaurants like Point Loma Seafoods and the iconic tiki-themed Bali Hai. Boat owners can secure slips at several full-service marinas.</p>
+                    </div>
+                </div>
+                <div class="lifestyle-item">
+                    <div class="bullet-icon"></div>
+                    <div class="lifestyle-content">
+                        <h3>🏛️ Cabrillo National Monument</h3>
+                        <p>At the peninsula's southern tip sits this historic site commemorating the first European landing on the West Coast. The old Point Loma Lighthouse, perched 462 feet above sea level, offers panoramic views while the tide pools below attract 350,000+ visitors annually.</p>
+                    </div>
+                </div>
+                <div class="lifestyle-item">
+                    <div class="bullet-icon"></div>
+                    <div class="lifestyle-content">
+                        <h3>🍺 Craft Beer & Culinary Scene</h3>
+                        <p>Stone Brewing's massive World Bistro & Gardens anchors Liberty Station's dining scene, while neighborhood gems like Stone Tacos & Beer, The Godfather, and Point Loma Seafoods keep locals well-fed. The weekly Ocean Beach Farmers Market is just minutes away.</p>
+                    </div>
+                </div>
+                <div class="lifestyle-item">
+                    <div class="bullet-icon"></div>
+                    <div class="lifestyle-content">
+                        <h3>🏃‍♀️ Active Outdoor Lifestyle</h3>
+                        <p>Coastal walking trails line both shores of the peninsula, Liberty Station's expansive NTC Park offers 46 acres of green space, and the bayfront path is perfect for morning runs with downtown skyline views. Paddle boarders and kayakers launch from Shelter Island's calm waters.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schools Section -->
+        <section class="section">
+            <h2>Schools & Education</h2>
+            <p>Point Loma families benefit from a strong mix of highly-rated public schools in the San Diego Unified School District plus excellent private options. The area's proximity to Point Loma Nazarene University also provides college prep opportunities and community enrichment programs.</p>
+            
+            <div class="schools-grid">
+                <div class="school-card">
+                    <h4>Loma Portal Elementary</h4>
+                    <div class="school-rating">★ 7/10 GreatSchools Rating</div>
+                    <p>K-4 public school known for strong academics, involved parent community, and Spanish immersion program. Highly sought-after by families moving to Point Loma.</p>
+                </div>
+                <div class="school-card">
+                    <h4>Dana Middle School</h4>
+                    <div class="school-rating">★ Top-Rated Middle School</div>
+                    <p>Grades 6-8 serving Point Loma and Ocean Beach families. Strong STEM programs, active arts and music departments, and competitive athletics make this a standout public option.</p>
+                </div>
+                <div class="school-card">
+                    <h4>Point Loma High School</h4>
+                    <div class="school-rating">★ 8/10 GreatSchools Rating</div>
+                    <p>Grades 9-12 with comprehensive college prep curriculum, award-winning performing arts program, competitive athletics, and strong community pride. The Pointers have a loyal following.</p>
+                </div>
+                <div class="school-card">
+                    <h4>High Tech Schools Network</h4>
+                    <div class="school-rating">★ Charter Excellence</div>
+                    <p>High Tech Middle and High Tech High (Point Loma campus) offer project-based learning with exceptional college acceptance rates. Competitive lottery admission draws families across the city.</p>
+                </div>
+                <div class="school-card">
+                    <h4>Private School Options</h4>
+                    <div class="school-rating">Multiple Choices</div>
+                    <p>The Rock Academy (K-12 Christian), Sacred Heart Academy (K-8 Catholic), and various Montessori programs serve families seeking faith-based or alternative education models.</p>
+                </div>
+                <div class="school-card">
+                    <h4>Point Loma Nazarene University</h4>
+                    <div class="school-rating">Higher Education</div>
+                    <p>Private Christian liberal arts university with 3,500+ students, stunning hilltop campus, and strong programs in business, nursing, and marine biology. Community members enjoy campus events and athletic games.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Commute & Location Section -->
+        <section class="section">
+            <h2>Commute & Location</h2>
+            <p>Point Loma offers one of San Diego's most convenient locations—perched between downtown and the airport with quick access to major employment centers. Military personnel stationed at Naval Base Point Loma enjoy sub-10-minute commutes, while downtown workers typically arrive in under 15 minutes.</p>
+            
+            <ul class="commute-list">
+                <li>
+                    <span class="commute-location">📍 Downtown San Diego</span>
+                    <span class="commute-time">10-15 minutes</span>
+                </li>
+                <li>
+                    <span class="commute-location">✈️ San Diego International Airport</span>
+                    <span class="commute-time">8-12 minutes</span>
+                </li>
+                <li>
+                    <span class="commute-location">⚓ Naval Base Point Loma</span>
+                    <span class="commute-time">5-10 minutes</span>
+                </li>
+                <li>
+                    <span class="commute-location">🏢 Little Italy / Waterfront</span>
+                    <span class="commute-time">10 minutes</span>
+                </li>
+                <li>
+                    <span class="commute-location">🏖️ Ocean Beach</span>
+                    <span class="commute-time">5-8 minutes</span>
+                </li>
+                <li>
+                    <span class="commute-location">🌊 Mission Bay / Pacific Beach</span>
+                    <span class="commute-time">15-20 minutes</span>
+                </li>
+                <li>
+                    <span class="commute-location">🏝️ Coronado (via Bridge)</span>
+                    <span class="commute-time">12 minutes</span>
+                </li>
+                <li>
+                    <span class="commute-location">🏫 UC San Diego</span>
+                    <span class="commute-time">20-25 minutes</span>
+                </li>
+            </ul>
+
+            <p style="margin-top: 2rem;"><strong>Highway Access:</strong> Point Loma connects to I-5 and I-8 via Rosecrans Street and Sports Arena Boulevard, providing easy access to north and east county destinations. The peninsula's geography means you're always minutes from the water—whether bay or ocean.</p>
+
+            <p><strong>Transit Options:</strong> MTS bus routes serve Point Loma with connections to downtown, Old Town Transit Center (with Trolley and Coaster access), and surrounding neighborhoods. Many residents bike to Liberty Station or walk to neighborhood amenities. The airport's proximity makes business travel exceptionally convenient.</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <h2>Ready to Call Point Loma Home?</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <p style="font-size: 1.15rem; line-height: 1.9; margin-bottom: 2rem;">As a 6-year San Diego real estate veteran, I know Point Loma inside and out—from the best pockets for families to which Liberty Station condos offer the best value. Whether you're drawn to Sunset Cliffs' dramatic coastline or Liberty Station's walkable urban lifestyle, I'll help you find your perfect Point Loma home.</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h3>Call or Text</h3>
+                            <p><a href="tel:+1234567890">(123) 456-7890</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p><a href="mailto:rusty@rauhomegroup.com">rusty@rauhomegroup.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">🏠</div>
+                        <div class="contact-details">
+                            <h3>Rau Home Group</h3>
+                            <p>Your Point Loma Real Estate Expert</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone</label>
+                            <input type="tel" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea name="message" required>I'm interested in Point Loma real estate...</textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Get Started</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Rau Home Group - Point Loma Real Estate",
+        "image": "https://rauhomegroup.com/assets/images/neighborhoods/point-loma-hero.jpg",
+        "description": "Point Loma San Diego real estate expert. Historic peninsula homes with sunset views and Liberty Station lifestyle. Median price $1.75M. Top schools and beaches.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Point Loma",
+            "addressRegion": "CA",
+            "postalCode": "92106",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "32.7157",
+            "longitude": "-117.2426"
+        },
+        "url": "https://rauhomegroup.com/neighborhoods/point-loma.html",
+        "priceRange": "$$$$",
+        "areaServed": "Point Loma, San Diego, California"
+    }
+    </script>
+</body>
+</html>

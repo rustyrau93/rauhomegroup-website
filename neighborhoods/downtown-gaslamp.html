@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downtown San Diego & Gaslamp Quarter Real Estate | Rau Home Group</title>
+    <meta name="description" content="Discover Downtown San Diego and Gaslamp Quarter - urban luxury living with walkable dining, nightlife, waterfront access, and high-rise condos. Median condo price $650K. Expert guidance from Rusty Rau.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.9;
+            color: #2c3e50;
+            background: white;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                        url('https://images.unsplash.com/photo-1580749232528-e1e3079c8e8e?w=1600') center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+        }
+
+        .hero-content .subtitle {
+            font-size: 1.75rem;
+            font-weight: 300;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 7rem 2rem;
+        }
+
+        .intro-section {
+            max-width: 1000px;
+            margin: 0 auto 5rem;
+            font-size: 1.35rem;
+            line-height: 1.9;
+            color: #555;
+        }
+
+        .intro-section p {
+            margin-bottom: 1.8rem;
+        }
+
+        .stats-banner {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            margin: 5rem 0;
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 12px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #d4af37;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            color: #666;
+            font-weight: 500;
+        }
+
+        .content-section {
+            max-width: 1000px;
+            margin: 0 auto 5rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 2.5rem;
+            text-align: left;
+        }
+
+        .content-section p {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #555;
+            margin-bottom: 1.8rem;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+        }
+
+        .feature-icon {
+            width: 32px;
+            height: 32px;
+            background: #d4af37;
+            border-radius: 50%;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0.25rem;
+        }
+
+        .feature-icon::after {
+            content: '✓';
+            color: white;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .feature-text {
+            font-size: 1.15rem;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            margin: 7rem -2rem 0;
+            padding: 7rem 2rem;
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .contact-info {
+            color: white;
+        }
+
+        .contact-info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+
+        .contact-info p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .contact-icon {
+            width: 56px;
+            height: 56px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .contact-item-text {
+            font-size: 1.15rem;
+        }
+
+        .contact-item-text a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .contact-item-text a:hover {
+            color: #d4af37;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 3rem;
+            border-radius: 12px;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #e1e8ed;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #d4af37;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-btn {
+            background: #d4af37;
+            color: white;
+            border: none;
+            padding: 1.25rem 3rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: #c4a137;
+        }
+
+        @media (max-width: 968px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-content .subtitle {
+                font-size: 1.25rem;
+            }
+
+            .container {
+                padding: 4rem 1.5rem;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .stats-banner {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>Downtown San Diego & Gaslamp Quarter</h1>
+            <p class="subtitle">Urban Living at Its Finest - Where City Energy Meets Coastal Charm</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        
+        <!-- Intro Section -->
+        <div class="intro-section">
+            <p>Downtown San Diego is the vibrant heart of America's Finest City, combining big-city sophistication with San Diego's signature laid-back coastal vibe. At its center lies the historic Gaslamp Quarter, a 16.5-block entertainment district that pulses with energy day and night. This is where urban professionals, empty nesters, and lifestyle seekers come to live the walkable city dream just steps from the waterfront.</p>
+            
+            <p>Living downtown means high-rise luxury condos with skyline and bay views, a thriving restaurant and nightlife scene, Petco Park baseball games, the Convention Center, and the waterfront Embarcadero. It's San Diego's most walkable neighborhood, with everything from Whole Foods to world-class museums within blocks of your front door.</p>
+        </div>
+
+        <!-- Stats Banner -->
+        <div class="stats-banner">
+            <div class="stat-item">
+                <div class="stat-number">$650K</div>
+                <div class="stat-label">Median Condo Price</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">98</div>
+                <div class="stat-label">Walk Score</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">45K</div>
+                <div class="stat-label">Residents</div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="content-section">
+            <h2 class="section-title">About Downtown & Gaslamp Quarter</h2>
+            <p>Downtown San Diego is Southern California's most successful urban revitalization story. What was once a sleepy business district has transformed into a thriving 24/7 neighborhood where people actually live, work, and play. The area encompasses several distinct districts: the historic Gaslamp Quarter with its Victorian-era architecture and nightlife, the Marina District with waterfront high-rises, East Village centered around Petco Park, Little Italy's culinary scene, and the Core business district.</p>
+            
+            <p>The Gaslamp Quarter is downtown's crown jewel, a 16.5-block National Historic District filled with restored Victorian buildings housing over 200 restaurants, bars, and entertainment venues. Gas lamps still line the streets, creating an atmospheric blend of old and new. This is where San Diego comes to celebrate, dine, and experience nightlife, yet it's also home to luxury residential towers where residents enjoy the energy from their balconies above.</p>
+            
+            <p>Who lives here? Downtown attracts young professionals in tech, finance, and biotech who want short commutes and walkable urban amenities. Empty nesters and retirees downsize from suburban homes to enjoy lock-and-leave condo living near arts and culture. Military personnel stationed at Naval Base San Diego appreciate the proximity. And increasingly, remote workers choose downtown for its lifestyle and connectivity to both the airport and Mexico.</p>
+        </div>
+
+        <!-- Lifestyle Section -->
+        <div class="content-section">
+            <h2 class="section-title">Lifestyle & Amenities</h2>
+            
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="feature-icon"></div>
+                    <div class="feature-text">Walk Score of 98 - everything within blocks</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"></div>
+                    <div class="feature-text">200+ restaurants and bars in Gaslamp Quarter</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"></div>
+                    <div class="feature-text">Petco Park, home of the San Diego Padres</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"></div>
+                    <div class="feature-text">Waterfront Embarcadero with bay views</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"></div>
+                    <div class="feature-text">Balboa Theatre, Horton Grand Theatre, live music venues</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"></div>
+                    <div class="feature-text">Ferry to Coronado, harbor cruises, USS Midway Museum</div>
+                </div>
+            </div>
+            
+            <p>Downtown San Diego delivers true urban living where you can ditch your car for days at a time. The Gaslamp Quarter alone offers hundreds of dining options, from craft cocktail lounges to farm-to-table restaurants to late-night tacos. Notable spots include Searsucker for modern American, Greystone Prime Steakhouse, Café Sevilla for Spanish tapas, and The Nolen rooftop bar with sweeping city views. Little Italy adds Italian cuisine and the weekly Mercato farmers market, while East Village brings craft breweries and casual eateries around Petco Park.</p>
+            
+            <p>Entertainment options are endless. Catch a Padres game at Petco Park, see Broadway shows at the Civic Theatre, explore contemporary art at the Museum of Contemporary Art, or tour the historic USS Midway aircraft carrier museum. The waterfront Embarcadero offers harbor cruises, Seaport Village shops, and the iconic Star of India tall ship. Nightlife ranges from upscale rooftop bars to dive bars to dance clubs, making downtown San Diego's premier going-out destination.</p>
+            
+            <p>Despite the urban density, outdoor recreation is accessible. Waterfront Park offers 12 acres of green space with fountains and bay views. Embarcadero Marina Park provides walking paths along the bay. The Bayshore Bikeway connects downtown to Coronado and beyond. And the beach communities of Pacific Beach and Ocean Beach are just a 10-15 minute drive west. For residents, downtown living means spontaneous nights out, weekend festivals, and never needing to worry about parking or designated drivers.</p>
+        </div>
+
+        <!-- Schools Section -->
+        <div class="content-section">
+            <h2 class="section-title">Schools & Education</h2>
+            <p>Downtown San Diego is not traditionally a family neighborhood due to limited public school options directly in the core area. However, families who do live downtown typically attend schools in adjacent neighborhoods or opt for private education. Washington Elementary School serves downtown students grades K-5 with a GreatSchools rating of 5/10. For middle and high school, students may attend schools in surrounding areas like Roosevelt Middle School or San Diego High School.</p>
+            
+            <p>Private school options within or near downtown include The Children's School (PreK-6), serving downtown families seeking progressive education, and Catholic schools like St. Joseph Cathedral School. Many downtown families choose private schools in nearby neighborhoods or utilize San Diego's open enrollment system to access higher-rated schools in other districts. For families prioritizing education, downtown living often means supplementing with after-school programs, tutoring, and enrichment activities widely available in the urban core.</p>
+            
+            <p>That said, downtown increasingly attracts young professionals who may not have children yet, as well as empty nesters whose children are grown. The proximity to higher education institutions like UC San Diego, San Diego State University, and University of San Diego makes downtown appealing for graduate students and young professionals pursuing advanced degrees. The Convention Center also hosts educational conferences and professional development opportunities year-round.</p>
+        </div>
+
+        <!-- Commute Section -->
+        <div class="content-section">
+            <h2 class="section-title">Getting Around</h2>
+            <p>Downtown San Diego offers the shortest commute times in the region for anyone working in the urban core. Major employers include financial firms, law offices, tech companies, biotech startups, the Convention Center, and the Port of San Diego. The neighborhood is also convenient for Naval Base San Diego, just a 10-minute drive across the Coronado Bridge. Commutes to other parts of San Diego are straightforward: La Jolla and UTC are 20 minutes north via I-5, and the airport is a mere 5 minutes away.</p>
+            
+            <p>Public transit is downtown's superpower. The San Diego Trolley's Blue, Orange, and Green Lines converge at multiple downtown stations, connecting residents to Old Town, Mission Valley, La Jolla (via UC San Diego), the border, and East County. MTS buses serve dozens of routes from downtown. The Coaster commuter train stops at Santa Fe Depot, linking to North County coastal cities like Solana Beach, Encinitas, and Oceanside. For travel to Coronado, the iconic ferry departs from the Embarcadero every 30 minutes. Many downtown residents bike, scooter, or simply walk to work and errands, enjoying some of the best walkability in Southern California.</p>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact-section">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Ready to Explore Downtown San Diego?</h2>
+                    <p>As a 6-year San Diego real estate veteran, I specialize in helping buyers navigate downtown's competitive condo market and sellers maximize their urban property value.</p>
+                    <p>Whether you're buying your first downtown condo or selling to upgrade, let's make it happen.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-item-text">
+                                <a href="tel:+1234567890">(123) 456-7890</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div class="contact-item-text">
+                                <a href="mailto:rusty@rauhomegroup.com">rusty@rauhomegroup.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">🏢</div>
+                            <div class="contact-item-text">
+                                Rau Home Group<br>
+                                San Diego, CA
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Rau Home Group - Downtown San Diego Real Estate",
+        "image": "https://rauhomegroup.com/assets/images/neighborhoods/downtown-hero.jpg",
+        "description": "Downtown San Diego and Gaslamp Quarter real estate expert. Urban luxury condos, high-rises, and walkable lifestyle. Median condo price $650K. Expert guidance from Rusty Rau.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "San Diego",
+            "addressRegion": "CA",
+            "postalCode": "92101",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "32.7157",
+            "longitude": "-117.1611"
+        },
+        "url": "https://rauhomegroup.com/neighborhoods/downtown-gaslamp.html",
+        "priceRange": "$$$$",
+        "areaServed": "Downtown San Diego, Gaslamp Quarter, California"
+    }
+    </script>
+</body>
+</html>

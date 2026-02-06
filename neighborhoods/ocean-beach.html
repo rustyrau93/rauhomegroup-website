@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Beach Real Estate & Homes for Sale | San Diego | Rau Home Group</title>
+    <meta name="description" content="Discover Ocean Beach San Diego - laid-back coastal living with bohemian vibes, world-class surfing, and sunset views. Median home price $1.1M. Expert local real estate guidance from Rusty Rau.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                        url('../assets/images/neighborhoods/ocean-beach-hero.jpg') center/cover;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+        
+        .hero-content p {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 7rem 2rem;
+        }
+        
+        .text-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .intro {
+            font-size: 1.35rem;
+            line-height: 1.9;
+            margin-bottom: 2.5rem;
+            color: #555;
+        }
+        
+        .stats-banner {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+            margin: 5rem auto;
+            padding: 4rem 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #d4af37;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 1rem;
+            color: #777;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .section {
+            margin-bottom: 5rem;
+        }
+        
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            font-weight: 700;
+            color: #2c3e50;
+            text-align: left;
+        }
+        
+        .section p {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            margin-bottom: 1.5rem;
+            color: #555;
+        }
+        
+        .amenities-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .amenity-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+        
+        .amenity-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #d4af37;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .amenity-text {
+            font-size: 1.15rem;
+            line-height: 1.7;
+            color: #555;
+        }
+        
+        .contact-section {
+            background: #f8f9fa;
+            padding: 5rem 0;
+            margin-top: 5rem;
+        }
+        
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+        }
+        
+        .contact-info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            color: #2c3e50;
+        }
+        
+        .contact-info p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 2rem;
+        }
+        
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        
+        .contact-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: #d4af37;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 1.5rem;
+        }
+        
+        .contact-method a {
+            color: #2c3e50;
+            text-decoration: none;
+            font-size: 1.15rem;
+            font-weight: 500;
+        }
+        
+        .contact-method a:hover {
+            color: #d4af37;
+        }
+        
+        .contact-form {
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #2c3e50;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+        
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            background: #d4af37;
+            color: white;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s;
+        }
+        
+        .submit-btn:hover {
+            background: #c5a028;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            
+            .stats-banner {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .amenities-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Ocean Beach, San Diego</h1>
+            <p>Where Bohemian Spirit Meets the Pacific</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="text-container">
+            <!-- About Section -->
+            <section class="section">
+                <p class="intro">
+                    Ocean Beach is San Diego's most authentically laid-back beach community—a place where surfers, artists, and free spirits have created a unique coastal culture that resists the polish of neighboring beach towns. Known locally as "OB," this eclectic neighborhood offers affordable beach living with personality to spare.
+                </p>
+
+                <div class="stats-banner">
+                    <div class="stat">
+                        <div class="stat-number">$1.1M</div>
+                        <div class="stat-label">Median Home Price</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">8/10</div>
+                        <div class="stat-label">School Rating</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">16,500</div>
+                        <div class="stat-label">Population</div>
+                    </div>
+                </div>
+
+                <p>
+                    Located on a sandy peninsula jutting into the Pacific about seven miles northwest of downtown San Diego, Ocean Beach has maintained its counterculture charm since the 1960s. The neighborhood's crown jewel is the historic Ocean Beach Pier, stretching 1,971 feet into the Pacific—the longest concrete pier on the West Coast. Unlike more commercialized beach communities, OB has preserved its small-town character with locally-owned businesses, vintage surf shops, and a refreshing absence of chain stores.
+                </p>
+
+                <p>
+                    The community attracts a diverse mix of long-time locals who remember when you could buy a beach cottage for $100K, young professionals drawn to the authentic beach lifestyle, surfers who never want to leave the break, artists and musicians who thrive in the creative atmosphere, and families who appreciate the tight-knit community feel. The median resident is younger than most San Diego neighborhoods, creating an energetic vibe that balances beach bum relaxation with creative hustle.
+                </p>
+
+                <p>
+                    What makes Ocean Beach truly special is its resistance to gentrification and corporate takeover. While home prices have risen significantly, the neighborhood has fought to maintain its local character through community activism and a fiercely independent spirit. You won't find Starbucks or McDonald's here—OB's commercial district along Newport Avenue is proudly lined with surf shops, vintage stores, dive bars, and locally-owned restaurants that have served the community for decades.
+                </p>
+            </section>
+
+            <!-- Lifestyle & Amenities Section -->
+            <section class="section">
+                <h2>Lifestyle & Amenities</h2>
+                
+                <div class="amenities-grid">
+                    <div class="amenity-item">
+                        <div class="amenity-icon">✓</div>
+                        <div class="amenity-text">The iconic Ocean Beach Pier and surrounding beaches perfect for surfing, fishing, and sunset watching</div>
+                    </div>
+                    <div class="amenity-item">
+                        <div class="amenity-icon">✓</div>
+                        <div class="amenity-text">Dog Beach—the original off-leash dog beach where your pup can run free in the sand and surf</div>
+                    </div>
+                    <div class="amenity-item">
+                        <div class="amenity-icon">✓</div>
+                        <div class="amenity-text">Sunset Cliffs Natural Park with dramatic coastal bluffs and world-class sunset views</div>
+                    </div>
+                    <div class="amenity-item">
+                        <div class="amenity-icon">✓</div>
+                        <div class="amenity-text">Newport Avenue's eclectic mix of vintage shops, surf stores, tattoo parlors, and local eateries</div>
+                    </div>
+                    <div class="amenity-item">
+                        <div class="amenity-icon">✓</div>
+                        <div class="amenity-text">OB Farmers Market every Wednesday with live music, local produce, and handmade crafts</div>
+                    </div>
+                    <div class="amenity-item">
+                        <div class="amenity-icon">✓</div>
+                        <div class="amenity-text">Walkable beach town layout where you can live car-free or car-light</div>
+                    </div>
+                </div>
+
+                <p>
+                    Ocean Beach pulses with an authentic beach town energy that feels more like a small coastal village than a San Diego neighborhood. The daily rhythm revolves around the ocean—morning surfers catching dawn patrol, dog owners converging at Dog Beach, pier fishermen casting for dinner, and sunset crowds gathering at Sunset Cliffs for the nightly show. Newport Avenue serves as the town's main artery, a six-block stretch where locals run into neighbors, street musicians perform, and you're never more than a few steps from a taco shop or dive bar.
+                </p>
+
+                <p>
+                    The community celebrates its quirky independence with annual traditions like the OB Street Fair & Chili Cook-Off (one of the largest single-day street fairs in California), Ocean Beach Kite Festival filling the sky with color, the OB Holiday Parade featuring "Dog Surfing Santa," and weekly Wednesday Farmers Market that transforms the main drag into a community gathering. The neighborhood's numerous dive bars, live music venues, and casual restaurants create a nightlife scene that's unpretentious and welcoming—think craft beer and fish tacos rather than bottle service and dress codes.
+                </p>
+
+                <p>
+                    What truly sets OB apart is its strong sense of community activism and local pride. Residents successfully fought to keep chain stores out, maintain local businesses, and preserve the neighborhood's character. The OB Town Council remains one of San Diego's most active community organizations, and locals genuinely care about keeping their beach town special. This isn't just a place to live—it's a community you join.
+                </p>
+            </section>
+
+            <!-- Schools & Education Section -->
+            <section class="section">
+                <h2>Schools & Education</h2>
+                
+                <p>
+                    Ocean Beach is served by the San Diego Unified School District, with Ocean Beach Elementary (K-5, GreatSchools Rating 8/10) as the neighborhood school. OB Elementary has a strong reputation for its tight-knit community feel, dedicated teachers, and active parent involvement. Many families appreciate the school's diversity and the genuine neighborhood school atmosphere where kids can walk or bike to class. For middle school, students typically attend Correia Middle School (6-8), and for high school, Point Loma High School (9-12, GreatSchools Rating 7/10), which offers strong academics and is particularly known for its International Baccalaureate program.
+                </p>
+
+                <p>
+                    While Ocean Beach doesn't have the concentration of private schools found in wealthier neighborhoods, families have access to quality private options nearby in Point Loma and beyond. The neighborhood's public schools benefit from highly engaged parent communities and strong local support. Many families are drawn to OB specifically for its diverse, inclusive school environment that reflects the community's values. Properties within the Ocean Beach Elementary boundaries see consistent demand from young families seeking both beach access and quality neighborhood schools.
+                </p>
+            </section>
+
+            <!-- Getting Around Section -->
+            <section class="section">
+                <h2>Getting Around</h2>
+                
+                <p>
+                    Ocean Beach is conveniently located about seven miles northwest of downtown San Diego, with easy access via Sunset Cliffs Boulevard and West Point Loma Boulevard connecting to Interstate 8. Commute times to downtown typically run 15-20 minutes outside rush hour, though traffic can extend this to 25-30 minutes during peak periods. The neighborhood is about 10 minutes from San Diego International Airport, making it exceptionally convenient for frequent travelers. Many residents work remotely or in nearby Point Loma employment centers, while others commute to downtown, Mission Valley, or Liberty Station.
+                </p>
+
+                <p>
+                    One of Ocean Beach's greatest advantages is its exceptional walkability and bike-friendliness. The compact peninsula layout means most daily errands—groceries, coffee, restaurants, beach—are within a 10-15 minute walk or 5-minute bike ride. Many residents embrace a car-light or even car-free lifestyle, using bikes as their primary transportation for local trips. Public transit options include MTS bus routes connecting to Old Town Transit Center, downtown, and other coastal neighborhoods. The neighborhood's laid-back pace and pedestrian-friendly streets make walking and biking not just practical but genuinely enjoyable.
+                </p>
+            </section>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Ready to Explore Ocean Beach?</h2>
+                <p>
+                    As a born-and-raised San Diego native and 6-year real estate veteran, I know Ocean Beach inside and out. Whether you're looking for a beach cottage, investment property, or your forever home by the sea, I'll help you navigate this unique market.
+                </p>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-icon">📞</div>
+                        <a href="tel:+1-XXX-XXX-XXXX">(XXX) XXX-XXXX</a>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">✉️</div>
+                        <a href="mailto:rusty@rauhomegroup.com">rusty@rauhomegroup.com</a>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">🏠</div>
+                        <a href="../listings.html">View Current Listings</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Tell me about your Ocean Beach home search..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Get In Touch</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Rau Home Group - Ocean Beach Real Estate",
+        "image": "https://rauhomegroup.com/assets/images/neighborhoods/ocean-beach-hero.jpg",
+        "description": "Ocean Beach San Diego real estate expert. Laid-back coastal homes and beach cottages. Median price $1.1M. Bohemian vibes, surf culture, and sunset views.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Ocean Beach",
+            "addressRegion": "CA",
+            "postalCode": "92107",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "32.7505",
+            "longitude": "-117.2494"
+        },
+        "url": "https://rauhomegroup.com/neighborhoods/ocean-beach.html",
+        "priceRange": "$$$",
+        "areaServed": "Ocean Beach, San Diego, California"
+    }
+    </script>
+</body>
+</html>

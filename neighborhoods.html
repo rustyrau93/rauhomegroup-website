@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore San Diego neighborhoods with Rusty Rau. Detailed guides to La Jolla, Del Mar, Encinitas, North Park, and more. Find your perfect San Diego community.">
+    <meta name="keywords" content="San Diego neighborhoods, La Jolla real estate, Del Mar homes, Encinitas living, North Park San Diego">
+    <title>San Diego Neighborhoods | Rusty Rau | San Diego Real Estate</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="luxury-effects.css">
+    
+    <!-- Smooth Scroll Library -->
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    
+    <!-- GSAP for advanced animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    
+    <style>
+        /* Neighborhood-specific styles */
+        .neighborhood-hero {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-dark) 100%);
+        }
+        
+        .neighborhoods-intro {
+            padding: var(--spacing-xl) 0;
+            background: var(--color-white);
+        }
+        
+        .region-section {
+            padding: var(--spacing-xl) 0;
+        }
+        
+        .region-section:nth-child(even) {
+            background: var(--color-off-white);
+        }
+        
+        .region-header {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .region-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--color-secondary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .region-icon i {
+            font-size: 1.5rem;
+            color: var(--color-primary);
+        }
+        
+        .neighborhood-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--spacing-md);
+        }
+        
+        .neighborhood-card {
+            background: var(--color-white);
+            border-radius: 4px;
+            overflow: hidden;
+            transition: var(--transition-normal);
+            border: 1px solid var(--color-light-gray);
+        }
+        
+        .region-section:nth-child(even) .neighborhood-card {
+            background: var(--color-white);
+        }
+        
+        .neighborhood-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--color-secondary);
+        }
+        
+        .neighborhood-image {
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .neighborhood-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .neighborhood-card:hover .neighborhood-image img {
+            transform: scale(1.1);
+        }
+        
+        .neighborhood-content {
+            padding: var(--spacing-md);
+        }
+        
+        .neighborhood-content h3 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .neighborhood-content p {
+            color: var(--color-gray);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .neighborhood-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--spacing-sm);
+            padding-top: var(--spacing-sm);
+            border-top: 1px solid var(--color-light-gray);
+        }
+        
+        .neighborhood-stat {
+            text-align: center;
+        }
+        
+        .neighborhood-stat-value {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--color-secondary);
+            display: block;
+        }
+        
+        .neighborhood-stat-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--color-gray);
+        }
+        
+        .neighborhood-highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-xs);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .highlight-tag {
+            background: rgba(201, 168, 105, 0.1);
+            color: var(--color-secondary);
+            padding: 0.3rem 0.6rem;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            border-radius: 2px;
+        }
+        
+        .map-section {
+            padding: var(--spacing-xl) 0;
+            background: var(--color-primary);
+        }
+        
+        .map-section .section-tag,
+        .map-section .section-title {
+            color: var(--color-white);
+        }
+        
+        .map-section .section-tag {
+            color: var(--color-secondary);
+        }
+        
+        .map-placeholder {
+            background: rgba(255,255,255,0.1);
+            border-radius: 4px;
+            padding: var(--spacing-xl);
+            text-align: center;
+            color: var(--color-white);
+        }
+        
+        .map-placeholder i {
+            font-size: 3rem;
+            color: var(--color-secondary);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .map-placeholder p {
+            color: rgba(255,255,255,0.7);
+        }
+        
+        @media (max-width: 1024px) {
+            .neighborhood-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .neighborhood-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .region-header {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar scrolled-dark">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <img src="images/logo.png" alt="Rau Home Group" class="logo-img">
+                <div class="logo-text-wrap">
+                    <span class="logo-text">RAU HOME GROUP</span>
+                    <span class="logo-subtitle">SAN DIEGO REAL ESTATE</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="/#about">About</a></li>
+                <li><a href="/buyers.html">Buyers</a></li>
+                <li><a href="/sellers.html">Sellers</a></li>
+                <li class="nav-dropdown">
+                    <a href="#" class="dropdown-toggle">Resources <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/mortgage-calculator.html"><i class="fas fa-calculator"></i> Mortgage Calculator</a></li>
+                        <li><a href="/neighborhoods.html" class="active"><i class="fas fa-map-marked-alt"></i> San Diego Neighborhoods</a></li>
+                    </ul>
+                </li>
+                <li><a href="/contact.html" class="nav-cta">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero neighborhood-hero">
+        <div class="hero-background">
+            <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1920&q=80" alt="San Diego aerial view" class="hero-image">
+            <div class="hero-overlay dark"></div>
+        </div>
+        <div class="hero-content">
+            <span class="hero-tag">Area Guide</span>
+            <h1 class="hero-title">San Diego<br><span class="accent">Neighborhoods</span></h1>
+            <p class="hero-subtitle">From stunning beaches to vibrant urban communities, find the San Diego neighborhood that fits your lifestyle.</p>
+            <a href="#coastal" class="cta-button">Explore Areas</a>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="neighborhoods-intro">
+        <div class="container narrow">
+            <div class="intro-content">
+                <h2 class="section-title">Find Your Perfect San Diego Community</h2>
+                <p class="lead-text">
+                    San Diego isn't just one city--it's a collection of distinct neighborhoods, each with its own character, lifestyle, and real estate market.
+                </p>
+                <p>
+                    Born and raised here, I've spent my life exploring every corner of San Diego County. From the upscale coastal enclaves of La Jolla and Del Mar to the hip urban neighborhoods of North Park and Hillcrest, I can help you find the community that matches your lifestyle, budget, and dreams.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coastal Communities -->
+    <section id="coastal" class="region-section">
+        <div class="container">
+            <div class="region-header">
+                <div class="region-icon"><i class="fas fa-water"></i></div>
+                <div>
+                    <span class="section-tag">Coastal Communities</span>
+                    <h2 class="section-title">Beach Living at Its Finest</h2>
+                </div>
+            </div>
+            
+            <div class="neighborhood-grid">
+                <div class="neighborhood-card">
+                    <div class="neighborhood-image">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80" alt="La Jolla">
+                    </div>
+                    <div class="neighborhood-content">
+                        <h3>La Jolla</h3>
+                        <div class="neighborhood-highlights">
+                            <span class="highlight-tag">Luxury</span>
+                            <span class="highlight-tag">Ocean Views</span>
+                            <span class="highlight-tag">Top Schools</span>
+                        </div>
+                        <p>Known as "The Jewel," La Jolla offers stunning coastline, world-class dining, and some of San Diego's most prestigious addresses. Home to UCSD and the famous Cove.</p>
+                        <div class="neighborhood-stats">
+                            <div class="neighborhood-stat">
+                                <span class="neighborhood-stat-value">$2.8M</span>
+                                <span class="neighborhood-stat-label">Median Price</span>
+                            </div>
+                            <div class="neighborhood-stat">
+                                <span class="neighborhood-stat-value">9/10</span>
+                                <span class="neighborhood-stat-label">Schools</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="neighborhood-card">
+                    <div class="neighborhood-image">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80" alt="Del Mar">
+                    </div>
+                    <div class="neighborhood-content">
+                        <h3>Del Mar</h3>
+                        <div class="neighborhood-highlights">
+                            <span class="highlight-tag">Beach Town</span>
+                            <span class="highlight-tag">Horseracing</span>
+                            <span class="highlight-tag">Village Feel</span>
+                        </div>
+                        <p>A charming coastal village known for its beautiful beaches, the Del Mar Racetrack, and a relaxed yet upscale atmosphere. Perfect for those seeking beach town living.</p>
+                        <div class="neighborhood-stats">
+                            <div class="neighborhood-stat">
+                                <span class="neighborhood-stat-value">$2.4M</span>
+                                <span class="neighborhood-stat-label">Median Price</span>
+                            </div>
+                            <div class="neighborhood-stat">
+                                <span class="neighborhood-stat-value">10/10</span>
+                                <span class="neighborhood-stat-label">Schools</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="neighborhood-card">
+                    <div class="neighborhood-image">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80" alt="Encinitas">
+                    </div>
+                    <div class="neighborhood-content">
+                        <h3>Encinitas</h3>
+                        <div class="neighborhood-highlights">
+                            <span class="highlight-tag">Surf Culture</span>
+                            <span class="highlight-tag">Yoga Capital</span>
+                            <span class="highlight-tag">Family Friendly</span>
+                        </div>
+                        <p>A laid-back surf town with excellent beaches, a thriving downtown, and strong community spirit. Known as the "Yoga Capital" with a health-conscious lifestyle.</p>
+                        <div class="neighborhood-stats">
+                            <div class="neighborhood-stat">
+                                <span class="neighborhood-stat-value">$1.8M</span>
+                                <span class="neighborhood-stat-label">Median Price</span>
+                            </div>
+                            <div class="neighborhood-stat">
+                                <span class="neighborhood-stat-value">9/10</span>
+                                <span class="neighborhood-stat-label">Schools</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="neighborhood-card">
+                    <div class="neighborhood-image">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80" alt="Solana Beach">
+                    </div>
+                    <div class="neighborhood-content">
+                        <h3>Solana Beach</h3>
+                        <div class="neighborhood-highlights">
+                            <span class="highlight-tag">Design District</span>
+                            <span class="highlight-tag">Cedros Ave</span>
+                            <span class="highlight-tag">Walkable</span>
+                        </div>
+                        <p>Small but stylish coastal community featuring the Cedros Design District. Great restaurants, boutique shopping, and easy beach access in a compact, walkable setting.</p>
+                        <div class="neighborhood-stats">
+                            <div class="neighborhood-stat">
+                                <span class="neighborhood-stat-value">$2.1M</span>
+                                <span class="neighborhood-stat-label">Median Price</span>
+                            </div>
+                            <div class="neighborhood-stat">
+                                <span class="neighborhood-stat-value">10/10</span>
+                                <span class="neighborhood-stat-label">Schools</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="neighborhood-card">
+                    <div class="neighborhood-image">
+                        <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&q=80" alt="Carlsbad">
+                    </div>
+                    <div class="neighborhood-content">
+                        <h3>Carlsbad</h3>
+                        <div class="neighborhood-highlights">
+                            <span class="highlight-tag">LEGOLAND</span>
+                            <span class="highlight-tag">Flower Fields</span>
+                            <span class="highlight-tag">Golf</span>
+                        </div>
+                        <p>A family-friendly coastal city with excellent schools, beautiful beaches, world-famous flower fields, and attractions like LEGOLAND. Great for families and professionals.</p>
+                        <div class="neighborhood-stats">
+                            <div class="neighborhood-stat">
+                                <span class="neighborhood-stat-value">$1.6M</span>
+                                <span class="neighborhood-stat-label">Median Price</span>
+                            </div>
+                            <div class="neighborhood-stat">
+                                <span class="neighborhood-stat-value">9/10</span>
+                                <span class="neighborhood-stat-label">Schools</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="neighborhood-card">
+                    <div class="neighborhood-image">
+                        <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=600&q=80" alt="Pacific Beach">
+                    </div>
+                    <div class="neighborhood-content">
+                        <h3>Pacific Beach</h3>
+                        <div class="neighborhood-highlights">
+                            <span class="highlight-tag">Nightlife</span>
+                            <span class="highlight-tag">Young Professionals</span>
+                            <span class="highlight-tag">Boardwalk</span>
+                        </div>
+                        <p>A vibrant, youthful beach community with a famous boardwalk, lively nightlife, and endless outdoor activities. Popular with young professionals and active lifestyles.</p>
+                        <div class="neighborhood-stats">
+                            <div class="neighborhood-stat">
+                                <span class="neighborhood-stat-value">$1.4M</span>
+                                <span class="neighborhood-stat-label">Median Price</span>
+                            </div>
+                            <div class="neighborhood-stat">
+                                <span class="neighborhood-stat-value">7/10</span>
+                                <span class="neighborhood-stat-label">Schools</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- North County -->
+    <section id="north-county" class="region-section">
+        <div class="container">
+            <div class="region-header">
+                <div class="region-icon"><i class="fas fa-mountain"></i></div>
+                <div>
+                    <span class="section-tag">North County</span>
+                    <h2 class="section-title">Space, Value & Community</h2>
+                </div>
+            </div>
+            
+            <div class="neighborhood-grid">
+                <div class="neighborhood-card">
+                    <div class="neighborhood-image">
+                        <img src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=600&q=80" alt="Rancho Santa Fe">
+                    </div>
+                    <div class="neighborhood-content">
+                        <h3>Rancho Santa Fe</h3>
+                        <div class="neighborhood-highlights">
+                            <span class="highlight-tag">Equestrian</span>
+                            <span class="highlight-tag">Estates</span>
+                            <span class="highlight-tag">Privacy</span>
+                        </div>
+                        <p>One of America's wealthiest zip codes featuring sprawling estates, equestrian properties, and ultimate privacy. A haven for celebrities and executives.</p>
+                        <div class="neighborhood-stats">
+                            <div class="neighborhood-stat">
+                                <span class="neighborhood-stat-value">$4.2M</span>
+                                <span class="neighborhood-stat-label">Median Price</span>
+                            </div>
+                            <div class="neighborhood-stat">
+                                <span class="neighborhood-stat-value">10/10</span>
+                                <span class="neighborhood-stat-label">Schools</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="neighborhood-card">
+                    <div class="neighborhood-image">
+                        <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&q=80" alt="Rancho Bernardo">
+                    </div>
+                    <div class="neighborhood-content">
+                        <h3>Rancho Bernardo</h3>
+                        <div class="neighborhood-highlights">
+                            <span class="highlight-tag">Master Planned</span>
+                            <span class="highlight-tag">Golf</span>
+                            <span class="highlight-tag">Tech Hub</span>
+                        </div>
+                        <p>A well-established master-planned community with excellent amenities, top-rated schools, and easy access to major tech employers. Great for families and retirees alike.</p>
+                        <div class="neighborhood-stats">
+                            <div class="neighborhood-stat">
+                                <span class="neighborhood-stat-value">$950K</span>
+                                <span class="neighborhood-stat-label">Median Price</span>
+                            </div>
+                            <div class="neighborhood-stat">
+                                <span class="neighborhood-stat-value">9/10</span>
+                                <span class="neighborhood-stat-label">Schools</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="neighborhood-card">
+                    <div class="neighborhood-image">
+                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80" alt="Poway">
+                    </div>
+                    <div class="neighborhood-content">
+                        <h3>Poway</h3>
+                        <div class="neighborhood-highlights">
+                            <span class="highlight-tag">City in the Country</span>
+                            <span class="highlight-tag">Trails</span>
+                            <span class="highlight-tag">Award Schools</span>
+                        </div>
+                        <p>Known as "The City in the Country," Poway offers larger lots, excellent schools, and a strong sense of community. Great for families who want space without sacrificing convenience.</p>
+                        <div class="neighborhood-stats">
+                            <div class="neighborhood-stat">
+                                <span class="neighborhood-stat-value">$1.2M</span>
+                                <span class="neighborhood-stat-label">Median Price</span>
+                            </div>
+                            <div class="neighborhood-stat">
+                                <span class="neighborhood-stat-value">10/10</span>
+                                <span class="neighborhood-stat-label">Schools</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="neighborhood-card">
+                    <div class="neighborhood-image">
+                        <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&q=80" alt="San Marcos">
+                    </div>
+                    <div class="neighborhood-content">
+                        <h3>San Marcos</h3>
+                        <div class="neighborhood-highlights">
+                            <span class="highlight-tag">Growing</span>
+                            <span class="highlight-tag">Restaurant Row</span>
+                            <span class="highlight-tag">CSUSM</span>
+                        </div>
+                        <p>A rapidly growing city with a revitalized downtown, home to Cal State San Marcos. Excellent value with new developments and improving amenities.</p>
+                        <div class="neighborhood-stats">
+                            <div class="neighborhood-stat">
+                                <span class="neighborhood-stat-value">$825K</span>
+                                <span class="neighborhood-stat-label">Median Price</span>
+                            </div>
+                            <div class="neighborhood-stat">
+                                <span class="neighborhood-stat-value">7/10</span>
+                                <span class="neighborhood-stat-label">Schools</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="neighborhood-card">
+                    <div class="neighborhood-image">
+                        <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=600&q=80" alt="Oceanside">
+                    </div>
+                    <div class="neighborhood-content">
+                        <h3>Oceanside</h3>
+                        <div class="neighborhood-highlights">
+                            <span class="highlight-tag">Beach Access</span>
+                            <span class="highlight-tag">Military</span>
+                            <span class="highlight-tag">Revitalizing</span>
+                        </div>
+                        <p>San Diego's third-largest city with miles of beaches, a historic pier, and a revitalizing downtown. Great value for beach living near Camp Pendleton.</p>
+                        <div class="neighborhood-stats">
+                            <div class="neighborhood-stat">
+                                <span class="neighborhood-stat-value">$875K</span>
+                                <span class="neighborhood-stat-label">Median Price</span>
+                            </div>
+                            <div class="neighborhood-stat">
+                                <span class="neighborhood-stat-value">7/10</span>
+                                <span class="neighborhood-stat-label">Schools</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="neighborhood-card">
+                    <div class="neighborhood-image">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80" alt="Vista">
+                    </div>
+                    <div class="neighborhood-content">
+                        <h3>Vista</h3>
+                        <div class="neighborhood-highlights">
+                            <span class="highlight-tag">Craft Breweries</span>
+                            <span class="highlight-tag">Affordable</span>
+                            <span class="highlight-tag">Growing</span>
+                        </div>
+                        <p>An up-and-coming community with a thriving craft brewery scene, historic downtown, and some of North County's most affordable homes.</p>
+                        <div class="neighborhood-stats">
+                            <div class="neighborhood-stat">
+                                <span class="neighborhood-stat-value">$775K</span>
+                                <span class="neighborhood-stat-label">Median Price</span>
+                            </div>
+                            <div class="neighborhood-stat">
+                                <span class="neighborhood-stat-value">6/10</span>
+                                <span class="neighborhood-stat-label">Schools</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Central San Diego -->
+    <section id="central" class="region-section">
+        <div class="container">
+            <div class="region-header">
+                <div class="region-icon"><i class="fas fa-city"></i></div>
+                <div>
+                    <span class="section-tag">Central San Diego</span>
+                    <h2 class="section-title">Urban Living & Character</h2>
+                </div>
+            </div>
+            
+            <div class="neighborhood-grid">
+                <div class="neighborhood-card">
+                    <div class="neighborhood-image">
+                        <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&q=80" alt="North Park">
+                    </div>
+                    <div class="neighborhood-content">
+                        <h3>North Park</h3>
+                        <div class="neighborhood-highlights">
+                            <span class="highlight-tag">Hip</span>
+                            <span class="highlight-tag">Craft Beer</span>
+                            <span class="highlight-tag">Walkable</span>
+                        </div>
+                        <p>One of San Diego's trendiest neighborhoods with fantastic restaurants, craft breweries, and a thriving arts scene. Walkable streets and historic Craftsman homes.</p>
+                        <div class="neighborhood-stats">
+                            <div class="neighborhood-stat">
+                                <span class="neighborhood-stat-value">$950K</span>
+                                <span class="neighborhood-stat-label">Median Price</span>
+                            </div>
+                            <div class="neighborhood-stat">
+                                <span class="neighborhood-stat-value">7/10</span>
+                                <span class="neighborhood-stat-label">Schools</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="neighborhood-card">
+                    <div class="neighborhood-image">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80" alt="Hillcrest">
+                    </div>
+                    <div class="neighborhood-content">
+                        <h3>Hillcrest</h3>
+                        <div class="neighborhood-highlights">
+                            <span class="highlight-tag">LGBTQ+ Friendly</span>
+                            <span class="highlight-tag">Dining</span>
+                            <span class="highlight-tag">Central Location</span>
+                        </div>
+                        <p>San Diego's most vibrant urban neighborhood, known for its inclusive community, excellent restaurants, and central location near Balboa Park.</p>
+                        <div class="neighborhood-stats">
+                            <div class="neighborhood-stat">
+                                <span class="neighborhood-stat-value">$875K</span>
+                                <span class="neighborhood-stat-label">Median Price</span>
+                            </div>
+                            <div class="neighborhood-stat">
+                                <span class="neighborhood-stat-value">7/10</span>
+                                <span class="neighborhood-stat-label">Schools</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="neighborhood-card">
+                    <div class="neighborhood-image">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80" alt="Normal Heights">
+                    </div>
+                    <div class="neighborhood-content">
+                        <h3>Normal Heights</h3>
+                        <div class="neighborhood-highlights">
+                            <span class="highlight-tag">Up & Coming</span>
+                            <span class="highlight-tag">Adams Ave</span>
+                            <span class="highlight-tag">Character</span>
+                        </div>
+                        <p>A charming neighborhood with tree-lined streets, eclectic shops along Adams Avenue, and a strong community feel. Great value with tons of character.</p>
+                        <div class="neighborhood-stats">
+                            <div class="neighborhood-stat">
+                                <span class="neighborhood-stat-value">$825K</span>
+                                <span class="neighborhood-stat-label">Median Price</span>
+                            </div>
+                            <div class="neighborhood-stat">
+                                <span class="neighborhood-stat-value">7/10</span>
+                                <span class="neighborhood-stat-label">Schools</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="neighborhood-card">
+                    <div class="neighborhood-image">
+                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80" alt="Clairemont">
+                    </div>
+                    <div class="neighborhood-content">
+                        <h3>Clairemont</h3>
+                        <div class="neighborhood-highlights">
+                            <span class="highlight-tag">Central</span>
+                            <span class="highlight-tag">Family Homes</span>
+                            <span class="highlight-tag">Value</span>
+                        </div>
+                        <p>A centrally-located neighborhood offering mid-century homes, good schools, and excellent value. Easy access to beaches, downtown, and major freeways.</p>
+                        <div class="neighborhood-stats">
+                            <div class="neighborhood-stat">
+                                <span class="neighborhood-stat-value">$925K</span>
+                                <span class="neighborhood-stat-label">Median Price</span>
+                            </div>
+                            <div class="neighborhood-stat">
+                                <span class="neighborhood-stat-value">7/10</span>
+                                <span class="neighborhood-stat-label">Schools</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="neighborhood-card">
+                    <div class="neighborhood-image">
+                        <img src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=600&q=80" alt="Mira Mesa">
+                    </div>
+                    <div class="neighborhood-content">
+                        <h3>Mira Mesa</h3>
+                        <div class="neighborhood-highlights">
+                            <span class="highlight-tag">Tech Corridor</span>
+                            <span class="highlight-tag">Diverse</span>
+                            <span class="highlight-tag">Affordable</span>
+                        </div>
+                        <p>A diverse, family-friendly community along the tech corridor with good schools, diverse dining options, and some of the best values in central San Diego.</p>
+                        <div class="neighborhood-stats">
+                            <div class="neighborhood-stat">
+                                <span class="neighborhood-stat-value">$850K</span>
+                                <span class="neighborhood-stat-label">Median Price</span>
+                            </div>
+                            <div class="neighborhood-stat">
+                                <span class="neighborhood-stat-value">8/10</span>
+                                <span class="neighborhood-stat-label">Schools</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="neighborhood-card">
+                    <div class="neighborhood-image">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80" alt="Carmel Valley">
+                    </div>
+                    <div class="neighborhood-content">
+                        <h3>Carmel Valley</h3>
+                        <div class="neighborhood-highlights">
+                            <span class="highlight-tag">Master Planned</span>
+                            <span class="highlight-tag">Top Schools</span>
+                            <span class="highlight-tag">Shopping</span>
+                        </div>
+                        <p>A premier master-planned community featuring top-rated schools, upscale shopping at Del Mar Highlands, and beautiful newer homes. Ideal for families.</p>
+                        <div class="neighborhood-stats">
+                            <div class="neighborhood-stat">
+                                <span class="neighborhood-stat-value">$1.6M</span>
+                                <span class="neighborhood-stat-label">Median Price</span>
+                            </div>
+                            <div class="neighborhood-stat">
+                                <span class="neighborhood-stat-value">10/10</span>
+                                <span class="neighborhood-stat-label">Schools</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <span class="section-tag center">Interactive</span>
+            <h2 class="section-title center">Explore the Map</h2>
+            <p class="section-subtitle light">Not sure which area is right for you? Let's talk about your lifestyle, budget, and priorities.</p>
+            
+            <div class="map-placeholder">
+                <i class="fas fa-map-marked-alt"></i>
+                <h3>Personalized Area Tour</h3>
+                <p>I offer complimentary neighborhood tours to help you experience San Diego's communities firsthand. Let's explore together.</p>
+                <a href="/contact.html" class="cta-button" style="margin-top: var(--spacing-md);">Schedule a Tour</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Not Sure Which Neighborhood is Right?</h2>
+                <p>Tell me about your lifestyle, budget, and priorities. I'll help you find your perfect San Diego community.</p>
+                <a href="/contact.html" class="cta-button large">Let's Talk</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-tag">Get in Touch</span>
+                    <h2 class="section-title">Find Your Perfect<br>Neighborhood</h2>
+                    <p class="contact-text">Tell me about your ideal lifestyle, and I'll help you find the San Diego community that fits.</p>
+                    
+                    <div class="contact-details">
+                        <a href="tel:+18582044692" class="contact-item">
+                            <span class="contact-icon"><i class="fas fa-phone"></i></span>
+                            <span>(858) 204-4692</span>
+                        </a>
+                        <a href="mailto:rusty@deanaguilargroup.com" class="contact-item">
+                            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+                            <span>rusty@deanaguilargroup.com</span>
+                        </a>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/rustyrau_sdrealtor/" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/rusty.rau" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" id="neighborhood-contact-form">
+                        <input type="hidden" name="interest" value="neighborhood-tour">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" name="phone" placeholder="Phone">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <select name="budget">
+                                    <option value="" disabled selected>Budget range?</option>
+                                    <option value="under750">Under $750K</option>
+                                    <option value="750-1m">$750K - $1M</option>
+                                    <option value="1-1.5m">$1M - $1.5M</option>
+                                    <option value="1.5-2m">$1.5M - $2M</option>
+                                    <option value="2m+">$2M+</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <select name="lifestyle">
+                                    <option value="" disabled selected>What's important?</option>
+                                    <option value="beach">Beach access</option>
+                                    <option value="schools">Top schools</option>
+                                    <option value="urban">Urban/walkable</option>
+                                    <option value="space">Space/privacy</option>
+                                    <option value="commute">Short commute</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Tell me about your ideal neighborhood..." rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Find My Neighborhood</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-text">RAU HOME GROUP</span>
+                    <p>San Diego Real Estate Expert</p>
+                    <p class="footer-brokerage">Rau Home Group</p>
+                </div>
+                <div class="footer-links">
+                    <a href="/#about">About</a>
+                    <a href="/buyers.html">Buyers</a>
+                    <a href="/sellers.html">Sellers</a>
+                    <a href="/#listings">Listings</a>
+                    <a href="/neighborhoods.html">Areas</a>
+                    <a href="/#testimonials">Reviews</a>
+                    <a href="/blog.html">Blog</a>
+                    <a href="/contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Rusty Rau. All rights reserved.</p>
+                <p class="footer-legal">DRE# 02084462 | Rau Home Group</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="luxury-effects.js"></script>
+</body>
+</html>

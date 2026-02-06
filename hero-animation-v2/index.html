@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Journey Home - Rusty Rau</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- GSAP for scroll animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0a0a0f;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* Placeholder Hero Section */
+        .hero-placeholder {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(180deg, #1A2332 0%, #0a0a0f 100%);
+            position: relative;
+        }
+
+        .hero-placeholder h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 6vw, 5rem);
+            font-weight: 600;
+            text-align: center;
+            color: #F8F7F4;
+        }
+
+        .hero-placeholder .subtitle {
+            text-align: center;
+            color: rgba(248, 247, 244, 0.6);
+            margin-top: 1rem;
+            font-size: 1.1rem;
+        }
+
+        /* Journey Animation Section */
+        .journey-section {
+            position: relative;
+            height: 400vh; /* Long scroll area */
+            background: #0a0a0f;
+        }
+
+        .journey-container {
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        #journey-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Stage Labels */
+        .stage-label {
+            position: absolute;
+            bottom: 15%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        .stage-label.active {
+            opacity: 1;
+        }
+
+        .stage-label h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            font-weight: 500;
+            color: #C9A869;
+            text-shadow: 0 0 40px rgba(201, 168, 105, 0.5);
+            margin-bottom: 0.5rem;
+        }
+
+        .stage-label p {
+            font-size: 1rem;
+            color: rgba(248, 247, 244, 0.6);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        /* Progress Indicator */
+        .progress-indicator {
+            position: fixed;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0;
+            z-index: 100;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .progress-indicator.visible {
+            opacity: 1;
+        }
+
+        .progress-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 2px solid rgba(201, 168, 105, 0.3);
+            background: transparent;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .progress-dot.active {
+            background: #C9A869;
+            border-color: #C9A869;
+            box-shadow: 0 0 20px rgba(201, 168, 105, 0.6);
+            transform: scale(1.2);
+        }
+
+        .progress-line {
+            width: 2px;
+            height: 30px;
+            background: rgba(201, 168, 105, 0.2);
+        }
+
+        /* Scroll Hint */
+        .scroll-hint {
+            position: absolute;
+            bottom: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            opacity: 0.6;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        .scroll-hint span {
+            display: block;
+            font-size: 0.85rem;
+            color: rgba(248, 247, 244, 0.5);
+            margin-bottom: 8px;
+        }
+
+        .scroll-hint .arrow {
+            width: 24px;
+            height: 24px;
+            border-right: 2px solid rgba(201, 168, 105, 0.5);
+            border-bottom: 2px solid rgba(201, 168, 105, 0.5);
+            transform: rotate(45deg);
+            margin: 0 auto;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.6; transform: translateX(-50%) translateY(0); }
+            50% { opacity: 0.3; transform: translateX(-50%) translateY(10px); }
+        }
+
+        /* CTA Section */
+        .cta-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(180deg, #0a0a0f 0%, #1A2332 100%);
+            padding: 4rem 2rem;
+        }
+
+        .cta-content {
+            text-align: center;
+            max-width: 700px;
+        }
+
+        .cta-content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 500;
+            color: #F8F7F4;
+            margin-bottom: 1rem;
+        }
+
+        .cta-content p {
+            color: rgba(248, 247, 244, 0.7);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(135deg, #C9A869 0%, #E8D5A8 100%);
+            color: #1A2332;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 30px rgba(201, 168, 105, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 40px rgba(201, 168, 105, 0.5);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .progress-indicator {
+                right: 15px;
+            }
+            
+            .progress-dot {
+                width: 8px;
+                height: 8px;
+            }
+            
+            .progress-line {
+                height: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Placeholder Hero -->
+    <section class="hero-placeholder">
+        <div>
+            <h1>Find Your San Diego Home</h1>
+            <p class="subtitle">↓ Scroll to experience the journey ↓</p>
+        </div>
+    </section>
+
+    <!-- Journey Animation Section -->
+    <section class="journey-section" id="journey">
+        <div class="journey-container">
+            <canvas id="journey-canvas"></canvas>
+            
+            <!-- Stage Labels -->
+            <div class="stage-label active" data-stage="1">
+                <h2>The Spark</h2>
+                <p>The dream begins. A vision of your perfect home takes shape.</p>
+            </div>
+            <div class="stage-label" data-stage="2">
+                <h2>The Search</h2>
+                <p>Exploring possibilities. Finding the one that feels like home.</p>
+            </div>
+            <div class="stage-label" data-stage="3">
+                <h2>The Keys</h2>
+                <p>The moment it becomes real. Your new chapter begins.</p>
+            </div>
+            <div class="stage-label" data-stage="4">
+                <h2>Home</h2>
+                <p>Where memories are made. Welcome home.</p>
+            </div>
+
+            <!-- Scroll Hint -->
+            <div class="scroll-hint">
+                <span>Scroll to explore</span>
+                <div class="arrow"></div>
+            </div>
+        </div>
+
+        <!-- Progress Indicator -->
+        <div class="progress-indicator">
+            <div class="progress-dot active" data-stage="1"></div>
+            <div class="progress-line"></div>
+            <div class="progress-dot" data-stage="2"></div>
+            <div class="progress-line"></div>
+            <div class="progress-dot" data-stage="3"></div>
+            <div class="progress-line"></div>
+            <div class="progress-dot" data-stage="4"></div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Ready to Start Your Journey?</h2>
+            <p>Every great home story starts with a conversation. Let's write yours together.</p>
+            <a href="#contact" class="cta-button">Begin Your Journey</a>
+        </div>
+    </section>
+
+    <script>
+        // Ensure canvas is properly sized before animation loads
+        window.addEventListener('DOMContentLoaded', () => {
+            const canvas = document.getElementById('journey-canvas');
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+    </script>
+    <script src="animation.js"></script>
+</body>
+</html>

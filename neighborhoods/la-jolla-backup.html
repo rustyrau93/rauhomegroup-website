@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La Jolla real estate guide. Known as 'The Jewel,' featuring luxury coastal homes, ocean views, and top-rated schools.">
+    <meta name="keywords" content="La Jolla real estate, La Jolla homes for sale, La Jolla luxury homes, La Jolla realtor, San Diego coastal living">
+    <title>La Jolla Real Estate | Homes for Sale in La Jolla | Rusty Rau</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../luxury-effects.css">
+</head>
+<body>
+    <nav class="navbar scrolled-dark">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <img src="../images/logo.png" alt="Rau Home Group" class="logo-img">
+                <div class="logo-text-wrap">
+                    <span class="logo-text">RAU HOME GROUP</span>
+                    <span class="logo-subtitle">SAN DIEGO REAL ESTATE</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="/#about">About</a></li>
+                <li><a href="/buyers.html">Buyers</a></li>
+                <li><a href="/sellers.html">Sellers</a></li>
+                <li class="nav-dropdown">
+                    <a href="#" class="dropdown-toggle">Resources <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/mortgage-calculator.html"><i class="fas fa-calculator"></i> Mortgage Calculator</a></li>
+                        <li><a href="/neighborhoods.html"><i class="fas fa-map-marked-alt"></i> San Diego Neighborhoods</a></li>
+                    </ul>
+                </li>
+                <li><a href="/contact.html" class="nav-cta">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero page-hero" style="background: linear-gradient(135deg, #1A2332 0%, #0D1117 100%); min-height: 65vh; display: flex; align-items: center; position: relative; margin-bottom: 0;">
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1920&q=80" alt="La Jolla coastline" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.3;">
+        </div>
+        <div class="container" style="position: relative; z-index: 1; text-align: center; color: white; max-width: 1200px;">
+            <h1 style="font-family: 'Playfair Display', serif; font-size: 4rem; margin-bottom: 1.5rem; font-weight: 600; letter-spacing: -0.02em;">La Jolla</h1>
+            <p style="font-size: 1.75rem; color: #C9A869; margin-bottom: 1.5rem; font-style: italic; font-family: 'Playfair Display', serif;">"The Jewel"</p>
+            <p style="font-size: 1.35rem; color: rgba(255,255,255,0.95); max-width: 800px; margin: 0 auto 3rem; line-height: 1.6;">Luxury coastal living, world-class beaches, and prestigious addresses</p>
+            <a href="#contact" class="cta-button" style="font-size: 1.1rem; padding: 1.25rem 3rem;">See Homes in La Jolla</a>
+        </div>
+    </section>
+
+    <!-- Stats Banner -->
+    <section style="background: #F8F7F4; padding: 5rem 0; border-top: 1px solid #E8E6E1;">
+        <div class="container" style="max-width: 1400px;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem; text-align: center;">
+                <div>
+                    <div style="font-family: 'Playfair Display', serif; font-size: 3.5rem; font-weight: 600; color: #C9A869; margin-bottom: 1rem; letter-spacing: -0.02em;">$2.8M</div>
+                    <div style="font-size: 0.95rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 500;">Median Home Price</div>
+                </div>
+                <div>
+                    <div style="font-family: 'Playfair Display', serif; font-size: 3.5rem; font-weight: 600; color: #C9A869; margin-bottom: 1rem; letter-spacing: -0.02em;">9/10</div>
+                    <div style="font-size: 0.95rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 500;">School Rating</div>
+                </div>
+                <div>
+                    <div style="font-family: 'Playfair Display', serif; font-size: 3.5rem; font-weight: 600; color: #C9A869; margin-bottom: 1rem; letter-spacing: -0.02em;">43K</div>
+                    <div style="font-size: 0.95rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 500;">Population</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section style="padding: 7rem 0; background: white;">
+        <div class="container" style="max-width: 1200px;">
+            <h2 style="font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 3rem; color: #1A2332; font-weight: 500; letter-spacing: -0.02em;">About La Jolla</h2>
+            
+            <div style="max-width: 1000px;">
+                <p style="font-size: 1.35rem; line-height: 1.9; color: #1A2332; margin-bottom: 2.5rem; font-weight: 400;">
+                    If you've ever dreamed of living by the ocean in one of Southern California's most beautiful communities, La Jolla is probably what you're picturing. Known as "The Jewel," this seven-mile stretch of coastline offers everything from dramatic cliffs and hidden coves to pristine beaches and world-class dining.
+                </p>
+
+                <p style="font-size: 1.15rem; line-height: 1.9; color: #4A5568; margin-bottom: 2.5rem;">
+                    What makes La Jolla special isn't just the views—though watching the sunset from Scripps Park or catching sight of sea lions basking at the Cove never gets old. It's the complete lifestyle package. The village itself feels like a European coastal town with Prospect Street and Girard Avenue lined with boutique shops, art galleries, and sidewalk cafes where locals gather.
+                </p>
+
+                <p style="font-size: 1.15rem; line-height: 1.9; color: #4A5568; margin-bottom: 2.5rem;">
+                    La Jolla attracts an interesting mix of successful professionals, tech executives, academics from UC San Diego, doctors from Scripps Health, and retirees who've built the wealth to afford this lifestyle. What unites residents is a shared appreciation for the ocean, outdoor activities, and cultural sophistication.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lifestyle & Amenities -->
+    <section style="padding: 7rem 0; background: #FAFAF8;">
+        <div class="container" style="max-width: 1200px;">
+            <h2 style="font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 3rem; color: #1A2332; font-weight: 500; letter-spacing: -0.02em;">Lifestyle & Amenities</h2>
+            
+            <div style="max-width: 1000px;">
+                <div style="display: grid; gap: 2rem; margin-bottom: 4rem;">
+                    <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
+                        <div style="flex-shrink: 0; width: 32px; height: 32px; background: #C9A869; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 4px;">
+                            <i class="fas fa-check" style="color: white; font-size: 14px;"></i>
+                        </div>
+                        <p style="margin: 0; color: #4A5568; font-size: 1.15rem; line-height: 1.7;">La Jolla Cove - world-famous snorkeling and sea lions</p>
+                    </div>
+                    <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
+                        <div style="flex-shrink: 0; width: 32px; height: 32px; background: #C9A869; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 4px;">
+                            <i class="fas fa-check" style="color: white; font-size: 14px;"></i>
+                        </div>
+                        <p style="margin: 0; color: #4A5568; font-size: 1.15rem; line-height: 1.7;">Prospect Street - upscale dining and boutique shopping</p>
+                    </div>
+                    <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
+                        <div style="flex-shrink: 0; width: 32px; height: 32px; background: #C9A869; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 4px;">
+                            <i class="fas fa-check" style="color: white; font-size: 14px;"></i>
+                        </div>
+                        <p style="margin: 0; color: #4A5568; font-size: 1.15rem; line-height: 1.7;">Torrey Pines Golf Course - world-class golf and hiking</p>
+                    </div>
+                    <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
+                        <div style="flex-shrink: 0; width: 32px; height: 32px; background: #C9A869; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 4px;">
+                            <i class="fas fa-check" style="color: white; font-size: 14px;"></i>
+                        </div>
+                        <p style="margin: 0; color: #4A5568; font-size: 1.15rem; line-height: 1.7;">Birch Aquarium - marine education center with ocean views</p>
+                    </div>
+                    <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
+                        <div style="flex-shrink: 0; width: 32px; height: 32px; background: #C9A869; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 4px;">
+                            <i class="fas fa-check" style="color: white; font-size: 14px;"></i>
+                        </div>
+                        <p style="margin: 0; color: #4A5568; font-size: 1.15rem; line-height: 1.7;">Multiple pristine beaches including Windansea and Black's Beach</p>
+                    </div>
+                    <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
+                        <div style="flex-shrink: 0; width: 32px; height: 32px; background: #C9A869; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 4px;">
+                            <i class="fas fa-check" style="color: white; font-size: 14px;"></i>
+                        </div>
+                        <p style="margin: 0; color: #4A5568; font-size: 1.15rem; line-height: 1.7;">La Jolla Playhouse - Tony Award-winning theater</p>
+                    </div>
+                </div>
+
+                <p style="font-size: 1.15rem; line-height: 1.9; color: #4A5568; margin-bottom: 2.5rem;">
+                    The beaches are what draw most people to La Jolla initially. La Jolla Cove offers crystal-clear water perfect for snorkeling where you'll swim alongside garibaldi, leopard sharks, and spot sea lions lounging on the rocks. Windansea Beach is where serious surfers go—this spot has been featured in countless surf films with its distinctive beach shack and consistent waves.
+                </p>
+
+                <p style="font-size: 1.15rem; line-height: 1.9; color: #4A5568; margin-bottom: 0;">
+                    Beyond the beaches, there's world-class golf at Torrey Pines (site of multiple U.S. Opens), incredible hiking at Torrey Pines State Natural Reserve, and the Museum of Contemporary Art San Diego. The weekly farmers market is a community gathering spot where neighbors catch up and live music fills the air.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schools -->
+    <section style="padding: 7rem 0; background: white;">
+        <div class="container" style="max-width: 1200px;">
+            <h2 style="font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 3rem; color: #1A2332; font-weight: 500; letter-spacing: -0.02em;">Schools & Education</h2>
+            
+            <div style="max-width: 1000px;">
+                <p style="font-size: 1.15rem; line-height: 1.9; color: #4A5568; margin-bottom: 2.5rem;">
+                    If you have kids, La Jolla's schools are a major draw. La Jolla High School consistently ranks among the top public schools in San Diego County, with strong academics, competitive sports programs, and a beautiful campus that overlooks the ocean. Muirlands Middle School and La Jolla Elementary are both highly rated and sought-after by families.
+                </p>
+
+                <p style="font-size: 1.15rem; line-height: 1.9; color: #4A5568; margin-bottom: 0;">
+                    For private education, The Bishop's School is one of California's most prestigious independent schools, offering college-prep curriculum that rivals any East Coast boarding school. Other options include Stella Maris Academy (Catholic), The Children's School, and All Hallows. Plus, UC San Diego's presence means kids have access to summer programs, lectures, and world-class facilities.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Getting Around -->
+    <section style="padding: 7rem 0; background: #FAFAF8;">
+        <div class="container" style="max-width: 1200px;">
+            <h2 style="font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 3rem; color: #1A2332; font-weight: 500; letter-spacing: -0.02em;">Getting Around</h2>
+            
+            <div style="max-width: 1000px;">
+                <p style="font-size: 1.15rem; line-height: 1.9; color: #4A5568; margin-bottom: 2.5rem;">
+                    La Jolla sits about 12 miles north of downtown San Diego—expect a 20-30 minute drive depending on traffic. Many residents work locally at UC San Diego, Scripps Health, or biotech companies in nearby Torrey Pines. San Diego International Airport is about 15 miles south, making it incredibly convenient for frequent travelers.
+                </p>
+
+                <p style="font-size: 1.15rem; line-height: 1.9; color: #4A5568; margin-bottom: 0;">
+                    The village itself is very walkable—you can easily stroll to restaurants, shops, and beaches. Many residents bike along the coastal roads. That said, you'll definitely want a car for exploring beyond La Jolla or commuting to other parts of San Diego.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="padding: 7rem 0; background: white; border-top: 1px solid #E8E6E1;">
+        <div class="container" style="max-width: 1200px;">
+            <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 6rem; align-items: start;">
+                
+                <!-- Left: Contact Info -->
+                <div>
+                    <span style="color: #C9A869; text-transform: uppercase; font-size: 0.875rem; letter-spacing: 0.15em; font-weight: 600;">Get in Touch</span>
+                    <h2 style="font-family: 'Playfair Display', serif; font-size: 3rem; margin: 1.5rem 0 2rem; color: #1A2332; line-height: 1.2; font-weight: 500;">Let's Find Your<br>La Jolla Home</h2>
+                    <p style="color: #4A5568; margin-bottom: 3rem; line-height: 1.8; font-size: 1.1rem;">I know La Jolla inside and out. Let's talk about what you're looking for.</p>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 1.75rem; margin-bottom: 3rem;">
+                        <div style="display: flex; align-items: center; gap: 1.25rem;">
+                            <div style="width: 56px; height: 56px; background: #C9A869; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <i class="fas fa-phone" style="color: white; font-size: 20px;"></i>
+                            </div>
+                            <a href="tel:+18582044692" style="color: #1A2332; text-decoration: none; font-size: 1.2rem; font-weight: 500; transition: color 0.3s;">(858) 204-4692</a>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1.25rem;">
+                            <div style="width: 56px; height: 56px; background: #C9A869; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <i class="fas fa-envelope" style="color: white; font-size: 20px;"></i>
+                            </div>
+                            <a href="mailto:rusty@rauhomegroup.com" style="color: #1A2332; text-decoration: none; font-size: 1.2rem; font-weight: 500; transition: color 0.3s;">rusty@rauhomegroup.com</a>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; gap: 1.25rem;">
+                        <a href="https://www.instagram.com/rustyrau_sdrealtor/" target="_blank" style="width: 48px; height: 48px; background: #F8F7F4; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #1A2332; text-decoration: none; transition: all 0.3s; font-size: 20px;">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" target="_blank" style="width: 48px; height: 48px; background: #F8F7F4; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #1A2332; text-decoration: none; transition: all 0.3s; font-size: 20px;">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Right: Form -->
+                <div style="background: #F8F7F4; padding: 3.5rem; border-radius: 4px;">
+                    <form class="contact-form">
+                        <div style="margin-bottom: 1.75rem;">
+                            <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 1.25rem; border: 1px solid #E5E5E5; border-radius: 4px; font-size: 1.05rem; font-family: 'Inter', sans-serif; background: white;">
+                        </div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-bottom: 1.75rem;">
+                            <input type="email" name="email" placeholder="Email" required style="padding: 1.25rem; border: 1px solid #E5E5E5; border-radius: 4px; font-size: 1.05rem; font-family: 'Inter', sans-serif; background: white;">
+                            <input type="tel" name="phone" placeholder="Phone" style="padding: 1.25rem; border: 1px solid #E5E5E5; border-radius: 4px; font-size: 1.05rem; font-family: 'Inter', sans-serif; background: white;">
+                        </div>
+                        <div style="margin-bottom: 1.75rem;">
+                            <textarea name="message" placeholder="Tell me what you're looking for in La Jolla..." rows="5" style="width: 100%; padding: 1.25rem; border: 1px solid #E5E5E5; border-radius: 4px; font-size: 1.05rem; font-family: 'Inter', sans-serif; resize: vertical; background: white;"></textarea>
+                        </div>
+                        <button type="submit" style="width: 100%; background: #1A2332; color: white; padding: 1.25rem 2.5rem; border: none; border-radius: 4px; font-size: 1rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; cursor: pointer; transition: background 0.3s;">Contact Rusty</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-accolades">
+                <div class="accolade-item"><i class="fas fa-award"></i><span>Top Producer</span></div>
+                <div class="accolade-item"><i class="fas fa-star"></i><span>100% 5-Star Reviews</span></div>
+                <div class="accolade-item"><i class="fas fa-shield-alt"></i><span>Licensed REALTOR</span></div>
+                <div class="accolade-item"><i class="fas fa-trophy"></i><span>Top 5% in San Diego</span></div>
+            </div>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-text">RAU HOME GROUP</span>
+                    <p>San Diego Real Estate Expert</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/rustyrau_sdrealtor/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-links">
+                        <a href="/#about">About</a>
+                        <a href="/buyers.html">Buyers</a>
+                        <a href="/sellers.html">Sellers</a>
+                        <a href="/neighborhoods.html">Areas</a>
+                        <a href="/contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Rusty Rau. All rights reserved.</p>
+                <p class="footer-legal">DRE# 02084462 | Rau Home Group</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

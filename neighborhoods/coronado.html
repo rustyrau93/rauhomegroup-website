@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coronado Real Estate & Homes for Sale | San Diego | Rau Home Group</title>
+    <meta name="description" content="Discover Coronado San Diego - island paradise with pristine beaches, top-rated schools, and historic charm. Median home price $2.2M. Expert local real estate guidance from Rusty Rau.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: #ffffff;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../assets/images/neighborhoods/coronado-hero.jpg') center/cover;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 7rem 2rem;
+        }
+
+        .stats-banner {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            padding: 4rem 0;
+            margin-top: -3rem;
+        }
+
+        .stats-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            color: white;
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #d4af37;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            color: #e0e0e0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .section {
+            max-width: 1000px;
+            margin: 0 auto 5rem;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2.5rem;
+            color: #1a1a1a;
+            font-weight: 700;
+        }
+
+        .intro-text {
+            font-size: 1.35rem;
+            line-height: 1.9;
+            color: #2c3e50;
+            margin-bottom: 2.5rem;
+        }
+
+        .section p {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #444;
+            margin-bottom: 1.5rem;
+        }
+
+        .amenities-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin: 2.5rem 0;
+        }
+
+        .amenity-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .amenity-icon {
+            width: 32px;
+            height: 32px;
+            background: #d4af37;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 4px;
+        }
+
+        .amenity-icon::after {
+            content: '✓';
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .amenity-text {
+            font-size: 1.15rem;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+
+        .contact-section {
+            background: #f8f9fa;
+            padding: 7rem 0;
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: start;
+        }
+
+        .contact-info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #1a1a1a;
+        }
+
+        .contact-info p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 2rem;
+        }
+
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .contact-icon {
+            width: 56px;
+            height: 56px;
+            background: #d4af37;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+
+        .contact-details h3 {
+            font-size: 1.1rem;
+            color: #1a1a1a;
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-details a {
+            color: #d4af37;
+            text-decoration: none;
+            font-size: 1.15rem;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background: #d4af37;
+            color: white;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: #c09d2e;
+        }
+
+        @media (max-width: 968px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .amenities-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .container {
+                padding: 4rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <div>
+            <h1>Coronado, San Diego</h1>
+            <p>Island Paradise - Where History Meets Perfection</p>
+        </div>
+    </div>
+
+    <!-- Stats Banner -->
+    <div class="stats-banner">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <span class="stat-number">$2.2M</span>
+                <span class="stat-label">Median Home Price</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">9/10</span>
+                <span class="stat-label">School Rating</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">24,000</span>
+                <span class="stat-label">Population</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        
+        <!-- About Section -->
+        <section class="section">
+            <h2>About Coronado</h2>
+            <p class="intro-text">Coronado isn't just a neighborhood - it's a 7.4-square-mile island paradise connected to San Diego by the iconic Coronado Bay Bridge. Known as "The Crown City," this exclusive enclave offers something increasingly rare in Southern California: small-town charm combined with world-class amenities and some of the finest beaches in America.</p>
+            
+            <p>What makes Coronado truly special is its unique character. Unlike mainland San Diego neighborhoods that blend into one another, Coronado maintains distinct boundaries and an unmistakable island identity. The historic Hotel del Coronado anchors the coastline with its Victorian grandeur, while tree-lined streets showcase immaculately maintained homes ranging from charming beach cottages to waterfront estates. The community is remarkably walkable and bike-friendly, with residents often choosing two wheels over four for their daily routines.</p>
+            
+            <p>Life here moves at a different pace. There's a palpable sense of community pride - from the pristine beaches maintained by dedicated volunteers to the thriving small businesses along Orange Avenue. The island attracts discerning families seeking top-tier schools, military families stationed at Naval Air Station North Island, empty nesters who've earned their coastal retreat, and successful professionals who appreciate the perfect work-life balance. Despite its exclusivity, Coronado maintains a welcoming, neighborly atmosphere where newcomers are embraced and longtime residents become lifelong friends.</p>
+        </section>
+
+        <!-- Lifestyle & Amenities Section -->
+        <section class="section">
+            <h2>Lifestyle & Amenities</h2>
+            
+            <div class="amenities-grid">
+                <div class="amenity-item">
+                    <div class="amenity-icon"></div>
+                    <div class="amenity-text">Consistently ranked #1 beach in America with pristine sand and gentle surf</div>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon"></div>
+                    <div class="amenity-text">Historic Hotel del Coronado - iconic Victorian resort featured in "Some Like It Hot"</div>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon"></div>
+                    <div class="amenity-text">Vibrant Orange Avenue downtown with boutique shopping and restaurants</div>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon"></div>
+                    <div class="amenity-text">World-class golf at Coronado Golf Course with bay views</div>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon"></div>
+                    <div class="amenity-text">Bayshore Bikeway - 24 miles of scenic waterfront cycling</div>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon"></div>
+                    <div class="amenity-text">Coronado Ferry offering car-free commute to downtown San Diego</div>
+                </div>
+            </div>
+            
+            <p>Coronado's lifestyle centers around outdoor living and community connection. The island's crown jewel is its wide, flat beach stretching for miles with powdery sand and gentle waves perfect for families. Unlike many Southern California beaches crowded with tourists, Coronado Beach maintains an uncrowded, almost private feel even during peak season. Residents start their days with sunrise beach walks, surfing sessions, or bike rides along the bay, then perhaps grab coffee at Clayton's Coffee Shop or breakfast at Tartine.</p>
+            
+            <p>Orange Avenue serves as the island's main street, offering everything from casual cafes to upscale dining. Notable restaurants include 1500 Ocean at Hotel del Coronado for special occasions, Stake Chophouse for premium steaks, and Coronado Brewing Company for craft beer and pub fare. The Village Theatre, a 1940s-era cinema, screens first-run movies in nostalgic surroundings. The Coronado Ferry Landing features bayfront dining and boutiques with stunning skyline views, while the Tuesday Farmers Market brings the community together with local produce and artisan goods.</p>
+            
+            <p>Recreation options abound beyond the beach. Coronado Municipal Golf Course offers affordable play with spectacular views. Spreckels Park hosts concerts, festivals, and community gatherings throughout the year. The island's extensive bike path network makes car-free living genuinely feasible - many families own golf carts for local errands. The Coronado Public Library and cultural center provide programming for all ages, while the historic Coronado Playhouse offers live theater productions. It's a lifestyle that seamlessly blends resort-town amenities with authentic neighborhood living.</p>
+        </section>
+
+        <!-- Schools & Education Section -->
+        <section class="section">
+            <h2>Schools & Education</h2>
+            
+            <p>Coronado's exceptional school system is consistently cited as a primary reason families choose the island. The Coronado Unified School District serves all island students with remarkable results - SAT scores well above state averages, graduation rates exceeding 98%, and college acceptance rates approaching 100%. The district's small size allows for personalized attention and strong parent involvement. Village Elementary, Coronado Middle School, and Coronado High School all receive top ratings from GreatSchools and consistently rank among San Diego County's finest public schools.</p>
+            
+            <p>What sets Coronado schools apart isn't just academic excellence but also comprehensive programs. Students benefit from robust STEM curricula, award-winning arts and music programs, competitive athletics, and extensive AP course offerings. The district's commitment to innovation includes modern technology integration and project-based learning. Class sizes remain manageable, teachers are experienced and dedicated, and the community's investment in education is evident in well-maintained facilities and strong funding. Sacred Heart Parish School offers a private Catholic education option for K-8 students seeking faith-based learning.</p>
+        </section>
+
+        <!-- Getting Around Section -->
+        <section class="section">
+            <h2>Getting Around</h2>
+            
+            <p>Coronado's island location creates unique commuting dynamics. The iconic 2.1-mile Coronado Bay Bridge provides the primary vehicle connection to downtown San Diego and the greater metro area. During peak hours, expect 15-20 minutes to reach downtown, though bridge traffic can extend this during rush hour or major events. The alternative route through Imperial Beach and Chula Vista takes longer but avoids bridge congestion. Many residents, however, embrace the Coronado Ferry - a 15-minute waterfront commute from the Ferry Landing to downtown's Embarcadero that transforms the daily grind into a pleasant bay cruise.</p>
+            
+            <p>Within Coronado, most residents adopt a car-optional lifestyle. The island's compact size and excellent bike infrastructure make cycling the preferred transportation method. Golf carts are common for quick trips to the store or beach. Everything essential - groceries, restaurants, schools, parks, and beaches - sits within a comfortable bike ride or walk. San Diego International Airport is just 10 minutes away across the bridge, making business travel remarkably convenient. For those working in nearby Chula Vista or Imperial Beach, commutes are straightforward, while positions in La Jolla or North County require 30-45 minutes via I-5.</p>
+        </section>
+
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Ready to Call Coronado Home?</h2>
+                <p>I'm Rusty Rau, your Coronado real estate expert with 6 years of experience helping families discover island living. Whether you're searching for a family home near top-rated schools or a waterfront estate with bay views, I'll guide you through Coronado's competitive market with insider knowledge and proven results.</p>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h3>Call or Text</h3>
+                            <a href="tel:+1234567890">(123) 456-7890</a>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:rusty@rauhomegroup.com">rusty@rauhomegroup.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h3>Office</h3>
+                            <a href="#">Rau Home Group, San Diego</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Tell me about your Coronado home search</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Get Started Today</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Rau Home Group - Coronado Real Estate",
+        "image": "https://rauhomegroup.com/assets/images/neighborhoods/coronado-hero.jpg",
+        "description": "Coronado San Diego real estate expert. Island paradise homes with top-rated schools and pristine beaches. Median price $2.2M.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Coronado",
+            "addressRegion": "CA",
+            "postalCode": "92118",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "32.6859",
+            "longitude": "-117.1831"
+        },
+        "url": "https://rauhomegroup.com/neighborhoods/coronado.html",
+        "priceRange": "$$$$$",
+        "areaServed": "Coronado, San Diego, California"
+    }
+    </script>
+</body>
+</html>

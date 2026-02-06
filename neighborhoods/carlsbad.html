@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlsbad Real Estate & Homes for Sale | San Diego | Rau Home Group</title>
+    <meta name="description" content="Discover Carlsbad San Diego - coastal village charm meets family-friendly living with LEGOLAND, pristine beaches, and top-rated schools. Median home price $1.69M. Expert local real estate guidance from Rusty Rau.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                        url('../assets/images/neighborhoods/carlsbad-hero.jpg') center/cover no-repeat;
+            height: 65vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 7rem 2rem;
+        }
+        
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero-content p {
+            font-size: 1.5rem;
+            font-weight: 300;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .stats-banner {
+            background: #2d2d2d;
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        .stats-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            padding: 0 2rem;
+        }
+        
+        .stat {
+            color: white;
+        }
+        
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #D4AF37;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 1.1rem;
+            color: #ccc;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .content-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 7rem 2rem;
+        }
+        
+        .intro {
+            max-width: 1000px;
+            margin: 0 auto 5rem;
+            font-size: 1.35rem;
+            line-height: 1.9;
+            color: #444;
+        }
+        
+        section {
+            margin-bottom: 5rem;
+        }
+        
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2.5rem;
+            color: #2d2d2d;
+            font-weight: 700;
+            text-align: left;
+        }
+        
+        .text-block {
+            max-width: 1000px;
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #444;
+            margin-bottom: 2rem;
+        }
+        
+        .lifestyle-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem 3rem;
+            margin: 3rem 0;
+            max-width: 1000px;
+        }
+        
+        .lifestyle-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+        
+        .gold-checkmark {
+            width: 32px;
+            height: 32px;
+            background: #D4AF37;
+            border-radius: 50%;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 4px;
+        }
+        
+        .gold-checkmark::after {
+            content: '✓';
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .lifestyle-item span {
+            font-size: 1.15rem;
+            line-height: 1.6;
+            color: #444;
+        }
+        
+        .contact-section {
+            background: #f8f8f8;
+            padding: 5rem 0;
+            margin: 7rem 0 0 0;
+        }
+        
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: start;
+        }
+        
+        .contact-info h2 {
+            margin-bottom: 2rem;
+        }
+        
+        .contact-info p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 2.5rem;
+        }
+        
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        
+        .contact-icon {
+            width: 56px;
+            height: 56px;
+            background: #D4AF37;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: white;
+            flex-shrink: 0;
+        }
+        
+        .contact-method-info {
+            flex: 1;
+        }
+        
+        .contact-method-info strong {
+            display: block;
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 0.25rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .contact-method-info a {
+            font-size: 1.25rem;
+            color: #2d2d2d;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .contact-method-info a:hover {
+            color: #D4AF37;
+        }
+        
+        .contact-form-wrapper {
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        
+        .contact-form-wrapper h3 {
+            margin-bottom: 2rem;
+            font-size: 1.75rem;
+            color: #2d2d2d;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #555;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.875rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .submit-btn {
+            background: #D4AF37;
+            color: white;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s;
+        }
+        
+        .submit-btn:hover {
+            background: #b8941f;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .stats-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .lifestyle-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            
+            .content-wrapper {
+                padding: 4rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Carlsbad, California</h1>
+            <p>Coastal Village Charm Meets Family-Friendly Living</p>
+        </div>
+    </div>
+
+    <!-- Stats Banner -->
+    <div class="stats-banner">
+        <div class="stats-container">
+            <div class="stat">
+                <span class="stat-number">$1.69M</span>
+                <span class="stat-label">Median Home Price</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">9/10</span>
+                <span class="stat-label">School Rating</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">115,000</span>
+                <span class="stat-label">Population</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content-wrapper">
+        
+        <!-- Intro Section -->
+        <div class="intro">
+            <p>Carlsbad perfectly balances coastal California charm with modern family-friendly amenities. Located in North County San Diego, this coastal village offers seven miles of pristine beaches, world-class attractions like LEGOLAND California, and a thriving downtown Village that feels more like a European town square than Southern California sprawl. With its Mediterranean climate, top-rated schools, and strong sense of community, Carlsbad has become one of San Diego's most desirable places to call home.</p>
+        </div>
+
+        <!-- About Carlsbad -->
+        <section>
+            <h2>About Carlsbad</h2>
+            <div class="text-block">
+                <p>Carlsbad sits along the Pacific Coast about 35 miles north of downtown San Diego and 87 miles south of Los Angeles. Named after a famous spa town in the Czech Republic when mineral water was discovered here in the 1880s, Carlsbad has evolved from an agricultural community known for flower fields into a sophisticated coastal city that somehow maintains its small-town character despite a population of approximately 115,000 residents.</p>
+                
+                <p>The city is divided into distinct neighborhoods, each with its own personality. The coastal areas feature beachfront living and cliff-top estates, while inland neighborhoods like Bressi Ranch and La Costa offer newer master-planned communities with resort-style amenities. The historic Carlsbad Village serves as the heart of the community, with tree-lined streets, independent shops, farm-to-table restaurants, and a walkable layout that encourages neighbors to actually know each other.</p>
+                
+                <p>What makes Carlsbad truly unique is how it manages to be simultaneously family-oriented and business-forward, laid-back and ambitious, beachy and sophisticated. Major employers like Thermo Fisher Scientific, Viasat, and ViaSat have established headquarters here, creating high-paying jobs while the city maintains strict development standards that preserve its coastal village character. The result is a community where tech executives and young families share the same coffee shops, beaches, and farmers markets.</p>
+            </div>
+        </section>
+
+        <!-- Lifestyle & Amenities -->
+        <section>
+            <h2>Lifestyle & Amenities</h2>
+            
+            <div class="lifestyle-grid">
+                <div class="lifestyle-item">
+                    <div class="gold-checkmark"></div>
+                    <span>Seven miles of pristine beaches including Tamarack, Carlsbad State Beach, and South Ponto</span>
+                </div>
+                <div class="lifestyle-item">
+                    <div class="gold-checkmark"></div>
+                    <span>LEGOLAND California Resort and SEA LIFE Aquarium - perfect for families</span>
+                </div>
+                <div class="lifestyle-item">
+                    <div class="gold-checkmark"></div>
+                    <span>The Flower Fields - 50 acres of stunning Giant Tecolote Ranunculus blooms each spring</span>
+                </div>
+                <div class="lifestyle-item">
+                    <div class="gold-checkmark"></div>
+                    <span>Historic Carlsbad Village with boutique shopping and award-winning restaurants</span>
+                </div>
+                <div class="lifestyle-item">
+                    <div class="gold-checkmark"></div>
+                    <span>Aviara Golf Club, The Crossings, and other world-class golf courses</span>
+                </div>
+                <div class="lifestyle-item">
+                    <div class="gold-checkmark"></div>
+                    <span>Carlsbad Premium Outlets for designer shopping at discount prices</span>
+                </div>
+            </div>
+            
+            <div class="text-block">
+                <p>Living in Carlsbad means year-round access to outdoor recreation and cultural experiences. The coastal trail system connects beaches and parks, making it easy to bike or walk along the ocean. Surf culture thrives here, with consistent waves attracting everyone from beginners at Tamarack Beach to experienced surfers at Warm Water Jetty. The lagoons - Batiquitos, Agua Hedionda, and Buena Vista - offer kayaking, stand-up paddleboarding, and birdwatching opportunities right in town.</p>
+                
+                <p>The dining scene punches well above its weight for a city of this size. Farm-to-table restaurants take advantage of the region's agricultural heritage, with spots like Campfire serving innovative California cuisine and Pizza Port Brewing Company embodying the relaxed beach vibe. The weekly State Street Farmers Market brings the community together every Wednesday, while special events like the Carlsbad Village Street Faire and Art in the Village showcase local artists and craftspeople.</p>
+                
+                <p>For families, Carlsbad is practically paradise. Beyond LEGOLAND, the city maintains over 50 parks, an excellent library system, and the Dove Library regularly hosts community events. The Carlsbad Village Theatre brings Broadway shows and concerts to town, while the New Village Arts Theatre offers intimate performances year-round. Safety is a top priority - Carlsbad consistently ranks as one of California's safest cities, with well-funded public services and an engaged community watch culture.</p>
+            </div>
+        </section>
+
+        <!-- Schools & Education -->
+        <section>
+            <h2>Schools & Education</h2>
+            <div class="text-block">
+                <p>Carlsbad Unified School District serves the city with a reputation for academic excellence that drives much of the real estate demand. The district operates 15 elementary schools, four middle schools, and three comprehensive high schools, along with alternative education options. Schools like Aviara Oaks Elementary, Sage Creek High School, and Carlsbad High School consistently earn top ratings, with many receiving California Gold Ribbon and National Blue Ribbon recognition.</p>
+                
+                <p>What sets Carlsbad schools apart is not just test scores but the well-rounded programs. Strong STEM curricula prepare students for careers in the region's thriving biotech and tech sectors, while robust arts, music, and athletics programs ensure students develop diverse skills. The district has embraced technology integration while maintaining small class sizes and personalized attention. Parent involvement is exceptionally high, creating a collaborative culture between families and educators.</p>
+                
+                <p>Private school options include Army and Navy Academy (a college preparatory military boarding school), Saint Patrick School (Catholic K-8), and Carlsbad Seaside Academy (independent K-8). Higher education opportunities are nearby, with MiraCosta College offering community college programs and four-year universities like UC San Diego and Cal State San Marcos within easy commuting distance. Many Carlsbad high school graduates go on to attend top universities nationwide, with college acceptance rates consistently above state and national averages.</p>
+            </div>
+        </section>
+
+        <!-- Getting Around -->
+        <section>
+            <h2>Getting Around</h2>
+            <div class="text-block">
+                <p>Carlsbad's location along Interstate 5 provides excellent connectivity throughout Southern California. Downtown San Diego is about 35 miles south (40-50 minutes), while Orange County and Los Angeles are accessible for day trips or occasional commutes. The nearby McClellan-Palomar Airport offers private and charter flights, while San Diego International Airport is about 40 minutes south. The Coaster commuter train stops at three stations in Carlsbad (Poinsettia, Carlsbad Village, and Carlsbad Poinsettia), providing scenic rail service along the coast to downtown San Diego and Oceanside.</p>
+                
+                <p>Within Carlsbad, most residents rely on cars, but the city has invested heavily in bike infrastructure and pedestrian-friendly design. The Coastal Rail Trail runs parallel to the train tracks, creating a north-south bike corridor, while the village areas are highly walkable with wide sidewalks and bike lanes. Traffic is generally manageable compared to other coastal California cities, though rush hour on I-5 can slow down, particularly heading south in the morning and north in the evening. Many Carlsbad residents work locally at one of the city's major employers, eliminating long commutes entirely and contributing to the high quality of life that defines this community.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Ready to Explore Carlsbad?</h2>
+                <p>As a San Diego real estate expert with deep knowledge of North County's coastal communities, I can help you find your perfect Carlsbad home. Whether you're drawn to beachfront living, family-friendly neighborhoods, or the village lifestyle, let's explore what this amazing city has to offer.</p>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-method-info">
+                            <strong>Call or Text</strong>
+                            <a href="tel:+18582004090">(858) 200-4090</a>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-method-info">
+                            <strong>Email</strong>
+                            <a href="mailto:rusty@rauhomegroup.com">rusty@rauhomegroup.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-method-info">
+                            <strong>Serving</strong>
+                            <a href="#" style="pointer-events: none;">All of San Diego County</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form-wrapper">
+                <h3>Get in Touch</h3>
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Rau Home Group - Carlsbad Real Estate",
+        "image": "https://rauhomegroup.com/assets/images/neighborhoods/carlsbad-hero.jpg",
+        "description": "Carlsbad California real estate expert. Coastal village living with beaches, LEGOLAND, top schools. Median price $1.69M. Expert local guidance from Rusty Rau.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Carlsbad",
+            "addressRegion": "CA",
+            "postalCode": "92008",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "33.1581",
+            "longitude": "-117.3506"
+        },
+        "url": "https://rauhomegroup.com/neighborhoods/carlsbad.html",
+        "priceRange": "$$$$",
+        "areaServed": "Carlsbad, San Diego, California"
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Del Mar Real Estate & Homes for Sale | San Diego | Rau Home Group</title>
+    <meta name="description" content="Discover Del Mar San Diego - upscale coastal village with pristine beaches, Del Mar Racetrack, and exceptional schools. Median home price $3.2M. Expert local real estate guidance from Rusty Rau.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                        url('../assets/images/neighborhoods/del-mar-hero.jpg') center/cover no-repeat;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-content h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+        }
+
+        .hero-content p {
+            font-size: 1.75rem;
+            font-weight: 300;
+        }
+
+        .stats-banner {
+            background: #2c3e50;
+            padding: 4rem 0;
+        }
+
+        .stats-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            padding: 0 2rem;
+        }
+
+        .stat {
+            text-align: center;
+            color: white;
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #d4af37;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 1.15rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.9;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 7rem 2rem;
+        }
+
+        .section {
+            margin-bottom: 5rem;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2.5rem;
+            color: #2c3e50;
+        }
+
+        .intro-text {
+            max-width: 1000px;
+            font-size: 1.35rem;
+            line-height: 1.9;
+            margin-bottom: 3rem;
+            color: #444;
+        }
+
+        .body-text {
+            max-width: 1000px;
+            font-size: 1.15rem;
+            line-height: 1.9;
+            margin-bottom: 2rem;
+            color: #555;
+        }
+
+        .amenities-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin: 3rem 0;
+            max-width: 1000px;
+        }
+
+        .amenity-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .check-circle {
+            width: 32px;
+            height: 32px;
+            background: #d4af37;
+            border-radius: 50%;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0.25rem;
+        }
+
+        .check-circle::after {
+            content: '✓';
+            color: white;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        .amenity-text {
+            font-size: 1.15rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .contact-section {
+            background: #f8f9fa;
+            padding: 7rem 0;
+            margin-top: 5rem;
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+        }
+
+        .contact-info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+        }
+
+        .contact-info p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 2rem;
+        }
+
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 2.5rem;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .contact-icon {
+            width: 56px;
+            height: 56px;
+            background: #d4af37;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .contact-method-text h3 {
+            font-size: 1.15rem;
+            margin-bottom: 0.25rem;
+            color: #2c3e50;
+        }
+
+        .contact-method-text a {
+            color: #3498db;
+            text-decoration: none;
+            font-size: 1.05rem;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #2c3e50;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.875rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-btn {
+            background: #d4af37;
+            color: white;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.2s;
+        }
+
+        .submit-btn:hover {
+            background: #c19b2a;
+        }
+
+        @media (max-width: 968px) {
+            .stats-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .amenities-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .content {
+                padding: 4rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Del Mar, San Diego</h1>
+            <p>Where the Turf Meets the Surf</p>
+        </div>
+    </div>
+
+    <!-- Stats Banner -->
+    <div class="stats-banner">
+        <div class="stats-container">
+            <div class="stat">
+                <div class="stat-number">$3.2M</div>
+                <div class="stat-label">Median Home Price</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">9/10</div>
+                <div class="stat-label">School Rating</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">4,200</div>
+                <div class="stat-label">Population</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        
+        <!-- About Section -->
+        <section class="section">
+            <h2>About Del Mar</h2>
+            <p class="intro-text">Del Mar is one of San Diego's most exclusive coastal communities, offering an unbeatable combination of small-town charm and sophisticated coastal living. This picturesque village sits on two miles of pristine Pacific coastline, where world-class beaches meet upscale dining, boutique shopping, and the iconic Del Mar Racetrack.</p>
+            
+            <p class="body-text">What sets Del Mar apart is its commitment to maintaining a village atmosphere despite being one of California's wealthiest communities. You won't find chain restaurants or big-box stores here. Instead, tree-lined streets lead to locally-owned cafes, art galleries, and specialty shops. The community fiercely protects its character, resulting in an authentic coastal experience that feels worlds away from typical suburban sprawl.</p>
+            
+            <p class="body-text">The town attracts affluent families, tech executives, successful entrepreneurs, and discerning retirees who value privacy, natural beauty, and proximity to both San Diego's employment centers and North County's laid-back lifestyle. Many residents have deep roots here, creating a tight-knit community where neighbors know each other and local events bring everyone together. Whether you're watching the sunset from Powerhouse Park, browsing the farmers market, or enjoying dinner at one of the village's celebrated restaurants, Del Mar offers a refined coastal lifestyle that's hard to match anywhere else in Southern California.</p>
+        </section>
+
+        <!-- Lifestyle & Amenities Section -->
+        <section class="section">
+            <h2>Lifestyle & Amenities</h2>
+            
+            <div class="amenities-grid">
+                <div class="amenity-item">
+                    <div class="check-circle"></div>
+                    <div class="amenity-text">Two miles of pristine beaches with year-round beach access and lifeguard stations</div>
+                </div>
+                <div class="amenity-item">
+                    <div class="check-circle"></div>
+                    <div class="amenity-text">Del Mar Racetrack hosting thoroughbred racing and the prestigious Del Mar Fair each summer</div>
+                </div>
+                <div class="amenity-item">
+                    <div class="check-circle"></div>
+                    <div class="amenity-text">Walkable village with boutique shopping, art galleries, and award-winning restaurants</div>
+                </div>
+                <div class="amenity-item">
+                    <div class="check-circle"></div>
+                    <div class="amenity-text">Powerhouse Park and community center with ocean views and event spaces</div>
+                </div>
+                <div class="amenity-item">
+                    <div class="check-circle"></div>
+                    <div class="amenity-text">Weekly farmers market featuring local produce, artisan goods, and live music</div>
+                </div>
+                <div class="amenity-item">
+                    <div class="check-circle"></div>
+                    <div class="amenity-text">Adjacent to Torrey Pines State Natural Reserve with world-class hiking trails</div>
+                </div>
+            </div>
+
+            <p class="body-text">Del Mar's lifestyle centers around its spectacular beaches. From the family-friendly shores near 15th Street to the dramatic bluffs of Torrey Pines State Beach, outdoor recreation defines daily life here. Mornings often start with beach walks or surf sessions, followed by coffee at one of the village's charming cafes. The community's compact, walkable layout means you can stroll to dinner, browse local shops, and enjoy the farmers market without ever getting in your car.</p>
+
+            <p class="body-text">The Del Mar Racetrack has been the social centerpiece since 1937, drawing celebrities and racing enthusiasts each summer for the thoroughbred season. The adjacent Del Mar Fairgrounds hosts the San Diego County Fair, one of California's largest annual events, bringing carnival rides, concerts, and agricultural exhibits right to your doorstep. Throughout the year, the village buzzes with art walks, holiday parades, and community gatherings that foster genuine connections among residents.</p>
+
+            <p class="body-text">Dining in Del Mar rivals any coastal destination in California. From casual beachfront spots like Jake's Del Mar and Poseidon to upscale establishments like Addison (San Diego's only three-Michelin-star restaurant), the culinary scene punches well above the town's small size. Pacific Coast Grill, Bistro du Marché, and Board & Brew are local favorites where you'll regularly bump into neighbors and friends, reinforcing that small-town feel despite the world-class amenities.</p>
+        </section>
+
+        <!-- Schools & Education Section -->
+        <section class="section">
+            <h2>Schools & Education</h2>
+            
+            <p class="body-text">Del Mar's exceptional schools are a major draw for families and significantly impact property values. The community is served by the highly-rated Del Mar Union School District, consistently ranking among California's top public school systems. Del Mar Heights Elementary, Ashley Falls Elementary, and Torrey Pines Elementary all earn GreatSchools ratings of 9 or 10, with test scores that regularly exceed state and national averages.</p>
+
+            <p class="body-text">For middle school, students attend Oak Crest Middle School or Carmel Del Mar Middle School, both offering strong academic programs and extensive extracurricular activities. High school students typically attend Torrey Pines High School or Canyon Crest Academy, two of San Diego's premier public high schools with exceptional college preparatory programs, competitive athletics, and impressive college acceptance rates. Private school options include The Del Mar Pines School and nearby institutions in La Jolla and Solana Beach, giving families excellent educational choices at every level. Many Del Mar families specifically relocated here for the schools, and homes within the Del Mar Union School District boundaries command substantial premiums over comparable properties just outside the district.</p>
+        </section>
+
+        <!-- Getting Around Section -->
+        <section class="section">
+            <h2>Getting Around</h2>
+            
+            <p class="body-text">Del Mar's location offers the rare combination of coastal tranquility and convenient access to major employment centers. Downtown San Diego sits just 20 miles south, typically a 25-minute drive via Interstate 5. The Sorrento Valley and University City tech corridors are even closer, about 10-15 minutes away, making Del Mar popular with executives and professionals working at Qualcomm, Illumina, and other major employers. San Diego International Airport is 22 miles south, roughly a 25-30 minute drive, while the Carlsbad airport offers a closer option for private aviation.</p>
+
+            <p class="body-text">The compact village layout means most residents walk or bike for daily errands, with dedicated bike lanes and pedestrian-friendly streets throughout the residential areas. The Coaster commuter train stops in Del Mar, providing easy rail access to downtown San Diego and North County beach towns without the hassle of freeway traffic. Interstate 5 runs along Del Mar's eastern edge, offering quick connections north to Carlsbad, Oceanside, and Orange County, or south to La Jolla and central San Diego. For families, the short commute to excellent schools means less time in the car and more time enjoying the beach lifestyle that makes Del Mar so special.</p>
+        </section>
+
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-section">
+        <div class="contact-container">
+            <!-- Left Column: Contact Info -->
+            <div class="contact-info">
+                <h2>Ready to Find Your Del Mar Home?</h2>
+                <p>As a 6-year San Diego real estate veteran with deep Del Mar market expertise, I understand what makes this community so special. Whether you're looking for a beachfront estate, a village cottage, or a family home near top-rated schools, I'll help you navigate this competitive luxury market and find the perfect property.</p>
+                <p>Del Mar's inventory moves quickly, often with multiple offers on well-priced homes. Let's discuss your goals and create a strategy to secure your dream coastal property.</p>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-method-text">
+                            <h3>Call or Text</h3>
+                            <a href="tel:+1234567890">(123) 456-7890</a>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-method-text">
+                            <h3>Email</h3>
+                            <a href="mailto:rusty@rauhomegroup.com">rusty@rauhomegroup.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-method-text">
+                            <h3>Serving</h3>
+                            <a>Del Mar & All San Diego County</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Contact Form -->
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Get in Touch</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Rau Home Group - Del Mar Real Estate",
+        "image": "https://rauhomegroup.com/assets/images/neighborhoods/del-mar-hero.jpg",
+        "description": "Del Mar San Diego real estate expert. Upscale coastal village homes and estates. Median price $3.2M. Top schools, beaches, and racetrack lifestyle.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Del Mar",
+            "addressRegion": "CA",
+            "postalCode": "92014",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "32.9595",
+            "longitude": "-117.2653"
+        },
+        "url": "https://rauhomegroup.com/neighborhoods/del-mar.html",
+        "priceRange": "$$$$$",
+        "areaServed": "Del Mar, San Diego, California"
+    }
+    </script>
+</body>
+</html>

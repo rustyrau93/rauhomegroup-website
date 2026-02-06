@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission Beach Real Estate & Homes for Sale | San Diego | Rau Home Group</title>
+    <meta name="description" content="Discover Mission Beach San Diego - iconic boardwalk living with Belmont Park, year-round beach lifestyle, and bay access. Median home price $1.99M. Expert local real estate guidance from Rusty Rau.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                        url('../assets/images/neighborhoods/mission-beach-hero.jpg') center/cover no-repeat;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-content h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+        }
+
+        .hero-content p {
+            font-size: 1.75rem;
+            font-weight: 300;
+        }
+
+        .stats-banner {
+            background: #2c3e50;
+            padding: 4rem 0;
+        }
+
+        .stats-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            padding: 0 2rem;
+        }
+
+        .stat {
+            text-align: center;
+            color: white;
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #d4af37;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 1.15rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.9;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 7rem 2rem;
+        }
+
+        .section {
+            margin-bottom: 5rem;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2.5rem;
+            color: #2c3e50;
+        }
+
+        .intro-text {
+            max-width: 1000px;
+            font-size: 1.35rem;
+            line-height: 1.9;
+            margin-bottom: 3rem;
+            color: #444;
+        }
+
+        .body-text {
+            max-width: 1000px;
+            font-size: 1.15rem;
+            line-height: 1.9;
+            margin-bottom: 2rem;
+            color: #555;
+        }
+
+        .amenities-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin: 3rem 0;
+            max-width: 1000px;
+        }
+
+        .amenity-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .check-circle {
+            width: 32px;
+            height: 32px;
+            background: #d4af37;
+            border-radius: 50%;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0.25rem;
+        }
+
+        .check-circle::after {
+            content: '✓';
+            color: white;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        .amenity-text {
+            font-size: 1.15rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .contact-section {
+            background: #f8f9fa;
+            padding: 7rem 0;
+            margin-top: 5rem;
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+        }
+
+        .contact-info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+        }
+
+        .contact-info p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 2rem;
+        }
+
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 2.5rem;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .contact-icon {
+            width: 56px;
+            height: 56px;
+            background: #d4af37;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .contact-method-text h3 {
+            font-size: 1.15rem;
+            margin-bottom: 0.25rem;
+            color: #2c3e50;
+        }
+
+        .contact-method-text a {
+            color: #3498db;
+            text-decoration: none;
+            font-size: 1.05rem;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #2c3e50;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.875rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-btn {
+            background: #d4af37;
+            color: white;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.2s;
+        }
+
+        .submit-btn:hover {
+            background: #c19b2a;
+        }
+
+        @media (max-width: 968px) {
+            .stats-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .amenities-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .content {
+                padding: 4rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Mission Beach, San Diego</h1>
+            <p>The Ultimate Boardwalk Beach Town</p>
+        </div>
+    </div>
+
+    <!-- Stats Banner -->
+    <div class="stats-banner">
+        <div class="stats-container">
+            <div class="stat">
+                <div class="stat-number">$1.99M</div>
+                <div class="stat-label">Median Home Price</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">7/10</div>
+                <div class="stat-label">School Rating</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">7,000</div>
+                <div class="stat-label">Population</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        
+        <!-- About Section -->
+        <section class="section">
+            <h2>About Mission Beach</h2>
+            <p class="intro-text">Mission Beach is San Diego's most iconic beach community, stretching along a narrow two-mile strip of sand between the Pacific Ocean and Mission Bay. This vibrant neighborhood captures the quintessential Southern California beach lifestyle with its famous boardwalk, legendary beach culture, and the vintage charm of Belmont Park's historic wooden roller coaster lighting up the shoreline.</p>
+            
+            <p class="body-text">What makes Mission Beach truly unique is its dual waterfront access. On the oceanside, powerful waves attract surfers and bodyboarders while the wide sandy beach buzzes with volleyball games, beach bonfires, and endless sunshine. Just steps away on the bay side, calm protected waters offer perfect conditions for paddleboarding, kayaking, sailing, and wakeboarding. This rare geographic setup means you can surf in the morning and paddleboard in the afternoon without leaving your neighborhood.</p>
+            
+            <p class="body-text">The community attracts a diverse mix of young professionals, active families, beach enthusiasts, remote workers who prioritize lifestyle, and seasonal residents who maintain vacation homes here. The vibe is decidedly casual and energetic, with flip-flops as formal attire and beach cruiser bikes as the preferred mode of transportation. While property values have soared in recent years, Mission Beach maintains its laid-back, unpretentious character where million-dollar homeowners share the boardwalk with college students and everyone gathers at the same beachfront taco stands. It's a place where you measure wealth in perfect waves, sunset views, and walking distance to the ocean rather than square footage or luxury finishes.</p>
+        </section>
+
+        <!-- Lifestyle & Amenities Section -->
+        <section class="section">
+            <h2>Lifestyle & Amenities</h2>
+            
+            <div class="amenities-grid">
+                <div class="amenity-item">
+                    <div class="check-circle"></div>
+                    <div class="amenity-text">Two miles of oceanfront boardwalk perfect for biking, skating, and jogging with constant ocean views</div>
+                </div>
+                <div class="amenity-item">
+                    <div class="check-circle"></div>
+                    <div class="amenity-text">Belmont Park featuring the historic Giant Dipper roller coaster, arcade, restaurants, and beach shops</div>
+                </div>
+                <div class="amenity-item">
+                    <div class="check-circle"></div>
+                    <div class="amenity-text">Direct access to both ocean waves and calm Mission Bay waters for endless water sports options</div>
+                </div>
+                <div class="amenity-item">
+                    <div class="check-circle"></div>
+                    <div class="amenity-text">Year-round beach volleyball courts, basketball courts, and outdoor fitness equipment along the strand</div>
+                </div>
+                <div class="amenity-item">
+                    <div class="check-circle"></div>
+                    <div class="amenity-text">Mission Bay Park offering 4,600 acres of protected waterways, bike paths, and picnic areas</div>
+                </div>
+                <div class="amenity-item">
+                    <div class="check-circle"></div>
+                    <div class="amenity-text">Walk or bike to Pacific Beach nightlife, restaurants, and Garnet Avenue shopping district</div>
+                </div>
+            </div>
+
+            <p class="body-text">Life in Mission Beach revolves entirely around outdoor recreation and beach culture. Most residents start their day on the beach or boardwalk, whether that's a morning surf session, a run along the strand, or coffee watching the sunrise over the Pacific. The neighborhood's compact layout means everything is within walking or biking distance, and you'll quickly fall into the rhythm of beach cruiser life where cars feel unnecessary. The boardwalk serves as Main Street, bringing together locals and visitors in a constant parade of activity from dawn to dusk.</p>
+
+            <p class="body-text">Belmont Park anchors the southern end of the neighborhood, and the vintage amusement park's neon lights and roller coaster screams provide the soundtrack to summer evenings. Beyond the rides, the complex offers casual dining at venues like Cannonball and Draft, beach gear shops, and The Plunge indoor swimming pool. On the bay side, Sail Bay and Santa Clara Point offer launching spots for kayaks, paddleboards, and small sailboats, while Ski Beach attracts wakeboarders and jet skiers to its protected waters.</p>
+
+            <p class="body-text">The dining scene is purposefully casual, focusing on beach-friendly fare and outdoor patios where sandy feet and wet swimsuits are always welcome. Local favorites include The Beachcomber for fish tacos and ocean views, Draft South Mission for craft beer and bay-front dining, and Sandbar Sports Grill for sports on TV and late-night bites. For groceries and essentials, most residents bike to the nearby Vons or venture into Pacific Beach's commercial district on Garnet Avenue, where you'll find everything from yoga studios to surf shops to taco stands serving until 2 AM.</p>
+        </section>
+
+        <!-- Schools & Education Section -->
+        <section class="section">
+            <h2>Schools & Education</h2>
+            
+            <p class="body-text">Mission Beach is served by San Diego Unified School District, with families typically attending Pacific Beach Elementary School and Pacific Beach Middle School, both earning GreatSchools ratings around 6-7 out of 10. For high school, students attend Mission Bay High School, which offers solid college prep programs and strong athletic teams, particularly in water sports given the community's beach location. While these schools don't achieve the top-tier rankings of nearby La Jolla or Del Mar, they provide quality education and the tight-knit beach community means teachers often live in the neighborhood and deeply understand the local culture.</p>
+
+            <p class="body-text">Many Mission Beach families prioritize the lifestyle and outdoor education opportunities the area provides, viewing the beach itself as an extension of the classroom where kids learn ocean safety, environmental stewardship, and water sports from an early age. Private and charter school options are available throughout San Diego if families seek alternative educational paths, and the central location makes commutes to schools in La Jolla, Point Loma, or other districts manageable. The community also benefits from proximity to UC San Diego, San Diego State University, and numerous private colleges, creating a college-town atmosphere that influences the neighborhood's youthful energy and progressive values.</p>
+        </section>
+
+        <!-- Getting Around Section -->
+        <section class="section">
+            <h2>Getting Around</h2>
+            
+            <p class="body-text">Mission Beach occupies a prime central location in San Diego's coastal corridor, making it surprisingly convenient despite its beach town feel. Downtown San Diego is just 8 miles southeast, typically a 15-20 minute drive via Interstate 5, while San Diego International Airport sits 10 miles away, about a 15-minute drive depending on traffic. The Sorrento Valley tech corridor and University City employment centers are 15-20 minutes north, and most of San Diego's major employers remain within a 30-minute commute, making Mission Beach viable for working professionals who refuse to sacrifice beach access for career opportunities.</p>
+
+            <p class="body-text">Within the neighborhood, most residents rarely drive. The compact geography means you can walk or bike to everything you need, and beach cruiser bikes are practically the official vehicle of Mission Beach. Mission Boulevard runs the length of the community, providing the main north-south route, while the bayfront promenade and oceanfront boardwalk offer car-free paths for bikes and pedestrians. Parking can be extremely challenging, especially on summer weekends when visitors flood the beach, so most locals embrace the bike-and-walk lifestyle and reserve car trips for longer excursions. MTS bus routes connect Mission Beach to downtown and other coastal communities, though most residents find bikes more convenient for local travel and use rideshare services for longer trips or nights out.</p>
+        </section>
+
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-section">
+        <div class="contact-container">
+            <!-- Left Column: Contact Info -->
+            <div class="contact-info">
+                <h2>Ready to Find Your Mission Beach Home?</h2>
+                <p>As a 6-year San Diego real estate veteran with deep expertise in beach communities, I understand what makes Mission Beach special and how to navigate its unique market. Whether you're looking for a beachfront cottage, a bay-side condo, or an investment property near the boardwalk, I'll help you find the perfect beach lifestyle fit.</p>
+                <p>Mission Beach properties move fast, often attracting multiple offers from buyers who prioritize location and lifestyle over square footage. Let's discuss your goals and create a strategy to secure your piece of San Diego's most iconic beach.</p>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-method-text">
+                            <h3>Call or Text</h3>
+                            <a href="tel:+1234567890">(123) 456-7890</a>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-method-text">
+                            <h3>Email</h3>
+                            <a href="mailto:rusty@rauhomegroup.com">rusty@rauhomegroup.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-method-text">
+                            <h3>Serving</h3>
+                            <a>Mission Beach & All San Diego County</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Contact Form -->
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Get in Touch</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Rau Home Group - Mission Beach Real Estate",
+        "image": "https://rauhomegroup.com/assets/images/neighborhoods/mission-beach-hero.jpg",
+        "description": "Mission Beach San Diego real estate expert. Iconic boardwalk beach living with Belmont Park and dual waterfront access. Median price $1.99M.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Mission Beach",
+            "addressRegion": "CA",
+            "postalCode": "92109",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "32.7701",
+            "longitude": "-117.2526"
+        },
+        "url": "https://rauhomegroup.com/neighborhoods/mission-beach.html",
+        "priceRange": "$$$$",
+        "areaServed": "Mission Beach, San Diego, California"
+    }
+    </script>
+</body>
+</html>

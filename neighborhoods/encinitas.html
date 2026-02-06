@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encinitas Real Estate & Homes for Sale | San Diego | Rau Home Group</title>
+    <meta name="description" content="Discover Encinitas San Diego - coastal surf town with organic lifestyle, world-class beaches, and laid-back vibe. Median home price $1.87M. Expert local real estate guidance from Rusty Rau.">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                        url('../assets/images/neighborhoods/encinitas-hero.jpg') center/cover no-repeat;
+            height: 65vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .hero-content h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+        }
+
+        .hero-content .tagline {
+            font-size: 1.75rem;
+            font-weight: 300;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 7rem 2rem;
+        }
+
+        .intro-section {
+            max-width: 1000px;
+            margin: 0 auto 5rem;
+        }
+
+        .intro-text {
+            font-size: 1.35rem;
+            line-height: 1.9;
+            color: #34495e;
+            margin-bottom: 2.5rem;
+        }
+
+        .stats-banner {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            margin: 4rem 0 5rem;
+            padding: 3.5rem;
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #c9a961;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 1.15rem;
+            color: #7f8c8d;
+            font-weight: 500;
+        }
+
+        .section {
+            max-width: 1000px;
+            margin: 0 auto 5rem;
+        }
+
+        .section-title {
+            font-size: 2.25rem;
+            color: #2c3e50;
+            margin-bottom: 2rem;
+            font-weight: 600;
+            text-align: left;
+        }
+
+        .section-content p {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #34495e;
+            margin-bottom: 2rem;
+        }
+
+        .section-content strong {
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        .lifestyle-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2.5rem;
+            margin: 3rem 0;
+        }
+
+        .lifestyle-feature {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.25rem;
+        }
+
+        .feature-icon {
+            width: 32px;
+            height: 32px;
+            background: #c9a961;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 0.25rem;
+        }
+
+        .feature-icon::before {
+            content: "✓";
+            color: white;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .feature-text {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #34495e;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            border-radius: 12px;
+            padding: 5rem 4rem;
+            margin-top: 7rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: start;
+        }
+
+        .contact-info {
+            color: white;
+        }
+
+        .contact-info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+
+        .contact-info p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            color: rgba(255,255,255,0.9);
+        }
+
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 2.5rem;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .contact-icon {
+            width: 56px;
+            height: 56px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .contact-details {
+            color: white;
+        }
+
+        .contact-label {
+            font-size: 0.95rem;
+            color: rgba(255,255,255,0.7);
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-value {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+        }
+
+        .contact-value:hover {
+            color: #c9a961;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.875rem 1rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #c9a961;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-btn {
+            background: #c9a961;
+            color: white;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: #b89451;
+        }
+
+        @media (max-width: 968px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .stats-banner {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                padding: 2rem;
+            }
+
+            .lifestyle-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .container {
+                padding: 4rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Encinitas, San Diego</h1>
+            <p class="tagline">Surf, Soul & Sunshine - Where the Coast Meets Consciousness</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        
+        <!-- Intro Section -->
+        <div class="intro-section">
+            <p class="intro-text">Welcome to Encinitas, where golden beaches meet spiritual enlightenment and the surf culture runs as deep as the Pacific. This isn't your typical Southern California beach town. Here, yoga studios outnumber fast-food chains, organic cafes line the streets, and world-class surf breaks draw wave riders from around the globe. With its laid-back vibe, health-conscious community, and stunning coastline, Encinitas has become one of San Diego's most sought-after coastal communities.</p>
+        </div>
+
+        <!-- Stats Banner -->
+        <div class="stats-banner">
+            <div class="stat-item">
+                <span class="stat-number">$1.87M</span>
+                <span class="stat-label">Median Home Price</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">8/10</span>
+                <span class="stat-label">School Rating</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">62,000</span>
+                <span class="stat-label">Population</span>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <section class="section">
+            <h2 class="section-title">About Encinitas</h2>
+            <div class="section-content">
+                <p>Nestled along six miles of pristine Pacific coastline about 25 miles north of downtown San Diego, Encinitas embodies the authentic California beach lifestyle. The city is actually a collection of five distinct neighborhoods, each with its own personality: classic surf-town Leucadia, family-friendly Cardiff-by-the-Sea, rural Olivenhain, modern New Encinitas, and the vibrant downtown area along historic Highway 101.</p>
+
+                <p>What sets Encinitas apart is its unique blend of counterculture cool and family-friendly appeal. The Self-Realization Fellowship's golden-domed meditation gardens overlook Swami's Beach, one of Southern California's most iconic surf breaks. The legendary San Diego Botanic Garden sprawls across 37 acres of rare plants and specialty gardens. And throughout the city, you'll find an eclectic mix of surf shops, yoga studios, farm-to-table restaurants, craft breweries, and wellness centers that reflect the community's health-conscious, environmentally aware values.</p>
+
+                <p>The residents of Encinitas are surfers, yogis, entrepreneurs, artists, and families who've chosen to prioritize quality of life over the urban hustle. Despite the luxury real estate market, the town maintains a refreshingly unpretentious vibe where billionaires and surf instructors share the same beach access and coffee shops. It's a place where you can start your morning with sunrise yoga, spend your afternoon catching waves, and end your day watching the sunset from a cliff-top restaurant, all without ever leaving your neighborhood.</p>
+            </div>
+        </section>
+
+        <!-- Lifestyle & Amenities Section -->
+        <section class="section">
+            <h2 class="section-title">Lifestyle & Amenities</h2>
+            
+            <div class="lifestyle-grid">
+                <div class="lifestyle-feature">
+                    <div class="feature-icon"></div>
+                    <div class="feature-text">Five world-class beaches including Swami's, Moonlight Beach, and Beacon's Beach</div>
+                </div>
+                <div class="lifestyle-feature">
+                    <div class="feature-icon"></div>
+                    <div class="feature-text">San Diego Botanic Garden with 37 acres of rare plants and themed gardens</div>
+                </div>
+                <div class="lifestyle-feature">
+                    <div class="feature-icon"></div>
+                    <div class="feature-text">Thriving downtown corridor with organic markets, surf shops, and wellness centers</div>
+                </div>
+                <div class="lifestyle-feature">
+                    <div class="feature-icon"></div>
+                    <div class="feature-text">Multiple craft breweries, farm-to-table restaurants, and beachfront cafes</div>
+                </div>
+                <div class="lifestyle-feature">
+                    <div class="feature-icon"></div>
+                    <div class="feature-text">Self-Realization Fellowship meditation gardens and golden lotus archway</div>
+                </div>
+                <div class="lifestyle-feature">
+                    <div class="feature-icon"></div>
+                    <div class="feature-text">Year-round farmers markets and community events celebrating local culture</div>
+                </div>
+            </div>
+
+            <div class="section-content">
+                <p>Life in Encinitas revolves around the ocean, wellness, and community. Mornings often start at Moonlight Beach where families set up for the day while surfers paddle out at dawn. The coastline offers something for everyone: gentle waves at Cardiff Reef for beginners, powerful swells at Swami's for experienced surfers, and pristine sand at Leucadia's secret spots for those seeking solitude. Stand-up paddleboarders cruise the calm waters of Cardiff Lagoon while tide-poolers explore the rocky shores at low tide.</p>
+
+                <p>The dining scene reflects Encinitas' health-conscious culture. You'll find açai bowl cafes next to gourmet taco shops, organic juice bars alongside craft breweries, and upscale farm-to-table restaurants serving locally-sourced seafood with ocean views. The Sunday farmers market on Vulcan Avenue draws crowds for fresh produce, artisan bread, and live music. Coast Highway 101 (the historic Pacific Coast Highway) serves as the town's main artery, lined with surf shops that have been family-owned for generations, yoga studios offering beachfront classes, and boutiques selling everything from handmade jewelry to sustainable surf wear.</p>
+
+                <p>Community events bring residents together throughout the year. The Encinitas Street Fair attracts over 50,000 visitors for arts, crafts, and live entertainment. The Cardiff Kook Run celebrates the town's famous (and frequently decorated) surfer statue. Summer concerts at Moonlight Beach pack the sand with families enjoying music under the stars. And every Sunday evening, locals gather on the bluffs to watch the sunset, often accompanied by impromptu drumming circles and fire dancers, a tradition that captures the town's bohemian spirit perfectly.</p>
+            </div>
+        </section>
+
+        <!-- Schools & Education Section -->
+        <section class="section">
+            <h2 class="section-title">Schools & Education</h2>
+            <div class="section-content">
+                <p>Encinitas is served by two highly-rated school districts: the Encinitas Union Elementary School District (K-6) and San Dieguito Union High School District (7-12), both consistently ranking among San Diego County's top performers. Families are drawn to the area specifically for schools like Ocean Knoll Elementary, Paul Ecke Central Elementary, and Diegueno Middle School, which boast strong academic programs, dedicated teachers, and active parent involvement. La Costa Canyon High School and San Dieguito Academy offer rigorous college prep curricula with impressive Advanced Placement offerings and graduation rates exceeding 95%.</p>
+
+                <p>Beyond traditional public schools, Encinitas offers excellent private and alternative education options. The Rhoades School provides progressive K-8 education emphasizing creativity and critical thinking. Sunset High School serves students seeking smaller class sizes and personalized learning. Several Montessori schools cater to early childhood development, while Cardiff Elementary School District serves the Cardiff-by-the-Sea community with neighborhood schools that feel like extensions of the beach town lifestyle. The emphasis on outdoor education, environmental science, and wellness programs reflects the community's values throughout the educational system.</p>
+            </div>
+        </section>
+
+        <!-- Getting Around Section -->
+        <section class="section">
+            <h2 class="section-title">Getting Around</h2>
+            <div class="section-content">
+                <p>Encinitas sits perfectly positioned on the I-5 corridor, making commutes surprisingly manageable despite the coastal location. Downtown San Diego is 25 miles south (30-40 minutes), while the employment hubs of Sorrento Valley and UTC are just 15 minutes away. The Coaster commuter train stops at three stations within Encinitas (Encinitas Station, Old Encinitas, and Poinsettia), offering a relaxing alternative to freeway driving for those working in downtown San Diego or Del Mar. Many residents bike to the beach, walk to neighborhood cafes, and embrace the car-free lifestyle for daily errands, especially in downtown Encinitas and Cardiff where everything is within a mile radius.</p>
+
+                <p>The town's walkability and bike-friendliness are major draws. The coastal rail trail connects neighborhoods, offering a scenic route for cyclists and runners from Oceanside to Solana Beach. Highway 101 features bike lanes and regular beach access points. During summer, parking near the beaches fills early, but locals know the secret spots and prefer to walk or bike anyway. The laid-back pace extends to traffic, which remains manageable compared to Los Angeles or even some San Diego neighborhoods, though peak summer weekends can see tourist congestion along the main beach areas.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <div class="contact-section">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Ready to Call Encinitas Home?</h2>
+                    <p>As a 6-year San Diego real estate veteran with deep knowledge of North County's coastal markets, I'll help you navigate Encinitas' competitive landscape and find your perfect beach town sanctuary.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details">
+                                <span class="contact-label">Call or Text</span>
+                                <a href="tel:+1234567890" class="contact-value">(123) 456-7890</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">✉️</div>
+                            <div class="contact-details">
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:rusty@rauhomegroup.com" class="contact-value">rusty@rauhomegroup.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Get In Touch</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Rau Home Group - Encinitas Real Estate",
+        "image": "https://rauhomegroup.com/assets/images/neighborhoods/encinitas-hero.jpg",
+        "description": "Encinitas San Diego real estate expert. Coastal surf town with organic lifestyle, world-class beaches. Median price $1.87M. Top schools and wellness culture.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Encinitas",
+            "addressRegion": "CA",
+            "postalCode": "92024",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "33.0370",
+            "longitude": "-117.2920"
+        },
+        "url": "https://rauhomegroup.com/neighborhoods/encinitas.html",
+        "priceRange": "$$$$$",
+        "areaServed": "Encinitas, San Diego, California"
+    }
+    </script>
+</body>
+</html>

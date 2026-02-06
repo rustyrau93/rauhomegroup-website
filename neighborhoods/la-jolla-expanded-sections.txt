@@ -1,0 +1,24 @@
+<!-- After 3rd paragraph in About section, add: -->
+<p style="font-size: 1.15rem; line-height: 1.9; color: #4A5568; margin-bottom: 2.5rem;">
+La Jolla itself is divided into distinct neighborhoods, each with its own character. La Jolla Shores is the family-friendly beach area with the calmest waters. La Jolla Village (the downtown area) centers around Prospect Street with its shops and restaurants. The Bird Rock neighborhood to the south has a more laid-back, surf-town vibe. And up north, La Jolla Farms and Muirlands sit on the hills with some of the most dramatic ocean views in San Diego.
+</p>
+
+<!-- In Lifestyle section, after bullets but before beaches paragraph, add: -->
+<p style="font-size: 1.15rem; line-height: 1.9; color: #4A5568; margin-bottom: 2.5rem;">
+The dining scene here deserves special mention. George's at the Cove is a La Jolla institution with three levels—from California Modern fine dining on top to the casual Ocean Terrace with unbeatable sunset views. The Marine Room has been serving guests since 1941, famous for its floor-to-ceiling windows where waves crash during high tide. Duke's La Jolla offers Hawaiian-inspired cuisine right on the sand. For casual meals, The Taco Stand, Puesto, and Galaxy Taco are local favorites. And if you're into coffee, Bird Rock Coffee Roasters and Better Buzz are morning staples.
+</p>
+
+<!-- At end of Lifestyle section, add: -->
+<p style="font-size: 1.15rem; line-height: 1.9; color: #4A5568; margin-bottom: 0;">
+The cultural scene is surprisingly rich for a beach community. The Museum of Contemporary Art San Diego showcases rotating exhibitions in a building right on the ocean. The La Jolla Playhouse has premiered numerous Broadway productions and continues to push theatrical boundaries. Athenaeum Music & Arts Library hosts concerts, lectures, and art exhibitions. And throughout the year, you'll find events like the La Jolla Art & Wine Festival, La Jolla Concours d'Elegance (classic cars), and the Rough Water Swim at the Cove.
+</p>
+
+<!-- At end of Schools section, add: -->
+<p style="font-size: 1.15rem; line-height: 1.9; color: #4A5568; margin-bottom: 0;">
+The academic culture here is strong. Parents are highly involved, PTA programs are well-funded, and there's a general expectation of excellence. Many families move to La Jolla specifically for the schools, and it shows in the achievement levels. That said, kids here are also encouraged to be well-rounded—you'll see the same students excelling in academics, sports, and arts programs.
+</p>
+
+<!-- At end of Getting Around section, add: -->
+<p style="font-size: 1.15rem; line-height: 1.9; color: #4A5568; margin-bottom: 0;">
+One thing to know about La Jolla—parking can be challenging, especially in the village and near popular beaches during summer weekends. Residents often walk or bike for local errands. There are also electric scooters and bike shares available. Many locals have a strategy: they'll do their beach time early morning or late afternoon to avoid the tourist crowds, and they know the secret parking spots that visitors don't.
+</p>

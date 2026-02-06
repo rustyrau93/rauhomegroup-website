@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hillcrest Real Estate & Homes for Sale | San Diego | Rau Home Group</title>
+    <meta name="description" content="Discover Hillcrest San Diego - vibrant urban living with walkable streets, diverse culture, and exceptional dining. Median home price $825K. Expert local real estate guidance from Rusty Rau.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.9;
+            color: #2d3436;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .hero-neighborhood {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                        url('https://images.unsplash.com/photo-1536431311719-398b6704d4cc?w=1600') center/cover;
+            height: 65vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .hero-content h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+        }
+        
+        .hero-content p {
+            font-size: 1.75rem;
+            font-weight: 300;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 7rem 2rem;
+        }
+        
+        .intro-section {
+            max-width: 1000px;
+            margin: 0 auto 5rem;
+            font-size: 1.35rem;
+            line-height: 1.9;
+            color: #2d3436;
+        }
+        
+        .intro-section p {
+            margin-bottom: 1.5rem;
+        }
+        
+        /* Stats Banner */
+        .stats-banner {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            margin: 5rem auto;
+            max-width: 1200px;
+        }
+        
+        .stat-box {
+            text-align: center;
+            padding: 3rem 2rem;
+            background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #d4af37;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 1.1rem;
+            color: #636e72;
+            font-weight: 500;
+        }
+        
+        /* Section Styling */
+        .content-section {
+            max-width: 1000px;
+            margin: 0 auto 5rem;
+        }
+        
+        .content-section h2 {
+            font-size: 2.5rem;
+            color: #2d3436;
+            margin-bottom: 2.5rem;
+            font-weight: 700;
+        }
+        
+        .content-section h3 {
+            font-size: 1.75rem;
+            color: #2d3436;
+            margin: 3rem 0 1.5rem;
+            font-weight: 600;
+        }
+        
+        .content-section p {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            margin-bottom: 1.5rem;
+            color: #2d3436;
+        }
+        
+        /* Gold Bullet Lists */
+        .gold-checklist {
+            list-style: none;
+            padding: 0;
+            margin: 2.5rem 0;
+        }
+        
+        .gold-checklist li {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            margin-bottom: 1rem;
+            padding-left: 3rem;
+            position: relative;
+            color: #2d3436;
+        }
+        
+        .gold-checklist li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        
+        /* Contact Section */
+        .contact-section {
+            background: linear-gradient(135deg, #2d3436 0%, #1e272e 100%);
+            padding: 7rem 2rem;
+            margin-top: 7rem;
+        }
+        
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: start;
+        }
+        
+        .contact-info h2 {
+            font-size: 2.5rem;
+            color: white;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .contact-info p {
+            font-size: 1.15rem;
+            color: rgba(255,255,255,0.9);
+            line-height: 1.9;
+            margin-bottom: 2rem;
+        }
+        
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        
+        .contact-icon {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .contact-icon svg {
+            width: 28px;
+            height: 28px;
+            fill: white;
+        }
+        
+        .contact-text {
+            color: white;
+        }
+        
+        .contact-text .label {
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.7);
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+        
+        .contact-text .value {
+            font-size: 1.15rem;
+            color: white;
+            font-weight: 500;
+        }
+        
+        .contact-form-wrapper {
+            background: white;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        
+        .contact-form-wrapper h3 {
+            font-size: 1.75rem;
+            margin-bottom: 2rem;
+            color: #2d3436;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #2d3436;
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.875rem;
+            border: 2px solid #dfe6e9;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #d4af37;
+        }
+        
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
+            color: white;
+            border: none;
+            padding: 1rem 3rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            width: 100%;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+        }
+        
+        @media (max-width: 968px) {
+            .hero-content h1 { font-size: 2.5rem; }
+            .stats-banner { grid-template-columns: 1fr; gap: 2rem; }
+            .contact-container { grid-template-columns: 1fr; gap: 3rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero-neighborhood">
+        <div class="hero-content">
+            <h1>Hillcrest, San Diego</h1>
+            <p>San Diego's Most Vibrant Urban Neighborhood</p>
+        </div>
+    </div>
+
+    <!-- Intro Section -->
+    <div class="container">
+        <div class="intro-section">
+            <p>Hillcrest stands as San Diego's most dynamic urban neighborhood, where tree-lined streets buzz with energy, diversity thrives in every corner, and walkability meets world-class dining. Just north of Balboa Park, this historic community has evolved into the beating heart of uptown San Diego, offering an unmatched blend of culture, convenience, and community spirit.</p>
+            
+            <p>What sets Hillcrest apart is its authentic urban character. Unlike many San Diego neighborhoods that sprawl horizontally, Hillcrest rises vertically with a true city feel—mid-century modern condos alongside Craftsman bungalows, sidewalk cafes next to independent boutiques, and neighbors who actually walk to dinner. The iconic Hillcrest sign at Fifth and University serves as a beacon for a neighborhood that celebrates individuality, inclusion, and a fiercely independent spirit.</p>
+        </div>
+
+        <!-- Stats Banner -->
+        <div class="stats-banner">
+            <div class="stat-box">
+                <span class="stat-number">$825K</span>
+                <span class="stat-label">Median Home Price</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number">9/10</span>
+                <span class="stat-label">Walkability Score</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number">15,963</span>
+                <span class="stat-label">Population</span>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="content-section">
+            <h2>About Hillcrest</h2>
+            <p>Hillcrest sits in San Diego's uptown region, approximately three miles north of downtown, bounded by Mission Hills to the west, University Heights to the north, North Park to the east, and Balboa Park to the south. This strategic location puts residents minutes from downtown employment centers while maintaining a distinct neighborhood identity that feels worlds away from the urban core.</p>
+            
+            <p>With a population of nearly 16,000 packed into less than one square mile, Hillcrest achieves something rare in car-centric San Diego—genuine pedestrian urbanism. The median age of 39 reflects a professional demographic, with 49% holding college degrees and an average income of $75,829. But statistics don't capture Hillcrest's true character: it's San Diego's recognized gayborhood and a beacon of LGBTQ+ culture, yet its diversity extends far beyond any single identity. You'll find young professionals, empty nesters, artists, scientists from nearby research institutions, and families who value walkability over sprawl.</p>
+            
+            <p>The neighborhood's architectural tapestry tells its evolution story. Craftsman homes from the 1910s and 1920s anchor residential streets, while mid-century modern apartment buildings reflect post-war development. Recent decades have brought contemporary condos and thoughtful infill projects. The result is visual variety that keeps every block interesting, with mature trees providing a green canopy over it all.</p>
+        </div>
+
+        <!-- Lifestyle & Amenities -->
+        <div class="content-section">
+            <h2>Lifestyle & Amenities</h2>
+            <ul class="gold-checklist">
+                <li>Unmatched walkability—run daily errands without a car along University and Fifth Avenues</li>
+                <li>200+ locally owned restaurants, cafes, and bars representing cuisines from around the world</li>
+                <li>Independent boutiques, vintage shops, bookstores, and specialty retailers line every block</li>
+                <li>Weekly Hillcrest Farmers Market brings local produce, artisan goods, and community together</li>
+                <li>Balboa Park's 1,200 acres—museums, gardens, trails—literally at your doorstep</li>
+                <li>Vibrant nightlife scene from craft cocktail lounges to dance clubs and live music venues</li>
+            </ul>
+            
+            <p>Living in Hillcrest means embracing urban convenience without sacrificing neighborhood charm. Morning coffee at a sidewalk cafe, lunch at an Ethiopian restaurant, afternoon browsing at Babette Schwartz (the iconic gift shop), evening drinks at a rooftop bar, dinner at one of dozens of acclaimed restaurants—all within a ten-minute walk. The new Pride Promenade project, completing in late 2026, will transform Normal Street into a pedestrian-friendly plaza with rainbow bike paths, seating areas, and 115 new trees, further enhancing the walkable experience.</p>
+            
+            <p>The dining scene alone justifies a Hillcrest address. From upscale contemporary American at Cucina Urbana to authentic Thai at Taste of Thai, Mexican at Pozole House, Italian at Arrivederci, vegetarian at Loving Hut, and late-night diners like Hash House A Go Go—the variety is staggering. Weekend brunch culture thrives with lines out the door at Snooze, The Cottage, and Great Maple. Food halls like Hillcrest Brewing Company anchor community gathering. This isn't a neighborhood where you need to drive elsewhere for good food; restaurants from across San Diego County consider Hillcrest the dining destination.</p>
+        </div>
+
+        <!-- Schools & Education -->
+        <div class="content-section">
+            <h2>Schools & Education</h2>
+            <p>Hillcrest falls within San Diego Unified School District boundaries, with several quality educational options serving neighborhood families. While Hillcrest's urban character attracts fewer families with school-age children compared to suburban neighborhoods, those who do choose to raise kids here appreciate the cultural richness and walkable lifestyle that shapes their children's worldview.</p>
+            
+            <p>Grant K-8 School serves as the primary neighborhood public school, offering programs from kindergarten through eighth grade. For high school, students typically attend nearby Mission Bay High or apply to specialized magnet programs throughout the district. Several highly-rated private schools sit within easy reach, including St. Augustine High School, The Bishop's School in La Jolla, and various Montessori and alternative education programs. The proximity to UC San Diego, San Diego State University, and numerous research institutions also creates opportunities for advanced coursework and mentorship programs.</p>
+        </div>
+
+        <!-- Getting Around -->
+        <div class="content-section">
+            <h2>Getting Around</h2>
+            <p>Hillcrest's location offers exceptional connectivity throughout greater San Diego. Interstate 8 runs along the neighborhood's northern edge, providing rapid access to beaches (15 minutes to Ocean Beach), Mission Valley's employment centers (10 minutes), and inland communities. Washington Street connects directly to downtown San Diego in under 10 minutes. The neighborhood sits just 10 miles from San Diego International Airport—a quick 15-minute drive or rideshare.</p>
+            
+            <p>What truly distinguishes Hillcrest is that many residents simply don't need a car for daily life. Multiple MTS bus routes crisscross the neighborhood, connecting to downtown, North Park, and the broader transit network. The planned extension of San Diego's trolley system will further enhance public transit options. More importantly, most daily needs sit within walking or biking distance. Grocery stores (Trader Joe's, Whole Foods), pharmacies, medical clinics, banks, gyms, and entertainment all cluster along University Avenue and Fifth Avenue. Residents who work remotely or at nearby UC San Diego, Scripps Research, or Balboa Park institutions can walk or bike to work—a rare luxury in Southern California.</p>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Ready to Experience Hillcrest Living?</h2>
+                <p>As a 6-year San Diego real estate veteran who knows Hillcrest's unique market inside and out, I'll help you find the perfect urban home in this vibrant neighborhood. Whether you're buying your first condo or selling to upsize, let's make it happen.</p>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        </div>
+                        <div class="contact-text">
+                            <span class="label">Email</span>
+                            <span class="value">rusty@rauhomegroup.com</span>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.28-.28.67-.36 1.02-.24 1.12.37 2.32.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                        </div>
+                        <div class="contact-text">
+                            <span class="label">Call or Text</span>
+                            <span class="value">(619) 555-7890</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form-wrapper">
+                <h3>Get Your Free Hillcrest Market Report</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">What are you looking for in Hillcrest?</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Rau Home Group - Hillcrest Real Estate",
+        "image": "https://rauhomegroup.com/assets/images/neighborhoods/hillcrest-hero.jpg",
+        "description": "Hillcrest San Diego real estate expert. Urban living, walkable lifestyle, diverse community. Median price $825K. Top dining and culture scene.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Hillcrest",
+            "addressRegion": "CA",
+            "postalCode": "92103",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "32.7500",
+            "longitude": "-117.1667"
+        },
+        "url": "https://rauhomegroup.com/neighborhoods/hillcrest.html",
+        "priceRange": "$$",
+        "areaServed": "Hillcrest, San Diego, California"
+    }
+    </script>
+</body>
+</html>

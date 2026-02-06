@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eastlake/Chula Vista Real Estate & Homes for Sale | San Diego | Rau Home Group</title>
+    <meta name="description" content="Discover Eastlake Chula Vista - master-planned family community with top schools, parks, and modern amenities. Median home price $740K. Expert local real estate guidance from Rusty Rau.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                        url('../assets/images/neighborhoods/eastlake-hero.jpg') center/cover no-repeat;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero-content p {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+
+        /* Stats Banner */
+        .stats-banner {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            padding: 4rem 0;
+        }
+
+        .stats-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            padding: 0 2rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            color: white;
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #d4af37;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            color: #e0e0e0;
+            font-weight: 400;
+        }
+
+        /* Main Content */
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 7rem 2rem;
+        }
+
+        .intro {
+            max-width: 1000px;
+            margin: 0 auto 5rem;
+        }
+
+        .intro-text {
+            font-size: 1.35rem;
+            line-height: 1.9;
+            color: #444;
+            margin-bottom: 2.5rem;
+        }
+
+        .section {
+            max-width: 1000px;
+            margin: 0 auto 5rem;
+        }
+
+        .section h2 {
+            font-size: 2.2rem;
+            margin-bottom: 2.5rem;
+            color: #1a1a1a;
+            font-weight: 600;
+        }
+
+        .section-text {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #444;
+            margin-bottom: 2.5rem;
+        }
+
+        /* Lifestyle Grid */
+        .lifestyle-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+
+        .lifestyle-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .bullet-circle {
+            width: 32px;
+            height: 32px;
+            background: #d4af37;
+            border-radius: 50%;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0.2rem;
+        }
+
+        .bullet-circle::after {
+            content: '✓';
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .lifestyle-text {
+            font-size: 1.15rem;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: #f8f9fa;
+            padding: 7rem 2rem;
+            margin-top: 5rem;
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contact-info h2 {
+            font-size: 2.2rem;
+            margin-bottom: 2rem;
+            color: #1a1a1a;
+        }
+
+        .contact-info p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 2rem;
+        }
+
+        .contact-methods {
+            margin-top: 2rem;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-icon {
+            width: 56px;
+            height: 56px;
+            background: #d4af37;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-icon svg {
+            width: 28px;
+            height: 28px;
+            fill: white;
+        }
+
+        .contact-details h3 {
+            font-size: 1.1rem;
+            color: #1a1a1a;
+            margin-bottom: 0.3rem;
+        }
+
+        .contact-details p {
+            font-size: 1rem;
+            color: #666;
+            margin: 0;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-btn {
+            background: #d4af37;
+            color: white;
+            border: none;
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: #b8941f;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .hero-content p {
+                font-size: 1.1rem;
+            }
+
+            .stats-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .lifestyle-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .content {
+                padding: 4rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Eastlake/Chula Vista</h1>
+            <p>San Diego's Premier Master-Planned Community</p>
+        </div>
+    </div>
+
+    <!-- Stats Banner -->
+    <div class="stats-banner">
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-number">$740K</div>
+                <div class="stat-label">Median Home Price</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">7/10</div>
+                <div class="stat-label">Top School Rating</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">75,000+</div>
+                <div class="stat-label">Residents</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- About Section -->
+        <section class="intro">
+            <p class="intro-text">Eastlake is one of San Diego County's most successful master-planned communities, offering modern family living in the heart of Chula Vista. Developed in the 1980s with meticulous attention to quality of life, Eastlake combines well-designed neighborhoods, abundant parks, top-rated schools, and convenient shopping into a cohesive community that feels both suburban and walkable.</p>
+
+            <p class="intro-text">Located just 10 miles from downtown San Diego and minutes from the Mexican border, Eastlake provides an excellent value proposition for families seeking newer construction, safe streets, and strong schools without the premium pricing of coastal communities. The neighborhood's tree-lined streets, numerous parks, and family-friendly atmosphere have made it one of South Bay's most desirable addresses for over three decades.</p>
+
+            <p class="intro-text">Residents enjoy a true neighborhood feel with community events, farmers markets, outdoor concerts, and active HOAs that maintain the area's high standards. Eastlake attracts young families, professionals working in biotech and healthcare, military families stationed nearby, and anyone seeking affordable San Diego living with modern amenities and excellent schools.</p>
+        </section>
+
+        <!-- Lifestyle Section -->
+        <section class="section">
+            <h2>Lifestyle & Amenities</h2>
+
+            <div class="lifestyle-grid">
+                <div class="lifestyle-item">
+                    <div class="bullet-circle"></div>
+                    <div class="lifestyle-text">25+ parks and green spaces including Eastlake Trails featuring lakeside walking paths and playgrounds</div>
+                </div>
+                <div class="lifestyle-item">
+                    <div class="bullet-circle"></div>
+                    <div class="lifestyle-text">Olympic Training Center just minutes away with world-class sports facilities and tours</div>
+                </div>
+                <div class="lifestyle-item">
+                    <div class="bullet-circle"></div>
+                    <div class="lifestyle-text">Eastlake Village Center with Vons, Target, restaurants, and professional services all walkable</div>
+                </div>
+                <div class="lifestyle-item">
+                    <div class="bullet-circle"></div>
+                    <div class="lifestyle-text">Multiple recreation centers offering fitness classes, youth programs, and community events</div>
+                </div>
+                <div class="lifestyle-item">
+                    <div class="bullet-circle"></div>
+                    <div class="lifestyle-text">Salt Creek Golf Club and The Bridges Golf Club providing resort-quality golf within the community</div>
+                </div>
+                <div class="lifestyle-item">
+                    <div class="bullet-circle"></div>
+                    <div class="lifestyle-text">Annual Eastlake Summer Concert Series and community festivals building neighborhood connections</div>
+                </div>
+            </div>
+
+            <p class="section-text">Eastlake's master-planned design means everything families need is within a short drive or walk. The Village Center serves as the community hub with grocery shopping, casual dining spots like Chipotle and Panera Bread, Starbucks, and local favorites including Rockin' Baja Lobster. Families gather at the weekly farmers market, kids bike safely through interconnected trails, and neighbors actually know each other.</p>
+
+            <p class="section-text">The community's 25+ parks range from tot lots to expansive recreation areas like Eastlake Trails, which features a scenic lake, walking paths, picnic areas, and playgrounds. The nearby Olympic Training Center welcomes visitors and offers a unique educational experience right in your backyard. For golf enthusiasts, two championship courses provide resort-quality play without resort pricing.</p>
+
+            <p class="section-text">Eastlake's location in South Bay offers easy access to both urban amenities and outdoor recreation. Downtown San Diego's restaurants, breweries, and Padres games are just 15 minutes away. The beaches of Coronado and Imperial Beach are equally close. Living Room Coffeehouse provides a local gathering spot, while nearby Otay Ranch Town Center delivers major retail therapy with over 100 stores and restaurants.</p>
+        </section>
+
+        <!-- Schools Section -->
+        <section class="section">
+            <h2>Schools & Education</h2>
+
+            <p class="section-text">Eastlake's exceptional schools are consistently rated among the best in Chula Vista and South San Diego County, making the community especially attractive to families. The Sweetwater Union High School District serves the area with highly-regarded programs focused on college readiness and career preparation. Liberty Elementary School earns a 7 out of 10 GreatSchools rating, while Eastlake Elementary and Eastlake Middle School maintain strong academic reputations with dedicated parent involvement.</p>
+
+            <p class="section-text">Eastlake High School serves as the community's flagship educational institution, offering Advanced Placement courses, strong athletics programs, and active arts and music departments. The school consistently sends graduates to UC and Cal State universities. Bonita Vista High School also serves portions of the community with equally strong programs. Many families specifically relocate to Eastlake for the school quality, and homes within the top school boundaries command premium pricing.</p>
+
+            <p class="section-text">Beyond public schools, families have access to several private and charter options including KIPP schools focused on college preparation, St. Rose of Lima Catholic School, and various Montessori programs. Southwestern College's nearby Chula Vista campus provides affordable higher education and vocational training. The proximity to San Diego State University and University of San Diego also makes Eastlake attractive to education-focused families planning for their children's future.</p>
+        </section>
+
+        <!-- Getting Around Section -->
+        <section class="section">
+            <h2>Getting Around</h2>
+
+            <p class="section-text">Eastlake offers convenient freeway access via State Route 125 and Interstate 805, making commutes throughout San Diego County straightforward. Downtown San Diego is typically 20 minutes during non-peak hours, while the airport sits about 25 minutes away. South Bay's major employment centers including the Otay Mesa industrial area, Scripps Mercy Hospital Chula Vista, and Sharp Chula Vista Medical Center are all within 10-15 minutes. Naval Base San Diego and other military installations are easily accessible for active-duty families.</p>
+
+            <p class="section-text">While Eastlake is designed primarily for car owners with a Walk Score of 31, the community's internal trail system makes walking and biking practical for errands within the neighborhood. The MTS Blue Line Trolley's Palomar Street and E Street stations provide public transit connections to downtown San Diego and the border, though most residents prefer driving. Many professionals work remotely or commute to nearby biotech and healthcare employers, while others appreciate the reverse commute to jobs in North County, avoiding the worst of San Diego's traffic.</p>
+        </section>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-section">
+        <div class="contact-container">
+            <!-- Left: Contact Info -->
+            <div class="contact-info">
+                <h2>Ready to Call Eastlake Home?</h2>
+                <p>As a 6-year San Diego real estate veteran and South Bay market expert, I'll help you find the perfect home in Eastlake's family-friendly community. Whether you're relocating for the schools, seeking affordable San Diego living, or looking for modern amenities, let's make it happen.</p>
+
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>rusty@rauhomegroup.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>(619) 555-0123</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Contact Form -->
+            <div class="contact-form">
+                <form action="/contact" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Rau Home Group - Eastlake/Chula Vista Real Estate",
+        "image": "https://rauhomegroup.com/assets/images/neighborhoods/eastlake-hero.jpg",
+        "description": "Eastlake Chula Vista San Diego real estate expert. Master-planned family community with top schools and modern amenities. Median price $740K.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Chula Vista",
+            "addressRegion": "CA",
+            "postalCode": "91913",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "32.6401",
+            "longitude": "-116.9553"
+        },
+        "url": "https://rauhomegroup.com/neighborhoods/eastlake-chula-vista.html",
+        "priceRange": "$$",
+        "areaServed": "Eastlake, Chula Vista, San Diego, California"
+    }
+    </script>
+</body>
+</html>

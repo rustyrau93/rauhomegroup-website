@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rusty Rau - San Diego Real Estate Expert. Born and raised in San Diego with 8 years of experience helping buyers and sellers achieve their real estate goals.">
+    <meta name="keywords" content="San Diego real estate, Rusty Rau, San Diego realtor, homes for sale San Diego, buy home San Diego">
+    <title>Rusty Rau | San Diego Real Estate</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="luxury-effects.css">
+    
+    <!-- Smooth Scroll Library -->
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    
+    <!-- GSAP for advanced animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <img src="images/logo.png" alt="Rau Home Group" class="logo-img">
+                <div class="logo-text-wrap">
+                    <span class="logo-text">RAU HOME GROUP</span>
+                    <span class="logo-subtitle">SAN DIEGO REAL ESTATE</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="/buyers.html">Buyers</a></li>
+                <li><a href="/sellers.html">Sellers</a></li>
+                <li class="nav-dropdown">
+                    <a href="#" class="dropdown-toggle">Resources <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/mortgage-calculator.html"><i class="fas fa-calculator"></i> Mortgage Calculator</a></li>
+                        <li><a href="/neighborhoods.html"><i class="fas fa-map-marked-alt"></i> San Diego Neighborhoods</a></li>
+                    </ul>
+                </li>
+                <li><a href="/contact.html" class="nav-cta">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1920&q=80" alt="San Diego Skyline" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title animate-fade-in">Find Your Place in<br><span class="accent">San Diego</span></h1>
+            <p class="hero-subtitle animate-fade-in-delay">Born and raised here. 8 years helping San Diegans buy and sell homes.</p>
+            <div class="hero-cta-group animate-fade-in-delay-2">
+                <a href="/contact.html" class="cta-button pulse-glow">Let's Talk</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image-container reveal-left">
+                    <img src="images/rusty-headshot.jpg" alt="Rusty Rau - San Diego Realtor" class="about-image">
+                    <div class="about-image-accent"></div>
+                </div>
+                <div class="about-content reveal-right">
+                    
+                    <h2 class="section-title">Meet Rusty Rau</h2>
+                    <p class="about-text">
+                        I was born and raised in San Diego, and this city has always been a huge part of who I am. Growing up, my mom worked in interior design, and I spent a lot of time tagging along to her job sites. At the time, I didn't realize it, but those early experiences sparked a genuine appreciation for homes, neighborhoods, and how people live in the spaces they choose.
+                    </p>
+                    <p class="about-text">
+                        As I got older, I naturally gravitated toward people-focused work and found my strengths in connecting with clients, understanding their needs, and guiding them through one of life's biggest decisions. Real estate isn't just about transactions for me--it's about helping people find where they belong.
+                    </p>
+                    <p class="about-text">
+                        Whether you're a first-time homebuyer navigating the competitive San Diego market, a family looking to upsize, or an investor seeking the right opportunity, I bring patience, market expertise, and honest guidance to every relationship.
+                    </p>
+                    <div class="about-credentials">
+                        <div class="credential">
+                            <span class="credential-icon"><i class="fas fa-home"></i></span>
+                            <span>Buyer's Agent</span>
+                        </div>
+                        <div class="credential">
+                            <span class="credential-icon"><i class="fas fa-clipboard-list"></i></span>
+                            <span>Listing Agent</span>
+                        </div>
+                        <div class="credential">
+                            <span class="credential-icon"><i class="fas fa-medal"></i></span>
+                            <span>Military/Veterans</span>
+                        </div>
+                        <div class="credential">
+                            <span class="credential-icon"><i class="fas fa-gem"></i></span>
+                            <span>Luxury Homes</span>
+                        </div>
+                        <div class="credential">
+                            <span class="credential-icon"><i class="fas fa-hard-hat"></i></span>
+                            <span>New Construction</span>
+                        </div>
+                        <div class="credential">
+                            <span class="credential-icon"><i class="fas fa-chart-line"></i></span>
+                            <span>Investment Properties</span>
+                        </div>
+                    </div>
+                    <a href="/contact.html" class="cta-button">Let's Connect</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section class="success-stories">
+        <div class="container">
+            
+            <h2 class="section-title center">Success Stories</h2>
+            <p class="section-subtitle">Real results for real clients</p>
+            
+            <div class="stories-grid">
+                <div class="story-card">
+                    <div class="story-image">
+                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80" alt="Normal Heights home">
+                    </div>
+                    <div class="story-content">
+                        <div class="story-tag">First-Time Buyers</div>
+                        <h3>Won in a 12-Offer Situation</h3>
+                        <p>Daniel and his wife were competing against 11 other offers in Normal Heights. Through strategic offer writing and direct communication with the listing agent, we secured their dream home without significantly overpaying.</p>
+                        <div class="story-stats">
+                            <div class="story-stat">
+                                <span class="story-stat-value">12</span>
+                                <span class="story-stat-label">Competing Offers</span>
+                            </div>
+                            <div class="story-stat">
+                                <span class="story-stat-value">7</span>
+                                <span class="story-stat-label">Days to Close</span>
+                            </div>
+                            <div class="story-stat">
+                                <span class="story-stat-value">$15K</span>
+                                <span class="story-stat-label">Under Budget</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="story-card">
+                    <div class="story-image">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80" alt="Oceanside home">
+                    </div>
+                    <div class="story-content">
+                        <div class="story-tag">Seller Success</div>
+                        <h3>Sold $45K Over Asking</h3>
+                        <p>Paul's home in Mira Costa, Oceanside needed the right marketing strategy. With professional staging, photography, and a carefully timed listing, we generated multiple offers and sold well above asking price.</p>
+                        <div class="story-stats">
+                            <div class="story-stat">
+                                <span class="story-stat-value">$45K</span>
+                                <span class="story-stat-label">Over Asking</span>
+                            </div>
+                            <div class="story-stat">
+                                <span class="story-stat-value">5</span>
+                                <span class="story-stat-label">Days on Market</span>
+                            </div>
+                            <div class="story-stat">
+                                <span class="story-stat-value">8</span>
+                                <span class="story-stat-label">Offers Received</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            
+            <h2 class="section-title center">What Clients Say</h2>
+            <p class="section-subtitle light">Every review is 5 stars. Here's what clients are saying about working with Rusty.</p>
+            
+            <div class="testimonials-slider">
+                <div class="testimonials-track">
+                    <!-- Review 1 -->
+                    <div class="testimonial-card">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="testimonial-text">"Rusty has the expertise, knowledge and motivation to make your buying/selling needs go better than you expect! I'm not kidding! I was truly blessed to have found Rusty to help me with my home sale."</p>
+                        <div class="testimonial-author">
+                            <span class="author-name">Paul S.</span>
+                            <span class="author-detail">Sold a home in Mira Costa, Oceanside</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Review 2 -->
+                    <div class="testimonial-card featured">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="testimonial-text">"We were first time home buyers trying to buy in a very competitive market, and Rusty helped us navigate the process with patience and honesty. We always felt like he had our best interests at heart."</p>
+                        <div class="testimonial-author">
+                            <span class="author-name">Daniel B.</span>
+                            <span class="author-detail">Bought a home in Normal Heights</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Review 3 -->
+                    <div class="testimonial-card">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="testimonial-text">"Rusty did an amazing job. He wasn't pushy, he listened and he responded in a timely manner. He was super patient with us. He had strategies to help us get our house!"</p>
+                        <div class="testimonial-author">
+                            <span class="author-name">Amanda D.</span>
+                            <span class="author-detail">Bought a home in Clairemont Mesa East</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Review 4 -->
+                    <div class="testimonial-card">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="testimonial-text">"We met Rusty and Richard at an open house that we just happened upon. We had been looking for a home for almost a year. They expertly guided us through the entire process with professionalism and care."</p>
+                        <div class="testimonial-author">
+                            <span class="author-name">Gina P.</span>
+                            <span class="author-detail">Bought and sold a home</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Review 5 -->
+                    <div class="testimonial-card">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="testimonial-text">"All of the prior highly positive reviews are spot on. Rusty and Richard teamed to help us sell and buy our house. They expertly helped us work through a challenging situation with skill and dedication."</p>
+                        <div class="testimonial-author">
+                            <span class="author-name">Verified Client</span>
+                            <span class="author-detail">Bought and sold in Rancho Bernardo</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Review 6 -->
+                    <div class="testimonial-card">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="testimonial-text">"The process of purchasing my first home was very overwhelming. But I'm glad I had a very knowledgeable, personable and patient agent on my team. Rusty not only helped me find my dream home but made the whole experience enjoyable."</p>
+                        <div class="testimonial-author">
+                            <span class="author-name">Marvin G.</span>
+                            <span class="author-detail">Bought a condo in Carmel Valley</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonials-nav">
+                <button class="testimonial-nav-btn prev" aria-label="Previous review"><i class="fas fa-chevron-left"></i></button>
+                <div class="testimonial-dots"></div>
+                <button class="testimonial-nav-btn next" aria-label="Next review"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview Section -->
+    <section class="services-preview">
+        <div class="container">
+            
+            <h2 class="section-title center">How I Can Help</h2>
+            <div class="services-grid">
+                <div class="service-card reveal-up">
+                    <div class="service-icon"><i class="fas fa-search-dollar"></i></div>
+                    <h3>Buying a Home</h3>
+                    <p>Navigate the competitive San Diego market with confidence. From pre-approval to closing, I'll guide you every step of the way.</p>
+                    <a href="/buyers.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card reveal-up" style="animation-delay: 0.2s;">
+                    <div class="service-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                    <h3>Selling Your Home</h3>
+                    <p>Maximize your home's value with strategic pricing, professional marketing, and expert negotiation to get you the best results.</p>
+                    <a href="/sellers.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Sales Section -->
+    <section class="recent-sales">
+        <div class="container">
+            
+            <h2 class="section-title center">Recently Sold</h2>
+            <p class="section-subtitle">Recent wins for my clients</p>
+            
+            <div class="sales-grid">
+                <div class="sale-card">
+                    <div class="sale-image">
+                        <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&q=80" alt="Sold home">
+                        <div class="sale-badge">SOLD</div>
+                    </div>
+                    <div class="sale-content">
+                        <div class="sale-price">$1,125,000</div>
+                        <p class="sale-location">Encinitas</p>
+                        <p class="sale-result"><i class="fas fa-arrow-up"></i> $25K over asking</p>
+                    </div>
+                </div>
+                
+                <div class="sale-card">
+                    <div class="sale-image">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80" alt="Sold home">
+                        <div class="sale-badge">SOLD</div>
+                    </div>
+                    <div class="sale-content">
+                        <div class="sale-price">$1,450,000</div>
+                        <p class="sale-location">Carmel Valley</p>
+                        <p class="sale-result"><i class="fas fa-clock"></i> 6 days on market</p>
+                    </div>
+                </div>
+                
+                <div class="sale-card">
+                    <div class="sale-image">
+                        <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=600&q=80" alt="Sold home">
+                        <div class="sale-badge">SOLD</div>
+                    </div>
+                    <div class="sale-content">
+                        <div class="sale-price">$2,495,000</div>
+                        <p class="sale-location">La Jolla</p>
+                        <p class="sale-result"><i class="fas fa-handshake"></i> Represented buyer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deal of the Week Section -->
+    <section id="listings" class="deal-of-week">
+        <div class="container">
+            <div class="deal-grid">
+                <div class="deal-content">
+                    
+                    <h2 class="section-title">Deal of the Week</h2>
+                    <p class="deal-description">Every week, I scour the San Diego market to find one standout property - a home that's priced right, move-in ready, and won't last long. This is the kind of deal I'd tell my friends about.</p>
+                    
+                    <div class="deal-why">
+                        <h4>Why This Home?</h4>
+                        <ul class="deal-highlights">
+                            <li><i class="fas fa-check-circle"></i> Priced 8% below comparable sales</li>
+                            <li><i class="fas fa-check-circle"></i> Recently updated kitchen & baths</li>
+                            <li><i class="fas fa-check-circle"></i> Top-rated Poway schools</li>
+                            <li><i class="fas fa-check-circle"></i> Low days on market - won't last</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="deal-cta-group">
+                        <a href="/contact.html" class="cta-button">Get Full Details</a>
+                        <a href="#deal-signup" class="cta-button secondary">Get Weekly Deals</a>
+                    </div>
+                </div>
+                
+                <div class="deal-property">
+                    <div class="listing-card featured-listing">
+                        <div class="listing-badge">Deal of the Week</div>
+                        <div class="listing-image">
+                            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80" alt="This week's deal - Poway home">
+                            <div class="listing-overlay">
+                                <a href="/contact.html" class="listing-btn">Schedule Tour</a>
+                            </div>
+                        </div>
+                        <div class="listing-content">
+                            <div class="listing-price">$1,195,000</div>
+                            <h3 class="listing-address">14523 Poway Mesa Drive</h3>
+                            <p class="listing-location"><i class="fas fa-map-marker-alt"></i> Poway, CA 92064</p>
+                            <div class="listing-specs">
+                                <span><i class="fas fa-bed"></i> 4 Beds</span>
+                                <span><i class="fas fa-bath"></i> 3 Baths</span>
+                                <span><i class="fas fa-ruler-combined"></i> 2,650 SF</span>
+                            </div>
+                            <div class="listing-meta">
+                                <span class="listing-dom"><i class="fas fa-clock"></i> 5 days on market</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Weekly Email Signup -->
+            <div id="deal-signup" class="deal-signup-box">
+                <div class="signup-content">
+                    <i class="fas fa-envelope-open-text signup-icon"></i>
+                    <div class="signup-text">
+                        <h4>Never Miss a Deal</h4>
+                        <p>Get my Deal of the Week delivered to your inbox every Friday.</p>
+                    </div>
+                </div>
+                <form class="signup-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="cta-button">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- San Diego Neighborhoods - Themed Slider -->
+    <section id="areas" class="neighborhoods-fullwidth">
+        <div class="neighborhoods-header">
+            <h2>Neighborhoods</h2>
+            <div class="neighborhoods-nav">
+                <button class="nav-text prev">PREVIOUS</button>
+                <span class="nav-divider">|</span>
+                <button class="nav-text next">NEXT</button>
+            </div>
+        </div>
+        
+        <div class="neighborhoods-slider" id="neighborhoods-slider">
+            <a href="/neighborhoods.html#la-jolla" class="neighborhood-slide">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80" alt="La Jolla">
+                <div class="slide-overlay"></div>
+                <span class="slide-name">LA JOLLA</span>
+                <span class="slide-cta">Learn More</span>
+            </a>
+            <a href="/neighborhoods.html#del-mar" class="neighborhood-slide">
+                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80" alt="Del Mar">
+                <div class="slide-overlay"></div>
+                <span class="slide-name">DEL MAR</span>
+                <span class="slide-cta">Learn More</span>
+            </a>
+            <a href="/neighborhoods.html#pacific-beach" class="neighborhood-slide">
+                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80" alt="Pacific Beach">
+                <div class="slide-overlay"></div>
+                <span class="slide-name">OCEAN, MISSION & PACIFIC BEACHES</span>
+                <span class="slide-cta">Learn More</span>
+            </a>
+            <a href="/neighborhoods.html#hillcrest" class="neighborhood-slide">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80" alt="Hillcrest">
+                <div class="slide-overlay"></div>
+                <span class="slide-name">HILLCREST & MISSION HILLS</span>
+                <span class="slide-cta">Learn More</span>
+            </a>
+            <a href="/neighborhoods.html#north-county" class="neighborhood-slide">
+                <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&q=80" alt="North County">
+                <div class="slide-overlay"></div>
+                <span class="slide-name">NORTH COUNTY COASTAL</span>
+                <span class="slide-cta">Learn More</span>
+            </a>
+            <a href="/neighborhoods.html#carmel-valley" class="neighborhood-slide">
+                <img src="https://images.unsplash.com/photo-1449844908441-8829872d2647?w=600&q=80" alt="Carmel Valley">
+                <div class="slide-overlay"></div>
+                <span class="slide-name">CARMEL VALLEY</span>
+                <span class="slide-cta">Learn More</span>
+            </a>
+            <a href="/neighborhoods.html#poway" class="neighborhood-slide">
+                <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=600&q=80" alt="Poway">
+                <div class="slide-overlay"></div>
+                <span class="slide-name">POWAY & SCRIPPS RANCH</span>
+                <span class="slide-cta">Learn More</span>
+            </a>
+            <a href="/neighborhoods.html#downtown" class="neighborhood-slide">
+                <img src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=600&q=80" alt="Downtown">
+                <div class="slide-overlay"></div>
+                <span class="slide-name">DOWNTOWN & GASLAMP</span>
+                <span class="slide-cta">Learn More</span>
+            </a>
+            <a href="/neighborhoods.html#point-loma" class="neighborhood-slide">
+                <img src="https://images.unsplash.com/photo-1599809275671-b5942cabc7a2?w=600&q=80" alt="Point Loma">
+                <div class="slide-overlay"></div>
+                <span class="slide-name">POINT LOMA</span>
+                <span class="slide-cta">Learn More</span>
+            </a>
+            <a href="/neighborhoods.html#coronado" class="neighborhood-slide">
+                <img src="https://images.unsplash.com/photo-1602002418082-a4443e081dd1?w=600&q=80" alt="Coronado">
+                <div class="slide-overlay"></div>
+                <span class="slide-name">CORONADO</span>
+                <span class="slide-cta">Learn More</span>
+            </a>
+            <a href="/neighborhoods.html#rancho-santa-fe" class="neighborhood-slide">
+                <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=600&q=80" alt="Rancho Santa Fe">
+                <div class="slide-overlay"></div>
+                <span class="slide-name">RANCHO SANTA FE</span>
+                <span class="slide-cta">Learn More</span>
+            </a>
+            <a href="/neighborhoods.html#eastlake" class="neighborhood-slide">
+                <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=600&q=80" alt="Eastlake">
+                <div class="slide-overlay"></div>
+                <span class="slide-name">EASTLAKE & CHULA VISTA</span>
+                <span class="slide-cta">Learn More</span>
+            </a>
+            <a href="/neighborhoods.html" class="neighborhood-slide neighborhood-slide-more">
+                <div class="slide-more-content">
+                    <i class="fas fa-plus-circle" style="font-size: 3rem; color: var(--color-gold); margin-bottom: 1rem;"></i>
+                    <span class="slide-name">VIEW ALL NEIGHBORHOODS</span>
+                    <span class="slide-cta">Explore More</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Mortgage Calculator Section - MOVED TO OWN PAGE
+    <section class="calculator-section">
+        <div class="container">
+            <div class="calculator-grid">
+                <div class="calculator-content">
+                    
+                    <h2 class="section-title">Mortgage Calculator</h2>
+                    <p>Estimate your monthly payment and see what you can afford. This is just an estimate - for accurate numbers, I can connect you with trusted lenders.</p>
+                    <div class="calculator-note">
+                        <i class="fas fa-info-circle"></i>
+                        <span>Need help with financing? I work with several excellent lenders who can get you pre-approved quickly.</span>
+                    </div>
+                    <a href="/contact.html" class="cta-button secondary">Talk to Rusty</a>
+                </div>
+                <div class="calculator-tool">
+                    <form class="mortgage-calculator" id="mortgage-calculator">
+                        <div class="calc-group">
+                            <label>Home Price</label>
+                            <div class="input-with-prefix">
+                                <span>$</span>
+                                <input type="number" id="home-price" value="850000" min="100000" step="10000">
+                            </div>
+                            <input type="range" id="price-slider" min="200000" max="3000000" value="850000" step="10000">
+                        </div>
+                        <div class="calc-group">
+                            <label>Down Payment</label>
+                            <div class="calc-row">
+                                <div class="input-with-prefix">
+                                    <span>$</span>
+                                    <input type="number" id="down-payment" value="170000">
+                                </div>
+                                <div class="input-with-suffix">
+                                    <input type="number" id="down-percent" value="20" min="0" max="100">
+                                    <span>%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calc-row">
+                            <div class="calc-group half">
+                                <label>Interest Rate</label>
+                                <div class="input-with-suffix">
+                                    <input type="number" id="interest-rate" value="6.5" step="0.125" min="0" max="15">
+                                    <span>%</span>
+                                </div>
+                            </div>
+                            <div class="calc-group half">
+                                <label>Loan Term</label>
+                                <select id="loan-term">
+                                    <option value="30">30 years</option>
+                                    <option value="15">15 years</option>
+                                    <option value="20">20 years</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="calc-row">
+                            <div class="calc-group half">
+                                <label>Property Tax Rate</label>
+                                <div class="input-with-suffix">
+                                    <input type="number" id="tax-rate" value="1.1" step="0.1" min="0" max="5">
+                                    <span>%</span>
+                                </div>
+                            </div>
+                            <div class="calc-group half">
+                                <label>HOA (Monthly)</label>
+                                <div class="input-with-prefix">
+                                    <span>$</span>
+                                    <input type="number" id="hoa-fee" value="0" step="25" min="0">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" id="calc-button" class="cta-button calc-btn">Calculate Payment</button>
+                        <div class="calc-result">
+                            <span class="calc-result-label">Estimated Monthly Payment</span>
+                            <span class="calc-result-value" id="monthly-payment">--</span>
+                            <span class="calc-result-note">Includes principal, interest, taxes & HOA. Insurance not calculated.</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            
+            <h2 class="section-title center">Common Questions</h2>
+            <p class="section-subtitle">Answers to questions I hear most often from buyers and sellers</p>
+            
+            <div class="faq-grid">
+                <div class="faq-column">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How competitive is the San Diego market right now?</span>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>San Diego remains competitive, especially for well-priced homes in desirable areas. Most properties receive multiple offers within the first week. However, with the right strategy and an experienced agent, buyers can still win without significantly overpaying. I help my clients stand out with strong offer terms beyond just price.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How long does it take to buy a home in San Diego?</span>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Once you find the right home and your offer is accepted, closing typically takes 30-45 days. The entire process from starting your search to getting keys usually takes 2-4 months, depending on your criteria and market conditions. Being pre-approved before you start looking significantly speeds up the process.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Do I need to be pre-approved before looking at homes?</span>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>While not required to tour homes, being pre-approved is essential before making an offer. It shows sellers you're a serious buyer and tells you exactly what you can afford. I recommend getting pre-approved early so when you find "the one," you're ready to move quickly.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-column">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What's the best time of year to sell in San Diego?</span>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Spring (March-May) traditionally sees the most buyer activity in San Diego, but our mild climate means the market stays active year-round. Summer attracts families wanting to move before school starts, while fall often has less competition. The best time to sell depends on your personal situation more than the calendar.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How much do your services cost as a buyer?</span>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>In most cases, the seller pays the buyer's agent commission, so my services as your buyer's agent cost you nothing out of pocket. You get full representation, expert guidance, and someone fighting for your best interests at no direct cost to you.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Should I sell my current home before buying?</span>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>This depends on your financial situation and risk tolerance. Selling first gives you a stronger position as a buyer (no contingencies) and clarity on your budget. Buying first avoids the stress of moving twice but requires managing two mortgages temporarily. I can help you evaluate both options based on your specific circumstances.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-cta">
+                <p>Have a question that's not answered here?</p>
+                <a href="/contact.html" class="cta-button secondary">Ask Rusty</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section - HIDDEN
+    <section class="resources-section">
+        <div class="container">
+            
+            <h2 class="section-title center">Helpful Guides</h2>
+            <p class="section-subtitle">Download these free guides to help you on your real estate journey</p>
+            
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-icon"><i class="fas fa-home"></i></div>
+                    <h3>First-Time Buyer's Guide</h3>
+                    <p>Everything you need to know about buying your first home in San Diego, from pre-approval to closing day.</p>
+                    <a href="/contact.html" class="resource-download" data-resource="buyer-guide">
+                        <i class="fas fa-download"></i> Download PDF
+                    </a>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-icon"><i class="fas fa-clipboard-check"></i></div>
+                    <h3>Home Seller's Checklist</h3>
+                    <p>A comprehensive checklist to prepare your home for sale and maximize your selling price.</p>
+                    <a href="/contact.html" class="resource-download" data-resource="seller-checklist">
+                        <i class="fas fa-download"></i> Download PDF
+                    </a>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-icon"><i class="fas fa-map-marked-alt"></i></div>
+                    <h3>San Diego Neighborhood Guide</h3>
+                    <p>An insider's look at San Diego's top neighborhoods, schools, amenities, and home values.</p>
+                    <a href="/contact.html" class="resource-download" data-resource="neighborhood-guide">
+                        <i class="fas fa-download"></i> Download PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <!-- Instagram Section - REMOVED, SOCIAL ICONS IN FOOTER -->
+
+    <!-- Contact Section - MOVED TO SEPARATE PAGE /contact.html -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <!-- Accolades/Trust Badges -->
+            <div class="footer-accolades">
+                <div class="accolade-item">
+                    <i class="fas fa-award"></i>
+                    <span>Top Producer</span>
+                </div>
+                <div class="accolade-item">
+                    <i class="fas fa-star"></i>
+                    <span>100% 5-Star Reviews</span>
+                </div>
+                <div class="accolade-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Licensed REALTOR</span>
+                </div>
+                <div class="accolade-item">
+                    <i class="fas fa-trophy"></i>
+                    <span>Top 5% in San Diego</span>
+                </div>
+            </div>
+            
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-text">RAU HOME GROUP</span>
+                    <p>San Diego Real Estate Expert</p>
+                    <p class="footer-brokerage">Rau Home Group</p>
+                    <!-- Social Icons -->
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/rustyrau_sdrealtor/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-links">
+                        <a href="#about">About</a>
+                        <a href="/buyers.html">Buyers</a>
+                        <a href="/sellers.html">Sellers</a>
+                        <a href="/neighborhoods.html">Areas</a>
+                        <a href="/contact.html">Contact</a>
+                    </div>
+                    <div class="footer-links footer-links-secondary">
+                        <a href="/blog.html">Blog</a>
+                        <a href="#testimonials">Reviews</a>
+                        <a href="/mortgage-calculator.html">Mortgage Calculator</a>
+                        <a href="/neighborhoods.html">San Diego Neighborhoods</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Rusty Rau. All rights reserved.</p>
+                <p class="footer-legal">DRE# 02084462 | Rau Home Group</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="luxury-effects.js"></script>
+</body>
+</html>
