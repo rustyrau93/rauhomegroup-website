@@ -44,7 +44,7 @@ All pages should match La Jolla's exact structure (~25KB, 750 words):
 - [x] **Vista** - 20KB - Built previously
 
 ### 🔨 Needs Rebuild (Stub Pages ~11KB)
-- [ ] **Escondido** - 11KB stub - Hidden Valley, wineries, arts, affordable North County ($775K)
+- [x] **Escondido** - 29KB - Built 2026-02-06 - Hidden Valley, wineries, arts, Safari Park ($810K)
 - [ ] **Imperial Beach** - 11KB stub - Most Southwesterly City, laid-back surf town ($775K)
 - [ ] **Kensington** - 11KB stub - Village in the City, small-town charm ($1.1M)
 - [ ] **Mission Hills** - 11KB stub - Historic Elegance, prestigious location ($1.4M)
