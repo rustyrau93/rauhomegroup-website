@@ -1,11 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rusty Rau - San Diego Real Estate Expert. Born and raised in San Diego with 8 years of experience helping buyers and sellers achieve their real estate goals.">
+    <meta name="keywords" content="San Diego real estate, Rusty Rau, San Diego realtor, homes for sale San Diego, buy home San Diego">
+    <meta name="author" content="Rusty Rau">
+    <meta name="description" content="Rusty Rau - San Diego Real Estate Expert. Born and raised in San Diego with 8 years of experience helping buyers and sellers achieve their real estate goals.">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Rusty Rau | San Diego Real Estate Expert">
+    <meta property="og:description" content="Born and raised in San Diego. 8 years helping San Diegans buy and sell homes.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rauhomegroup.com">
+    
     <title>Carlsbad Real Estate & Homes for Sale | San Diego | Rau Home Group</title>
-    <meta name="description" content="Discover Carlsbad San Diego - coastal village charm meets family-friendly living with LEGOLAND, pristine beaches, and top-rated schools. Median home price $1.69M. Expert local real estate guidance from Rusty Rau.">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    
+    <!-- Preconnect to external domains for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="../styles.css" as="style">
+    <link rel="preload" href="images/logo.png" as="image">
+    
+    <!-- Fonts with display=swap for better performance -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome - defer loading -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../luxury-effects.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -306,6 +342,42 @@
     </style>
 </head>
 <body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="../index.html" class="logo" aria-label="Rau Home Group - Home">
+                <img src="../images/logo-white.jpg" alt="" class="logo-img" width="60" height="60" aria-hidden="true">
+                <div class="logo-text-wrap">
+                    <span class="logo-text">RAU HOME GROUP</span>
+                    <span class="logo-subtitle">SAN DIEGO REAL ESTATE</span>
+                </div>
+            </a>
+            <ul class="nav-links" role="menubar">
+                <li role="none"><a href="../index.html#about" role="menuitem">About</a></li>
+                <li role="none"><a href="../buyers.html" role="menuitem">Buyers</a></li>
+                <li role="none"><a href="../sellers.html" role="menuitem">Sellers</a></li>
+                <li class="nav-dropdown" role="none">
+                    <a href="../index.html" class="dropdown-toggle" role="menuitem" aria-haspopup="true" aria-expanded="false">
+                        Resources <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-label="Resources submenu">
+                        <li role="none"><a href="../mortgage-calculator.html" role="menuitem"><i class="fas fa-calculator" aria-hidden="true"></i> Mortgage Calculator</a></li>
+                        <li role="none"><a href="../neighborhoods.html" role="menuitem"><i class="fas fa-map-marked-alt" aria-hidden="true"></i> San Diego Neighborhoods</a></li>
+                    </ul>
+                </li>
+                <li role="none"><a href="../contact.html" class="nav-cta" role="menuitem">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="nav-links">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
     <!-- Hero Section -->
     <div class="hero">
         <div class="hero-content">
@@ -475,6 +547,206 @@
 
     <!-- Schema Markup for SEO -->
     <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Rau Home Group - Carlsbad Real Estate",
+        "image": "https://rauhomegroup.com/assets/images/neighborhoods/carlsbad-hero.jpg",
+        "description": "Carlsbad California real estate expert. Coastal village living with beaches, LEGOLAND, top schools. Median price $1.69M. Expert local guidance from Rusty Rau.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Carlsbad",
+            "addressRegion": "CA",
+            "postalCode": "92008",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "33.1581",
+            "longitude": "-117.3506"
+        },
+        "url": "https://rauhomegroup.com/neighborhoods/carlsbad.html",
+        "priceRange": "$$$$",
+        "areaServed": "Carlsbad, San Diego, California"
+    }
+    </script>
+
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <!-- Accolades/Trust Badges -->
+            <div class="footer-accolades" role="list" aria-label="Achievements and certifications">
+                <div class="accolade-item" role="listitem">
+                    <i class="fas fa-award" aria-hidden="true"></i>
+                    <span>Top Producer</span>
+                </div>
+                <div class="accolade-item" role="listitem">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <span>100% 5-Star Reviews</span>
+                </div>
+                <div class="accolade-item" role="listitem">
+                    <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                    <span>Licensed REALTOR</span>
+                </div>
+                <div class="accolade-item" role="listitem">
+                    <i class="fas fa-trophy" aria-hidden="true"></i>
+                    <span>Top 5% in San Diego</span>
+                </div>
+            </div>
+            
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-text">RAU HOME GROUP</span>
+                    <p>San Diego Real Estate Expert</p>
+                    <p class="footer-brokerage">Rau Home Group</p>
+                    <!-- Social Icons -->
+                    <div class="footer-social" role="list" aria-label="Social media links">
+                        <a href="https://www.instagram.com/rustyrau_sdrealtor/" target="_blank" rel="noopener noreferrer" aria-label="Follow Rusty on Instagram">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Follow Rusty on Facebook">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="Connect with Rusty on LinkedIn">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="Watch Rusty on YouTube">
+                            <i class="fab fa-youtube" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <nav class="footer-nav" aria-label="Footer navigation">
+                    <div class="footer-links">
+                        <a href="../index.html#about">About</a>
+                        <a href="../buyers.html">Buyers</a>
+                        <a href="../sellers.html">Sellers</a>
+                        <a href="../neighborhoods.html">Areas</a>
+                        <a href="../contact.html">Contact</a>
+                    </div>
+                    <div class="footer-links footer-links-secondary">
+                        <a href="../blog.html">Blog</a>
+                        <a href="../index.html#testimonials">Reviews</a>
+                        <a href="../mortgage-calculator.html">Mortgage Calculator</a>
+                        <a href="../neighborhoods.html">San Diego Neighborhoods</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Rusty Rau. All rights reserved.</p>
+                <p class="footer-legal">DRE# 02084462 | Rau Home Group</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts - Deferred for better performance -->
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="../script.js" defer></script>
+    <script src="../luxury-effects.js" defer></script>
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Rau Home Group - Carlsbad Real Estate",
+        "image": "https://rauhomegroup.com/assets/images/neighborhoods/carlsbad-hero.jpg",
+        "description": "Carlsbad California real estate expert. Coastal village living with beaches, LEGOLAND, top schools. Median price $1.69M. Expert local guidance from Rusty Rau.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Carlsbad",
+            "addressRegion": "CA",
+            "postalCode": "92008",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "33.1581",
+            "longitude": "-117.3506"
+        },
+        "url": "https://rauhomegroup.com/neighborhoods/carlsbad.html",
+        "priceRange": "$$$$",
+        "areaServed": "Carlsbad, San Diego, California"
+    }
+    </script>
+
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <!-- Accolades/Trust Badges -->
+            <div class="footer-accolades" role="list" aria-label="Achievements and certifications">
+                <div class="accolade-item" role="listitem">
+                    <i class="fas fa-award" aria-hidden="true"></i>
+                    <span>Top Producer</span>
+                </div>
+                <div class="accolade-item" role="listitem">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <span>100% 5-Star Reviews</span>
+                </div>
+                <div class="accolade-item" role="listitem">
+                    <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                    <span>Licensed REALTOR</span>
+                </div>
+                <div class="accolade-item" role="listitem">
+                    <i class="fas fa-trophy" aria-hidden="true"></i>
+                    <span>Top 5% in San Diego</span>
+                </div>
+            </div>
+            
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-text">RAU HOME GROUP</span>
+                    <p>San Diego Real Estate Expert</p>
+                    <p class="footer-brokerage">Rau Home Group</p>
+                    <!-- Social Icons -->
+                    <div class="footer-social" role="list" aria-label="Social media links">
+                        <a href="https://www.instagram.com/rustyrau_sdrealtor/" target="_blank" rel="noopener noreferrer" aria-label="Follow Rusty on Instagram">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Follow Rusty on Facebook">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="Connect with Rusty on LinkedIn">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="Watch Rusty on YouTube">
+                            <i class="fab fa-youtube" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <nav class="footer-nav" aria-label="Footer navigation">
+                    <div class="footer-links">
+                        <a href="../index.html#about">About</a>
+                        <a href="../buyers.html">Buyers</a>
+                        <a href="../sellers.html">Sellers</a>
+                        <a href="../neighborhoods.html">Areas</a>
+                        <a href="../contact.html">Contact</a>
+                    </div>
+                    <div class="footer-links footer-links-secondary">
+                        <a href="../blog.html">Blog</a>
+                        <a href="../index.html#testimonials">Reviews</a>
+                        <a href="../mortgage-calculator.html">Mortgage Calculator</a>
+                        <a href="../neighborhoods.html">San Diego Neighborhoods</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Rusty Rau. All rights reserved.</p>
+                <p class="footer-legal">DRE# 02084462 | Rau Home Group</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts - Deferred for better performance -->
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="../script.js" defer></script>
+    <script src="../luxury-effects.js" defer></script>
+
+<script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
