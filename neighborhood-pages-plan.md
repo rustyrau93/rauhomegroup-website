@@ -29,6 +29,7 @@ All pages should match La Jolla's exact structure (~25KB, 750 words):
 - [x] **El Cajon** - 22KB - Built previously
 - [x] **Encinitas** - 21KB - Built previously
 - [x] **Hillcrest** - 20KB - Built previously
+- [x] **Imperial Beach** - 36KB - Built 2026-02-06 - Where California Begins, affordable surf culture ($775K median)
 - [x] **La Jolla** - 25KB - TEMPLATE
 - [x] **La Mesa** - 19KB - Built previously
 - [x] **Mira Mesa** - 20KB - Built previously
@@ -45,7 +46,6 @@ All pages should match La Jolla's exact structure (~25KB, 750 words):
 
 ### 🔨 Needs Rebuild (Stub Pages ~11KB)
 - [x] **Escondido** - 29KB - Built 2026-02-06 - Hidden Valley, wineries, arts, Safari Park ($810K)
-- [ ] **Imperial Beach** - 11KB stub - Most Southwesterly City, laid-back surf town ($775K)
 - [ ] **Kensington** - 11KB stub - Village in the City, small-town charm ($1.1M)
 - [ ] **Mission Hills** - 11KB stub - Historic Elegance, prestigious location ($1.4M)
 - [ ] **National City** - 11KB stub - First Incorporated City, waterfront access ($650K)
