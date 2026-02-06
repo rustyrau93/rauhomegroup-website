@@ -1808,6 +1808,7 @@ section {
     border-radius: 2px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: var(--transition-normal);
+    width: calc(33.333% - var(--spacing-md));
     min-width: calc(33.333% - var(--spacing-md));
     flex-shrink: 0;
 }
