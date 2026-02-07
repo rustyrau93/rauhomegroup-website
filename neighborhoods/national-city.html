@@ -1,27 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rusty Rau - San Diego Real Estate Expert. Born and raised in San Diego with 8 years of experience helping buyers and sellers achieve their real estate goals.">
-    <meta name="keywords" content="San Diego real estate, Rusty Rau, San Diego realtor, homes for sale San Diego, buy home San Diego">
+    <meta name="description" content="National City San Diego real estate expert. First incorporated city, waterfront access, affordable homes. Median price $735K. Top schools and diverse community.">
+    <meta name="keywords" content="National City San Diego, National City real estate, waterfront homes San Diego, National City homes for sale, affordable San Diego">
     <meta name="author" content="Rusty Rau">
-    <meta name="description" content="National City real estate guide. National City, San Diego County's second-oldest incorporated city, offers waterfront access, diverse dining, and some of the area's most affordable ho">
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Rusty Rau | San Diego Real Estate Expert">
-    <meta property="og:description" content="Born and raised in San Diego. 8 years helping San Diegans buy and sell homes.">
+    <meta property="og:title" content="National City Real Estate & Homes for Sale | San Diego | Rau Home Group">
+    <meta property="og:description" content="Historic National City - San Diego County's first incorporated city. Waterfront access, diverse community, and affordable home prices.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://rauhomegroup.com">
+    <meta property="og:url" content="https://rauhomegroup.com/neighborhoods/national-city.html">
     
-    <title>National City Real Estate | Homes for Sale | Rusty Rau</title>
+    <title>National City Real Estate & Homes for Sale | San Diego | Rau Home Group</title>
     
     <!-- Preconnect to external domains for faster loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://images.unsplash.com">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     
     <!-- Preload critical assets -->
@@ -42,6 +39,275 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/logo.png">
 
+    <style>
+        /* Hero Section */
+        .hero-neighborhood {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../assets/images/neighborhoods/national-city-hero.jpg') center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 0 2rem;
+        }
+        
+        .hero-neighborhood h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .hero-neighborhood p {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+
+        /* Stats Banner */
+        .stats-banner {
+            background: #1a1a1a;
+            padding: 3rem 0;
+            margin-bottom: 5rem;
+        }
+
+        .stats-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            padding: 0 2rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            color: white;
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #d4af37;
+            margin-bottom: 0.5rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            color: #ccc;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Main Content */
+        .neighborhood-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem 7rem;
+        }
+
+        .intro-text {
+            max-width: 1000px;
+            margin: 0 auto 5rem;
+            font-size: 1.35rem;
+            line-height: 1.9;
+            color: #2c3e50;
+        }
+
+        .content-block {
+            max-width: 1000px;
+            margin: 0 auto 5rem;
+        }
+
+        .content-block h2 {
+            font-size: 2.2rem;
+            color: #1a1a1a;
+            margin-bottom: 2.5rem;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+        }
+
+        .content-block p {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #444;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Amenities List with Gold Bullets */
+        .amenities-list {
+            list-style: none;
+            padding: 0;
+            margin: 2.5rem 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .amenities-list li {
+            display: flex;
+            align-items: flex-start;
+            font-size: 1.15rem;
+            line-height: 1.6;
+        }
+
+        .amenities-list li::before {
+            content: "✓";
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background: #d4af37;
+            color: white;
+            border-radius: 50%;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: #f8f9fa;
+            padding: 5rem 0;
+            margin-top: 7rem;
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .contact-info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .contact-info p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 2rem;
+        }
+
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .contact-icon {
+            width: 56px;
+            height: 56px;
+            background: #d4af37;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .contact-method-info h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.25rem;
+            color: #1a1a1a;
+        }
+
+        .contact-method-info a {
+            color: #d4af37;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #333;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background: #d4af37;
+            color: white;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: #b8941f;
+        }
+
+        /* Responsive */
+        @media (max-width: 968px) {
+            .stats-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .amenities-list {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .hero-neighborhood h1 {
+                font-size: 2rem;
+            }
+
+            .hero-neighborhood p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Skip to main content link for accessibility -->
@@ -80,143 +346,180 @@
         </div>
     </nav>
 
-<nav class="navbar scrolled-dark">
-        <div class="nav-container">
-            <a href="/" class="logo">
-                <img src="../images/logo.png" alt="Rau Home Group" class="logo-img">
-                <div class="logo-text-wrap">
-                    <span class="logo-text">RAU HOME GROUP</span>
-                    <span class="logo-subtitle">SAN DIEGO REAL ESTATE</span>
-                </div>
-            </a>
-            <ul class="nav-links">
-                <li><a href="/#about">About</a></li>
-                <li><a href="/buyers.html">Buyers</a></li>
-                <li><a href="/sellers.html">Sellers</a></li>
-                <li><a href="/#listings">Listings</a></li>
-                <li><a href="/neighborhoods.html" class="active">Areas</a></li>
-                <li><a href="/#testimonials">Reviews</a></li>
-                <li><a href="/blog.html">Blog</a></li>
-                <li><a href="#contact" class="nav-cta">Contact</a></li>
+    <!-- Hero Section -->
+    <div class="hero-neighborhood">
+        <div>
+            <h1>National City, San Diego</h1>
+            <p>San Diego County's First Incorporated City Since 1887</p>
+        </div>
+    </div>
+
+    <!-- Stats Banner -->
+    <div class="stats-banner">
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-number">$735K</div>
+                <div class="stat-label">Median Home Price</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">7/10</div>
+                <div class="stat-label">School Rating</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">58,800</div>
+                <div class="stat-label">Population</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content" class="neighborhood-content">
+        
+        <!-- About Section -->
+        <section class="content-block">
+            <h2>About National City</h2>
+            <div class="intro-text">
+                <p>National City holds a unique place in San Diego County history as the area's first incorporated city, earning its charter in 1887—one year before San Diego itself. This South Bay community of nearly 59,000 residents offers an authentic, multicultural urban experience with exceptional waterfront access to San Diego Bay, making it one of the region's most accessible entry points for homebuyers seeking coastal proximity without coastal premiums.</p>
+            </div>
+            
+            <p>Located just 5 miles south of downtown San Diego, National City occupies a strategic position along Interstate 5 and Interstate 805, providing seamless connectivity to employment centers throughout the county. The city's 9-square-mile footprint includes a mile of San Diego Bay shoreline, featuring the National City Marina and the emerging Pepper Park waterfront district—a rapidly developing area that's becoming a focal point for dining, recreation, and community events.</p>
+            
+            <p>What sets National City apart is its rich cultural diversity and genuine working-class character. The city is home to one of California's most vibrant Filipino-American communities, alongside thriving Hispanic, Vietnamese, and other Asian populations. This cultural tapestry translates into exceptional authentic cuisine, diverse shopping districts, and community events that celebrate the city's multicultural identity. National City has retained its unpretentious, community-oriented atmosphere while benefiting from significant public and private investment in recent years.</p>
+            
+            <p>The community attracts first-time homebuyers, military families from nearby naval installations, working professionals seeking affordability, and investors recognizing the area's growth potential. With median home prices around $735,000—notably lower than most San Diego County coastal communities—National City offers genuine accessibility to homeownership alongside urban amenities, public transit access via the Blue Line Trolley, and ongoing waterfront redevelopment that promises to enhance livability and property values.</p>
+        </section>
+
+        <!-- Lifestyle & Amenities Section -->
+        <section class="content-block">
+            <h2>Lifestyle & Amenities</h2>
+            
+            <ul class="amenities-list">
+                <li>Waterfront access with National City Marina and Pepper Park</li>
+                <li>Blue Line Trolley stations connecting to downtown and Tijuana</li>
+                <li>Diverse international dining - Filipino, Mexican, Vietnamese cuisine</li>
+                <li>Westfield Plaza Bonita - major shopping and entertainment center</li>
+                <li>Mile of Sweetwater Regional Park trails and open space</li>
+                <li>Close proximity to downtown San Diego (5 miles, 10 minutes)</li>
             </ul>
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
 
-    <section class="hero page-hero" style="background: linear-gradient(135deg, #1A2332 0%, #0D1117 100%);">
-        <div class="hero-background">
-            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80" alt="National City" class="hero-image">
-            <div class="hero-overlay dark"></div>
-        </div>
-        <div class="hero-content">
-            <span class="hero-tag">San Diego</span>
-            <h1 class="hero-title">National City<br><span class="accent">First Incorporated City</span></h1>
-            <p class="hero-subtitle">Historic city with waterfront access and affordable South Bay living</p>
-            <a href="#contact" class="cta-button">See Homes in National City</a>
-        </div>
-    </section>
-
-    <section class="content-section" style="padding: 4rem 0;">
-        <div class="container narrow">
-            <h2 class="section-title">About National City</h2>
-            <p class="lead-text">National City, San Diego County's second-oldest incorporated city, offers waterfront access, diverse dining, and some of the area's most affordable housing. The city is undergoing revitalization with new development along the bayfront.</p>
+            <p>National City offers an authentic urban lifestyle characterized by cultural diversity, practical convenience, and evolving waterfront amenities. The city's downtown corridor along Highland Avenue showcases family-owned restaurants, international markets, and local businesses that reflect the community's multicultural character. From authentic Filipino lumpia at local eateries to traditional Mexican panaderias and Vietnamese pho shops, National City's dining scene rivals any in the county for authenticity and value.</p>
             
-            <p style="color: #6B7280; margin-bottom: 1rem;">The bayfront features Pepper Park with views of downtown San Diego and boat launches. Highland Avenue offers Filipino, Mexican, and international restaurants. The city is investing in infrastructure and attracting new residents.</p>
+            <p>The National City Marina and adjacent Pepper Park represent the city's waterfront transformation. This bayfront area features walking paths, fishing piers, picnic areas, and stunning views of San Diego Bay and the Coronado Bridge. The marina accommodates both recreational boaters and working vessels, maintaining National City's maritime heritage while evolving into a recreational destination. Recent investment has brought new restaurants and public spaces to the waterfront, creating a gathering place that's attracting residents and visitors alike.</p>
             
-            <p style="color: #6B7280; margin-bottom: 2rem;">Real estate includes affordable single-family homes, apartments, and new bayfront developments. The combination of affordability, waterfront access, and proximity to downtown make National City attractive to first-time buyers.</p>
+            <p>Westfield Plaza Bonita serves as South Bay's premier shopping destination, offering major retailers, restaurants, and a cinema complex just minutes from most National City neighborhoods. The city's central location provides quick access to downtown San Diego's employment centers, Coronado's beaches, and Chula Vista's bayfront attractions. Public transit via the Blue Line Trolley makes National City one of the most transit-accessible communities in San Diego County, with direct service to downtown, Mission Valley, and the U.S.-Mexico border.</p>
+        </section>
 
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin: 3rem 0; padding: 2rem; background: #F8F7F4; border-radius: 4px;">
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">$650K</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">Median Home Price</div>
-                </div>
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">6/10</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">School Rating</div>
-                </div>
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">61K</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">Population</div>
+        <!-- Schools & Education Section -->
+        <section class="content-block">
+            <h2>Schools & Education</h2>
+            
+            <p>National City is served by the National School District (K-8) and Sweetwater Union High School District (9-12), providing neighborhood schools throughout the community. Top-performing schools include Rosebank Elementary (7/10 GreatSchools rating), Kimball Elementary, and Las Palmas Elementary. These schools serve diverse student populations and offer bilingual programs reflecting the community's multicultural character.</p>
+            
+            <p>High school students attend National City Middle School before transitioning to Sweetwater High School, one of the district's established comprehensive high schools offering college preparatory courses, career technical education, and athletic programs. The city's location provides easy access to Southwestern College's nearby Chula Vista campus, one of California's premier community colleges, as well as San Diego's major universities. Many National City families value the practical, community-oriented education their schools provide while benefiting from the diversity that prepares students for success in California's multicultural economy.</p>
+        </section>
+
+        <!-- Getting Around Section -->
+        <section class="content-block">
+            <h2>Getting Around</h2>
+            
+            <p>National City earns a Walk Score of 69 ("Very Walkable"), with most errands accomplishable on foot in the central neighborhoods surrounding Highland Avenue and downtown National City. The city's compact layout and grid street pattern make navigation straightforward, while its two Blue Line Trolley stations (8th Street and 24th Street) provide frequent public transit service to downtown San Diego (15 minutes), Mission Valley (30 minutes), and the San Ysidro border crossing (20 minutes). This transit connectivity makes National City particularly attractive for car-free or single-car households.</p>
+            
+            <p>By car, National City offers exceptional freeway access via Interstate 5 and Interstate 805, both of which run through the city. Downtown San Diego is just 5 miles north (10-15 minutes), San Diego International Airport is 8 miles (15 minutes), and beaches in Coronado or Imperial Beach are 10 minutes away. Commuters heading to major South Bay employers in Chula Vista, the Otay Mesa industrial corridor, or Naval Base San Diego benefit from reverse-commute patterns that often mean lighter traffic. The city's central location essentially positions residents within 20 minutes of most major San Diego County destinations.</p>
+        </section>
+
+    </main>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Ready to Explore National City Real Estate?</h2>
+                <p>As a San Diego real estate expert with deep knowledge of National City's diverse neighborhoods and strong growth potential, I'll help you find the perfect home in this accessible, waterfront community.</p>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-method-info">
+                            <h3>Call or Text</h3>
+                            <a href="tel:+1234567890">(123) 456-7890</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-method-info">
+                            <h3>Email</h3>
+                            <a href="mailto:rusty@rauhomegroup.com">rusty@rauhomegroup.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-calendar"></i>
+                        </div>
+                        <div class="contact-method-info">
+                            <h3>Schedule</h3>
+                            <a href="../contact.html">Book a Consultation</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; margin: 2rem 0 1rem; color: #1A2332;">Lifestyle & Amenities</h3>
-            <ul style="list-style: none; padding: 0;">
-                <li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Pepper Park - bayfront views and recreation</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Diverse international dining</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Mile of Cars - auto dealerships</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Trolley access to downtown</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Improving waterfront development</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Affordable housing options</li>
-            </ul>
-
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; margin: 2rem 0 1rem; color: #1A2332;">Who Lives Here</h3>
-            <p style="color: #6B7280;">National City attracts diverse populations, first-time buyers, military families, and those seeking South Bay affordability with bay access. The community is working-class, diverse, and experiencing gradual revitalization.</p>
-        </div>
-    </section>
-
-    <section class="cta-section" style="background: #1A2332; color: white; padding: 4rem 0; text-align: center;">
-        <div class="container">
-            <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 1rem; color: white;">Ready to Find Your National City Home?</h2>
-            <p style="color: rgba(255,255,255,0.8); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">Let me show you the best homes and investment opportunities in National City.</p>
-            <a href="#contact" class="cta-button large">See Homes in National City</a>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <span class="section-tag">Get in Touch</span>
-                    <h2 class="section-title">Let's Find Your<br>National City Home</h2>
-                    <p class="contact-text">I know National City inside and out. Let's talk about what you're looking for.</p>
-                    
-                    <div class="contact-details">
-                        <a href="tel:+18582044692" class="contact-item">
-                            <span class="contact-icon"><i class="fas fa-phone"></i></span>
-                            <span>(858) 204-4692</span>
-                        </a>
-                        <a href="mailto:rusty@deanaguilargroup.com" class="contact-item">
-                            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
-                            <span>rusty@deanaguilargroup.com</span>
-                        </a>
-                    </div>
-                    
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/rustyrau_sdrealtor/" target="_blank" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.facebook.com/rusty.rau" target="_blank" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </div>
+            <form class="contact-form" action="../contact-form-handler.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
                 
-                <div class="contact-form-container">
-                    <form class="contact-form">
-                        <input type="hidden" name="neighborhood" value="National City">
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="email" name="email" placeholder="Email" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" name="phone" placeholder="Phone">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="message" placeholder="Tell me what you're looking for in National City..." rows="4"></textarea>
-                        </div>
-                        <button type="submit" class="submit-button">Contact Rusty</button>
-                    </form>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
-            </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" required placeholder="Tell me about your National City home search..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
         </div>
     </section>
 
-
-    <script src="../script.js"></script>
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Rau Home Group - National City Real Estate",
+        "image": "https://rauhomegroup.com/assets/images/neighborhoods/national-city-hero.jpg",
+        "description": "National City San Diego real estate expert. First incorporated city, waterfront access, diverse community. Median price $735K. Top schools and affordable homes.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "National City",
+            "addressRegion": "CA",
+            "postalCode": "91950",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "32.6781",
+            "longitude": "-117.0992"
+        },
+        "url": "https://rauhomegroup.com/neighborhoods/national-city.html",
+        "priceRange": "$$$",
+        "areaServed": "National City, San Diego, California"
+    }
+    </script>
 
     <!-- Footer -->
     <footer class="footer" role="contentinfo">
@@ -291,7 +594,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
     <script src="../script.js" defer></script>
     <script src="../luxury-effects.js" defer></script>
-
-
 </body>
 </html>
