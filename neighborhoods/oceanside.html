@@ -4,19 +4,18 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rusty Rau - San Diego Real Estate Expert. Born and raised in San Diego with 8 years of experience helping buyers and sellers achieve their real estate goals.">
-    <meta name="keywords" content="San Diego real estate, Rusty Rau, San Diego realtor, homes for sale San Diego, buy home San Diego">
+    <meta name="description" content="Oceanside real estate - California's classic beach town with historic pier, surf culture, and affordable coastal living. Median home price $875K.">
+    <meta name="keywords" content="Oceanside real estate, Oceanside homes, Oceanside California, San Diego real estate, beach homes Oceanside">
     <meta name="author" content="Rusty Rau">
-    <meta name="description" content="Oceanside real estate guide. Oceanside is San Diego County's third-largest city, offering 3.5 miles of sandy beaches, a historic wooden pier, and some of the most affordable coast">
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Rusty Rau | San Diego Real Estate Expert">
-    <meta property="og:description" content="Born and raised in San Diego. 8 years helping San Diegans buy and sell homes.">
+    <meta property="og:title" content="Oceanside Real Estate | California's Classic Beach Town">
+    <meta property="og:description" content="Explore Oceanside real estate - historic pier, surf culture, and authentic California beach living.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://rauhomegroup.com">
+    <meta property="og:url" content="https://rauhomegroup.com/neighborhoods/oceanside.html">
     
-    <title>Oceanside Real Estate | Homes for Sale | Rusty Rau</title>
+    <title>Oceanside Real Estate & Homes for Sale | San Diego | Rau Home Group</title>
     
     <!-- Preconnect to external domains for faster loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,6 +41,323 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/logo.png">
 
+    <style>
+        /* Hero Section */
+        .hero-neighborhood {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                        url('https://images.unsplash.com/photo-1502933691298-84fc14542831?w=1600&q=80') center/cover;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 7rem 2rem;
+        }
+        
+        .hero-content h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+            letter-spacing: -1px;
+        }
+        
+        .hero-content .tagline {
+            font-size: 1.75rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+        }
+
+        /* Stats Banner */
+        .stats-banner {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            padding: 4rem 0;
+            margin-bottom: 7rem;
+        }
+        
+        .stats-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 4rem;
+            padding: 0 2rem;
+        }
+        
+        .stat-item {
+            text-align: center;
+            color: white;
+        }
+        
+        .stat-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #D4AF37;
+            display: block;
+            margin-bottom: 0.75rem;
+            text-shadow: 0 2px 10px rgba(212, 175, 55, 0.3);
+        }
+        
+        .stat-label {
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
+        /* Main Content Container */
+        .neighborhood-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem 7rem;
+        }
+        
+        /* Section Styling */
+        .content-section {
+            margin-bottom: 7rem;
+        }
+        
+        .content-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.75rem;
+            color: #1a1a2e;
+            margin-bottom: 2.5rem;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+        }
+        
+        /* Text Blocks */
+        .text-block {
+            max-width: 1000px;
+            margin: 0 auto 3rem;
+        }
+        
+        .intro-text {
+            font-size: 1.35rem;
+            line-height: 1.9;
+            color: #2c3e50;
+            margin-bottom: 2.5rem;
+            font-weight: 400;
+        }
+        
+        .body-text {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #4a5568;
+            margin-bottom: 2rem;
+        }
+        
+        .body-text strong {
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        /* Lifestyle Bullets */
+        .lifestyle-list {
+            list-style: none;
+            padding: 0;
+            margin: 3rem 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .lifestyle-list li {
+            display: flex;
+            align-items: center;
+            font-size: 1.15rem;
+            color: #2c3e50;
+            padding: 0.5rem 0;
+        }
+        
+        .lifestyle-list li:before {
+            content: '✓';
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, #D4AF37 0%, #F4D03F 100%);
+            color: white;
+            border-radius: 50%;
+            margin-right: 1.25rem;
+            font-weight: bold;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            padding: 6rem 3rem;
+            margin: 7rem -2rem 0;
+            color: white;
+        }
+        
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 5rem;
+            align-items: center;
+        }
+        
+        .contact-info h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.75rem;
+            margin-bottom: 1.5rem;
+            color: #D4AF37;
+            font-weight: 600;
+        }
+        
+        .contact-info p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 2.5rem;
+            opacity: 0.95;
+        }
+        
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        
+        .contact-icon {
+            width: 56px;
+            height: 56px;
+            background: rgba(212, 175, 55, 0.15);
+            border: 2px solid #D4AF37;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: #D4AF37;
+            flex-shrink: 0;
+        }
+        
+        .contact-method a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+        
+        .contact-method a:hover {
+            color: #D4AF37;
+        }
+        
+        .contact-form {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 3rem;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #D4AF37;
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 8px;
+            color: white;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #D4AF37;
+            background: rgba(255, 255, 255, 0.15);
+        }
+        
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            width: 100%;
+            padding: 1.25rem;
+            background: linear-gradient(135deg, #D4AF37 0%, #F4D03F 100%);
+            color: #1a1a2e;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(212, 175, 55, 0.4);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 968px) {
+            .hero-content h1 {
+                font-size: 3rem;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+            
+            .lifestyle-list {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .hero-content h1 {
+                font-size: 2.25rem;
+            }
+            
+            .hero-content .tagline {
+                font-size: 1.25rem;
+            }
+            
+            .stat-number {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Skip to main content link for accessibility -->
@@ -80,143 +396,191 @@
         </div>
     </nav>
 
-<nav class="navbar scrolled-dark">
-        <div class="nav-container">
-            <a href="/" class="logo">
-                <img src="../images/logo.png" alt="Rau Home Group" class="logo-img">
-                <div class="logo-text-wrap">
-                    <span class="logo-text">RAU HOME GROUP</span>
-                    <span class="logo-subtitle">SAN DIEGO REAL ESTATE</span>
-                </div>
-            </a>
-            <ul class="nav-links">
-                <li><a href="/#about">About</a></li>
-                <li><a href="/buyers.html">Buyers</a></li>
-                <li><a href="/sellers.html">Sellers</a></li>
-                <li><a href="/#listings">Listings</a></li>
-                <li><a href="/neighborhoods.html" class="active">Areas</a></li>
-                <li><a href="/#testimonials">Reviews</a></li>
-                <li><a href="/blog.html">Blog</a></li>
-                <li><a href="#contact" class="nav-cta">Contact</a></li>
-            </ul>
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
-
-    <section class="hero page-hero" style="background: linear-gradient(135deg, #1A2332 0%, #0D1117 100%);">
-        <div class="hero-background">
-            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80" alt="Oceanside" class="hero-image">
-            <div class="hero-overlay dark"></div>
-        </div>
+    <!-- Hero Section -->
+    <div class="hero-neighborhood">
         <div class="hero-content">
-            <span class="hero-tag">San Diego</span>
-            <h1 class="hero-title">Oceanside<br><span class="accent">California's Classic Beach Town</span></h1>
-            <p class="hero-subtitle">Miles of beaches, historic pier, and great value for coastal living</p>
-            <a href="#contact" class="cta-button">See Homes in Oceanside</a>
+            <h1>Oceanside, San Diego</h1>
+            <p class="tagline">California's Classic Beach Town</p>
         </div>
-    </section>
+    </div>
 
-    <section class="content-section" style="padding: 4rem 0;">
-        <div class="container narrow">
-            <h2 class="section-title">About Oceanside</h2>
-            <p class="lead-text">Oceanside is San Diego County's third-largest city, offering 3.5 miles of sandy beaches, a historic wooden pier, and some of the most affordable coastal real estate in the region. The city is experiencing a major revitalization.</p>
-            
-            <p style="color: #6B7280; margin-bottom: 1rem;">Downtown Oceanside has transformed in recent years with craft breweries, art galleries, and new restaurants. The historic pier and harbor area offer fishing, surfing, and waterfront dining. The city's proximity to Camp Pendleton provides a strong military presence and community.</p>
-            
-            <p style="color: #6B7280; margin-bottom: 2rem;">Real estate includes beachfront properties, downtown condos, and suburban neighborhoods. The revitalizing downtown and improving amenities make Oceanside an excellent value for those seeking beach access without premium coastal prices.</p>
-
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin: 3rem 0; padding: 2rem; background: #F8F7F4; border-radius: 4px;">
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">$875K</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">Median Home Price</div>
-                </div>
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">7/10</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">School Rating</div>
-                </div>
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">175K</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">Population</div>
-                </div>
+    <!-- Stats Banner -->
+    <div class="stats-banner">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <span class="stat-number">$875K</span>
+                <span class="stat-label">Median Home Price</span>
             </div>
-
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; margin: 2rem 0 1rem; color: #1A2332;">Lifestyle & Amenities</h3>
-            <ul style="list-style: none; padding: 0;">
-                <li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Oceanside Pier - 1,942-foot historic pier</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Oceanside Harbor - boating and waterfront dining</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Craft beer scene - multiple breweries downtown</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> California Surf Museum - surf history and culture</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Camp Pendleton proximity - military community</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Improving downtown with shops and restaurants</li>
-            </ul>
-
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; margin: 2rem 0 1rem; color: #1A2332;">Who Lives Here</h3>
-            <p style="color: #6B7280;">Oceanside attracts military families, surfers, young professionals seeking coastal value, and those working at Camp Pendleton. The community is diverse, active, and increasingly focused on arts and culture.</p>
+            <div class="stat-item">
+                <span class="stat-number">7/10</span>
+                <span class="stat-label">Average School Rating</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">176K</span>
+                <span class="stat-label">Population</span>
+            </div>
         </div>
-    </section>
+    </div>
 
-    <section class="cta-section" style="background: #1A2332; color: white; padding: 4rem 0; text-align: center;">
-        <div class="container">
-            <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 1rem; color: white;">Ready to Find Your Oceanside Home?</h2>
-            <p style="color: rgba(255,255,255,0.8); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">Let me show you the best homes and investment opportunities in Oceanside.</p>
-            <a href="#contact" class="cta-button large">See Homes in Oceanside</a>
-        </div>
-    </section>
+    <!-- Main Content -->
+    <main id="main-content" class="neighborhood-content">
+        
+        <!-- About Section -->
+        <section class="content-section">
+            <h2>About Oceanside</h2>
+            <div class="text-block">
+                <p class="intro-text">
+                    Oceanside embodies authentic California beach town living without the pretense. Home to the longest wooden pier on the West Coast and three-and-a-half miles of pristine coastline, this North County gem offers genuine surf culture, historic charm, and an increasingly vibrant downtown—all at a more accessible price point than its southern coastal neighbors.
+                </p>
+                
+                <p class="body-text">
+                    <strong>Location:</strong> Oceanside sits in northern San Diego County, approximately 40 miles north of downtown San Diego and 83 miles south of Los Angeles. Bordered by Camp Pendleton to the north and Carlsbad to the south, it's the northernmost coastal city in San Diego County with direct beach access.
+                </p>
+                
+                <p class="body-text">
+                    <strong>What Makes It Unique:</strong> Oceanside has remained refreshingly unpretentious while evolving into a cultural hotspot. The historic downtown features a thriving craft brewery scene, the California Surf Museum, and the iconic 1,954-foot pier dating back to 1888. The city blends military heritage (proximity to Camp Pendleton brings a strong veteran community) with artistic revival, creating an authentic coastal experience that feels worlds away from the polished luxury of La Jolla or the tourist crowds of Mission Beach.
+                </p>
+                
+                <p class="body-text">
+                    <strong>Who Lives Here:</strong> Oceanside attracts a diverse mix of military families and veterans, surfers and water sports enthusiasts, young professionals seeking coastal affordability, families drawn to good schools and beach access, retirees looking for laid-back coastal living, and artists and creatives energizing the cultural scene. The community values authenticity, outdoor recreation, and neighborhood character over status symbols.
+                </p>
+            </div>
+        </section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-grid">
+        <!-- Lifestyle & Amenities Section -->
+        <section class="content-section">
+            <h2>Lifestyle & Amenities</h2>
+            <div class="text-block">
+                <ul class="lifestyle-list">
+                    <li>Historic 1,954-foot pier and pristine beaches</li>
+                    <li>Thriving craft brewery and restaurant scene</li>
+                    <li>California Surf Museum and arts district</li>
+                    <li>Oceanside Harbor with marina and dining</li>
+                    <li>Mission San Luis Rey (1798 historic landmark)</li>
+                    <li>Family-friendly community events and farmers markets</li>
+                </ul>
+                
+                <p class="body-text">
+                    Oceanside's lifestyle revolves around genuine beach culture and community connection. The revitalized downtown along Coast Highway and Pier View Way has transformed into a destination for craft beer enthusiasts (over a dozen breweries), food lovers discovering creative restaurants, and art collectors browsing galleries during the monthly First Friday Art Walk. Unlike more touristy beach towns, Oceanside maintains an authentic residential feel where locals actually live year-round.
+                </p>
+                
+                <p class="body-text">
+                    The harbor offers recreational boating, sport fishing charters, and waterfront dining with views of Camp Pendleton's rolling hills. Families enjoy the Strand—a paved beachfront path perfect for biking, jogging, and rollerblading. The Wednesday Sunset Market brings local vendors, live music, and farm-fresh produce to the pier plaza. Historic Mission San Luis Rey provides a glimpse into California's Spanish colonial past with beautiful gardens and architecture.
+                </p>
+            </div>
+        </section>
+
+        <!-- Schools & Education Section -->
+        <section class="content-section">
+            <h2>Schools & Education</h2>
+            <div class="text-block">
+                <p class="body-text">
+                    Oceanside is served by the Oceanside Unified School District, which has made significant strides in recent years with new facilities and improved programs. School quality varies by neighborhood, with some areas offering excellent options while others are improving. Many families also consider Vista Unified schools in eastern sections.
+                </p>
+                
+                <p class="body-text">
+                    <strong>Notable Public Schools:</strong> El Camino High School (GreatSchools 7/10) offers strong college prep and career technical programs. Ocean Knoll Elementary (8/10) and Jefferson Middle School (7/10) serve families in the coastal areas with solid academics and engaged parent communities. Several elementary schools have recently undergone modernization with updated facilities and technology integration.
+                </p>
+                
+                <p class="body-text">
+                    <strong>Private & Charter Options:</strong> Army and Navy Academy provides military-style education for boys in grades 7-12 with a historic campus overlooking the Pacific. St. Mary's Catholic School offers K-8 faith-based education. Several charter schools including Oceanside Charter School and El Camino Creek Charter provide alternative public education models with smaller class sizes and specialized curricula.
+                </p>
+            </div>
+        </section>
+
+        <!-- Getting Around Section -->
+        <section class="content-section">
+            <h2>Getting Around</h2>
+            <div class="text-block">
+                <p class="body-text">
+                    <strong>Commute Times:</strong> Downtown San Diego is approximately 40 miles south (40-60 minutes via I-5 depending on traffic). Carlsbad and Vista employment centers are 10-15 minutes away. Orange County is 45-60 minutes north. Many residents work locally at Camp Pendleton, local healthcare facilities, or North County businesses, making commutes manageable. The Sprinter light rail connects to inland employment centers.
+                </p>
+                
+                <p class="body-text">
+                    <strong>Transit & Accessibility:</strong> The Oceanside Transit Center serves as a major regional hub with Coaster commuter rail service to San Diego, Amtrak Pacific Surfliner to Los Angeles and San Diego, Sprinter light rail to Escondido and inland communities, and Breeze bus routes throughout North County. The transit center's proximity to downtown makes car-free living feasible for some residents. However, most families still prefer personal vehicles for daily convenience and beach gear transport.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="contact-container">
                 <div class="contact-info">
-                    <span class="section-tag">Get in Touch</span>
-                    <h2 class="section-title">Let's Find Your<br>Oceanside Home</h2>
-                    <p class="contact-text">I know Oceanside inside and out. Let's talk about what you're looking for.</p>
-                    
-                    <div class="contact-details">
-                        <a href="tel:+18582044692" class="contact-item">
-                            <span class="contact-icon"><i class="fas fa-phone"></i></span>
-                            <span>(858) 204-4692</span>
-                        </a>
-                        <a href="mailto:rusty@deanaguilargroup.com" class="contact-item">
-                            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
-                            <span>rusty@deanaguilargroup.com</span>
-                        </a>
-                    </div>
-                    
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/rustyrau_sdrealtor/" target="_blank" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.facebook.com/rusty.rau" target="_blank" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
+                    <h2>Ready to Explore Oceanside?</h2>
+                    <p>
+                        As a born-and-raised San Diego native with deep knowledge of North County communities, I'll help you find the perfect Oceanside property that matches your lifestyle and budget.
+                    </p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <div style="font-size: 0.9rem; opacity: 0.8;">Call or Text</div>
+                                <a href="tel:+1234567890">(123) 456-7890</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <div style="font-size: 0.9rem; opacity: 0.8;">Email</div>
+                                <a href="mailto:rusty@rauhomegroup.com">rusty@rauhomegroup.com</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="contact-form-container">
-                    <form class="contact-form">
-                        <input type="hidden" name="neighborhood" value="Oceanside">
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="email" name="email" placeholder="Email" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" name="phone" placeholder="Phone">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="message" placeholder="Tell me what you're looking for in Oceanside..." rows="4"></textarea>
-                        </div>
-                        <button type="submit" class="submit-button">Contact Rusty</button>
-                    </form>
-                </div>
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">What are you looking for in Oceanside?</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
             </div>
-        </div>
-    </section>
+        </section>
 
+    </main>
 
-    <script src="../script.js"></script>
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Rau Home Group - Oceanside Real Estate",
+        "image": "https://rauhomegroup.com/assets/images/neighborhoods/oceanside-hero.jpg",
+        "description": "Oceanside San Diego real estate expert. Classic California beach town living with historic pier, surf culture, and coastal affordability. Median price $875K.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Oceanside",
+            "addressRegion": "CA",
+            "postalCode": "92054",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "33.1959",
+            "longitude": "-117.3795"
+        },
+        "url": "https://rauhomegroup.com/neighborhoods/oceanside.html",
+        "priceRange": "$$",
+        "areaServed": "Oceanside, San Diego County, California"
+    }
+    </script>
 
     <!-- Footer -->
     <footer class="footer" role="contentinfo">
@@ -291,7 +655,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
     <script src="../script.js" defer></script>
     <script src="../luxury-effects.js" defer></script>
-
-
 </body>
 </html>
