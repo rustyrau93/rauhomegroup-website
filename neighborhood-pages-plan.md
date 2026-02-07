@@ -50,7 +50,7 @@ All pages should match La Jolla's exact structure (~25KB, 750 words):
 - [x] **Mission Hills** - 26KB - Built 2026-02-07 - Historic Elegance, prestigious location ($1.5M)
 - [x] **National City** - 28KB - Built 2026-02-07 - First Incorporated City, waterfront access ($735K)
 - [x] **Normal Heights** - 30KB - Built 2026-02-07 - Eclectic urban village, Adams Avenue scene, walkable ($947K)
-- [ ] **North Park** - 11KB stub - Hip & Happening, craft beer, arts scene ($950K)
+- [x] **North Park** - 32KB - Built 2026-02-07 - Where San Diego Gets Creative, craft beer capital, walkable urban living ($1.0M)
 - [ ] **Oceanside** - 11KB stub - California's Classic Beach Town, historic pier ($875K)
 - [ ] **Rancho Bernardo** - 11KB stub - Established Excellence, golf, tech corridor ($950K)
 - [ ] **San Marcos** - 11KB stub - Growing & Thriving, CSUSM, Restaurant Row ($825K)
@@ -59,11 +59,11 @@ All pages should match La Jolla's exact structure (~25KB, 750 words):
 - [ ] **University Heights** - 11KB stub - Elevated Living, hilltop breweries ($900K)
 
 ## Build Priority (Next Up)
-1. **Chula Vista** - Large South Bay city, bayfront development
-2. **Escondido** - Major North County inland city
-3. **Oceanside** - Large coastal city with pier
-4. **North Park** - Popular urban neighborhood
-5. **Rancho Bernardo** - Established North County community
+1. **Oceanside** - Large coastal city with pier
+2. **Rancho Bernardo** - Established North County community
+3. **San Marcos** - Growing & Thriving, CSUSM, Restaurant Row
+4. **Santee** - Best Climate on Earth, lakes and trails
+5. **South Park** - Neighborhood Charm, family-friendly cafes
 
 ## Deployment
 - Repo: rustyrau93/rauhomegroup-website
