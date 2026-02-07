@@ -46,7 +46,7 @@ All pages should match La Jolla's exact structure (~25KB, 750 words):
 
 ### 🔨 Needs Rebuild (Stub Pages ~11KB)
 - [x] **Escondido** - 29KB - Built 2026-02-06 - Hidden Valley, wineries, arts, Safari Park ($810K)
-- [ ] **Kensington** - 11KB stub - Village in the City, small-town charm ($1.1M)
+- [x] **Kensington** - 37KB - Built 2026-02-07 - Village in the City, small-town charm, walkable Adams Avenue ($1.1M)
 - [ ] **Mission Hills** - 11KB stub - Historic Elegance, prestigious location ($1.4M)
 - [ ] **National City** - 11KB stub - First Incorporated City, waterfront access ($650K)
 - [ ] **Normal Heights** - 11KB stub - Adams Avenue Arts, eclectic, up-and-coming ($825K)
