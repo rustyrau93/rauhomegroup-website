@@ -1,27 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rusty Rau - San Diego Real Estate Expert. Born and raised in San Diego with 8 years of experience helping buyers and sellers achieve their real estate goals.">
-    <meta name="keywords" content="San Diego real estate, Rusty Rau, San Diego realtor, homes for sale San Diego, buy home San Diego">
+    <meta name="description" content="Mission Hills San Diego real estate expert. Historic homes, tree-lined streets, and prestigious location. Median price $1.5M. Top schools and walkable lifestyle.">
+    <meta name="keywords" content="Mission Hills San Diego, Mission Hills real estate, historic homes San Diego, Mission Hills homes for sale">
     <meta name="author" content="Rusty Rau">
-    <meta name="description" content="Mission Hills real estate guide. Mission Hills is one of San Diego's most prestigious and historic neighborhoods, featuring grand homes, tree-lined streets, and proximity to Balboa Pa">
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Rusty Rau | San Diego Real Estate Expert">
-    <meta property="og:description" content="Born and raised in San Diego. 8 years helping San Diegans buy and sell homes.">
+    <meta property="og:title" content="Mission Hills Real Estate & Homes for Sale | San Diego | Rau Home Group">
+    <meta property="og:description" content="Historic elegance meets modern convenience in Mission Hills. Tree-lined streets, Craftsman homes, and prestigious San Diego location.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://rauhomegroup.com">
+    <meta property="og:url" content="https://rauhomegroup.com/neighborhoods/mission-hills.html">
     
-    <title>Mission Hills Real Estate | Homes for Sale | Rusty Rau</title>
+    <title>Mission Hills Real Estate & Homes for Sale | San Diego | Rau Home Group</title>
     
     <!-- Preconnect to external domains for faster loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://images.unsplash.com">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     
     <!-- Preload critical assets -->
@@ -42,6 +39,275 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/logo.png">
 
+    <style>
+        /* Hero Section */
+        .hero-neighborhood {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../assets/images/neighborhoods/mission-hills-hero.jpg') center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 0 2rem;
+        }
+        
+        .hero-neighborhood h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .hero-neighborhood p {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+
+        /* Stats Banner */
+        .stats-banner {
+            background: #1a1a1a;
+            padding: 3rem 0;
+            margin-bottom: 5rem;
+        }
+
+        .stats-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            padding: 0 2rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            color: white;
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #d4af37;
+            margin-bottom: 0.5rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            color: #ccc;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Main Content */
+        .neighborhood-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem 7rem;
+        }
+
+        .intro-text {
+            max-width: 1000px;
+            margin: 0 auto 5rem;
+            font-size: 1.35rem;
+            line-height: 1.9;
+            color: #2c3e50;
+        }
+
+        .content-block {
+            max-width: 1000px;
+            margin: 0 auto 5rem;
+        }
+
+        .content-block h2 {
+            font-size: 2.2rem;
+            color: #1a1a1a;
+            margin-bottom: 2.5rem;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+        }
+
+        .content-block p {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #444;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Amenities List with Gold Bullets */
+        .amenities-list {
+            list-style: none;
+            padding: 0;
+            margin: 2.5rem 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .amenities-list li {
+            display: flex;
+            align-items: flex-start;
+            font-size: 1.15rem;
+            line-height: 1.6;
+        }
+
+        .amenities-list li::before {
+            content: "✓";
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background: #d4af37;
+            color: white;
+            border-radius: 50%;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: #f8f9fa;
+            padding: 5rem 0;
+            margin-top: 7rem;
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .contact-info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .contact-info p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 2rem;
+        }
+
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .contact-icon {
+            width: 56px;
+            height: 56px;
+            background: #d4af37;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .contact-method-info h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.25rem;
+            color: #1a1a1a;
+        }
+
+        .contact-method-info a {
+            color: #d4af37;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #333;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background: #d4af37;
+            color: white;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: #b8941f;
+        }
+
+        /* Responsive */
+        @media (max-width: 968px) {
+            .stats-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .amenities-list {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .hero-neighborhood h1 {
+                font-size: 2rem;
+            }
+
+            .hero-neighborhood p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Skip to main content link for accessibility -->
@@ -80,143 +346,180 @@
         </div>
     </nav>
 
-<nav class="navbar scrolled-dark">
-        <div class="nav-container">
-            <a href="/" class="logo">
-                <img src="../images/logo.png" alt="Rau Home Group" class="logo-img">
-                <div class="logo-text-wrap">
-                    <span class="logo-text">RAU HOME GROUP</span>
-                    <span class="logo-subtitle">SAN DIEGO REAL ESTATE</span>
-                </div>
-            </a>
-            <ul class="nav-links">
-                <li><a href="/#about">About</a></li>
-                <li><a href="/buyers.html">Buyers</a></li>
-                <li><a href="/sellers.html">Sellers</a></li>
-                <li><a href="/#listings">Listings</a></li>
-                <li><a href="/neighborhoods.html" class="active">Areas</a></li>
-                <li><a href="/#testimonials">Reviews</a></li>
-                <li><a href="/blog.html">Blog</a></li>
-                <li><a href="#contact" class="nav-cta">Contact</a></li>
+    <!-- Hero Section -->
+    <div class="hero-neighborhood">
+        <div>
+            <h1>Mission Hills, San Diego</h1>
+            <p>Historic Elegance in the Heart of San Diego</p>
+        </div>
+    </div>
+
+    <!-- Stats Banner -->
+    <div class="stats-banner">
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-number">$1.5M</div>
+                <div class="stat-label">Median Home Price</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">7/10</div>
+                <div class="stat-label">School Rating</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">10,500</div>
+                <div class="stat-label">Population</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content" class="neighborhood-content">
+        
+        <!-- About Section -->
+        <section class="content-block">
+            <h2>About Mission Hills</h2>
+            <div class="intro-text">
+                <p>Mission Hills stands as one of San Diego's most distinguished and architecturally significant neighborhoods. Perched on hillsides northwest of downtown, this historic community showcases an extraordinary collection of preserved homes from the 1920s and 1930s, featuring classic Craftsman bungalows, Spanish Colonial Revival estates, and elegant Victorian mansions set along tree-canopied streets.</p>
+            </div>
+            
+            <p>Located just minutes from downtown San Diego and adjacent to both Hillcrest and Little Italy, Mission Hills offers an unbeatable combination of historic charm and urban convenience. The neighborhood earned its name from its proximity to the original San Diego Mission and Presidio Park—the site where California's European settlement began in 1769.</p>
+            
+            <p>What makes Mission Hills truly exceptional is its dedication to preservation and architectural integrity. The neighborhood's strict historic preservation guidelines have maintained the area's distinctive character while allowing homes to be thoughtfully updated for modern living. Mature landscaping, wide sidewalks, and quiet residential streets create a serene village atmosphere despite being in the heart of a major city.</p>
+            
+            <p>The community attracts professionals, executives, artists, and families who value history, architecture, and sophisticated urban living. Residents enjoy walkable access to world-class dining in Little Italy, trendy shops and cafes in Hillcrest, and stunning views of San Diego Bay, downtown, and Point Loma from elevated properties throughout the neighborhood.</p>
+        </section>
+
+        <!-- Lifestyle & Amenities Section -->
+        <section class="content-block">
+            <h2>Lifestyle & Amenities</h2>
+            
+            <ul class="amenities-list">
+                <li>Historic architecture and tree-lined streets with preservation standards</li>
+                <li>Walking distance to Little Italy, Hillcrest, and downtown San Diego</li>
+                <li>Pioneer Park with stunning bay views and green space</li>
+                <li>Presidio Park - birthplace of California with hiking trails</li>
+                <li>Boutique shopping and cafes along Goldfinch Street</li>
+                <li>Quick access to San Diego International Airport (10 minutes)</li>
             </ul>
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
 
-    <section class="hero page-hero" style="background: linear-gradient(135deg, #1A2332 0%, #0D1117 100%);">
-        <div class="hero-background">
-            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80" alt="Mission Hills" class="hero-image">
-            <div class="hero-overlay dark"></div>
-        </div>
-        <div class="hero-content">
-            <span class="hero-tag">San Diego</span>
-            <h1 class="hero-title">Mission Hills<br><span class="accent">Historic Elegance</span></h1>
-            <p class="hero-subtitle">Upscale hillside neighborhood with historic homes and Balboa Park views</p>
-            <a href="#contact" class="cta-button">See Homes in Mission Hills</a>
-        </div>
-    </section>
-
-    <section class="content-section" style="padding: 4rem 0;">
-        <div class="container narrow">
-            <h2 class="section-title">About Mission Hills</h2>
-            <p class="lead-text">Mission Hills is one of San Diego's most prestigious and historic neighborhoods, featuring grand homes, tree-lined streets, and proximity to Balboa Park and downtown. The area exudes old San Diego elegance.</p>
+            <p>Mission Hills offers a refined, walkable lifestyle that feels like a peaceful retreat while remaining deeply connected to urban amenities. Morning coffee at neighborhood cafes, evening strolls under historic street lamps, and weekend explorations of nearby cultural districts define the Mission Hills experience.</p>
             
-            <p style="color: #6B7280; margin-bottom: 1rem;">The neighborhood showcases diverse architectural styles including Spanish Colonial Revival, Craftsman, and Mid-Century Modern. Fort Stockton Drive offers boutique shopping and cafes with a European village feel. Pioneer Park provides stunning downtown and bay views.</p>
+            <p>The neighborhood's central location provides residents with unparalleled convenience. Little Italy's renowned restaurants are a five-minute walk away, downtown's business district is accessible in minutes, and beaches are a quick 15-minute drive. Yet the tree-lined residential streets maintain a tranquil, small-town character that makes it easy to forget you're in California's eighth-largest city.</p>
             
-            <p style="color: #6B7280; margin-bottom: 2rem;">Real estate includes historic estates, renovated bungalows, and luxury properties. The combination of historic character, central location, and prestige makes Mission Hills one of San Diego's most desirable addresses.</p>
+            <p>Pioneer Park serves as the neighborhood's crown jewel—offering panoramic views of San Diego Bay, downtown skyline, and Point Loma. The park features walking trails, picnic areas, and historic monuments, making it a favorite gathering spot for community events and casual recreation. Nearby Presidio Park provides additional hiking opportunities and connects residents to San Diego's founding history.</p>
+        </section>
 
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin: 3rem 0; padding: 2rem; background: #F8F7F4; border-radius: 4px;">
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">$1.4M</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">Median Home Price</div>
-                </div>
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">8/10</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">School Rating</div>
-                </div>
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">9K</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">Population</div>
+        <!-- Schools & Education Section -->
+        <section class="content-block">
+            <h2>Schools & Education</h2>
+            
+            <p>Mission Hills families benefit from access to well-regarded San Diego Unified schools and proximity to several prestigious private institutions. Grant K-8 School serves the neighborhood with a strong academic program and tight-knit community atmosphere, earning a 7/10 GreatSchools rating and serving over 700 students from kindergarten through eighth grade.</p>
+            
+            <p>The neighborhood's central location provides easy access to some of San Diego's finest private schools, including Francis Parker School (K-12 college preparatory), All Hallows Catholic Academy, and The Bishop's School in nearby La Jolla. Many families also appreciate proximity to San Diego High School, one of the city's oldest and most academically rigorous public high schools, located just minutes away in the Bankers Hill neighborhood.</p>
+        </section>
+
+        <!-- Getting Around Section -->
+        <section class="content-block">
+            <h2>Getting Around</h2>
+            
+            <p>Mission Hills earns a Walk Score of 70 ("Very Walkable"), making it one of San Diego's most pedestrian-friendly neighborhoods. Residents can walk to groceries, cafes, restaurants, and entertainment in Hillcrest and Little Italy. The neighborhood's tree-lined sidewalks and gentle slopes make walking pleasant year-round, while the central location means most San Diego destinations are within a 15-minute drive.</p>
+            
+            <p>Downtown San Diego is just 2 miles away (5-minute drive), San Diego International Airport is 3 miles (10 minutes), and beaches in Ocean Beach or Pacific Beach are 15 minutes west. Interstate 5 and State Route 163 provide quick freeway access for commuters heading north to La Jolla and Del Mar or south to Chula Vista and the border. Public transit options include multiple MTS bus routes connecting to the greater San Diego area, though most residents rely on cars for primary transportation.</p>
+        </section>
+
+    </main>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Ready to Find Your Mission Hills Home?</h2>
+                <p>As a San Diego real estate expert with deep knowledge of Mission Hills' historic properties and competitive market, I'll help you navigate this prestigious neighborhood and find the perfect home.</p>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-method-info">
+                            <h3>Call or Text</h3>
+                            <a href="tel:+1234567890">(123) 456-7890</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-method-info">
+                            <h3>Email</h3>
+                            <a href="mailto:rusty@rauhomegroup.com">rusty@rauhomegroup.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-calendar"></i>
+                        </div>
+                        <div class="contact-method-info">
+                            <h3>Schedule</h3>
+                            <a href="../contact.html">Book a Consultation</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; margin: 2rem 0 1rem; color: #1A2332;">Lifestyle & Amenities</h3>
-            <ul style="list-style: none; padding: 0;">
-                <li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Pioneer Park - hilltop park with views</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Fort Stockton shops and cafes</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Historic architecture throughout</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Walking distance to Balboa Park</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Close proximity to downtown</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Washington Street corridor</li>
-            </ul>
-
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; margin: 2rem 0 1rem; color: #1A2332;">Who Lives Here</h3>
-            <p style="color: #6B7280;">Mission Hills attracts affluent professionals, executives, and those who appreciate historic architecture and central urban living. The community values preservation, aesthetics, and maintaining the neighborhood's prestigious character.</p>
-        </div>
-    </section>
-
-    <section class="cta-section" style="background: #1A2332; color: white; padding: 4rem 0; text-align: center;">
-        <div class="container">
-            <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 1rem; color: white;">Ready to Find Your Mission Hills Home?</h2>
-            <p style="color: rgba(255,255,255,0.8); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">Let me show you the best homes and investment opportunities in Mission Hills.</p>
-            <a href="#contact" class="cta-button large">See Homes in Mission Hills</a>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <span class="section-tag">Get in Touch</span>
-                    <h2 class="section-title">Let's Find Your<br>Mission Hills Home</h2>
-                    <p class="contact-text">I know Mission Hills inside and out. Let's talk about what you're looking for.</p>
-                    
-                    <div class="contact-details">
-                        <a href="tel:+18582044692" class="contact-item">
-                            <span class="contact-icon"><i class="fas fa-phone"></i></span>
-                            <span>(858) 204-4692</span>
-                        </a>
-                        <a href="mailto:rusty@deanaguilargroup.com" class="contact-item">
-                            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
-                            <span>rusty@deanaguilargroup.com</span>
-                        </a>
-                    </div>
-                    
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/rustyrau_sdrealtor/" target="_blank" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.facebook.com/rusty.rau" target="_blank" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </div>
+            <form class="contact-form" action="../contact-form-handler.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
                 
-                <div class="contact-form-container">
-                    <form class="contact-form">
-                        <input type="hidden" name="neighborhood" value="Mission Hills">
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="email" name="email" placeholder="Email" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" name="phone" placeholder="Phone">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="message" placeholder="Tell me what you're looking for in Mission Hills..." rows="4"></textarea>
-                        </div>
-                        <button type="submit" class="submit-button">Contact Rusty</button>
-                    </form>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
-            </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" required placeholder="Tell me about your Mission Hills home search..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
         </div>
     </section>
 
-
-    <script src="../script.js"></script>
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Rau Home Group - Mission Hills Real Estate",
+        "image": "https://rauhomegroup.com/assets/images/neighborhoods/mission-hills-hero.jpg",
+        "description": "Mission Hills San Diego real estate expert. Historic homes, Craftsman architecture, tree-lined streets. Median price $1.5M. Top schools and walkable lifestyle.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Mission Hills",
+            "addressRegion": "CA",
+            "postalCode": "92103",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "32.7520",
+            "longitude": "-117.1946"
+        },
+        "url": "https://rauhomegroup.com/neighborhoods/mission-hills.html",
+        "priceRange": "$$$$",
+        "areaServed": "Mission Hills, San Diego, California"
+    }
+    </script>
 
     <!-- Footer -->
     <footer class="footer" role="contentinfo">
@@ -291,7 +594,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
     <script src="../script.js" defer></script>
     <script src="../luxury-effects.js" defer></script>
-
-
 </body>
 </html>
