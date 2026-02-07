@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Rusty Rau - San Diego Real Estate Expert. Born and raised in San Diego with 8 years of experience helping buyers and sellers achieve their real estate goals.">
-    <meta name="keywords" content="San Diego real estate, Rusty Rau, San Diego realtor, homes for sale San Diego, buy home San Diego">
+    <meta name="keywords" content="San Diego real estate, Rusty Rau, San Diego realtor, homes for sale San Diego, buy home San Diego, Santee real estate">
     <meta name="author" content="Rusty Rau">
-    <meta name="description" content="Santee real estate guide. Santee promotes itself as having the 'Best Climate on Earth' with warm, sunny weather year-round. The city offers family-friendly amenities, lakes, tr">
+    <meta name="description" content="Santee CA homes for sale. Best Climate on Earth with lakes, trails, family-friendly neighborhoods. Median price $825K. Top schools and outdoor recreation.">
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph / Social Media -->
@@ -16,7 +16,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://rauhomegroup.com">
     
-    <title>Santee Real Estate | Homes for Sale | Rusty Rau</title>
+    <title>Santee Real Estate & Homes for Sale | San Diego | Rau Home Group</title>
     
     <!-- Preconnect to external domains for faster loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,6 +42,181 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/logo.png">
 
+    <style>
+        .hero-neighborhood {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../assets/images/neighborhoods/santee-hero.jpg') center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .hero-neighborhood h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        .hero-neighborhood p {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+        .neighborhood-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+        .section {
+            margin-bottom: 4rem;
+        }
+        .section h2 {
+            color: #2C3E50;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid #D4AF37;
+            padding-bottom: 0.5rem;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .stat-card {
+            background: linear-gradient(135deg, #D4AF37 0%, #F4E5C2 100%);
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            border-left: 4px solid #B8941E;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .stat-card h3 {
+            color: #2C3E50;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+        .stat-card p {
+            color: #2C3E50;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        .amenities-list {
+            list-style: none;
+            padding: 0;
+        }
+        .amenities-list li {
+            margin-bottom: 1rem;
+            padding-left: 3rem;
+            position: relative;
+        }
+        .amenities-list li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 32px;
+            height: 32px;
+            background: #D4AF37;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .pros-cons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .pros, .cons {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+        }
+        .pros {
+            border-left: 4px solid #27ae60;
+        }
+        .cons {
+            border-left: 4px solid #e74c3c;
+        }
+        .pros h3 {
+            color: #27ae60;
+        }
+        .cons h3 {
+            color: #e74c3c;
+        }
+        ul {
+            line-height: 1.8;
+        }
+        .cta-section {
+            background: linear-gradient(135deg, #D4AF37 0%, #B8941E 100%);
+            color: white;
+            padding: 3rem;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 4rem;
+        }
+        .cta-section h2 {
+            color: white;
+            border: none;
+        }
+        .cta-buttons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            max-width: 600px;
+            margin: 2rem auto 0;
+        }
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #D4AF37;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+        .sub-neighborhoods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .sub-neighborhood-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-top: 3px solid #D4AF37;
+        }
+        .sub-neighborhood-card h4 {
+            color: #2C3E50;
+            margin-bottom: 0.5rem;
+        }
+        .sub-neighborhood-card .price {
+            color: #D4AF37;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        @media (max-width: 768px) {
+            .pros-cons {
+                grid-template-columns: 1fr;
+            }
+            .cta-buttons {
+                grid-template-columns: 1fr;
+            }
+            .hero-neighborhood h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Skip to main content link for accessibility -->
@@ -80,143 +255,321 @@
         </div>
     </nav>
 
-<nav class="navbar scrolled-dark">
-        <div class="nav-container">
-            <a href="/" class="logo">
-                <img src="../images/logo.png" alt="Rau Home Group" class="logo-img">
-                <div class="logo-text-wrap">
-                    <span class="logo-text">RAU HOME GROUP</span>
-                    <span class="logo-subtitle">SAN DIEGO REAL ESTATE</span>
-                </div>
-            </a>
-            <ul class="nav-links">
-                <li><a href="/#about">About</a></li>
-                <li><a href="/buyers.html">Buyers</a></li>
-                <li><a href="/sellers.html">Sellers</a></li>
-                <li><a href="/#listings">Listings</a></li>
-                <li><a href="/neighborhoods.html" class="active">Areas</a></li>
-                <li><a href="/#testimonials">Reviews</a></li>
-                <li><a href="/blog.html">Blog</a></li>
-                <li><a href="#contact" class="nav-cta">Contact</a></li>
-            </ul>
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+    <!-- Hero Section -->
+    <div class="hero-neighborhood">
+        <div>
+            <h1>Santee, San Diego</h1>
+            <p>Best Climate on Earth - Where Lakes Meet Trails</p>
         </div>
-    </nav>
+    </div>
 
-    <section class="hero page-hero" style="background: linear-gradient(135deg, #1A2332 0%, #0D1117 100%);">
-        <div class="hero-background">
-            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80" alt="Santee" class="hero-image">
-            <div class="hero-overlay dark"></div>
+    <!-- Main Content -->
+    <div class="neighborhood-content">
+        
+        <!-- Stats Banner -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>$825K</h3>
+                <p>Median Home Price</p>
+            </div>
+            <div class="stat-card">
+                <h3>8/10</h3>
+                <p>Average School Rating</p>
+            </div>
+            <div class="stat-card">
+                <h3>59,000</h3>
+                <p>Population</p>
+            </div>
         </div>
-        <div class="hero-content">
-            <span class="hero-tag">San Diego</span>
-            <h1 class="hero-title">Santee<br><span class="accent">Best Climate on Earth</span></h1>
-            <p class="hero-subtitle">Family-friendly city with lakes, trails, and suburban amenities</p>
-            <a href="#contact" class="cta-button">See Homes in Santee</a>
-        </div>
-    </section>
 
-    <section class="content-section" style="padding: 4rem 0;">
-        <div class="container narrow">
-            <h2 class="section-title">About Santee</h2>
-            <p class="lead-text">Santee promotes itself as having the 'Best Climate on Earth' with warm, sunny weather year-round. The city offers family-friendly amenities, lakes, trails, and good value for suburban living.</p>
+        <!-- Overview Section -->
+        <section class="section">
+            <h2>🏡 About Santee</h2>
+            <p>Santee proudly calls itself "The Best Climate on Earth" — and locals will tell you it's not just marketing. Nestled in the East County foothills with year-round sunshine, this family-friendly community of 59,000 offers an outdoor-oriented lifestyle centered around Santee Lakes, extensive trail systems, and easy access to Mission Trails Regional Park.</p>
             
-            <p style="color: #6B7280; margin-bottom: 1rem;">Santee Lakes Recreation Preserve features fishing, camping, and trails. Town Center Community Park offers sports fields and playgrounds. Trolley access connects to downtown San Diego. The community is family-oriented with good schools.</p>
+            <p>Just 20 minutes from downtown San Diego and perfectly positioned between the coast and backcountry, Santee delivers exceptional value for homebuyers seeking space, recreation, and strong schools without coastal price tags. The community has evolved from its rural roots into a well-planned suburban haven with modern amenities, shopping districts, and a genuine small-town feel.</p>
             
-            <p style="color: #6B7280; margin-bottom: 2rem;">Real estate includes single-family homes in established and new neighborhoods, townhomes, and affordable options. The combination of recreation, schools, and value makes Santee popular with families.</p>
+            <p>Santee attracts young families drawn to excellent schools and safe neighborhoods, active retirees seeking golf and outdoor recreation, telecommuters and tech professionals valuing space and affordability, and first-time buyers entering the San Diego market. The city's motto rings true year-round — with 300+ days of sunshine, low humidity, and comfortable temperatures, Santee truly offers one of Southern California's finest climates.</p>
+        </section>
 
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin: 3rem 0; padding: 2rem; background: #F8F7F4; border-radius: 4px;">
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">$825K</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">Median Home Price</div>
+        <!-- Real Estate Market Section -->
+        <section class="section">
+            <h2>💰 Real Estate Market</h2>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>$825K</h3>
+                    <p>Median Home Price</p>
                 </div>
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">7/10</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">School Rating</div>
+                <div class="stat-card">
+                    <h3>$538</h3>
+                    <p>Price per Square Foot</p>
                 </div>
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">58K</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">Population</div>
+                <div class="stat-card">
+                    <h3>30 Days</h3>
+                    <p>Average Days on Market</p>
+                </div>
+                <div class="stat-card">
+                    <h3>100%</h3>
+                    <p>Sale-to-List Price Ratio</p>
                 </div>
             </div>
 
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; margin: 2rem 0 1rem; color: #1A2332;">Lifestyle & Amenities</h3>
-            <ul style="list-style: none; padding: 0;">
-                <li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Santee Lakes - fishing and camping</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Town Center Community Park</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Trolley access to downtown</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Mission Trails Regional Park nearby</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Shopping and dining along Mission Gorge</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Family-friendly community events</li>
+            <p><strong>Price Ranges:</strong> Santee offers diverse options from entry-level condos starting around $450K to luxury hillside estates exceeding $1.5M. Most single-family homes range from $650K to $950K, making Santee one of East County's best values for space and quality of life.</p>
+
+            <p><strong>Types of Homes:</strong></p>
+            <ul>
+                <li><strong>Single-Family Homes:</strong> Ranch-style homes, two-story family residences, Spanish colonial, and newer contemporary builds</li>
+                <li><strong>Townhomes & Condos:</strong> Well-maintained communities with HOA amenities ($450K-$650K)</li>
+                <li><strong>Hillside Properties:</strong> Elevated lots with valley and mountain views commanding premium pricing</li>
+                <li><strong>Lakefront Homes:</strong> Limited inventory near Santee Lakes with unique recreational access</li>
             </ul>
 
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; margin: 2rem 0 1rem; color: #1A2332;">Who Lives Here</h3>
-            <p style="color: #6B7280;">Santee attracts families seeking affordability, outdoor recreation, and good schools. Residents value the suburban lifestyle, year-round sunshine, and proximity to nature while remaining accessible to employment centers.</p>
-        </div>
-    </section>
+            <p><strong>Recent Market Trends (2026):</strong></p>
+            <ul>
+                <li>Very competitive market with many homes receiving multiple offers</li>
+                <li>Properties typically sell at or above asking price in 30 days</li>
+                <li>Strong appreciation of 5-8% annually over the past five years</li>
+                <li>Growing demand from families relocating from coastal areas seeking affordability</li>
+                <li>New construction in north Santee attracting tech professionals and young families</li>
+                <li>Homes near top-rated schools sell 40% faster than average</li>
+            </ul>
 
-    <section class="cta-section" style="background: #1A2332; color: white; padding: 4rem 0; text-align: center;">
-        <div class="container">
-            <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 1rem; color: white;">Ready to Find Your Santee Home?</h2>
-            <p style="color: rgba(255,255,255,0.8); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">Let me show you the best homes and investment opportunities in Santee.</p>
-            <a href="#contact" class="cta-button large">See Homes in Santee</a>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <span class="section-tag">Get in Touch</span>
-                    <h2 class="section-title">Let's Find Your<br>Santee Home</h2>
-                    <p class="contact-text">I know Santee inside and out. Let's talk about what you're looking for.</p>
-                    
-                    <div class="contact-details">
-                        <a href="tel:+18582044692" class="contact-item">
-                            <span class="contact-icon"><i class="fas fa-phone"></i></span>
-                            <span>(858) 204-4692</span>
-                        </a>
-                        <a href="mailto:rusty@deanaguilargroup.com" class="contact-item">
-                            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
-                            <span>rusty@deanaguilargroup.com</span>
-                        </a>
-                    </div>
-                    
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/rustyrau_sdrealtor/" target="_blank" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.facebook.com/rusty.rau" target="_blank" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </div>
+            <div class="sub-neighborhoods">
+                <div class="sub-neighborhood-card">
+                    <h4>🏞️ Carlton Hills</h4>
+                    <p class="price">Median: $875K</p>
+                    <p>Hillside community with panoramic views, newer homes, and highly-rated Carlton Hills Elementary. Family-oriented with strong community feel.</p>
                 </div>
-                
-                <div class="contact-form-container">
-                    <form class="contact-form">
-                        <input type="hidden" name="neighborhood" value="Santee">
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="email" name="email" placeholder="Email" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" name="phone" placeholder="Phone">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="message" placeholder="Tell me what you're looking for in Santee..." rows="4"></textarea>
-                        </div>
-                        <button type="submit" class="submit-button">Contact Rusty</button>
-                    </form>
+                <div class="sub-neighborhood-card">
+                    <h4>🌄 Sky Ranch</h4>
+                    <p class="price">Median: $925K</p>
+                    <p>Master-planned community with newer construction, parks, and trails. Popular with young families seeking modern amenities and excellent schools.</p>
+                </div>
+                <div class="sub-neighborhood-card">
+                    <h4>🏡 West Santee</h4>
+                    <p class="price">Median: $750K</p>
+                    <p>Established neighborhoods near Santee Lakes with mature landscaping. Mix of original homes and renovated properties offering great value.</p>
+                </div>
+                <div class="sub-neighborhood-card">
+                    <h4>🏘️ East Elliott</h4>
+                    <p class="price">Median: $795K</p>
+                    <p>Golf course living near Carlton Oaks Country Club. Quiet, established area with larger lots and proximity to trails.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
+        <!-- Lifestyle & Amenities Section -->
+        <section class="section">
+            <h2>🌟 Lifestyle & Amenities</h2>
+            
+            <ul class="amenities-list">
+                <li><strong>Santee Lakes Recreation Preserve:</strong> 190 acres with seven stocked fishing lakes, camping, playgrounds, and picnic areas</li>
+                <li><strong>Mission Trails Regional Park:</strong> 8,000 acres of hiking, biking, and nature exploration just minutes away</li>
+                <li><strong>Family-Friendly Parks:</strong> Over 20 neighborhood parks with sports facilities, playgrounds, and green space</li>
+                <li><strong>Year-Round Outdoor Activities:</strong> Hiking, fishing, mountain biking, camping, and wildlife viewing</li>
+                <li><strong>Santee Trolley Square:</strong> Major shopping and dining hub with Target, restaurants, and entertainment</li>
+                <li><strong>Small-Town Community Feel:</strong> Farmer's Market, seasonal events, tight-knit neighborhoods, and civic engagement</li>
+            </ul>
 
-    <script src="../script.js"></script>
+            <p>Santee delivers the perfect balance of outdoor recreation and suburban convenience. The city's crown jewel is Santee Lakes, where families spend weekends fishing, camping, and enjoying waterside picnics. Mission Trails Regional Park offers world-class hiking just five minutes from most neighborhoods — trails range from easy nature walks to challenging summit hikes with stunning views.</p>
+
+            <p>The community maintains a genuine small-town atmosphere despite modern amenities. Local events like the Santee Street Fair, summer concerts in the park, and holiday celebrations bring neighbors together year-round. Residents pride themselves on civic involvement, excellent schools, and maintaining safe, clean neighborhoods where kids still ride bikes to friends' houses.</p>
+        </section>
+
+        <!-- Things to Do Section -->
+        <section class="section">
+            <h2>🎯 Things to Do</h2>
+            
+            <h3>🏞️ Outdoor & Recreation</h3>
+            <ul>
+                <li><strong>Santee Lakes Recreation Preserve:</strong> Seven fishing lakes, camping, paddle boats, and nature trails</li>
+                <li><strong>Mission Trails Regional Park:</strong> Cowles Mountain summit hike (highest point in San Diego), visitor center, and 60+ miles of trails</li>
+                <li><strong>Walker Preserve:</strong> Peaceful nature preserve with walking paths and wildlife viewing</li>
+                <li><strong>Carlton Oaks Golf Course:</strong> Championship 18-hole course with stunning hillside setting</li>
+                <li><strong>Santee Boulders:</strong> Popular rock climbing destination for beginners and experienced climbers</li>
+                <li><strong>Mast Park:</strong> Community hub with sports fields, playgrounds, skate park, and aquatic center</li>
+            </ul>
+
+            <h3>🛍️ Shopping & Dining</h3>
+            <ul>
+                <li><strong>Santee Trolley Square:</strong> Major retail center with Target, Costco, HomeGoods, restaurants, and entertainment</li>
+                <li><strong>Santee Town Center:</strong> Shopping, dining, and services along Mission Gorge Road</li>
+                <li><strong>Farmers Market:</strong> Weekly fresh produce, artisan goods, and community gathering</li>
+            </ul>
+
+            <p><strong>Notable Restaurants & Dining:</strong></p>
+            <ul>
+                <li><strong>Santee Brewery & Grill:</strong> Local craft beer and American comfort food</li>
+                <li><strong>Phil's BBQ:</strong> Famous San Diego barbecue institution with Santee location</li>
+                <li><strong>The Sycamore Den:</strong> Farm-to-table dining with creative seasonal menus</li>
+                <li><strong>Cowboy Star:</strong> Upscale steakhouse and butcher shop</li>
+                <li><strong>Brigantine Seafood:</strong> Fresh seafood with family-friendly atmosphere</li>
+                <li><strong>Local favorites:</strong> Wide variety of casual dining, Mexican cuisine, Asian restaurants, and coffee shops</li>
+            </ul>
+
+            <h3>🎭 Entertainment & Community</h3>
+            <ul>
+                <li><strong>Creation & Earth History Museum:</strong> Educational exhibits and community programs</li>
+                <li><strong>Santee Drive-In:</strong> Classic outdoor movie theater experience (nearby)</li>
+                <li><strong>Seasonal Events:</strong> Street fairs, concerts in the park, holiday celebrations, and community festivals</li>
+                <li><strong>Youth Sports:</strong> Extensive baseball, soccer, basketball, and recreational leagues</li>
+                <li><strong>Santee Aquatic Center:</strong> Swimming lessons, lap swimming, and aquatic programs</li>
+            </ul>
+        </section>
+
+        <!-- Schools Section -->
+        <section class="section">
+            <h2>🎓 Schools & Education</h2>
+            <p>Santee's exceptional public schools are a major draw for families and significantly boost property values. The area is served by the Santee School District (elementary and middle) and Grossmont Union High School District, both known for strong academic performance and family engagement.</p>
+
+            <h3>Top-Rated Public Schools</h3>
+            <ul>
+                <li><strong>Rio Seco Elementary:</strong> K-8, GreatSchools Rating 7/10 - Large, well-established school with strong academics and parent involvement</li>
+                <li><strong>Carlton Hills Elementary:</strong> K-8, GreatSchools Rating 7/10 - Highly sought-after school in growing north Santee area</li>
+                <li><strong>Sycamore Canyon Elementary:</strong> K-6, GreatSchools Rating 7/10 - Excellent neighborhood school with dedicated staff</li>
+                <li><strong>Cajon Park Elementary:</strong> K-8, GreatSchools Rating 8/10 - Strong test scores and community support</li>
+                <li><strong>West Hills High School:</strong> Grades 9-12, GreatSchools Rating 7/10 - Comprehensive high school with excellent athletics, arts programs, and college prep</li>
+                <li><strong>Santana High School:</strong> Grades 9-12, GreatSchools Rating 7/10 - Strong AP offerings, sports programs, and performing arts</li>
+            </ul>
+
+            <h3>Private & Charter Options</h3>
+            <ul>
+                <li><strong>Foothills Christian Schools:</strong> K-12 faith-based education with strong academics</li>
+                <li><strong>Cajon Valley Middle College High School:</strong> Innovative early college program</li>
+                <li><strong>Homeschool Community:</strong> Active network of homeschooling families with co-ops and resources</li>
+            </ul>
+
+            <h3>Higher Education Nearby</h3>
+            <ul>
+                <li><strong>Grossmont College:</strong> Community college just 10 minutes away offering associate degrees and transfer programs</li>
+                <li><strong>San Diego State University:</strong> 20 minutes - major public university with 35,000+ students</li>
+                <li><strong>UC San Diego:</strong> 30 minutes - world-class research university</li>
+            </ul>
+
+            <p><strong>School Impact on Real Estate:</strong> Homes within top school boundaries (especially Carlton Hills Elementary and Rio Seco Elementary) command 10-15% premiums and sell significantly faster. Many families specifically relocate to Santee for the combination of excellent schools and affordability compared to coastal areas.</p>
+        </section>
+
+        <!-- Commute & Location Section -->
+        <section class="section">
+            <h2>🚗 Getting Around & Commute</h2>
+            <ul>
+                <li><strong>Downtown San Diego:</strong> 18 miles, approximately 25-30 minutes via I-8 West</li>
+                <li><strong>Mission Valley (major employment hub):</strong> 12 miles, 20 minutes</li>
+                <li><strong>San Diego Airport:</strong> 20 miles, approximately 30 minutes</li>
+                <li><strong>La Mesa & El Cajon:</strong> 5-8 miles, 10-15 minutes</li>
+                <li><strong>Beaches (Mission Beach/Pacific Beach):</strong> 25 miles, 35-40 minutes</li>
+            </ul>
+
+            <h3>Freeway Access</h3>
+            <ul>
+                <li><strong>I-8 (East-West):</strong> Direct freeway access via multiple on-ramps — quick commute to downtown or east county</li>
+                <li><strong>SR-52 (East-West):</strong> Connects to I-15 and coastal communities via Santee Lakes exit</li>
+                <li><strong>SR-67 (North-South):</strong> Access to Ramona, Poway, and north county backcountry</li>
+            </ul>
+
+            <h3>Public Transit</h3>
+            <ul>
+                <li><strong>San Diego Trolley Green Line:</strong> Santee Trolley Station provides direct rail service to downtown San Diego, Mission Valley, and SDSU (30-minute ride downtown)</li>
+                <li><strong>MTS Bus Routes:</strong> Multiple bus lines connecting to trolley stations and neighboring communities</li>
+                <li><strong>Park & Ride:</strong> Santee Trolley Station offers free parking for commuters</li>
+            </ul>
+
+            <p><strong>Commute Profile:</strong> Most Santee residents work in Mission Valley, downtown San Diego, La Mesa, or El Cajon — all accessible within 20-30 minutes. The trolley has become increasingly popular for downtown commuters seeking to avoid I-8 traffic. Growing numbers of tech professionals and remote workers are choosing Santee for larger homes and outdoor lifestyle while maintaining San Diego connectivity.</p>
+        </section>
+
+        <!-- Pros & Cons Section -->
+        <section class="section">
+            <h2>⚖️ Pros & Cons</h2>
+            <div class="pros-cons">
+                <div class="pros">
+                    <h3>✅ What Buyers Love</h3>
+                    <ul>
+                        <li>Outstanding value — significantly more affordable than coastal communities</li>
+                        <li>Year-round perfect weather (300+ days of sunshine)</li>
+                        <li>Exceptional outdoor recreation (lakes, trails, Mission Trails Park)</li>
+                        <li>Top-rated schools with strong community involvement</li>
+                        <li>Family-friendly neighborhoods with safe, walkable streets</li>
+                        <li>Direct trolley access to downtown San Diego</li>
+                        <li>Small-town community feel with modern amenities</li>
+                        <li>Larger lots and more space than coastal areas</li>
+                        <li>Low crime rates and strong civic engagement</li>
+                        <li>Excellent shopping and dining at Santee Trolley Square</li>
+                        <li>Active community events and recreation programs</li>
+                        <li>Close to both beach and mountains</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h3>⚠️ Considerations</h3>
+                    <ul>
+                        <li>Summer temperatures can reach 90-100°F (warmer than coast)</li>
+                        <li>30-40 minute commute to beaches and coastal areas</li>
+                        <li>I-8 traffic during rush hour can be congested</li>
+                        <li>Limited nightlife and entertainment compared to urban areas</li>
+                        <li>Some older neighborhoods may need updating</li>
+                        <li>Wildfire awareness in hillside/canyon areas (though well-managed)</li>
+                        <li>Less walkable than urban neighborhoods</li>
+                        <li>Limited fine dining options compared to coastal communities</li>
+                        <li>Further from major tech employment centers (Sorrento Valley, UTC)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta-section">
+            <h2>Ready to Explore Santee Real Estate?</h2>
+            <p>As an 8-year San Diego real estate veteran and East County market expert, I'll help you find the perfect Santee home for your family and budget.</p>
+            <p><strong>Whether you're buying or selling in Santee, let's make it happen.</strong></p>
+            <div class="cta-buttons">
+                <a href="../contact.html" class="cta-button">Schedule Free Consultation</a>
+                <a href="tel:+1234567890" class="cta-button">📞 Call Rusty Now</a>
+            </div>
+            <p style="margin-top: 2rem; font-size: 0.9rem;">
+                <a href="../listings.html" style="color: white; text-decoration: underline;">Browse Current Santee Listings</a> | 
+                <a href="../neighborhoods.html" style="color: white; text-decoration: underline;">Explore Other San Diego Neighborhoods</a>
+            </p>
+        </section>
+
+        <!-- Internal Links Section -->
+        <section class="section">
+            <h3>🔗 Related San Diego Neighborhoods</h3>
+            <p>Exploring your options? Check out these other San Diego communities:</p>
+            <ul>
+                <li><a href="la-mesa.html">La Mesa</a> - Charming village atmosphere with walkable downtown</li>
+                <li><a href="el-cajon.html">El Cajon</a> - Diverse community with excellent value</li>
+                <li><a href="poway.html">Poway</a> - Award-winning schools and family-friendly living</li>
+                <li><a href="mission-valley.html">Mission Valley</a> - Central location with urban amenities</li>
+                <li><a href="la-jolla.html">La Jolla</a> - Luxury coastal living with world-class beaches</li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Rau Home Group - Santee Real Estate",
+        "image": "https://rauhomegroup.com/assets/images/neighborhoods/santee-hero.jpg",
+        "description": "Santee San Diego real estate expert. Family-friendly homes with lakes and trails. Median price $825K. Top schools and Best Climate on Earth.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Santee",
+            "addressRegion": "CA",
+            "postalCode": "92071",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "32.8384",
+            "longitude": "-116.9739"
+        },
+        "url": "https://rauhomegroup.com/neighborhoods/santee.html",
+        "priceRange": "$$",
+        "areaServed": "Santee, San Diego County, California"
+    }
+    </script>
 
     <!-- Footer -->
     <footer class="footer" role="contentinfo">
@@ -291,7 +644,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
     <script src="../script.js" defer></script>
     <script src="../luxury-effects.js" defer></script>
-
-
 </body>
 </html>
