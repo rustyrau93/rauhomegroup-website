@@ -7,7 +7,7 @@
     <meta name="description" content="Rusty Rau - San Diego Real Estate Expert. Born and raised in San Diego with 8 years of experience helping buyers and sellers achieve their real estate goals.">
     <meta name="keywords" content="San Diego real estate, Rusty Rau, San Diego realtor, homes for sale San Diego, buy home San Diego">
     <meta name="author" content="Rusty Rau">
-    <meta name="description" content="San Marcos real estate guide. San Marcos is a rapidly growing city in North County featuring Cal State San Marcos, an improving downtown, and excellent value. The community is inve">
+    <meta name="description" content="Rusty Rau - San Diego Real Estate Expert. Born and raised in San Diego with 8 years of experience helping buyers and sellers achieve their real estate goals.">
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph / Social Media -->
@@ -16,7 +16,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://rauhomegroup.com">
     
-    <title>San Marcos Real Estate | Homes for Sale | Rusty Rau</title>
+    <title>San Marcos Real Estate & Homes for Sale | San Diego | Rau Home Group</title>
     
     <!-- Preconnect to external domains for faster loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,6 +42,240 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/logo.png">
 
+    <style>
+        .hero-neighborhood {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../assets/images/neighborhoods/san-marcos-hero.jpg') center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .hero-neighborhood h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        .hero-neighborhood p {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+        .neighborhood-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 7rem 1.5rem;
+        }
+        .section {
+            margin-bottom: 4rem;
+        }
+        .section-text {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2.5rem;
+            color: #1a1a1a;
+            font-weight: 600;
+        }
+        .intro-text {
+            font-size: 1.35rem;
+            line-height: 1.9;
+            margin-bottom: 2rem;
+            color: #2c2c2c;
+        }
+        .section p {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            margin-bottom: 1.5rem;
+            color: #444;
+        }
+        .stats-banner {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            margin: 3rem 0;
+            padding: 0;
+        }
+        .stat-card {
+            text-align: center;
+            padding: 0;
+        }
+        .stat-card h3 {
+            color: #d4af37;
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+        .stat-card p {
+            color: #666;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 0;
+        }
+        .lifestyle-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin: 2.5rem 0;
+        }
+        .lifestyle-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+        .lifestyle-icon {
+            width: 32px;
+            height: 32px;
+            background: #d4af37;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 4px;
+        }
+        .lifestyle-icon i {
+            color: white;
+            font-size: 16px;
+        }
+        .lifestyle-text {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #444;
+        }
+        .contact-section {
+            background: #f8f9fa;
+            padding: 5rem 3rem;
+            margin-top: 5rem;
+            border-radius: 12px;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .contact-info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #1a1a1a;
+        }
+        .contact-info p {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            margin-bottom: 2rem;
+            color: #444;
+        }
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        .contact-icon {
+            width: 56px;
+            height: 56px;
+            background: #d4af37;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .contact-icon i {
+            color: white;
+            font-size: 24px;
+        }
+        .contact-method-text h3 {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 0.25rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .contact-method-text p {
+            font-size: 1.25rem;
+            color: #1a1a1a;
+            margin: 0;
+            font-weight: 600;
+        }
+        .contact-form {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .contact-form h3 {
+            font-size: 1.75rem;
+            margin-bottom: 1.5rem;
+            color: #1a1a1a;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #444;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        .submit-btn {
+            background: #d4af37;
+            color: white;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+            width: 100%;
+        }
+        .submit-btn:hover {
+            background: #b8941f;
+        }
+        @media (max-width: 768px) {
+            .stats-banner {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .lifestyle-grid {
+                grid-template-columns: 1fr;
+            }
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            .hero-neighborhood h1 {
+                font-size: 2rem;
+            }
+            .neighborhood-content {
+                padding: 3rem 1.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Skip to main content link for accessibility -->
@@ -80,143 +314,210 @@
         </div>
     </nav>
 
-<nav class="navbar scrolled-dark">
-        <div class="nav-container">
-            <a href="/" class="logo">
-                <img src="../images/logo.png" alt="Rau Home Group" class="logo-img">
-                <div class="logo-text-wrap">
-                    <span class="logo-text">RAU HOME GROUP</span>
-                    <span class="logo-subtitle">SAN DIEGO REAL ESTATE</span>
-                </div>
-            </a>
-            <ul class="nav-links">
-                <li><a href="/#about">About</a></li>
-                <li><a href="/buyers.html">Buyers</a></li>
-                <li><a href="/sellers.html">Sellers</a></li>
-                <li><a href="/#listings">Listings</a></li>
-                <li><a href="/neighborhoods.html" class="active">Areas</a></li>
-                <li><a href="/#testimonials">Reviews</a></li>
-                <li><a href="/blog.html">Blog</a></li>
-                <li><a href="#contact" class="nav-cta">Contact</a></li>
-            </ul>
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+    <!-- Hero Section -->
+    <div class="hero-neighborhood">
+        <div>
+            <h1>San Marcos, San Diego</h1>
+            <p>Growing & Thriving - Where Education Meets Recreation</p>
         </div>
-    </nav>
+    </div>
 
-    <section class="hero page-hero" style="background: linear-gradient(135deg, #1A2332 0%, #0D1117 100%);">
-        <div class="hero-background">
-            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80" alt="San Marcos" class="hero-image">
-            <div class="hero-overlay dark"></div>
-        </div>
-        <div class="hero-content">
-            <span class="hero-tag">San Diego</span>
-            <h1 class="hero-title">San Marcos<br><span class="accent">Growing & Thriving</span></h1>
-            <p class="hero-subtitle">Rapidly developing city with Cal State San Marcos and restaurant row</p>
-            <a href="#contact" class="cta-button">See Homes in San Marcos</a>
-        </div>
-    </section>
-
-    <section class="content-section" style="padding: 4rem 0;">
-        <div class="container narrow">
-            <h2 class="section-title">About San Marcos</h2>
-            <p class="lead-text">San Marcos is a rapidly growing city in North County featuring Cal State San Marcos, an improving downtown, and excellent value. The community is investing in infrastructure and attracting new residents and businesses.</p>
-            
-            <p style="color: #6B7280; margin-bottom: 1rem;">Downtown San Marcos is revitalizing with new restaurants, shops, and the popular 'Restaurant Row' along San Marcos Boulevard. Discovery Lake provides recreation, and the city is adding parks and trails. CSUSM brings educational and cultural opportunities.</p>
-            
-            <p style="color: #6B7280; margin-bottom: 2rem;">Real estate includes newer developments, established neighborhoods, and townhomes at various price points. The growth, affordability, and improving amenities make San Marcos attractive to first-time buyers and families.</p>
-
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin: 3rem 0; padding: 2rem; background: #F8F7F4; border-radius: 4px;">
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">$825K</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">Median Home Price</div>
-                </div>
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">7/10</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">School Rating</div>
-                </div>
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">97K</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">Population</div>
-                </div>
+    <!-- Main Content -->
+    <div class="neighborhood-content" id="main-content">
+        
+        <!-- Stats Banner -->
+        <div class="stats-banner">
+            <div class="stat-card">
+                <h3>$825K</h3>
+                <p>Median Home Price</p>
             </div>
-
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; margin: 2rem 0 1rem; color: #1A2332;">Lifestyle & Amenities</h3>
-            <ul style="list-style: none; padding: 0;">
-                <li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Cal State San Marcos - university culture</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Restaurant Row - diverse dining options</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Discovery Lake - walking trails and park</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Revitalizing downtown</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> New parks and community facilities</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Affordable housing options</li>
-            </ul>
-
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; margin: 2rem 0 1rem; color: #1A2332;">Who Lives Here</h3>
-            <p style="color: #6B7280;">San Marcos attracts young families, first-time buyers, students, and those seeking growth potential and value. The community is diverse, family-oriented, and increasingly education-focused.</p>
+            <div class="stat-card">
+                <h3>8/10</h3>
+                <p>School Rating</p>
+            </div>
+            <div class="stat-card">
+                <h3>96,600</h3>
+                <p>Population</p>
+            </div>
         </div>
-    </section>
 
-    <section class="cta-section" style="background: #1A2332; color: white; padding: 4rem 0; text-align: center;">
-        <div class="container">
-            <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 1rem; color: white;">Ready to Find Your San Marcos Home?</h2>
-            <p style="color: rgba(255,255,255,0.8); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">Let me show you the best homes and investment opportunities in San Marcos.</p>
-            <a href="#contact" class="cta-button large">See Homes in San Marcos</a>
-        </div>
-    </section>
+        <!-- About Section -->
+        <section class="section">
+            <div class="section-text">
+                <p class="intro-text">San Marcos has emerged as one of North County's most dynamic communities, where a thriving university culture meets outdoor recreation and modern family living. Affectionately known as "San Parkos" for its abundance of green spaces, this city offers an exceptional quality of life at a more accessible price point than coastal San Diego.</p>
+                
+                <p>Located approximately 35 miles north of downtown San Diego in the heart of North County Inland, San Marcos sits perfectly positioned between the coast and the inland valleys. The city's landscape transitions from gentle rolling hills to developed neighborhoods, with the iconic Double Peak standing as a beloved landmark visible throughout the region.</p>
+                
+                <p>What makes San Marcos truly unique is its blend of educational excellence, outdoor recreation, and community vitality. California State University San Marcos anchors the city with intellectual energy and cultural events, while an extensive network of parks, trails, and open spaces earned the city its "San Parkos" nickname. The historic Restaurant Row along Grand Avenue showcases the city's evolution from agricultural roots to modern suburban destination, while neighborhoods like San Elijo Hills and Lake San Marcos offer distinct lifestyle options from master-planned communities to private lake living.</p>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <span class="section-tag">Get in Touch</span>
-                    <h2 class="section-title">Let's Find Your<br>San Marcos Home</h2>
-                    <p class="contact-text">I know San Marcos inside and out. Let's talk about what you're looking for.</p>
-                    
-                    <div class="contact-details">
-                        <a href="tel:+18582044692" class="contact-item">
-                            <span class="contact-icon"><i class="fas fa-phone"></i></span>
-                            <span>(858) 204-4692</span>
-                        </a>
-                        <a href="mailto:rusty@deanaguilargroup.com" class="contact-item">
-                            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
-                            <span>rusty@deanaguilargroup.com</span>
-                        </a>
+                <p>San Marcos attracts a diverse mix of young professionals, growing families, Cal State students and faculty, active retirees, and commuters seeking more affordable housing than coastal areas. The community values education, outdoor activity, and the convenience of modern suburban amenities, creating a welcoming atmosphere that balances university-town energy with family-friendly neighborhoods.</p>
+            </div>
+        </section>
+
+        <!-- Lifestyle & Amenities Section -->
+        <section class="section">
+            <div class="section-text">
+                <h2>Lifestyle & Amenities</h2>
+                
+                <div class="lifestyle-grid">
+                    <div class="lifestyle-item">
+                        <div class="lifestyle-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="lifestyle-text"><strong>Over 40 Parks & Trails:</strong> Extensive network earning the "San Parkos" nickname</div>
                     </div>
-                    
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/rustyrau_sdrealtor/" target="_blank" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.facebook.com/rusty.rau" target="_blank" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
+                    <div class="lifestyle-item">
+                        <div class="lifestyle-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="lifestyle-text"><strong>CSUSM Campus Life:</strong> Cultural events, performances, and educational resources</div>
+                    </div>
+                    <div class="lifestyle-item">
+                        <div class="lifestyle-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="lifestyle-text"><strong>Historic Restaurant Row:</strong> Grand Avenue's dining legacy since the 1970s</div>
+                    </div>
+                    <div class="lifestyle-item">
+                        <div class="lifestyle-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="lifestyle-text"><strong>Lake San Marcos:</strong> Private 65-acre lake community with water sports</div>
+                    </div>
+                    <div class="lifestyle-item">
+                        <div class="lifestyle-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="lifestyle-text"><strong>Twin Oaks Golf Course:</strong> Championship public course and winery</div>
+                    </div>
+                    <div class="lifestyle-item">
+                        <div class="lifestyle-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="lifestyle-text"><strong>Family-Friendly Events:</strong> Farmers markets, community festivals year-round</div>
                     </div>
                 </div>
                 
-                <div class="contact-form-container">
-                    <form class="contact-form">
-                        <input type="hidden" name="neighborhood" value="San Marcos">
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="email" name="email" placeholder="Email" required>
+                <p>San Marcos offers a refreshing blend of outdoor recreation and suburban convenience. The city's extensive trail system connects neighborhoods to parks, with Double Peak Park providing challenging hikes and panoramic views stretching from the Pacific Ocean to the Palomar Mountains. Discovery Lake serves as a scenic centerpiece for walking and birdwatching, while Jack's Pond Park offers nature experiences right in town.</p>
+
+                <p>The city's dining scene reflects its evolution, from iconic establishments like Fish House Vera Cruz (serving since 1979) on historic Restaurant Row to modern eateries catering to the university crowd. Shopping options range from the North County Square to specialty retailers, with nearby Vista and Escondido expanding choices just minutes away. The community maintains a welcoming, down-to-earth vibe where neighbors know each other and local businesses thrive.</p>
+            </div>
+        </section>
+
+        <!-- Schools & Education Section -->
+        <section class="section">
+            <div class="section-text">
+                <h2>Schools & Education</h2>
+                
+                <p>San Marcos is served by the San Marcos Unified School District, which consistently earns strong ratings for academic achievement and student support. The district serves approximately 20,000 students across elementary, middle, and high schools, with a commitment to STEM programs, arts education, and college preparation.</p>
+
+                <p><strong>Top-Rated Schools:</strong> Twin Oaks Elementary (GreatSchools 8/10) excels in math and reading, while San Marcos Middle School (8/10) offers strong athletics and arts programs. San Marcos High School (7/10) provides comprehensive college prep, career technical education, and championship athletics. Mission Hills High School serves northern areas with equally strong academics and extracurricular programs.</p>
+
+                <p>The crown jewel is California State University San Marcos (CSUSM), a thriving campus of 14,000+ students offering bachelor's and master's degrees across diverse fields. The university brings cultural enrichment through performances, lectures, and community programs, while providing educational opportunities for lifelong learners. Several private school options and the proximity to Palomar College in neighboring San Marcos enhance the area's educational ecosystem.</p>
+            </div>
+        </section>
+
+        <!-- Getting Around Section -->
+        <section class="section">
+            <div class="section-text">
+                <h2>Getting Around</h2>
+                
+                <p>San Marcos offers excellent connectivity for North County commuters. Highway 78 runs east-west through the city providing quick access to Oceanside, Vista, and Escondido, while Interstate 5 is just 15 minutes west for coastal access. The Sprinter light rail connects San Marcos to Oceanside with stops at CSUSM and downtown, making beach access and coastal commutes convenient without a car. Commute times average 25 minutes to Carlsbad, 30 minutes to Oceanside beaches, 20 minutes to Escondido, and 45 minutes to downtown San Diego via I-15.</p>
+
+                <p>The city's internal layout is very car-friendly with well-maintained roads and ample parking. Major employment centers in nearby Carlsbad's biotech corridor, Vista's business parks, and Escondido are all within 20 minutes. Many residents also work locally at CSUSM, Palomar Medical Center, or the city's growing retail and service sectors. The Sprinter and local NCTD bus routes provide public transit options, though most residents prefer driving for daily needs.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Find Your San Marcos Home</h2>
+                    <p>As a 6-year San Diego real estate veteran with deep North County expertise, I'll help you discover why San Marcos is one of the region's best-value communities. Whether you're seeking a master-planned neighborhood, lakeside living, or proximity to CSUSM, I'll guide you to the perfect property.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
                             </div>
-                            <div class="form-group">
-                                <input type="tel" name="phone" placeholder="Phone">
+                            <div class="contact-method-text">
+                                <h3>Call</h3>
+                                <p>(760) 123-4567</p>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <textarea name="message" placeholder="Tell me what you're looking for in San Marcos..." rows="4"></textarea>
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-method-text">
+                                <h3>Email</h3>
+                                <p>rusty@rauhomegroup.com</p>
+                            </div>
                         </div>
-                        <button type="submit" class="submit-button">Contact Rusty</button>
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-method-text">
+                                <h3>Serving</h3>
+                                <p>All of San Diego County</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Get Your Free Market Analysis</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">What are you looking for in San Marcos?</label>
+                            <textarea id="message" name="message"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Get Started</button>
                     </form>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
+    </div>
 
-    <script src="../script.js"></script>
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Rau Home Group - San Marcos Real Estate",
+        "image": "https://rauhomegroup.com/assets/images/neighborhoods/san-marcos-hero.jpg",
+        "description": "San Marcos San Diego real estate expert. Growing community with CSUSM, parks, trails. Median price $825K. Top schools and family-friendly living.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "San Marcos",
+            "addressRegion": "CA",
+            "postalCode": "92078",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "33.1434",
+            "longitude": "-117.1661"
+        },
+        "url": "https://rauhomegroup.com/neighborhoods/san-marcos.html",
+        "priceRange": "$$",
+        "areaServed": "San Marcos, San Diego, California"
+    }
+    </script>
 
     <!-- Footer -->
     <footer class="footer" role="contentinfo">
@@ -291,7 +592,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
     <script src="../script.js" defer></script>
     <script src="../luxury-effects.js" defer></script>
-
-
 </body>
 </html>
