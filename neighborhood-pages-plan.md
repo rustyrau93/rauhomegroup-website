@@ -53,7 +53,7 @@ All pages should match La Jolla's exact structure (~25KB, 750 words):
 - [x] **North Park** - 32KB - Built 2026-02-07 - Where San Diego Gets Creative, craft beer capital, walkable urban living ($1.0M)
 - [x] **Oceanside** - 29KB - Built 2026-02-07 - California's Classic Beach Town, historic pier, surf culture ($875K)
 - [x] **Rancho Bernardo** - 37KB - Built 2026-02-07 - Established Excellence, master-planned community, top schools ($830K)
-- [ ] **San Marcos** - 11KB stub - Growing & Thriving, CSUSM, Restaurant Row ($825K)
+- [x] **San Marcos** - 28KB - Built 2026-02-07 - Growing & Thriving, CSUSM, Restaurant Row ($825K)
 - [ ] **Santee** - 11KB stub - Best Climate on Earth, lakes and trails ($825K)
 - [ ] **South Park** - 11KB stub - Neighborhood Charm, family-friendly cafes ($925K)
 - [ ] **University Heights** - 11KB stub - Elevated Living, hilltop breweries ($900K)
