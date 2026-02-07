@@ -1,32 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rusty Rau - San Diego Real Estate Expert. Born and raised in San Diego with 8 years of experience helping buyers and sellers achieve their real estate goals.">
-    <meta name="keywords" content="San Diego real estate, Rusty Rau, San Diego realtor, homes for sale San Diego, buy home San Diego">
+    <meta name="description" content="Normal Heights San Diego real estate - Discover this vibrant, walkable neighborhood with eclectic Adams Avenue dining, craft beer scene, and homes around $947K. Tour with Rusty Rau.">
+    <meta name="keywords" content="Normal Heights real estate, Normal Heights San Diego homes, Adams Avenue San Diego, Normal Heights neighborhood">
     <meta name="author" content="Rusty Rau">
-    <meta name="description" content="Normal Heights real estate guide. Normal Heights is an up-and-coming neighborhood centered on Adams Avenue, known for antique shops, live music, and a quirky, artistic vibe. The area o">
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Rusty Rau | San Diego Real Estate Expert">
-    <meta property="og:description" content="Born and raised in San Diego. 8 years helping San Diegans buy and sell homes.">
+    <meta property="og:title" content="Normal Heights San Diego Real Estate | Rau Home Group">
+    <meta property="og:description" content="Explore Normal Heights - San Diego's eclectic urban village with walkable Adams Avenue, craft beer culture, and vibrant arts scene.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://rauhomegroup.com">
+    <meta property="og:url" content="https://rauhomegroup.com/neighborhoods/normal-heights.html">
     
-    <title>Normal Heights Real Estate | Homes for Sale | Rusty Rau</title>
+    <title>Normal Heights Real Estate & Homes for Sale | San Diego | Rau Home Group</title>
     
     <!-- Preconnect to external domains for faster loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://images.unsplash.com">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     
     <!-- Preload critical assets -->
     <link rel="preload" href="../styles.css" as="style">
-    <link rel="preload" href="images/logo.png" as="image">
     
     <!-- Fonts with display=swap for better performance -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -40,8 +36,268 @@
     <link rel="stylesheet" href="../luxury-effects.css">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="icon" type="image/png" href="../images/logo.png">
 
+    <style>
+        /* Hero Section */
+        .hero-normal-heights {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                        url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1600&h=900&fit=crop') center/cover;
+            padding: 7rem 2rem;
+            text-align: center;
+            color: white;
+            margin-top: 80px;
+        }
+        .hero-normal-heights h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-normal-heights .tagline {
+            font-size: 1.5rem;
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        /* Stats Banner */
+        .stats-banner {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            padding: 3rem 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+            flex-wrap: wrap;
+        }
+        .stat-item {
+            text-align: center;
+            color: white;
+        }
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #D4AF37;
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 0.5rem;
+        }
+        .stat-label {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #ccc;
+        }
+
+        /* Main Content Container */
+        .neighborhood-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Section Styling */
+        .content-section {
+            padding: 7rem 0;
+        }
+        .content-section:nth-child(even) {
+            background: #f9f9f9;
+        }
+
+        .section-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #1a1a1a;
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+        }
+
+        .intro-text {
+            font-size: 1.35rem;
+            line-height: 1.9;
+            color: #333;
+            margin-bottom: 2.5rem;
+        }
+
+        .body-text {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #444;
+            margin-bottom: 2.5rem;
+        }
+
+        /* Lifestyle Grid with Gold Checkmarks */
+        .lifestyle-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .lifestyle-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+        }
+        .lifestyle-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #D4AF37;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .lifestyle-icon i {
+            color: white;
+            font-size: 14px;
+        }
+        .lifestyle-text {
+            font-size: 1.15rem;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            padding: 7rem 0;
+            color: white;
+        }
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+        .contact-info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            font-family: 'Playfair Display', serif;
+        }
+        .contact-info p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            color: #ccc;
+        }
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        .contact-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: #D4AF37;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .contact-icon i {
+            color: white;
+            font-size: 24px;
+        }
+        .contact-text {
+            color: white;
+        }
+        .contact-text .label {
+            font-size: 0.9rem;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .contact-text .value {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .contact-form {
+            background: rgba(255,255,255,0.05);
+            padding: 3rem;
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+        }
+        .contact-form h3 {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            font-family: 'Playfair Display', serif;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 4px;
+            color: white;
+            font-size: 1rem;
+        }
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(255,255,255,0.5);
+        }
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 1.2rem;
+            background: #D4AF37;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .submit-btn:hover {
+            background: #c4a137;
+            transform: translateY(-2px);
+        }
+
+        /* Responsive */
+        @media (max-width: 968px) {
+            .hero-normal-heights h1 {
+                font-size: 2.5rem;
+            }
+            .stats-banner {
+                gap: 2rem;
+            }
+            .lifestyle-grid {
+                grid-template-columns: 1fr;
+            }
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Skip to main content link for accessibility -->
@@ -80,143 +336,221 @@
         </div>
     </nav>
 
-<nav class="navbar scrolled-dark">
-        <div class="nav-container">
-            <a href="/" class="logo">
-                <img src="../images/logo.png" alt="Rau Home Group" class="logo-img">
-                <div class="logo-text-wrap">
-                    <span class="logo-text">RAU HOME GROUP</span>
-                    <span class="logo-subtitle">SAN DIEGO REAL ESTATE</span>
-                </div>
-            </a>
-            <ul class="nav-links">
-                <li><a href="/#about">About</a></li>
-                <li><a href="/buyers.html">Buyers</a></li>
-                <li><a href="/sellers.html">Sellers</a></li>
-                <li><a href="/#listings">Listings</a></li>
-                <li><a href="/neighborhoods.html" class="active">Areas</a></li>
-                <li><a href="/#testimonials">Reviews</a></li>
-                <li><a href="/blog.html">Blog</a></li>
-                <li><a href="#contact" class="nav-cta">Contact</a></li>
-            </ul>
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
+    <!-- Hero Section -->
+    <div class="hero-normal-heights">
+        <h1>Normal Heights</h1>
+        <p class="tagline">Where Eclectic Meets Elevated in the Heart of San Diego</p>
+    </div>
 
-    <section class="hero page-hero" style="background: linear-gradient(135deg, #1A2332 0%, #0D1117 100%);">
-        <div class="hero-background">
-            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80" alt="Normal Heights" class="hero-image">
-            <div class="hero-overlay dark"></div>
+    <!-- Stats Banner -->
+    <div class="stats-banner">
+        <div class="stat-item">
+            <div class="stat-number">$947K</div>
+            <div class="stat-label">Median Home Price</div>
         </div>
-        <div class="hero-content">
-            <span class="hero-tag">San Diego</span>
-            <h1 class="hero-title">Normal Heights<br><span class="accent">Adams Avenue Arts</span></h1>
-            <p class="hero-subtitle">Eclectic neighborhood with antique shops, music venues, and character</p>
-            <a href="#contact" class="cta-button">See Homes in Normal Heights</a>
+        <div class="stat-item">
+            <div class="stat-number">8/10</div>
+            <div class="stat-label">School Rating</div>
         </div>
-    </section>
+        <div class="stat-item">
+            <div class="stat-number">15,000</div>
+            <div class="stat-label">Population</div>
+        </div>
+    </div>
 
-    <section class="content-section" style="padding: 4rem 0;">
-        <div class="container narrow">
-            <h2 class="section-title">About Normal Heights</h2>
-            <p class="lead-text">Normal Heights is an up-and-coming neighborhood centered on Adams Avenue, known for antique shops, live music, and a quirky, artistic vibe. The area offers great value with tons of character.</p>
-            
-            <p style="color: #6B7280; margin-bottom: 1rem;">Adams Avenue features vintage shops, record stores, live music venues, and eclectic restaurants. The annual Adams Avenue Street Fair is one of San Diego's largest free festivals. The neighborhood has a creative, independent spirit.</p>
-            
-            <p style="color: #6B7280; margin-bottom: 2rem;">Real estate includes Spanish-style homes, bungalows, and modernized properties. The affordability, central location, and character make Normal Heights attractive to first-time buyers, artists, and those seeking authentic San Diego charm.</p>
-
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin: 3rem 0; padding: 2rem; background: #F8F7F4; border-radius: 4px;">
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">$825K</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">Median Home Price</div>
-                </div>
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">7/10</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">School Rating</div>
-                </div>
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">18K</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">Population</div>
+    <main id="main-content">
+        <!-- About Section -->
+        <section class="content-section">
+            <div class="neighborhood-container">
+                <div class="section-content">
+                    <h2 class="section-title">About Normal Heights</h2>
+                    
+                    <p class="intro-text">Normal Heights is where San Diego's creative spirit meets small-town charm. This vibrant, walkable neighborhood is the urban village you didn't know you were looking for—equal parts eclectic energy and laid-back California cool, wrapped up in tree-lined streets and vintage bungalows.</p>
+                    
+                    <p class="body-text">Perched on a mesa just northeast of Balboa Park, Normal Heights sits at the geographic heart of San Diego, making it one of the city's most accessible neighborhoods. You're five minutes from North Park's craft beer scene, ten minutes from downtown's urban pulse, and close enough to Mission Valley's shopping and employment hubs that your commute becomes an afterthought.</p>
+                    
+                    <p class="body-text">The neighborhood's crown jewel is Adams Avenue, a mile-long stretch of independently-owned restaurants, vintage shops, record stores, and neighborhood bars that feels more like a small-town main street than a San Diego thoroughfare. Here, you'll find locals grabbing morning coffee at Lestat's, browsing vinyl at Blue Meanie Records, and gathering for the annual Adams Avenue Street Fair—one of the largest free music festivals on the West Coast.</p>
+                    
+                    <p class="body-text">Normal Heights attracts young professionals seeking walkability without pretension, families drawn to excellent schools and genuine community, creative types who appreciate the neighborhood's artistic roots, and anyone tired of cookie-cutter suburban living. This is San Diego for people who value character over conformity and neighbors over anonymity.</p>
                 </div>
             </div>
+        </section>
 
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; margin: 2rem 0 1rem; color: #1A2332;">Lifestyle & Amenities</h3>
-            <ul style="list-style: none; padding: 0;">
-                <li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Adams Avenue - antique shops and music venues</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Live music scene - multiple performance spaces</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Adams Avenue Street Fair - annual tradition</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Ward Canyon Park - hiking trails</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Local breweries and coffee shops</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Easy freeway access and bus lines</li>
-            </ul>
-
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; margin: 2rem 0 1rem; color: #1A2332;">Who Lives Here</h3>
-            <p style="color: #6B7280;">Normal Heights attracts musicians, artists, first-time homebuyers, and those who value character over perfection. The community is creative, down-to-earth, and appreciates vintage and eclectic style.</p>
-        </div>
-    </section>
-
-    <section class="cta-section" style="background: #1A2332; color: white; padding: 4rem 0; text-align: center;">
-        <div class="container">
-            <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 1rem; color: white;">Ready to Find Your Normal Heights Home?</h2>
-            <p style="color: rgba(255,255,255,0.8); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">Let me show you the best homes and investment opportunities in Normal Heights.</p>
-            <a href="#contact" class="cta-button large">See Homes in Normal Heights</a>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <span class="section-tag">Get in Touch</span>
-                    <h2 class="section-title">Let's Find Your<br>Normal Heights Home</h2>
-                    <p class="contact-text">I know Normal Heights inside and out. Let's talk about what you're looking for.</p>
+        <!-- Lifestyle & Amenities Section -->
+        <section class="content-section">
+            <div class="neighborhood-container">
+                <div class="section-content">
+                    <h2 class="section-title">Lifestyle & Amenities</h2>
                     
-                    <div class="contact-details">
-                        <a href="tel:+18582044692" class="contact-item">
-                            <span class="contact-icon"><i class="fas fa-phone"></i></span>
-                            <span>(858) 204-4692</span>
-                        </a>
-                        <a href="mailto:rusty@deanaguilargroup.com" class="contact-item">
-                            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
-                            <span>rusty@deanaguilargroup.com</span>
-                        </a>
+                    <div class="lifestyle-grid">
+                        <div class="lifestyle-item">
+                            <div class="lifestyle-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="lifestyle-text">
+                                <strong>Adams Avenue's Eclectic Scene:</strong> From Lestat's Coffee House to The Rabbit Hole bar, discover independent businesses with real personality
+                            </div>
+                        </div>
+                        <div class="lifestyle-item">
+                            <div class="lifestyle-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="lifestyle-text">
+                                <strong>Walk Score of 89:</strong> One of San Diego's most walkable neighborhoods—daily errands on foot, not in traffic
+                            </div>
+                        </div>
+                        <div class="lifestyle-item">
+                            <div class="lifestyle-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="lifestyle-text">
+                                <strong>Minutes to Balboa Park:</strong> World-class museums, gardens, and the San Diego Zoo are your neighborhood amenities
+                            </div>
+                        </div>
+                        <div class="lifestyle-item">
+                            <div class="lifestyle-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="lifestyle-text">
+                                <strong>Craft Beer Culture:</strong> Easy access to North Park's brewery scene plus neighborhood favorites like Kilowatt Brewing
+                            </div>
+                        </div>
+                        <div class="lifestyle-item">
+                            <div class="lifestyle-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="lifestyle-text">
+                                <strong>Historic Architecture:</strong> Vintage Spanish bungalows, Craftsman cottages, and mid-century character homes
+                            </div>
+                        </div>
+                        <div class="lifestyle-item">
+                            <div class="lifestyle-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="lifestyle-text">
+                                <strong>Strong Community Vibe:</strong> Annual street fairs, farmer's markets, and neighbors who actually know each other's names
+                            </div>
+                        </div>
                     </div>
                     
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/rustyrau_sdrealtor/" target="_blank" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.facebook.com/rusty.rau" target="_blank" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
+                    <p class="body-text">What sets Normal Heights apart is its authentic neighborhood feel. This isn't a manufactured "lifestyle district"—it's a real community that evolved organically over decades. The local businesses are owned by neighbors who live here. The streets are lined with mature trees that actually provide shade. Front porches are designed for sitting on, not just looking at.</p>
+                    
+                    <p class="body-text">Dining options run the gamut from casual to creative. Start your morning at Lestat's Coffee House (a neighborhood institution in a converted funeral home), grab lunch at Rosie's Deli, enjoy happy hour at The Hideout, and finish with dinner at Saffron Thai or Antique Row Cafe. The food scene isn't trendy for the sake of being trendy—it's good because the owners care about feeding their neighbors well.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schools & Education Section -->
+        <section class="content-section">
+            <div class="neighborhood-container">
+                <div class="section-content">
+                    <h2 class="section-title">Schools & Education</h2>
+                    
+                    <p class="body-text">Normal Heights families benefit from access to some of San Diego's top-rated public schools. Normal Heights Elementary consistently earns an 8/10 GreatSchools rating, offering strong academics in a nurturing environment just blocks from most homes. The school's walkable location means many students actually walk to school—a rarity in modern San Diego.</p>
+                    
+                    <p class="body-text">Middle and high school students attend nearby Wilson Middle School and Hoover High School, both solid options with established programs. Many families also consider neighboring schools in North Park and Kensington. For private education, St. Didacus Catholic School offers K-8 instruction within the neighborhood, while acclaimed schools like Francis Parker and The Bishop's School are a short drive away.</p>
+                    
+                    <p class="body-text">The neighborhood's proximity to San Diego State University (just 10 minutes east) adds an academic energy to the area, with many graduate students and young faculty choosing Normal Heights for its affordability and walkable lifestyle. This educational influence contributes to the neighborhood's progressive, intellectually curious character.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Getting Around Section -->
+        <section class="content-section">
+            <div class="neighborhood-container">
+                <div class="section-content">
+                    <h2 class="section-title">Getting Around</h2>
+                    
+                    <p class="body-text">Normal Heights' central location makes it one of San Diego's most connected neighborhoods. Interstate 15 is minutes away for north-south travel, while Interstate 8 provides quick east-west access. Downtown San Diego is a 10-minute drive, the beaches are 15 minutes west, and Mission Valley's employment and shopping centers are practically next door. You're centrally positioned for everything San Diego offers without paying coastal premiums.</p>
+                    
+                    <p class="body-text">But the real story here is walkability. With an 89 Walk Score, Normal Heights lets you leave your car parked for daily errands. Coffee shops, groceries, restaurants, bars, banks, and services are all within a 10-minute walk for most residents. The neighborhood's bike-friendly streets (Bike Score of 69) and decent transit connections mean car-free living is actually viable—rare for Southern California. Many residents find they're driving less and walking more, which is exactly why they moved here in the first place.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Ready to Explore Normal Heights?</h2>
+                    <p>Normal Heights offers a rare combination: urban convenience, small-town community, and homes that won't break the bank compared to coastal neighborhoods. It's where you can actually walk to your favorite coffee shop and still afford to buy a house.</p>
+                    <p>As a born-and-raised San Diego local with 8 years in real estate, I know Normal Heights inside out. Let me show you why this neighborhood is one of San Diego's best-kept secrets—and help you find your perfect home here.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <div class="label">Call or Text</div>
+                                <div class="value">(619) 888-4663</div>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <div class="label">Email</div>
+                                <div class="value">rusty@rauhomegroup.com</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="contact-form-container">
-                    <form class="contact-form">
-                        <input type="hidden" name="neighborhood" value="Normal Heights">
+                <div class="contact-form">
+                    <h3>Schedule Your Tour</h3>
+                    <form id="contactForm" action="https://formspree.io/f/xeojoyaz" method="POST">
                         <div class="form-group">
-                            <input type="text" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="email" name="email" placeholder="Email" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" name="phone" placeholder="Phone">
-                            </div>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
                         </div>
                         <div class="form-group">
-                            <textarea name="message" placeholder="Tell me what you're looking for in Normal Heights..." rows="4"></textarea>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
                         </div>
-                        <button type="submit" class="submit-button">Contact Rusty</button>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(619) 123-4567">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Tell me about your Normal Heights home search..."></textarea>
+                        </div>
+                        <input type="hidden" name="_subject" value="Normal Heights Inquiry - Rau Home Group">
+                        <input type="hidden" name="_next" value="https://rauhomegroup.com/thank-you.html">
+                        <button type="submit" class="submit-btn">Send Message</button>
                     </form>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-
-    <script src="../script.js"></script>
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Rau Home Group - Normal Heights Real Estate",
+        "image": "https://rauhomegroup.com/assets/images/neighborhoods/normal-heights.jpg",
+        "description": "Normal Heights San Diego real estate expert. Walkable urban village with Adams Avenue dining, craft beer scene, and homes around $947K. Top schools and community vibe.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Normal Heights",
+            "addressRegion": "CA",
+            "postalCode": "92116",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "32.7608",
+            "longitude": "-117.1239"
+        },
+        "url": "https://rauhomegroup.com/neighborhoods/normal-heights.html",
+        "priceRange": "$$$$",
+        "areaServed": "Normal Heights, San Diego, California"
+    }
+    </script>
 
     <!-- Footer -->
     <footer class="footer" role="contentinfo">
@@ -291,7 +625,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
     <script src="../script.js" defer></script>
     <script src="../luxury-effects.js" defer></script>
-
-
 </body>
 </html>
