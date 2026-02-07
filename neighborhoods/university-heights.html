@@ -4,19 +4,18 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rusty Rau - San Diego Real Estate Expert. Born and raised in San Diego with 8 years of experience helping buyers and sellers achieve their real estate goals.">
-    <meta name="keywords" content="San Diego real estate, Rusty Rau, San Diego realtor, homes for sale San Diego, buy home San Diego">
+    <meta name="description" content="University Heights San Diego real estate. Historic hilltop neighborhood with craft breweries, walkable Park Boulevard, and charming bungalows. Median price $995K.">
+    <meta name="keywords" content="University Heights San Diego, University Heights real estate, San Diego hilltop homes, Park Boulevard breweries, craftsman homes San Diego">
     <meta name="author" content="Rusty Rau">
-    <meta name="description" content="University Heights real estate guide. University Heights sits on a mesa overlooking Mission Valley, offering hilltop views, excellent walkability, and a growing craft beer scene. The neigh">
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Rusty Rau | San Diego Real Estate Expert">
-    <meta property="og:description" content="Born and raised in San Diego. 8 years helping San Diegans buy and sell homes.">
+    <meta property="og:title" content="University Heights San Diego Real Estate | Rau Home Group">
+    <meta property="og:description" content="Elevated Living - Historic hilltop neighborhood with craft breweries and walkable village charm. Median price $995K.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://rauhomegroup.com">
+    <meta property="og:url" content="https://rauhomegroup.com/neighborhoods/university-heights.html">
     
-    <title>University Heights Real Estate | Homes for Sale | Rusty Rau</title>
+    <title>University Heights Real Estate & Homes for Sale | San Diego | Rau Home Group</title>
     
     <!-- Preconnect to external domains for faster loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,6 +41,255 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/logo.png">
 
+    <style>
+        .hero-neighborhood {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../assets/images/neighborhoods/university-heights-hero.jpg') center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .hero-neighborhood h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .hero-neighborhood p {
+            font-size: 1.5rem;
+            font-weight: 300;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+        
+        .neighborhood-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 7rem 1.5rem;
+        }
+        
+        .stats-banner {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+            margin: 3rem 0;
+            text-align: center;
+        }
+        
+        .stat-item h3 {
+            font-size: 3rem;
+            color: #D4AF37;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        
+        .stat-item p {
+            font-size: 1.15rem;
+            color: #2C3E50;
+            font-weight: 500;
+        }
+        
+        .intro-text {
+            font-size: 1.35rem;
+            line-height: 1.9;
+            color: #2C3E50;
+            margin-bottom: 2.5rem;
+        }
+        
+        .content-block {
+            max-width: 1000px;
+            margin: 0 auto 3rem auto;
+        }
+        
+        .content-block h2 {
+            font-size: 2.2rem;
+            color: #2C3E50;
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+        
+        .content-block p {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+        
+        .lifestyle-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin: 2.5rem 0;
+        }
+        
+        .lifestyle-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+        
+        .lifestyle-icon {
+            width: 32px;
+            height: 32px;
+            background: #D4AF37;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 0.25rem;
+        }
+        
+        .lifestyle-icon i {
+            color: white;
+            font-size: 0.9rem;
+        }
+        
+        .lifestyle-text {
+            font-size: 1.15rem;
+            line-height: 1.6;
+            color: #2C3E50;
+        }
+        
+        .contact-section {
+            background: #f8f9fa;
+            padding: 5rem 0;
+            margin-top: 5rem;
+        }
+        
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+        
+        .contact-info h2 {
+            font-size: 2.2rem;
+            color: #2C3E50;
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-info p {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #555;
+            margin-bottom: 2rem;
+        }
+        
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        
+        .contact-icon {
+            width: 56px;
+            height: 56px;
+            background: #D4AF37;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .contact-icon i {
+            color: white;
+            font-size: 1.5rem;
+        }
+        
+        .contact-details h3 {
+            font-size: 1.15rem;
+            color: #2C3E50;
+            margin-bottom: 0.25rem;
+        }
+        
+        .contact-details p {
+            font-size: 1rem;
+            color: #666;
+            margin: 0;
+        }
+        
+        .contact-form {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            font-size: 1rem;
+            color: #2C3E50;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            background: #D4AF37;
+            color: white;
+            border: none;
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.3s ease;
+            width: 100%;
+        }
+        
+        .submit-btn:hover {
+            background: #B8941F;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-neighborhood h1 {
+                font-size: 2rem;
+            }
+            .hero-neighborhood p {
+                font-size: 1.2rem;
+            }
+            .stats-banner {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            .lifestyle-list {
+                grid-template-columns: 1fr;
+            }
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Skip to main content link for accessibility -->
@@ -80,143 +328,235 @@
         </div>
     </nav>
 
-<nav class="navbar scrolled-dark">
-        <div class="nav-container">
-            <a href="/" class="logo">
-                <img src="../images/logo.png" alt="Rau Home Group" class="logo-img">
-                <div class="logo-text-wrap">
-                    <span class="logo-text">RAU HOME GROUP</span>
-                    <span class="logo-subtitle">SAN DIEGO REAL ESTATE</span>
-                </div>
-            </a>
-            <ul class="nav-links">
-                <li><a href="/#about">About</a></li>
-                <li><a href="/buyers.html">Buyers</a></li>
-                <li><a href="/sellers.html">Sellers</a></li>
-                <li><a href="/#listings">Listings</a></li>
-                <li><a href="/neighborhoods.html" class="active">Areas</a></li>
-                <li><a href="/#testimonials">Reviews</a></li>
-                <li><a href="/blog.html">Blog</a></li>
-                <li><a href="#contact" class="nav-cta">Contact</a></li>
-            </ul>
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+    <!-- Hero Section -->
+    <div class="hero-neighborhood">
+        <div>
+            <h1>University Heights, San Diego</h1>
+            <p>Elevated Living - Where Hilltop Charm Meets Craft Culture</p>
         </div>
-    </nav>
+    </div>
 
-    <section class="hero page-hero" style="background: linear-gradient(135deg, #1A2332 0%, #0D1117 100%);">
-        <div class="hero-background">
-            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80" alt="University Heights" class="hero-image">
-            <div class="hero-overlay dark"></div>
+    <!-- Main Content -->
+    <main id="main-content" class="neighborhood-content">
+        
+        <!-- Stats Banner -->
+        <div class="stats-banner">
+            <div class="stat-item">
+                <h3>$995K</h3>
+                <p>Median Home Price</p>
+            </div>
+            <div class="stat-item">
+                <h3>8/10</h3>
+                <p>School Rating</p>
+            </div>
+            <div class="stat-item">
+                <h3>15,000</h3>
+                <p>Population</p>
+            </div>
         </div>
-        <div class="hero-content">
-            <span class="hero-tag">San Diego</span>
-            <h1 class="hero-title">University Heights<br><span class="accent">Elevated Living</span></h1>
-            <p class="hero-subtitle">Hilltop neighborhood with craft breweries, parks, and walkable streets</p>
-            <a href="#contact" class="cta-button">See Homes in University Heights</a>
-        </div>
-    </section>
 
-    <section class="content-section" style="padding: 4rem 0;">
-        <div class="container narrow">
-            <h2 class="section-title">About University Heights</h2>
-            <p class="lead-text">University Heights sits on a mesa overlooking Mission Valley, offering hilltop views, excellent walkability, and a growing craft beer scene. The neighborhood combines historic charm with modern amenities.</p>
+        <!-- About Section -->
+        <div class="content-block">
+            <p class="intro-text">
+                Perched on a mesa overlooking downtown San Diego, University Heights combines the charm of a historic neighborhood with the vibrancy of a thriving urban village. Tree-lined streets showcase beautifully preserved craftsman bungalows and Spanish Revival homes, while Park Boulevard serves as the neighborhood's beating heart with its legendary concentration of craft breweries, independent restaurants, and local shops.
+            </p>
             
-            <p style="color: #6B7280; margin-bottom: 1rem;">Park Boulevard features breweries, restaurants, coffee shops, and boutiques. Trolley Barn Park is a community gathering spot. The neighborhood's elevated position provides views and cooler temperatures than the valleys below.</p>
+            <p>
+                The neighborhood earned its name from San Diego Normal School (now San Diego State University), which was located here from 1899 to 1931. That educational legacy created a community built on intellectual curiosity and cultural diversity that continues today. The hilltop location offers stunning city views, cooler breezes, and a sense of elevation both literal and figurative.
+            </p>
             
-            <p style="color: #6B7280; margin-bottom: 2rem;">Real estate includes Craftsman bungalows, Spanish-style homes, and some modern builds. The walkability, dining options, and central location make University Heights popular with young professionals and couples.</p>
+            <p>
+                University Heights attracts young professionals, creative types, families seeking character homes, and anyone who values walkability without sacrificing the unique personality of a historic neighborhood. Residents appreciate the perfect balance between urban convenience and residential tranquility, with downtown just minutes away but feeling worlds apart.
+            </p>
+            
+            <p>
+                What makes University Heights special is its authentic neighborhood culture. Unlike newer master-planned communities, this is a place that evolved organically over more than a century. The result is genuine character you can't replicate—historic architecture that tells stories, local businesses run by people who live here, and neighbors who actually know each other's names.
+            </p>
+        </div>
 
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin: 3rem 0; padding: 2rem; background: #F8F7F4; border-radius: 4px;">
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">$900K</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">Median Home Price</div>
+        <!-- Lifestyle & Amenities -->
+        <div class="content-block">
+            <h2>Lifestyle & Amenities</h2>
+            
+            <div class="lifestyle-list">
+                <div class="lifestyle-item">
+                    <div class="lifestyle-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="lifestyle-text">
+                        <strong>Craft Brewery Capital:</strong> More breweries per capita than almost any San Diego neighborhood
+                    </div>
                 </div>
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">7/10</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">School Rating</div>
+                <div class="lifestyle-item">
+                    <div class="lifestyle-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="lifestyle-text">
+                        <strong>Walkable Village:</strong> 95+ Walk Score on Park Boulevard with everything within blocks
+                    </div>
                 </div>
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">12K</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">Population</div>
+                <div class="lifestyle-item">
+                    <div class="lifestyle-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="lifestyle-text">
+                        <strong>Historic Homes:</strong> 1920s-1930s craftsman bungalows and Spanish Revival architecture
+                    </div>
+                </div>
+                <div class="lifestyle-item">
+                    <div class="lifestyle-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="lifestyle-text">
+                        <strong>Urban Parks:</strong> Trolley Barn Park and nearby Balboa Park within minutes
+                    </div>
+                </div>
+                <div class="lifestyle-item">
+                    <div class="lifestyle-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="lifestyle-text">
+                        <strong>Downtown Access:</strong> 5-minute drive to Gaslamp, Little Italy, and major employers
+                    </div>
+                </div>
+                <div class="lifestyle-item">
+                    <div class="lifestyle-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="lifestyle-text">
+                        <strong>Community Events:</strong> Street fairs, farmers markets, and neighborhood gatherings
+                    </div>
                 </div>
             </div>
-
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; margin: 2rem 0 1rem; color: #1A2332;">Lifestyle & Amenities</h3>
-            <ul style="list-style: none; padding: 0;">
-                <li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Park Boulevard - breweries and dining</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Trolley Barn Park - community gathering spot</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Hilltop location with views</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Walking distance to multiple neighborhoods</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Local coffee roasters and cafes</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Easy access to highways and trolley</li>
-            </ul>
-
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; margin: 2rem 0 1rem; color: #1A2332;">Who Lives Here</h3>
-            <p style="color: #6B7280;">University Heights attracts young professionals, craft beer enthusiasts, and those seeking walkability with a neighborhood feel. The community values local businesses and maintaining historic architecture.</p>
+            
+            <p>
+                Park Boulevard is where University Heights truly comes alive. Blocks of independent breweries create a craft beer destination recognized nationally—Mike Hess Brewing, Thorn Street Brewery, and Small Bar are neighborhood institutions. Between the brewpubs you'll find excellent restaurants representing cuisines from around the world, vintage shops, yoga studios, and the kind of independent coffee shops where regulars are greeted by name.
+            </p>
+            
+            <p>
+                The neighborhood's architecture is a major draw. Craftsman bungalows feature original hardwood floors, built-in cabinetry, and front porches perfect for watching the world go by. Spanish Revival homes showcase terracotta tile roofs, arched doorways, and courtyards that transport you to another era. Many homeowners have lovingly restored these historic properties while updating interiors with modern amenities—preserving character while embracing contemporary comfort.
+            </p>
         </div>
-    </section>
 
-    <section class="cta-section" style="background: #1A2332; color: white; padding: 4rem 0; text-align: center;">
-        <div class="container">
-            <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 1rem; color: white;">Ready to Find Your University Heights Home?</h2>
-            <p style="color: rgba(255,255,255,0.8); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">Let me show you the best homes and investment opportunities in University Heights.</p>
-            <a href="#contact" class="cta-button large">See Homes in University Heights</a>
+        <!-- Schools & Education -->
+        <div class="content-block">
+            <h2>Schools & Education</h2>
+            
+            <p>
+                University Heights is served by San Diego Unified School District with several well-regarded options nearby. Jefferson Elementary (K-5) serves most of the neighborhood with a GreatSchools rating of 7/10, known for dedicated teachers and strong parent involvement. McKinley Elementary (K-8) offers another quality option with a rating of 8/10, featuring smaller class sizes and a focus on individualized learning.
+            </p>
+            
+            <p>
+                For middle and high school, students typically attend Roosevelt International Middle School (6-8, rated 7/10) which offers International Baccalaureate programs, followed by San Diego High School (9-12, rated 6/10)—the oldest high school in San Diego with strong college prep programs and historic campus. Many families also consider nearby Mission Hills High School and various charter school options in the central San Diego area.
+            </p>
+            
+            <p>
+                The neighborhood's proximity to downtown and major universities (SDSU, USD, Point Loma Nazarene, and UC San Diego within 15-30 minutes) creates an education-focused environment. Private school families have excellent options including St. Didacus Parish School, Francis Parker School, and The Bishop's School, all within a short drive.
+            </p>
         </div>
-    </section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <span class="section-tag">Get in Touch</span>
-                    <h2 class="section-title">Let's Find Your<br>University Heights Home</h2>
-                    <p class="contact-text">I know University Heights inside and out. Let's talk about what you're looking for.</p>
-                    
-                    <div class="contact-details">
-                        <a href="tel:+18582044692" class="contact-item">
-                            <span class="contact-icon"><i class="fas fa-phone"></i></span>
-                            <span>(858) 204-4692</span>
-                        </a>
-                        <a href="mailto:rusty@deanaguilargroup.com" class="contact-item">
-                            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
-                            <span>rusty@deanaguilargroup.com</span>
-                        </a>
-                    </div>
-                    
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/rustyrau_sdrealtor/" target="_blank" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.facebook.com/rusty.rau" target="_blank" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </div>
-                </div>
+        <!-- Getting Around -->
+        <div class="content-block">
+            <h2>Getting Around</h2>
+            
+            <p>
+                University Heights offers exceptional urban accessibility with minimal freeway dependence. Downtown San Diego is just 3 miles south (5-10 minutes), making it perfect for professionals working in the Gaslamp, Little Italy, or financial district. The neighborhood sits between I-5 (west) and State Route 163 (east), providing quick freeway access when needed. North Park borders to the east, Hillcrest to the west, and Mission Valley is just 10 minutes north via the 163.
+            </p>
+            
+            <p>
+                The real advantage is walkability and transit. Most residents can walk to dozens of restaurants, shops, and services without ever getting in a car. The neighborhood is bike-friendly with designated lanes on many streets. MTS bus routes run frequently along Park Boulevard and nearby corridors, connecting to downtown, Hillcrest, North Park, and the trolley system. San Diego International Airport is just 15 minutes away. For those who do drive, street parking is typical (some homes have garages or driveways), and most daily errands are within a 5-minute radius.
+            </p>
+        </div>
+
+    </main>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Ready to Call University Heights Home?</h2>
+                <p>
+                    As a 6-year San Diego real estate veteran, I know University Heights inside and out—from the best blocks for craftsman bungalows to which breweries have the best patios. Whether you're looking for a historic fixer-upper or a fully restored gem, I'll help you find your perfect hilltop home.
+                </p>
                 
-                <div class="contact-form-container">
-                    <form class="contact-form">
-                        <input type="hidden" name="neighborhood" value="University Heights">
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Your Name" required>
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
                         </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="email" name="email" placeholder="Email" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" name="phone" placeholder="Phone">
-                            </div>
+                        <div class="contact-details">
+                            <h3>Call or Text</h3>
+                            <p>(619) 555-0100</p>
                         </div>
-                        <div class="form-group">
-                            <textarea name="message" placeholder="Tell me what you're looking for in University Heights..." rows="4"></textarea>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
                         </div>
-                        <button type="submit" class="submit-button">Contact Rusty</button>
-                    </form>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>rusty@rauhomegroup.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Serving</h3>
+                            <p>All of San Diego County</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+            
+            <form class="contact-form" action="../contact-handler.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required>I'm interested in University Heights real estate. Please contact me to discuss opportunities in this neighborhood.</textarea>
+                </div>
+                <button type="submit" class="submit-btn">Get Started Today</button>
+            </form>
         </div>
     </section>
 
-
-    <script src="../script.js"></script>
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Rau Home Group - University Heights Real Estate",
+        "image": "https://rauhomegroup.com/assets/images/neighborhoods/university-heights-hero.jpg",
+        "description": "University Heights San Diego real estate expert. Historic hilltop neighborhood with craft breweries, walkable Park Boulevard, and charming bungalows. Median price $995K.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "University Heights",
+            "addressRegion": "CA",
+            "postalCode": "92103",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "32.7486",
+            "longitude": "-117.1360"
+        },
+        "url": "https://rauhomegroup.com/neighborhoods/university-heights.html",
+        "priceRange": "$$$$",
+        "areaServed": "University Heights, San Diego, California"
+    }
+    </script>
 
     <!-- Footer -->
     <footer class="footer" role="contentinfo">
@@ -291,7 +631,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
     <script src="../script.js" defer></script>
     <script src="../luxury-effects.js" defer></script>
-
-
 </body>
 </html>
