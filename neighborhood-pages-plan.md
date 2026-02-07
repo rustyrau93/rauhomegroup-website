@@ -49,7 +49,7 @@ All pages should match La Jolla's exact structure (~25KB, 750 words):
 - [x] **Kensington** - 37KB - Built 2026-02-07 - Village in the City, small-town charm, walkable Adams Avenue ($1.1M)
 - [x] **Mission Hills** - 26KB - Built 2026-02-07 - Historic Elegance, prestigious location ($1.5M)
 - [x] **National City** - 28KB - Built 2026-02-07 - First Incorporated City, waterfront access ($735K)
-- [ ] **Normal Heights** - 11KB stub - Adams Avenue Arts, eclectic, up-and-coming ($825K)
+- [x] **Normal Heights** - 30KB - Built 2026-02-07 - Eclectic urban village, Adams Avenue scene, walkable ($947K)
 - [ ] **North Park** - 11KB stub - Hip & Happening, craft beer, arts scene ($950K)
 - [ ] **Oceanside** - 11KB stub - California's Classic Beach Town, historic pier ($875K)
 - [ ] **Rancho Bernardo** - 11KB stub - Established Excellence, golf, tech corridor ($950K)
