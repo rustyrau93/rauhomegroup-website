@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rusty Rau - San Diego Real Estate Expert. Born and raised in San Diego with 8 years of experience helping buyers and sellers achieve their real estate goals.">
-    <meta name="keywords" content="San Diego real estate, Rusty Rau, San Diego realtor, homes for sale San Diego, buy home San Diego">
+    <meta name="description" content="North Park San Diego real estate guide. Hip urban neighborhood with craft breweries, vintage charm, and walkable lifestyle. Median price $1.0M.">
+    <meta name="keywords" content="North Park San Diego, North Park real estate, North Park homes for sale, craft beer San Diego, urban living San Diego">
     <meta name="author" content="Rusty Rau">
-    <meta name="description" content="North Park real estate guide. North Park is one of San Diego's hottest neighborhoods, featuring a thriving craft beer scene, exceptional restaurants, live music venues, and a vibra">
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Rusty Rau | San Diego Real Estate Expert">
-    <meta property="og:description" content="Born and raised in San Diego. 8 years helping San Diegans buy and sell homes.">
+    <meta property="og:title" content="North Park Real Estate & Homes for Sale | San Diego | Rau Home Group">
+    <meta property="og:description" content="North Park - San Diego's hippest neighborhood. Craft breweries, vintage charm, walkable lifestyle. Median $1.0M.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://rauhomegroup.com">
+    <meta property="og:url" content="https://rauhomegroup.com/neighborhoods/north-park.html">
     
-    <title>North Park Real Estate | Homes for Sale | Rusty Rau</title>
+    <title>North Park Real Estate & Homes for Sale | San Diego | Rau Home Group</title>
     
     <!-- Preconnect to external domains for faster loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +24,7 @@
     
     <!-- Preload critical assets -->
     <link rel="preload" href="../styles.css" as="style">
-    <link rel="preload" href="images/logo.png" as="image">
+    <link rel="preload" href="../images/logo.png" as="image">
     
     <!-- Fonts with display=swap for better performance -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -40,8 +38,262 @@
     <link rel="stylesheet" href="../luxury-effects.css">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="icon" type="image/png" href="../images/logo.png">
 
+    <style>
+        .hero-neighborhood {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1514565131-fce0801e5785?w=1600') center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .hero-neighborhood h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+        }
+        .hero-neighborhood p {
+            font-size: 1.5rem;
+            font-weight: 300;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+        }
+        
+        /* Stats Banner - Gold Numbers */
+        .stats-banner {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            padding: 7rem 0;
+            margin: 0;
+        }
+        .stats-banner .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        .stats-grid-banner {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 4rem;
+            text-align: center;
+        }
+        .stat-item-banner h3 {
+            font-size: 4rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #D4AF37 0%, #F4E5A1 50%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        .stat-item-banner p {
+            color: #e0e0e0;
+            font-size: 1.15rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        /* Main Content */
+        .neighborhood-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 7rem 2rem;
+        }
+        .intro-section {
+            max-width: 1000px;
+            margin: 0 auto 7rem;
+            font-size: 1.35rem;
+            line-height: 1.9;
+            color: #2d2d2d;
+        }
+        .content-section {
+            max-width: 1000px;
+            margin: 0 auto 7rem;
+        }
+        .content-section h2 {
+            font-size: 2.5rem;
+            color: #1a1a1a;
+            margin-bottom: 2.5rem;
+            font-weight: 600;
+        }
+        .content-section p, .content-section ul {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #2d2d2d;
+            margin-bottom: 1.5rem;
+        }
+        
+        /* Lifestyle Grid with Gold Checkmarks */
+        .lifestyle-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .lifestyle-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+        }
+        .lifestyle-icon {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, #D4AF37 0%, #F4E5A1 50%, #D4AF37 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 0.25rem;
+        }
+        .lifestyle-icon i {
+            color: white;
+            font-size: 0.9rem;
+        }
+        .lifestyle-content h4 {
+            font-size: 1.3rem;
+            color: #1a1a1a;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        .lifestyle-content p {
+            font-size: 1.05rem;
+            color: #555;
+            margin: 0;
+            line-height: 1.7;
+        }
+        
+        /* Contact Section - 2 Column */
+        .contact-section {
+            background: #f8f8f8;
+            margin: 7rem -2rem 0;
+            padding: 7rem 2rem;
+        }
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+        .contact-info h2 {
+            font-size: 2.5rem;
+            color: #1a1a1a;
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+        .contact-info p {
+            font-size: 1.15rem;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 2.5rem;
+        }
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        .contact-icon {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, #D4AF37 0%, #F4E5A1 50%, #D4AF37 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .contact-icon i {
+            color: white;
+            font-size: 1.5rem;
+        }
+        .contact-text h4 {
+            font-size: 1.1rem;
+            color: #1a1a1a;
+            margin-bottom: 0.25rem;
+            font-weight: 600;
+        }
+        .contact-text p {
+            font-size: 1rem;
+            color: #555;
+            margin: 0;
+        }
+        .contact-text a {
+            color: #D4AF37;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .contact-form {
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #1a1a1a;
+            font-weight: 500;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.875rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        .submit-btn {
+            background: linear-gradient(135deg, #D4AF37 0%, #F4E5A1 50%, #D4AF37 100%);
+            color: white;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-neighborhood h1 {
+                font-size: 2.5rem;
+            }
+            .stats-grid-banner {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            .lifestyle-grid {
+                grid-template-columns: 1fr;
+            }
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Skip to main content link for accessibility -->
@@ -80,143 +332,266 @@
         </div>
     </nav>
 
-<nav class="navbar scrolled-dark">
-        <div class="nav-container">
-            <a href="/" class="logo">
-                <img src="../images/logo.png" alt="Rau Home Group" class="logo-img">
-                <div class="logo-text-wrap">
-                    <span class="logo-text">RAU HOME GROUP</span>
-                    <span class="logo-subtitle">SAN DIEGO REAL ESTATE</span>
-                </div>
-            </a>
-            <ul class="nav-links">
-                <li><a href="/#about">About</a></li>
-                <li><a href="/buyers.html">Buyers</a></li>
-                <li><a href="/sellers.html">Sellers</a></li>
-                <li><a href="/#listings">Listings</a></li>
-                <li><a href="/neighborhoods.html" class="active">Areas</a></li>
-                <li><a href="/#testimonials">Reviews</a></li>
-                <li><a href="/blog.html">Blog</a></li>
-                <li><a href="#contact" class="nav-cta">Contact</a></li>
-            </ul>
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+    <!-- Hero Section -->
+    <div class="hero-neighborhood">
+        <div>
+            <h1>North Park</h1>
+            <p>Where San Diego Gets Creative</p>
         </div>
-    </nav>
+    </div>
 
-    <section class="hero page-hero" style="background: linear-gradient(135deg, #1A2332 0%, #0D1117 100%);">
-        <div class="hero-background">
-            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80" alt="North Park" class="hero-image">
-            <div class="hero-overlay dark"></div>
-        </div>
-        <div class="hero-content">
-            <span class="hero-tag">San Diego</span>
-            <h1 class="hero-title">North Park<br><span class="accent">Hip & Happening</span></h1>
-            <p class="hero-subtitle">Trendy neighborhood with craft beer, restaurants, and arts scene</p>
-            <a href="#contact" class="cta-button">See Homes in North Park</a>
-        </div>
-    </section>
-
-    <section class="content-section" style="padding: 4rem 0;">
-        <div class="container narrow">
-            <h2 class="section-title">About North Park</h2>
-            <p class="lead-text">North Park is one of San Diego's hottest neighborhoods, featuring a thriving craft beer scene, exceptional restaurants, live music venues, and a vibrant arts community. The area has transformed from overlooked to must-live.</p>
-            
-            <p style="color: #6B7280; margin-bottom: 1rem;">30th Street and University Avenue are packed with craft breweries, farm-to-table restaurants, coffee roasters, and independent shops. The historic North Park Theatre hosts concerts and events. Weekly Ray Street art walks showcase local galleries.</p>
-            
-            <p style="color: #6B7280; margin-bottom: 2rem;">Real estate features beautifully restored Craftsman homes, Spanish bungalows, and new condos. The neighborhood's walkability, dining scene, and creative energy attract young professionals, creatives, and foodies.</p>
-
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin: 3rem 0; padding: 2rem; background: #F8F7F4; border-radius: 4px;">
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">$950K</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">Median Home Price</div>
+    <!-- Stats Banner -->
+    <section class="stats-banner">
+        <div class="container">
+            <div class="stats-grid-banner">
+                <div class="stat-item-banner">
+                    <h3>$1.0M</h3>
+                    <p>Median Home Price</p>
                 </div>
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">7/10</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">School Rating</div>
+                <div class="stat-item-banner">
+                    <h3>9/10</h3>
+                    <p>Top School Rating</p>
                 </div>
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">45K</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">Population</div>
+                <div class="stat-item-banner">
+                    <h3>86/100</h3>
+                    <p>Walk Score</p>
                 </div>
             </div>
-
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; margin: 2rem 0 1rem; color: #1A2332;">Lifestyle & Amenities</h3>
-            <ul style="list-style: none; padding: 0;">
-                <li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> 30th Street - craft beer and dining hub</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> North Park Theatre - historic entertainment venue</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Ray Street arts district - galleries and studios</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Observatory North Park - concert venue</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Weekly farmers market on Thursday</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Walkable to Balboa Park</li>
-            </ul>
-
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; margin: 2rem 0 1rem; color: #1A2332;">Who Lives Here</h3>
-            <p style="color: #6B7280;">North Park attracts young professionals, artists, creatives, and foodies who value walkability and a vibrant social scene. The community is hip, entrepreneurial, and passionate about local businesses.</p>
         </div>
     </section>
 
-    <section class="cta-section" style="background: #1A2332; color: white; padding: 4rem 0; text-align: center;">
-        <div class="container">
-            <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 1rem; color: white;">Ready to Find Your North Park Home?</h2>
-            <p style="color: rgba(255,255,255,0.8); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">Let me show you the best homes and investment opportunities in North Park.</p>
-            <a href="#contact" class="cta-button large">See Homes in North Park</a>
+    <!-- Main Content -->
+    <div class="neighborhood-content" id="main-content">
+        
+        <!-- Introduction -->
+        <div class="intro-section">
+            <p>North Park is San Diego's creative heart—a vibrant urban neighborhood where craft breweries meet vintage charm, street art adorns historic buildings, and walkable streets buzz with energy from morning coffee to late-night shows. This is where the city's artists, entrepreneurs, and young professionals have built one of Southern California's most distinctive communities.</p>
         </div>
-    </section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <span class="section-tag">Get in Touch</span>
-                    <h2 class="section-title">Let's Find Your<br>North Park Home</h2>
-                    <p class="contact-text">I know North Park inside and out. Let's talk about what you're looking for.</p>
-                    
-                    <div class="contact-details">
-                        <a href="tel:+18582044692" class="contact-item">
-                            <span class="contact-icon"><i class="fas fa-phone"></i></span>
-                            <span>(858) 204-4692</span>
-                        </a>
-                        <a href="mailto:rusty@deanaguilargroup.com" class="contact-item">
-                            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
-                            <span>rusty@deanaguilargroup.com</span>
-                        </a>
+        <!-- About Section -->
+        <section class="content-section">
+            <h2>About North Park</h2>
+            <p>Once a quiet streetcar suburb in the early 1900s, North Park has transformed into San Diego's hippest neighborhood while preserving its architectural character. Tree-lined streets showcase beautifully restored Craftsman bungalows, Spanish Revival homes, and mid-century apartments—all within walking distance of dozens of independently owned restaurants, bars, galleries, and shops.</p>
+            
+            <p><strong>Location:</strong> Central San Diego, approximately 3 miles northeast of downtown, bordered by University Heights to the west, Normal Heights to the north, City Heights to the east, and South Park to the south. The heart of the neighborhood runs along 30th Street and University Avenue—two of San Diego's most dynamic commercial corridors.</p>
+            
+            <p><strong>Population:</strong> Approximately 47,000 residents who embrace the neighborhood's creative, independent spirit and walkable urban lifestyle.</p>
+            
+            <p><strong>What Makes It Unique:</strong> North Park has become synonymous with San Diego's craft beer revolution, housing more breweries per capita than almost any neighborhood in America. But it's more than just beer—it's the vintage shops, the Thursday farmers market, the live music venues, the street festivals, and the sense that you're part of a community that values local, independent, and authentic over corporate and chain. The neighborhood's architecture and tree-canopied streets give it a distinct character that sets it apart from newer San Diego developments.</p>
+            
+            <p><strong>Who Lives Here:</strong> North Park attracts creative professionals (designers, writers, musicians), tech workers, small business owners, medical professionals (close to multiple hospitals), young families who value walkability and community, and urban-minded retirees downsizing from larger homes. The demographic skews younger and more diverse than many San Diego neighborhoods, with a strong LGBTQ+ presence and a genuine commitment to inclusivity.</p>
+        </section>
+
+        <!-- Lifestyle & Amenities Section -->
+        <section class="content-section">
+            <h2>Lifestyle & Amenities</h2>
+            
+            <div class="lifestyle-grid">
+                <div class="lifestyle-item">
+                    <div class="lifestyle-icon">
+                        <i class="fas fa-check"></i>
                     </div>
-                    
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/rustyrau_sdrealtor/" target="_blank" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.facebook.com/rusty.rau" target="_blank" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
+                    <div class="lifestyle-content">
+                        <h4>Craft Beer Capital</h4>
+                        <p>Home to 15+ breweries including Modern Times, Belching Beaver, North Park Beer Co., and more—all within walking distance.</p>
                     </div>
                 </div>
                 
-                <div class="contact-form-container">
-                    <form class="contact-form">
-                        <input type="hidden" name="neighborhood" value="North Park">
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="email" name="email" placeholder="Email" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" name="phone" placeholder="Phone">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="message" placeholder="Tell me what you're looking for in North Park..." rows="4"></textarea>
-                        </div>
-                        <button type="submit" class="submit-button">Contact Rusty</button>
-                    </form>
+                <div class="lifestyle-item">
+                    <div class="lifestyle-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="lifestyle-content">
+                        <h4>Walkable Everything</h4>
+                        <p>Walk Score 86/100—groceries, restaurants, bars, cafes, shops, and entertainment all accessible on foot.</p>
+                    </div>
                 </div>
+                
+                <div class="lifestyle-item">
+                    <div class="lifestyle-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="lifestyle-content">
+                        <h4>Arts & Culture Scene</h4>
+                        <p>The Observatory North Park (live music), Ray Street Arts District, monthly ArtWalk, and independent galleries and theaters.</p>
+                    </div>
+                </div>
+                
+                <div class="lifestyle-item">
+                    <div class="lifestyle-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="lifestyle-content">
+                        <h4>Food Destination</h4>
+                        <p>From taco shops to fine dining—Urban Solace, El Comal, Tiger!Tiger!, Waypoint Public, and 100+ other restaurants.</p>
+                    </div>
+                </div>
+                
+                <div class="lifestyle-item">
+                    <div class="lifestyle-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="lifestyle-content">
+                        <h4>Historic Character</h4>
+                        <p>Beautifully preserved 1920s-1940s architecture with tree-lined streets and neighborhood pride.</p>
+                    </div>
+                </div>
+                
+                <div class="lifestyle-item">
+                    <div class="lifestyle-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="lifestyle-content">
+                        <h4>Community Events</h4>
+                        <p>Thursday farmers market, Toyland Parade (holiday tradition), Ray at Night ArtWalk, Music Thing festival.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <p>North Park offers an authentic urban lifestyle where neighbors know each other, small businesses thrive, and every weekend brings something new to explore. The neighborhood has maintained its independent character even as it's grown in popularity—chain stores and corporate development are notably absent from the main corridors. Residents value supporting local businesses, sustainability, and civic engagement.</p>
+            
+            <p>The walkability is genuine—many North Park residents go weeks without driving, walking to work, restaurants, entertainment, and errands. The tree-lined residential streets provide a peaceful retreat just blocks from the bustling commercial areas. Morley Field (in adjacent Balboa Park) offers sports facilities, disc golf, and green space for recreation.</p>
+        </section>
+
+        <!-- Schools & Education Section -->
+        <section class="content-section">
+            <h2>Schools & Education</h2>
+            <p>North Park is served by San Diego Unified School District with several highly-rated elementary schools and access to quality middle and high schools. The neighborhood's walkability and community engagement make it increasingly popular with young families.</p>
+
+            <p><strong>Top Public Schools:</strong></p>
+            <ul>
+                <li><strong>McKinley Elementary:</strong> GreatSchools Rating 9/10 – One of the highest-rated elementary schools in central San Diego, known for strong academics and engaged parent community</li>
+                <li><strong>Normal Heights Elementary:</strong> GreatSchools Rating 8/10 – Well-regarded school with dedicated teachers and active neighborhood support</li>
+                <li><strong>Jefferson Elementary:</strong> GreatSchools Rating 6/10 – Diverse student body with improving test scores</li>
+                <li><strong>Roosevelt Middle School:</strong> GreatSchools Rating 6/10 – Serves the area with solid academic programs</li>
+                <li><strong>Hoover High School:</strong> GreatSchools Rating 6/10 – Historic high school with strong arts and athletics programs</li>
+            </ul>
+
+            <p><strong>Private School Options:</strong></p>
+            <ul>
+                <li><strong>Saint Didacus School:</strong> Catholic elementary school (K-8) with traditional values and strong academics</li>
+                <li><strong>Waldorf School of San Diego:</strong> Alternative education focused on arts integration and child development</li>
+                <li>Close proximity to The Bishop's School (La Jolla) and other private schools throughout San Diego</li>
+            </ul>
+
+            <p><strong>Higher Education Access:</strong> North Park's central location provides easy access to San Diego State University (15 minutes), University of San Diego (10 minutes), and numerous community colleges and technical schools.</p>
+        </section>
+
+        <!-- Getting Around Section -->
+        <section class="content-section">
+            <h2>Getting Around</h2>
+            <p><strong>Commute Times:</strong></p>
+            <ul>
+                <li><strong>Downtown San Diego:</strong> 3 miles, 10-15 minutes via surface streets or I-5</li>
+                <li><strong>San Diego International Airport:</strong> 5 miles, 15 minutes</li>
+                <li><strong>Hillcrest/Medical District:</strong> 2 miles, 5-10 minutes (major employment center with hospitals and medical offices)</li>
+                <li><strong>Mission Valley:</strong> 3 miles, 10 minutes (shopping, offices, trolley access)</li>
+                <li><strong>La Jolla/UTC:</strong> 12 miles, 20-25 minutes</li>
+                <li><strong>Sorrento Valley (tech/biotech):</strong> 15 miles, 25 minutes via I-805</li>
+            </ul>
+
+            <p><strong>Freeway Access:</strong> Quick access to I-805 (north-south) and SR-163 (downtown connector). I-15 and I-8 are easily reachable for east county or north county commutes. The central location means most of San Diego is within 30 minutes.</p>
+
+            <p><strong>Public Transit:</strong> Multiple MTS bus routes run through North Park, including Rapid routes along University Avenue and 30th Street. The neighborhood is bikeable (Bike Score 64/100) with dedicated bike lanes on major streets. Many residents bike or walk to work in nearby Hillcrest, downtown, or Balboa Park. The area is served by rideshare and has good access to the San Diego Trolley system from nearby stations.</p>
+
+            <p><strong>Walkability:</strong> With a Walk Score of 86/100, North Park is one of San Diego's most walkable neighborhoods. Daily errands, dining, entertainment, and work (for many residents) are all achievable on foot. This is a major draw for buyers seeking an urban lifestyle without complete car dependency.</p>
+        </section>
+
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Ready to Explore North Park?</h2>
+                <p>As a born-and-raised San Diego native with 6 years of real estate experience, I know North Park inside and out—from the best streets for Craftsman bungalows to which breweries have the best patios. Whether you're buying your first urban home or selling to move up, I'll help you navigate this competitive market with expertise and authenticity.</p>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Call or Text</h4>
+                            <p><a href="tel:+18584630503">(858) 463-0503</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p><a href="mailto:rusty@rauhomegroup.com">rusty@rauhomegroup.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-calendar"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Schedule</h4>
+                            <p><a href="../contact.html">Book a Free Consultation</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required placeholder="Tell me about your North Park real estate goals..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
             </div>
         </div>
     </section>
 
-
-    <script src="../script.js"></script>
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Rau Home Group - North Park Real Estate",
+        "image": "https://rauhomegroup.com/neighborhoods/north-park.html",
+        "description": "North Park San Diego real estate expert. Hip urban neighborhood with craft breweries, vintage charm, and walkable lifestyle. Median price $1.0M.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "North Park",
+            "addressRegion": "CA",
+            "postalCode": "92104",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "32.7441",
+            "longitude": "-117.1303"
+        },
+        "url": "https://rauhomegroup.com/neighborhoods/north-park.html",
+        "priceRange": "$$$",
+        "areaServed": "North Park, San Diego, California"
+    }
+    </script>
 
     <!-- Footer -->
     <footer class="footer" role="contentinfo">
@@ -291,7 +666,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
     <script src="../script.js" defer></script>
     <script src="../luxury-effects.js" defer></script>
-
-
 </body>
 </html>
