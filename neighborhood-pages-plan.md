@@ -52,18 +52,17 @@ All pages should match La Jolla's exact structure (~25KB, 750 words):
 - [x] **Normal Heights** - 30KB - Built 2026-02-07 - Eclectic urban village, Adams Avenue scene, walkable ($947K)
 - [x] **North Park** - 32KB - Built 2026-02-07 - Where San Diego Gets Creative, craft beer capital, walkable urban living ($1.0M)
 - [x] **Oceanside** - 29KB - Built 2026-02-07 - California's Classic Beach Town, historic pier, surf culture ($875K)
-- [ ] **Rancho Bernardo** - 11KB stub - Established Excellence, golf, tech corridor ($950K)
+- [x] **Rancho Bernardo** - 37KB - Built 2026-02-07 - Established Excellence, master-planned community, top schools ($830K)
 - [ ] **San Marcos** - 11KB stub - Growing & Thriving, CSUSM, Restaurant Row ($825K)
 - [ ] **Santee** - 11KB stub - Best Climate on Earth, lakes and trails ($825K)
 - [ ] **South Park** - 11KB stub - Neighborhood Charm, family-friendly cafes ($925K)
 - [ ] **University Heights** - 11KB stub - Elevated Living, hilltop breweries ($900K)
 
 ## Build Priority (Next Up)
-1. **Rancho Bernardo** - Established North County community, golf, tech corridor
-2. **San Marcos** - Growing & Thriving, CSUSM, Restaurant Row
-3. **Santee** - Best Climate on Earth, lakes and trails
-4. **South Park** - Neighborhood Charm, family-friendly cafes
-5. **University Heights** - Elevated Living, hilltop breweries
+1. **San Marcos** - Growing & Thriving, CSUSM, Restaurant Row
+2. **Santee** - Best Climate on Earth, lakes and trails
+3. **South Park** - Neighborhood Charm, family-friendly cafes
+4. **University Heights** - Elevated Living, hilltop breweries
 
 ## Deployment
 - Repo: rustyrau93/rauhomegroup-website
