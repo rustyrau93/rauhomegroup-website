@@ -4,19 +4,18 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rusty Rau - San Diego Real Estate Expert. Born and raised in San Diego with 8 years of experience helping buyers and sellers achieve their real estate goals.">
-    <meta name="keywords" content="San Diego real estate, Rusty Rau, San Diego realtor, homes for sale San Diego, buy home San Diego">
+    <meta name="description" content="South Park San Diego real estate guide. Discover this charming, walkable neighborhood with tree-lined streets, local cafes, and family-friendly community. Median price $1.3M.">
+    <meta name="keywords" content="South Park San Diego, South Park real estate, South Park homes for sale, San Diego neighborhoods, Fern Street">
     <meta name="author" content="Rusty Rau">
-    <meta name="description" content="South Park real estate guide. South Park offers a quieter alternative to its trendy neighbors while maintaining excellent walkability and local charm. The neighborhood features tre">
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Rusty Rau | San Diego Real Estate Expert">
-    <meta property="og:description" content="Born and raised in San Diego. 8 years helping San Diegans buy and sell homes.">
+    <meta property="og:title" content="South Park San Diego Real Estate | Rau Home Group">
+    <meta property="og:description" content="Charming, walkable neighborhood with tree-lined streets and family-friendly cafes. Median price $1.3M.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://rauhomegroup.com">
+    <meta property="og:url" content="https://rauhomegroup.com/neighborhoods/south-park.html">
     
-    <title>South Park Real Estate | Homes for Sale | Rusty Rau</title>
+    <title>South Park Real Estate & Homes for Sale | San Diego | Rau Home Group</title>
     
     <!-- Preconnect to external domains for faster loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,6 +41,328 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/logo.png">
 
+    <style>
+        .hero-neighborhood {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1449034446853-66c86144b0ad?q=80&w=2000') center/cover;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 7rem 2rem;
+        }
+        
+        .hero-neighborhood h1 {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero-neighborhood p {
+            font-size: 1.8rem;
+            font-weight: 300;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .neighborhood-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 7rem 2rem;
+        }
+        
+        .intro-section {
+            max-width: 1000px;
+            margin: 0 auto 5rem;
+            font-size: 1.35rem;
+            line-height: 1.9;
+            color: #2c3e50;
+        }
+        
+        .section {
+            margin-bottom: 5rem;
+        }
+        
+        .section h2 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 2.5rem;
+            font-weight: 600;
+        }
+        
+        .section-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #555;
+        }
+        
+        .section-content p {
+            margin-bottom: 1.8rem;
+        }
+        
+        .stats-banner {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 3rem;
+            margin: 4rem 0;
+            padding: 3rem;
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            border-radius: 12px;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #d4af37;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 1.1rem;
+            color: #555;
+            font-weight: 500;
+        }
+        
+        .lifestyle-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .lifestyle-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+        }
+        
+        .lifestyle-icon {
+            width: 32px;
+            height: 32px;
+            background: #d4af37;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 4px;
+        }
+        
+        .lifestyle-icon i {
+            color: white;
+            font-size: 16px;
+        }
+        
+        .lifestyle-text {
+            flex: 1;
+        }
+        
+        .lifestyle-text h4 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .lifestyle-text p {
+            color: #666;
+            margin: 0;
+            line-height: 1.7;
+        }
+        
+        .contact-section {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            padding: 5rem 3rem;
+            border-radius: 12px;
+            margin-top: 5rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .contact-info {
+            color: white;
+        }
+        
+        .contact-info h2 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-info p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+        
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        
+        .contact-icon {
+            width: 56px;
+            height: 56px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .contact-icon i {
+            color: #d4af37;
+            font-size: 24px;
+        }
+        
+        .contact-text {
+            flex: 1;
+        }
+        
+        .contact-text h4 {
+            color: #d4af37;
+            margin-bottom: 0.3rem;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .contact-text a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        
+        .contact-text a:hover {
+            color: #d4af37;
+        }
+        
+        .contact-form-container {
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+        }
+        
+        .contact-form-container h3 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #d4af37;
+        }
+        
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            background: #d4af37;
+            color: white;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+            width: 100%;
+        }
+        
+        .submit-btn:hover {
+            background: #c49d2f;
+        }
+        
+        @media (max-width: 968px) {
+            .hero-neighborhood h1 {
+                font-size: 3rem;
+            }
+            
+            .hero-neighborhood p {
+                font-size: 1.4rem;
+            }
+            
+            .contact-section {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            
+            .neighborhood-content {
+                padding: 4rem 1.5rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero-neighborhood {
+                height: 400px;
+                padding: 4rem 1.5rem;
+            }
+            
+            .hero-neighborhood h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-neighborhood p {
+                font-size: 1.2rem;
+            }
+            
+            .stats-banner {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                padding: 2rem;
+            }
+            
+            .lifestyle-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Skip to main content link for accessibility -->
@@ -80,143 +401,222 @@
         </div>
     </nav>
 
-<nav class="navbar scrolled-dark">
-        <div class="nav-container">
-            <a href="/" class="logo">
-                <img src="../images/logo.png" alt="Rau Home Group" class="logo-img">
-                <div class="logo-text-wrap">
-                    <span class="logo-text">RAU HOME GROUP</span>
-                    <span class="logo-subtitle">SAN DIEGO REAL ESTATE</span>
-                </div>
-            </a>
-            <ul class="nav-links">
-                <li><a href="/#about">About</a></li>
-                <li><a href="/buyers.html">Buyers</a></li>
-                <li><a href="/sellers.html">Sellers</a></li>
-                <li><a href="/#listings">Listings</a></li>
-                <li><a href="/neighborhoods.html" class="active">Areas</a></li>
-                <li><a href="/#testimonials">Reviews</a></li>
-                <li><a href="/blog.html">Blog</a></li>
-                <li><a href="#contact" class="nav-cta">Contact</a></li>
-            </ul>
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+    <!-- Hero Section -->
+    <div class="hero-neighborhood">
+        <div>
+            <h1>South Park, San Diego</h1>
+            <p>Where Neighborhood Charm Meets Urban Convenience</p>
         </div>
-    </nav>
+    </div>
 
-    <section class="hero page-hero" style="background: linear-gradient(135deg, #1A2332 0%, #0D1117 100%);">
-        <div class="hero-background">
-            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80" alt="South Park" class="hero-image">
-            <div class="hero-overlay dark"></div>
-        </div>
-        <div class="hero-content">
-            <span class="hero-tag">San Diego</span>
-            <h1 class="hero-title">South Park<br><span class="accent">Neighborhood Charm</span></h1>
-            <p class="hero-subtitle">Family-friendly community with local cafes, parks, and tree-lined streets</p>
-            <a href="#contact" class="cta-button">See Homes in South Park</a>
-        </div>
-    </section>
-
-    <section class="content-section" style="padding: 4rem 0;">
-        <div class="container narrow">
-            <h2 class="section-title">About South Park</h2>
-            <p class="lead-text">South Park offers a quieter alternative to its trendy neighbors while maintaining excellent walkability and local charm. The neighborhood features tree-lined streets, local cafes, and a strong community spirit.</p>
-            
-            <p style="color: #6B7280; margin-bottom: 1rem;">Fern Street and 30th Street feature local coffee shops, breakfast spots, and neighborhood restaurants. The community has preserved its historic character while adding modern amenities. The weekly library chess club and community garden reflect the neighborhood's values.</p>
-            
-            <p style="color: #6B7280; margin-bottom: 2rem;">Real estate includes charming bungalows, Craftsman homes, and some newer construction. The family-friendly atmosphere, good schools, and walkability make South Park popular with young families and professionals seeking community.</p>
-
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin: 3rem 0; padding: 2rem; background: #F8F7F4; border-radius: 4px;">
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">$925K</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">Median Home Price</div>
-                </div>
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">8/10</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">School Rating</div>
-                </div>
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">15K</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">Population</div>
-                </div>
+    <!-- Main Content -->
+    <main id="main-content" class="neighborhood-content">
+        
+        <!-- Stats Banner -->
+        <div class="stats-banner">
+            <div class="stat-item">
+                <span class="stat-number">$1.3M</span>
+                <span class="stat-label">Median Home Price</span>
             </div>
-
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; margin: 2rem 0 1rem; color: #1A2332;">Lifestyle & Amenities</h3>
-            <ul style="list-style: none; padding: 0;">
-                <li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Fern Street - local cafes and breakfast spots</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> South Park playground - family gathering spot</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Community garden - neighborhood involvement</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Walkable streets with sidewalk cafes</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Close to Balboa Park and Golden Hill</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Local library with active programs</li>
-            </ul>
-
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; margin: 2rem 0 1rem; color: #1A2332;">Who Lives Here</h3>
-            <p style="color: #6B7280;">South Park attracts young families, professionals, and those seeking a quieter urban neighborhood with community feel. Residents value local businesses, walkability, and maintaining the neighborhood's character.</p>
+            <div class="stat-item">
+                <span class="stat-number">9/10</span>
+                <span class="stat-label">School Rating</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">13,500</span>
+                <span class="stat-label">Residents</span>
+            </div>
         </div>
-    </section>
+        
+        <!-- About Section -->
+        <section class="section">
+            <div class="intro-section">
+                <p>South Park is one of San Diego's most charming and walkable neighborhoods, where tree-lined streets meet friendly local cafes, and historic Craftsman homes create a picture-perfect setting for modern urban living. Just minutes from downtown and Balboa Park, this tight-knit community offers the best of both worlds: small-town charm with big-city convenience.</p>
+                
+                <p>Originally developed in the 1920s and 1930s, South Park has evolved from a quiet residential area into one of San Diego's most desirable neighborhoods. The tree-canopied streets, beautifully preserved architecture, and thriving business district along Fern Street have made it a magnet for young professionals, families, and creatives seeking authentic neighborhood character without sacrificing urban amenities.</p>
+                
+                <p>What truly sets South Park apart is its genuine sense of community. Unlike many urban neighborhoods where residents barely know their neighbors, South Park fosters real connections through farmers markets, community gardens, local festivals, and a business district where shopkeepers know your name. The neighborhood's compact, walkable layout encourages street life and spontaneous interactions that make this feel like a true village within the city.</p>
+            </div>
+        </section>
 
-    <section class="cta-section" style="background: #1A2332; color: white; padding: 4rem 0; text-align: center;">
-        <div class="container">
-            <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 1rem; color: white;">Ready to Find Your South Park Home?</h2>
-            <p style="color: rgba(255,255,255,0.8); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">Let me show you the best homes and investment opportunities in South Park.</p>
-            <a href="#contact" class="cta-button large">See Homes in South Park</a>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <span class="section-tag">Get in Touch</span>
-                    <h2 class="section-title">Let's Find Your<br>South Park Home</h2>
-                    <p class="contact-text">I know South Park inside and out. Let's talk about what you're looking for.</p>
-                    
-                    <div class="contact-details">
-                        <a href="tel:+18582044692" class="contact-item">
-                            <span class="contact-icon"><i class="fas fa-phone"></i></span>
-                            <span>(858) 204-4692</span>
-                        </a>
-                        <a href="mailto:rusty@deanaguilargroup.com" class="contact-item">
-                            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
-                            <span>rusty@deanaguilargroup.com</span>
-                        </a>
+        <!-- Lifestyle & Amenities Section -->
+        <section class="section">
+            <h2>Lifestyle & Amenities</h2>
+            <div class="section-content">
+                <div class="lifestyle-grid">
+                    <div class="lifestyle-item">
+                        <div class="lifestyle-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="lifestyle-text">
+                            <h4>Walkable Village Atmosphere</h4>
+                            <p>Everything within walking distance on charming, tree-lined streets</p>
+                        </div>
                     </div>
                     
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/rustyrau_sdrealtor/" target="_blank" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.facebook.com/rusty.rau" target="_blank" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
+                    <div class="lifestyle-item">
+                        <div class="lifestyle-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="lifestyle-text">
+                            <h4>Thriving Local Business District</h4>
+                            <p>Family-owned cafes, boutiques, and restaurants along Fern Street</p>
+                        </div>
+                    </div>
+                    
+                    <div class="lifestyle-item">
+                        <div class="lifestyle-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="lifestyle-text">
+                            <h4>Historic Architecture</h4>
+                            <p>Beautifully preserved Craftsman and Spanish Colonial homes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="lifestyle-item">
+                        <div class="lifestyle-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="lifestyle-text">
+                            <h4>Family-Friendly Community</h4>
+                            <p>Active neighborhood association and family-oriented events</p>
+                        </div>
+                    </div>
+                    
+                    <div class="lifestyle-item">
+                        <div class="lifestyle-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="lifestyle-text">
+                            <h4>Prime Central Location</h4>
+                            <p>Minutes from downtown, Balboa Park, and major highways</p>
+                        </div>
+                    </div>
+                    
+                    <div class="lifestyle-item">
+                        <div class="lifestyle-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="lifestyle-text">
+                            <h4>Strong Community Spirit</h4>
+                            <p>Weekly farmers markets, community gardens, and local festivals</p>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="contact-form-container">
-                    <form class="contact-form">
-                        <input type="hidden" name="neighborhood" value="South Park">
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Your Name" required>
+                <p>South Park's charm lies in its authenticity. The neighborhood has carefully preserved its historic character while welcoming modern businesses that complement rather than replace the local fabric. Fern Street, the main commercial corridor, feels more like a European village square than a typical American shopping district, with outdoor patios, independent shops, and a genuine neighborhood vibe.</p>
+                
+                <p>The tree-canopied streets create natural gathering spaces where neighbors walk their dogs, kids ride bikes to the local ice cream shop, and families stroll to the weekly farmers market. Community gardens, pocket parks, and well-maintained sidewalks encourage outdoor living and social interaction. This is a neighborhood where people actually know their neighbors' names—a rarity in modern urban living.</p>
+            </div>
+        </section>
+
+        <!-- Schools & Education Section -->
+        <section class="section">
+            <h2>Schools & Education</h2>
+            <div class="section-content">
+                <p>South Park's strong public schools and proximity to excellent educational options throughout central San Diego make it a top choice for families. The neighborhood is served by well-regarded schools within the San Diego Unified School District, and its central location provides easy access to numerous private and charter school options.</p>
+                
+                <p><strong>McKinley Elementary School</strong> serves as the neighborhood's public elementary (K-5) with a GreatSchools rating of 7/10. The school offers strong academics in a historic setting with active parent involvement and community support. <strong>Mann Middle School</strong> (grades 6-8, rating 6/10) provides the middle school years with solid academics and extracurricular programs. <strong>Hoover High School</strong> (grades 9-12, rating 6/10) serves as the neighborhood's high school with comprehensive college prep programs, strong athletics, and diverse extracurricular activities.</p>
+                
+                <p>The neighborhood's central location also provides access to numerous highly-rated private schools including Francis Parker School, All Hallows Catholic Academy, and various Montessori programs. Many South Park families also consider schools in adjacent North Park and Golden Hill, expanding their educational options significantly.</p>
+            </div>
+        </section>
+
+        <!-- Getting Around Section -->
+        <section class="section">
+            <h2>Getting Around</h2>
+            <div class="section-content">
+                <p>South Park's central location and walkable design make it one of San Diego's most convenient neighborhoods for both daily errands and city-wide commuting. With a Walk Score of 85, most daily needs can be accomplished on foot, while excellent freeway access provides quick connections throughout the region.</p>
+                
+                <p>Downtown San Diego is just 3 miles away (8-10 minutes), making the morning commute remarkably easy. The airport is 6 miles (12 minutes), Balboa Park is adjacent to the neighborhood, and major employment centers in Mission Valley, UTC, and Sorrento Valley are all within 15-25 minutes. Multiple MTS bus routes serve the neighborhood with connections throughout the city, and the nearby trolley stations on the Orange and Blue Lines provide car-free commuting options.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="contact-info">
+                <h2>Ready to Call South Park Home?</h2>
+                <p>As a 6-year San Diego real estate veteran with deep knowledge of central San Diego's unique neighborhoods, I'll help you find the perfect South Park home that matches your lifestyle and budget.</p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
                         </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="email" name="email" placeholder="Email" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" name="phone" placeholder="Phone">
-                            </div>
+                        <div class="contact-text">
+                            <h4>Call or Text</h4>
+                            <a href="tel:+18585551234">(858) 555-1234</a>
                         </div>
-                        <div class="form-group">
-                            <textarea name="message" placeholder="Tell me what you're looking for in South Park..." rows="4"></textarea>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
                         </div>
-                        <button type="submit" class="submit-button">Contact Rusty</button>
-                    </form>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <a href="mailto:rusty@rauhomegroup.com">rusty@rauhomegroup.com</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+            
+            <div class="contact-form-container">
+                <h3>Get Your Free Market Analysis</h3>
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Tell me about your South Park real estate goals..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
 
+    </main>
 
-    <script src="../script.js"></script>
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Rau Home Group - South Park Real Estate",
+        "image": "https://rauhomegroup.com/assets/images/neighborhoods/south-park-hero.jpg",
+        "description": "South Park San Diego real estate expert. Charming, walkable neighborhood with tree-lined streets, local cafes, and family-friendly community. Median price $1.3M.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "South Park",
+            "addressRegion": "CA",
+            "postalCode": "92102",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "32.7313",
+            "longitude": "-117.1277"
+        },
+        "url": "https://rauhomegroup.com/neighborhoods/south-park.html",
+        "priceRange": "$$$$",
+        "areaServed": "South Park, San Diego, California"
+    }
+    </script>
 
     <!-- Footer -->
     <footer class="footer" role="contentinfo">
@@ -291,7 +691,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
     <script src="../script.js" defer></script>
     <script src="../luxury-effects.js" defer></script>
-
-
 </body>
 </html>
