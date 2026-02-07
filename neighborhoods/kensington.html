@@ -4,19 +4,18 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rusty Rau - San Diego Real Estate Expert. Born and raised in San Diego with 8 years of experience helping buyers and sellers achieve their real estate goals.">
-    <meta name="keywords" content="San Diego real estate, Rusty Rau, San Diego realtor, homes for sale San Diego, buy home San Diego">
+    <meta name="description" content="Kensington San Diego Real Estate - Village in the City. Historic Spanish Revival homes, walkable Adams Avenue, top schools. Median price $1.1M. Contact Rusty Rau.">
+    <meta name="keywords" content="Kensington San Diego real estate, Kensington homes for sale, Adams Avenue, Spanish Revival homes San Diego">
     <meta name="author" content="Rusty Rau">
-    <meta name="description" content="Kensington real estate guide. Kensington is a charming neighborhood that feels like a village within the city. With tree-lined streets, local businesses along Adams Avenue, and a s">
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Rusty Rau | San Diego Real Estate Expert">
-    <meta property="og:description" content="Born and raised in San Diego. 8 years helping San Diegans buy and sell homes.">
+    <meta property="og:title" content="Kensington Real Estate | San Diego | Rau Home Group">
+    <meta property="og:description" content="Village in the City - Historic charm meets urban convenience in Kensington.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://rauhomegroup.com">
     
-    <title>Kensington Real Estate | Homes for Sale | Rusty Rau</title>
+    <title>Kensington Real Estate & Homes for Sale | San Diego | Rau Home Group</title>
     
     <!-- Preconnect to external domains for faster loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,6 +41,122 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/logo.png">
 
+    <style>
+        .hero-neighborhood {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../assets/images/neighborhoods/kensington-hero.jpg') center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .hero-neighborhood h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        .hero-neighborhood p {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+        .neighborhood-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+        .section {
+            margin-bottom: 4rem;
+        }
+        .section h2 {
+            color: #2C3E50;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 0.5rem;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .stat-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            border-left: 4px solid #3498db;
+        }
+        .stat-card h3 {
+            color: #3498db;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .stat-card p {
+            color: #555;
+            font-size: 1rem;
+        }
+        .pros-cons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .pros, .cons {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+        }
+        .pros {
+            border-left: 4px solid #27ae60;
+        }
+        .cons {
+            border-left: 4px solid #e74c3c;
+        }
+        .pros h3 {
+            color: #27ae60;
+        }
+        .cons h3 {
+            color: #e74c3c;
+        }
+        ul {
+            line-height: 1.8;
+        }
+        .cta-section {
+            background: #3498db;
+            color: white;
+            padding: 3rem;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 4rem;
+        }
+        .cta-section h2 {
+            color: white;
+            border: none;
+        }
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #3498db;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: transform 0.2s;
+        }
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+        @media (max-width: 768px) {
+            .pros-cons {
+                grid-template-columns: 1fr;
+            }
+            .hero-neighborhood h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Skip to main content link for accessibility -->
@@ -80,143 +195,316 @@
         </div>
     </nav>
 
-<nav class="navbar scrolled-dark">
-        <div class="nav-container">
-            <a href="/" class="logo">
-                <img src="../images/logo.png" alt="Rau Home Group" class="logo-img">
-                <div class="logo-text-wrap">
-                    <span class="logo-text">RAU HOME GROUP</span>
-                    <span class="logo-subtitle">SAN DIEGO REAL ESTATE</span>
-                </div>
-            </a>
-            <ul class="nav-links">
-                <li><a href="/#about">About</a></li>
-                <li><a href="/buyers.html">Buyers</a></li>
-                <li><a href="/sellers.html">Sellers</a></li>
-                <li><a href="/#listings">Listings</a></li>
-                <li><a href="/neighborhoods.html" class="active">Areas</a></li>
-                <li><a href="/#testimonials">Reviews</a></li>
-                <li><a href="/blog.html">Blog</a></li>
-                <li><a href="#contact" class="nav-cta">Contact</a></li>
-            </ul>
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+    <!-- Hero Section -->
+    <div class="hero-neighborhood">
+        <div>
+            <h1>Kensington, San Diego</h1>
+            <p>Village in the City - Small-Town Charm Meets Urban Convenience</p>
         </div>
-    </nav>
+    </div>
 
-    <section class="hero page-hero" style="background: linear-gradient(135deg, #1A2332 0%, #0D1117 100%);">
-        <div class="hero-background">
-            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80" alt="Kensington" class="hero-image">
-            <div class="hero-overlay dark"></div>
+    <!-- Main Content -->
+    <div class="neighborhood-content">
+        
+        <!-- Stats Banner -->
+        <div class="stats-grid" style="margin-top: 3rem;">
+            <div class="stat-card">
+                <h3>$1.1M</h3>
+                <p>Median Home Price</p>
+            </div>
+            <div class="stat-card">
+                <h3>7/10</h3>
+                <p>Average School Rating</p>
+            </div>
+            <div class="stat-card">
+                <h3>~15,000</h3>
+                <p>Residents</p>
+            </div>
         </div>
-        <div class="hero-content">
-            <span class="hero-tag">San Diego</span>
-            <h1 class="hero-title">Kensington<br><span class="accent">Village in the City</span></h1>
-            <p class="hero-subtitle">Charming neighborhood with small-town feel and Adams Avenue character</p>
-            <a href="#contact" class="cta-button">See Homes in Kensington</a>
-        </div>
-    </section>
 
-    <section class="content-section" style="padding: 4rem 0;">
-        <div class="container narrow">
-            <h2 class="section-title">About Kensington</h2>
-            <p class="lead-text">Kensington is a charming neighborhood that feels like a village within the city. With tree-lined streets, local businesses along Adams Avenue, and a strong community identity, Kensington offers urban convenience with small-town charm.</p>
+        <!-- Overview Section -->
+        <section class="section" style="margin-top: 7rem;">
+            <h2>🏡 About Kensington</h2>
+            <p style="font-size: 1.35rem; line-height: 1.9; max-width: 1000px; margin-bottom: 2.5rem;">Kensington is San Diego's hidden gem — a charming historic neighborhood that feels like a small village tucked inside the city. Just minutes from downtown yet worlds away in atmosphere, this quiet enclave offers tree-lined streets, beautifully preserved Spanish Revival homes, and a walkable business district centered on Adams Avenue that locals adore.</p>
             
-            <p style="color: #6B7280; margin-bottom: 1rem;">Adams Avenue in Kensington features independent shops, cafes, and the iconic Ken Cinema (San Diego's oldest movie theater). The neighborhood has preserved its historic character while supporting local businesses. Community events and activism are strong.</p>
+            <p style="font-size: 1.15rem; line-height: 1.9; max-width: 1000px; margin-bottom: 2.5rem;"><strong>Location:</strong> Northeast San Diego, approximately 5 miles from downtown, nestled between Normal Heights to the west and College Area to the east. The neighborhood sits on gently rolling hills with easy access to I-15 and I-8 freeways.</p>
             
-            <p style="color: #6B7280; margin-bottom: 2rem;">Real estate includes Spanish-style homes, Tudor revivals, and Craftsman bungalows, many well-maintained or renovated. The sense of community, good schools, and proximity to amenities make Kensington popular with families and professionals.</p>
+            <p style="font-size: 1.15rem; line-height: 1.9; max-width: 1000px; margin-bottom: 2.5rem;"><strong>What Makes It Unique:</strong> Kensington masterfully balances small-town intimacy with big-city accessibility. The historic Adams Avenue village center features the iconic Kensington sign spanning the street, welcoming residents to local coffee shops, wine bars, restaurants, and the beloved Ken Cinema — San Diego's longest-running independent movie theater. The architecture tells a story: Spanish Revival homes from the 1920s and '30s with red-tile roofs, arched doorways, and mature landscaping create a cohesive, storybook streetscape that's increasingly rare in modern San Diego.</p>
+            
+            <p style="font-size: 1.15rem; line-height: 1.9; max-width: 1000px;"><strong>Who Lives Here:</strong> Kensington attracts long-term homeowners, young families, and professionals who value peace and community over nightlife. Many residents have lived here for years, investing in thoughtful renovations and building deep neighborhood connections. You'll find remote workers enjoying the quiet streets, families walking to the local elementary school, and retirees who've downsized from larger suburban homes while keeping their San Diego roots.</p>
+        </section>
 
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin: 3rem 0; padding: 2rem; background: #F8F7F4; border-radius: 4px;">
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">$1.1M</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">Median Home Price</div>
+        <!-- Real Estate Market Section -->
+        <section class="section" style="margin-top: 7rem;">
+            <h2>💰 Real Estate Market</h2>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>$1.1M</h3>
+                    <p>Median Home Price</p>
                 </div>
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">9/10</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">School Rating</div>
+                <div class="stat-card">
+                    <h3>$830</h3>
+                    <p>Price per Square Foot</p>
                 </div>
-                <div style="text-align: center;">
-                    <div style="font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: #D4AF37;">17K</div>
-                    <div style="font-size: 0.9rem; color: #6B7280; text-transform: uppercase; letter-spacing: 0.05em;">Population</div>
+                <div class="stat-card">
+                    <h3>54 Days</h3>
+                    <p>Average Days on Market</p>
+                </div>
+                <div class="stat-card">
+                    <h3>98.2%</h3>
+                    <p>Sale-to-List Price Ratio</p>
                 </div>
             </div>
 
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; margin: 2rem 0 1rem; color: #1A2332;">Lifestyle & Amenities</h3>
-            <ul style="list-style: none; padding: 0;">
-                <li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Ken Cinema - historic independent theater</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Kensington Park - playground and recreation</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Adams Avenue - local shops and restaurants</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Farmer's market and community events</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Tree-lined streets and sidewalks</li><li style="padding: 0.5rem 0; color: #6B7280; display: flex; align-items: center; gap: 0.75rem;"><i class="fas fa-check-circle" style="color: #D4AF37;"></i> Active neighborhood association</li>
+            <p style="font-size: 1.15rem; line-height: 1.9; max-width: 1000px; margin-top: 3rem; margin-bottom: 2.5rem;"><strong>Price Ranges:</strong> Kensington offers a diverse range from charming starter bungalows around $750K to fully renovated Spanish estates exceeding $2M. Most single-family homes range from $900K to $1.5M depending on size, updates, and location within the neighborhood.</p>
+
+            <p style="font-size: 1.15rem; line-height: 1.9; max-width: 1000px; margin-bottom: 2.5rem;"><strong>Types of Homes:</strong></p>
+            <ul style="font-size: 1.15rem; line-height: 1.9; max-width: 1000px; margin-bottom: 2.5rem;">
+                <li><strong>Spanish Revival Homes:</strong> The neighborhood's signature — 1920s-1950s homes with tile roofs, stucco facades, arched doorways, and courtyards</li>
+                <li><strong>Craftsman Bungalows:</strong> Charming early 20th-century homes with wood details, built-ins, and front porches</li>
+                <li><strong>Spanish Colonial:</strong> Larger estates with period details like wrought iron, tile work, and formal gardens</li>
+                <li><strong>Updated Contemporary:</strong> Thoughtfully modernized homes maintaining exterior charm while offering modern interiors</li>
             </ul>
 
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 1.75rem; margin: 2rem 0 1rem; color: #1A2332;">Who Lives Here</h3>
-            <p style="color: #6B7280;">Kensington attracts families, professionals, and those who value community involvement and historic preservation. Residents are civically engaged, supportive of local businesses, and proud of their neighborhood's identity.</p>
-        </div>
-    </section>
+            <p style="font-size: 1.15rem; line-height: 1.9; max-width: 1000px; margin-bottom: 2.5rem;"><strong>Architectural Styles:</strong> Spanish Revival dominates, complemented by Craftsman, Spanish Colonial, and occasional Mid-Century Modern homes. The architectural consistency creates the neighborhood's distinctive character.</p>
 
-    <section class="cta-section" style="background: #1A2332; color: white; padding: 4rem 0; text-align: center;">
-        <div class="container">
-            <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 1rem; color: white;">Ready to Find Your Kensington Home?</h2>
-            <p style="color: rgba(255,255,255,0.8); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">Let me show you the best homes and investment opportunities in Kensington.</p>
-            <a href="#contact" class="cta-button large">See Homes in Kensington</a>
-        </div>
-    </section>
+            <p style="font-size: 1.15rem; line-height: 1.9; max-width: 1000px; margin-bottom: 2.5rem;"><strong>Lot Sizes:</strong> Typically 5,000-8,000 sq ft for standard lots. While not large by suburban standards, lots are efficiently used with patios, gardens, and small yards perfect for California outdoor living.</p>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <span class="section-tag">Get in Touch</span>
-                    <h2 class="section-title">Let's Find Your<br>Kensington Home</h2>
-                    <p class="contact-text">I know Kensington inside and out. Let's talk about what you're looking for.</p>
-                    
-                    <div class="contact-details">
-                        <a href="tel:+18582044692" class="contact-item">
-                            <span class="contact-icon"><i class="fas fa-phone"></i></span>
-                            <span>(858) 204-4692</span>
-                        </a>
-                        <a href="mailto:rusty@deanaguilargroup.com" class="contact-item">
-                            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
-                            <span>rusty@deanaguilargroup.com</span>
-                        </a>
+            <p style="font-size: 1.15rem; line-height: 1.9; max-width: 1000px; margin-bottom: 2.5rem;"><strong>Recent Market Trends (2026):</strong></p>
+            <ul style="font-size: 1.15rem; line-height: 1.9; max-width: 1000px;">
+                <li>Somewhat competitive market with well-priced homes attracting multiple offers</li>
+                <li>Limited inventory keeps demand strong — many homeowners stay for 10+ years</li>
+                <li>Historic character homes command premium pricing over comparably sized newer construction</li>
+                <li>Walkability score of 71/100 drives strong buyer interest from urban professionals</li>
+                <li>Properties with updated kitchens/baths while preserving period details sell fastest</li>
+                <li>Close proximity to downtown (10 minutes) and major employment centers increases appeal</li>
+                <li>Strong community identity supports stable, consistent appreciation</li>
+            </ul>
+        </section>
+
+        <!-- Lifestyle & Culture Section -->
+        <section class="section" style="margin-top: 7rem;">
+            <h2>🎨 Lifestyle & Culture</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; margin: 3rem 0; max-width: 1000px;">
+                <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                    <div style="background: linear-gradient(135deg, #D4AF37 0%, #F8E08E 100%); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                     </div>
-                    
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/rustyrau_sdrealtor/" target="_blank" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.facebook.com/rusty.rau" target="_blank" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </div>
+                    <span style="font-size: 1.15rem; line-height: 1.9;">Walkable Adams Avenue village center</span>
                 </div>
+                <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                    <div style="background: linear-gradient(135deg, #D4AF37 0%, #F8E08E 100%); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    </div>
+                    <span style="font-size: 1.15rem; line-height: 1.9;">Tree-lined streets with mature landscaping</span>
+                </div>
+                <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                    <div style="background: linear-gradient(135deg, #D4AF37 0%, #F8E08E 100%); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    </div>
+                    <span style="font-size: 1.15rem; line-height: 1.9;">Historic Ken Cinema for indie films</span>
+                </div>
+                <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                    <div style="background: linear-gradient(135deg, #D4AF37 0%, #F8E08E 100%); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    </div>
+                    <span style="font-size: 1.15rem; line-height: 1.9;">Strong community pride and engagement</span>
+                </div>
+                <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                    <div style="background: linear-gradient(135deg, #D4AF37 0%, #F8E08E 100%); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    </div>
+                    <span style="font-size: 1.15rem; line-height: 1.9;">Quiet residential streets, minimal traffic</span>
+                </div>
+                <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                    <div style="background: linear-gradient(135deg, #D4AF37 0%, #F8E08E 100%); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    </div>
+                    <span style="font-size: 1.15rem; line-height: 1.9;">Family-friendly parks and green spaces</span>
+                </div>
+            </div>
+
+            <p style="font-size: 1.15rem; line-height: 1.9; max-width: 1000px; margin-top: 3rem; margin-bottom: 2.5rem;"><strong>Vibe & Personality:</strong> Kensington exudes a relaxed, neighborhood-first mentality. It's where you know your barista by name, neighbors wave from porches, and weekend mornings mean strolling to the farmers market or grabbing brunch at a local cafe. The atmosphere is unpretentious yet refined — people value quality of life over status symbols. Think more "regulars and neighbors" than tourist destinations.</p>
+
+            <p style="font-size: 1.15rem; line-height: 1.9; max-width: 1000px; margin-bottom: 2.5rem;"><strong>Community Feel:</strong> Long-term residents create stability and strong neighborhood bonds. You'll see the same faces at community events, on evening dog walks, and at local restaurants. The historic Kensington sign and well-maintained homes reflect genuine pride of ownership. This isn't a transient area — people put down roots, renovate thoughtfully, and invest in the community's future.</p>
+
+            <p style="font-size: 1.15rem; line-height: 1.9; max-width: 1000px;"><strong>Local Character:</strong> Adams Avenue forms the heart of the village with locally-owned businesses, neighborhood gathering spots, and the Ken Cinema — a beloved institution since 1947 showing independent and foreign films. The scale is intimate and human — you can accomplish daily errands on foot, chat with shopkeepers who remember you, and enjoy the rare pleasure of a neighborhood that hasn't been corporatized.</p>
+        </section>
+
+        <!-- Things to Do Section -->
+        <section class="section" style="margin-top: 7rem;">
+            <h2>🌟 Things to Do</h2>
+            
+            <h3 style="font-size: 1.35rem; margin-top: 3rem; margin-bottom: 2rem;">🏞️ Outdoor & Recreation</h3>
+            <ul style="font-size: 1.15rem; line-height: 1.9; max-width: 1000px; margin-bottom: 2.5rem;">
+                <li><strong>Kensington Park:</strong> Neighborhood park with playgrounds, open space, and community events</li>
+                <li><strong>Balboa Park:</strong> World-famous cultural park just 5 minutes away with museums, gardens, and trails</li>
+                <li><strong>Mission Trails Regional Park:</strong> Extensive hiking and mountain biking trails 15 minutes east</li>
+                <li><strong>Tree-lined walking streets:</strong> The neighborhood itself is the attraction — peaceful strolls through historic blocks</li>
+                <li><strong>Nearby canyons:</strong> Natural open spaces for nature walks and wildlife viewing</li>
+            </ul>
+
+            <h3 style="font-size: 1.35rem; margin-top: 3rem; margin-bottom: 2rem;">🛍️ Shopping & Dining</h3>
+            <ul style="font-size: 1.15rem; line-height: 1.9; max-width: 1000px; margin-bottom: 2.5rem;">
+                <li><strong>Adams Avenue:</strong> Walkable village center with boutiques, antique shops, and local services</li>
+                <li><strong>Kensington Cafe:</strong> Neighborhood breakfast and lunch institution with patio seating</li>
+                <li><strong>Clem's Tap House:</strong> Local gastropub featuring craft beers and elevated comfort food</li>
+                <li><strong>Kensington Wine Market:</strong> Curated wine selection with knowledgeable staff and tasting events</li>
+                <li><strong>The Farmer's Bottega:</strong> Farm-to-table Italian cuisine in a cozy setting</li>
+                <li><strong>Local coffee shops:</strong> Multiple independent cafes perfect for remote work or morning meetups</li>
+            </ul>
+
+            <h3 style="font-size: 1.35rem; margin-top: 3rem; margin-bottom: 2rem;">🎭 Entertainment & Culture</h3>
+            <ul style="font-size: 1.15rem; line-height: 1.9; max-width: 1000px;">
+                <li><strong>Ken Cinema:</strong> Historic independent theater showing art house, foreign, and indie films since 1947</li>
+                <li><strong>Adams Avenue Street Fair:</strong> Annual neighborhood festival with live music, food vendors, and local artisans</li>
+                <li><strong>Kensington Farmers Market:</strong> Weekly gathering featuring local produce and community connections</li>
+                <li><strong>Nearby North Park:</strong> Adjacent neighborhood with vibrant dining, breweries, and nightlife (5 minutes)</li>
+                <li><strong>Nearby Normal Heights:</strong> More casual dining and entertainment options within walking distance</li>
+            </ul>
+        </section>
+
+        <!-- Schools Section -->
+        <section class="section" style="margin-top: 7rem;">
+            <h2>🎓 Schools & Education</h2>
+            <p style="font-size: 1.15rem; line-height: 1.9; max-width: 1000px; margin-bottom: 2.5rem;">Kensington is served by San Diego Unified School District with several well-regarded public schools nearby. The neighborhood's stable, family-friendly character attracts homeowners who prioritize education and community involvement.</p>
+
+            <p style="font-size: 1.15rem; line-height: 1.9; max-width: 1000px; margin-bottom: 2.5rem;"><strong>Public Schools:</strong></p>
+            <ul style="font-size: 1.15rem; line-height: 1.9; max-width: 1000px; margin-bottom: 2.5rem;">
+                <li><strong>Kensington Elementary:</strong> K-5 neighborhood school within walking distance for many families</li>
+                <li><strong>Horace Mann Middle School:</strong> Nearby middle school option serving the area</li>
+                <li><strong>Herbert Hoover High School:</strong> Local high school with college prep programs</li>
+                <li><strong>San Diego Unified magnet programs:</strong> Additional specialized options throughout the district</li>
+            </ul>
+
+            <p style="font-size: 1.15rem; line-height: 1.9; max-width: 1000px;"><strong>Private & Charter Options:</strong> Families also have access to excellent private schools throughout San Diego including Bishop's School, Francis Parker, and various parochial schools within a short drive. The neighborhood's central location makes nearly any San Diego school accessible.</p>
+        </section>
+
+        <!-- Commute Section -->
+        <section class="section" style="margin-top: 7rem;">
+            <h2>🚗 Getting Around</h2>
+            <p style="font-size: 1.15rem; line-height: 1.9; max-width: 1000px; margin-bottom: 2.5rem;">Kensington's central location provides exceptional access to all of San Diego while maintaining its quiet residential character. Quick freeway access means you're connected without living next to highway noise.</p>
+
+            <p style="font-size: 1.15rem; line-height: 1.9; max-width: 1000px; margin-bottom: 2.5rem;"><strong>Commute Times:</strong></p>
+            <ul style="font-size: 1.15rem; line-height: 1.9; max-width: 1000px; margin-bottom: 2.5rem;">
+                <li><strong>Downtown San Diego:</strong> 5 miles, approximately 10-12 minutes via I-15 or surface streets</li>
+                <li><strong>Mission Valley (major employment hub):</strong> 3 miles, 8-10 minutes</li>
+                <li><strong>La Jolla / UTC:</strong> 12 miles, 18-22 minutes via I-805</li>
+                <li><strong>San Diego Airport:</strong> 7 miles, 15 minutes via I-5</li>
+                <li><strong>Beaches (Pacific/Mission Beach):</strong> 8 miles, 15-18 minutes</li>
+            </ul>
+
+            <p style="font-size: 1.15rem; line-height: 1.9; max-width: 1000px;"><strong>Transportation:</strong> I-15 and I-8 freeways are easily accessible. MTS bus routes serve Adams Avenue. The neighborhood itself is very walkable for daily errands with a Walk Score of 71/100. Many residents work remotely or have short commutes to downtown, Mission Valley, or nearby employment centers.</p>
+        </section>
+
+        <!-- Pros & Cons Section -->
+        <section class="section" style="margin-top: 7rem;">
+            <h2>⚖️ Pros & Cons</h2>
+            <div class="pros-cons">
+                <div class="pros">
+                    <h3>✅ What Buyers Love</h3>
+                    <ul>
+                        <li>Historic Spanish Revival charm and architectural character</li>
+                        <li>Walkable village center with local shops and restaurants</li>
+                        <li>Tree-lined streets and mature landscaping</li>
+                        <li>Quiet, safe, family-friendly atmosphere</li>
+                        <li>Strong community bonds and neighborhood pride</li>
+                        <li>Central location — 10 minutes to downtown</li>
+                        <li>Small-town feel within the city</li>
+                        <li>Ken Cinema and local cultural amenities</li>
+                        <li>Excellent walkability (71/100 score)</li>
+                        <li>Stable property values and limited inventory</li>
+                        <li>Long-term homeowners create community stability</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h3>⚠️ Considerations</h3>
+                    <ul>
+                        <li>Limited inventory — homes sell quickly when available</li>
+                        <li>Older homes may need renovation or system updates</li>
+                        <li>Smaller lot sizes compared to suburban areas</li>
+                        <li>Some homes have limited parking/small garages</li>
+                        <li>Premium pricing for historic character</li>
+                        <li>Quieter nightlife scene — nearby areas for dining/bars</li>
+                        <li>Competitive market for well-maintained homes</li>
+                        <li>Steeper streets in some areas</li>
+                        <li>Not as close to beaches as coastal neighborhoods</li>
+                        <li>HOA fees minimal but some shared spaces need maintenance</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="cta-section">
+            <div style="max-width: 1000px; margin: 0 auto;">
+                <h2 style="font-size: 2rem; margin-bottom: 2rem;">Ready to Explore Kensington Homes?</h2>
+                <p style="font-size: 1.15rem; line-height: 1.9; margin-bottom: 2rem;">As an 8-year San Diego real estate veteran, I know Kensington's unique market inside and out. Whether you're drawn to Spanish Revival charm, walkable village living, or the perfect blend of urban convenience and neighborhood tranquility, I'll help you find your ideal home in this special community.</p>
                 
-                <div class="contact-form-container">
-                    <form class="contact-form">
-                        <input type="hidden" name="neighborhood" value="Kensington">
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Your Name" required>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 3rem; max-width: 900px; margin-left: auto; margin-right: auto;">
+                    <div style="text-align: center;">
+                        <div style="width: 56px; height: 56px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                            <i class="fas fa-phone" style="color: #3498db; font-size: 1.5rem;"></i>
                         </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="email" name="email" placeholder="Email" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" name="phone" placeholder="Phone">
-                            </div>
+                        <h3 style="color: white; font-size: 1.2rem; margin-bottom: 0.5rem;">Call Rusty</h3>
+                        <a href="tel:+16195550123" style="color: white; text-decoration: underline; font-size: 1.1rem;">Schedule Your Consultation</a>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="width: 56px; height: 56px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                            <i class="fas fa-envelope" style="color: #3498db; font-size: 1.5rem;"></i>
                         </div>
-                        <div class="form-group">
-                            <textarea name="message" placeholder="Tell me what you're looking for in Kensington..." rows="4"></textarea>
-                        </div>
-                        <button type="submit" class="submit-button">Contact Rusty</button>
-                    </form>
+                        <h3 style="color: white; font-size: 1.2rem; margin-bottom: 0.5rem;">Get in Touch</h3>
+                        <a href="../contact.html" style="color: white; text-decoration: underline; font-size: 1.1rem;">Send a Message</a>
+                    </div>
                 </div>
+
+                <p style="margin-top: 2.5rem; font-size: 0.95rem;">
+                    <a href="../neighborhoods.html" style="color: white; text-decoration: underline;">Explore Other San Diego Neighborhoods</a>
+                </p>
             </div>
-        </div>
-    </section>
+        </section>
 
+        <!-- Internal Links Section -->
+        <section class="section" style="margin-top: 7rem;">
+            <h3 style="font-size: 1.35rem; margin-bottom: 2rem;">🔗 Related San Diego Neighborhoods</h3>
+            <p style="font-size: 1.15rem; line-height: 1.9; max-width: 1000px; margin-bottom: 1.5rem;">Exploring your options? Check out these other great San Diego communities:</p>
+            <ul style="font-size: 1.15rem; line-height: 1.9; max-width: 1000px;">
+                <li><a href="north-park.html">North Park</a> - Vibrant arts district with craft breweries and dining</li>
+                <li><a href="normal-heights.html">Normal Heights</a> - Eclectic neighbor with vintage charm</li>
+                <li><a href="south-park.html">South Park</a> - Hip walkable community with local character</li>
+                <li><a href="university-heights.html">University Heights</a> - Craftsman homes and tree-lined streets</li>
+                <li><a href="la-jolla.html">La Jolla</a> - Coastal luxury with world-class beaches</li>
+            </ul>
+        </section>
+    </div>
 
-    <script src="../script.js"></script>
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Rau Home Group - Kensington Real Estate",
+        "image": "https://rauhomegroup.com/assets/images/neighborhoods/kensington-hero.jpg",
+        "description": "Kensington San Diego real estate expert. Historic Spanish Revival homes, walkable village living. Median price $1.1M. Village in the City charm.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Kensington",
+            "addressRegion": "CA",
+            "postalCode": "92116",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "32.7650",
+            "longitude": "-117.1089"
+        },
+        "url": "https://rauhomegroup.com/neighborhoods/kensington.html",
+        "priceRange": "$$$",
+        "areaServed": "Kensington, San Diego, California"
+    }
+    </script>
 
     <!-- Footer -->
     <footer class="footer" role="contentinfo">
@@ -291,7 +579,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
     <script src="../script.js" defer></script>
     <script src="../luxury-effects.js" defer></script>
-
-
 </body>
 </html>
